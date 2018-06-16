@@ -1,0 +1,11 @@
+1.top
+2.jdk_path/jstat -gcutil pid
+3.jdk_path/jstack pid > dump_file_path
+
+printf "%x\n" pid
+
+javap是Java class文件分解器，可以反编译（即对javac编译的文件进行反编译），也可以查看java编译器生成的字节码。
+
+用于分解class文件。
+
+https://blog.csdn.net/kringpin_lin/article/details/26211119
