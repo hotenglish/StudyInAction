@@ -1,0 +1,19 @@
+﻿//li8_9.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    cout.setf(ios::showpos);
+    cout.setf(ios::scientific);
+    cout<<123<<" "<<123.23<<endl;
+    cout.width(10);
+    cout<<123<<" "<<123.23<<endl;
+    cout.fill('#');
+    cout.width(10);
+    cout<<123<<" "<<123.23<<endl;
+    return 0;
+}
+
+

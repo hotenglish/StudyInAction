@@ -1,0 +1,31 @@
+﻿//li8_8.cpp
+#include <iostream>
+
+using namespace std;
+
+void showflags(long f);
+
+int main(){
+    long f;
+    f=cout.flags();
+    cout<<f<<endl;
+    showflags(f);
+    cout.setf(ios::showpos);
+    cout.setf(ios::scientific);
+    f=cout.flags();
+    showflags(f);
+    cout.unsetf(ios::scientific);
+    f=cout.flags();
+    showflags(f);
+    return 0;
+}
+
+void showflags(long f){
+    long i;
+    for(i=0x4000;i;i=i>>1)
+    if(i&f)
+       cout<<"1";
+    else
+       cout<<"0";
+    cout<<endl;
+}

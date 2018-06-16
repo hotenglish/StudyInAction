@@ -1,0 +1,36 @@
+﻿//li5_7.cpp
+//类的定义同例 5_6
+#include <iostream>
+
+using namespace std;
+
+class Parent{
+    public:
+        virtual void MyFun(){
+            cout<<"执行 Parent::MyFun()\n";
+        }
+};
+
+class Child:public Parent{
+    public:
+        virtual void MyFun(){         // Auto virtual
+            cout<<"执行 Child::MyFun()\n";
+        }
+};
+
+int main()
+{
+    Child ob_ch;
+    Parent *ptr_pa;                //基类的指针
+    ptr_pa=&ob_ch;                 //指向派生类的对象
+    ptr_pa->MyFun();               //访问虚函数
+    //不是Parent::MyFun()，而是Child::MyFun()
+    Parent &ref_pa=ob_ch;          //基类引用派生类的对象
+    ref_pa.MyFun();                //访问虚函数
+    //不是Parent::MyFun()，而是Child::MyFun()
+    Parent ob_pa;                  //基类的对象
+    ob_pa.MyFun();                 //Parent::MyFun()
+    ob_pa=ob_ch;                   //派生类的对象，基类的对象赋值，相当于类型的转换
+    ob_pa.MyFun();                 //Parent::MyFun()
+    return 0;
+}

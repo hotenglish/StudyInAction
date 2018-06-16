@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/icoFile">
+        <file>images/action-undo.ico</file>
+        <file>images/clipboard-copy_1.ico</file>
+        <file>images/close.png</file>
+        <file>images/cut.ico</file>
+        <file>images/exit.ICO</file>
+        <file>images/introduction.ico</file>
+        <file>images/MYSL.ICO</file>
+        <file>images/open_Text.ico</file>
+        <file>images/paste.ico</file>
+        <file>images/save.ico</file>
+        <file>images/fileadd.ico</file>
+        <file>images/edit-find.png</file>
+        <file>images/text-preview.png</file>
+        <file>images/save-as.png</file>
+    </qresource>
+</RCC>

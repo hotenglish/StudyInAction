@@ -1,0 +1,48 @@
+﻿//li7_6.cpp
+#include <iostream>
+using namespace std;
+template<class Type>
+class Array{
+    int size;
+    Type *ptr;
+    public:
+       Array(int s=1){
+           size=s;
+           ptr=new Type[s];   //为数组分配内存空间
+       }
+       void Fill();
+       void Display();
+       ~Array(){
+          delete[] ptr;
+       }
+};
+
+template<class Type>          //类模板的成员函数定义
+void Array<Type>::Fill(){
+    for(int i=0;i<size;i++){
+        cin>>ptr[i];
+    }
+}
+
+template<class Type>
+void Array<Type>::Display(){  //类模板的成员函数定义
+    for(int i=0;i<size;i++){
+        cout<<ptr[i]<<" ";
+    }
+    cout<<endl;
+}
+
+int main(){
+    Array<int> array1(4);               // Array<int>为模板类，array1为对象
+    cout<<"请填充一个整型数组："<<endl;
+    array1.Fill();
+    cout<<"整型数组的内容是:"<<endl;
+    array1.Display();
+
+    Array<char> array2(2);             // Array<char>为模板类，array2为对象
+    cout<<"请填充一个字符数组："<<endl;
+    array2.Fill();
+    cout<<"字符数组的内容是:"<<endl;
+    array2.Display();
+    return 0;
+}

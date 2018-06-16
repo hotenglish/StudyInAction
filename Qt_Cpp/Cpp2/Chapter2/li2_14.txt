@@ -1,0 +1,17 @@
+﻿//li2_13.cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+    string str1,str2,str3,maxstr;     //定义string变量（对象）
+    cout<<"please input three strings:";
+    cin>>str1>>str2>>str3;            //字符串输入
+    if(str1>str2)                     //字符串直接比较
+        maxstr=str1;                  //字符串直接赋值
+    else
+        maxstr=str2;
+    if(maxstr<str3)
+        maxstr=str3;
+    cout<<"Max string:"<<maxstr<<endl; //字符串输出
+    return 0;
+}

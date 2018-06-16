@@ -1,0 +1,50 @@
+﻿//li4_9.cpp
+#include <iostream>
+
+using namespace std;
+
+class Parent{
+    public:
+        Parent(){
+            cout<<"执行默认构造函数 Parent()"<<endl;
+        }
+        Parent(char *p){
+            cout<<"执行构造函数 Parent(char *)"<<endl;
+        }
+
+};
+
+class Member{
+    public:
+        Member(){
+            cout<<"执行默认构造函数 Member()"<<endl;
+        }
+        Member(int i){
+            cout<<"执行构造函数 Member(int)"<<endl;
+        }
+};
+
+
+class Child: public Parent{
+  private:
+    Member a;
+    Member b;
+  public:
+    Child();
+    Child(char *p,int i);
+};
+
+Child::Child():b(100),a(),Parent("Hello"){          //注意初始化表的执行顺序，参数的匹配
+    cout<<"执行默认构造函数 Child()"<<endl;
+}
+
+Child::Child(char *p,int i):a(i),b(i*2),Parent(p){
+    cout<<"执行构造函数 Child(char*,int)"<<endl;
+}
+
+int main(){
+    Child ob1;
+    cout<<endl;
+    Child aa("Hello VC++",100);
+    return 0;
+}

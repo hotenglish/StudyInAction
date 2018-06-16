@@ -1,0 +1,15 @@
+﻿//li2_23.cpp
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+int main(){
+    int *p=NULL;
+    p=new int(89);   //初始化值为89
+    if(p==NULL){     //判断内存分配是否成功
+        cout<<"allocation failure\n";
+        exit(1);
+     }
+    cout<<*p;
+    delete p;
+    return 0;
+}

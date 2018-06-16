@@ -1,0 +1,25 @@
+﻿//li7_9.cpp
+#include <iostream>
+#include <stack>
+#include <string>
+
+using namespace std;
+
+int main(){
+    stack<int> iStack;                            //定义一个整数栈
+    iStack.push(5);
+    iStack.push(6);
+    cout<<"第一个出栈的整数＝"<<iStack.top()<<endl; //弹出栈顶元素
+    iStack.pop();
+    cout<<"第二个出栈的整数＝"<<iStack.top()<<endl;
+    iStack.pop();
+    stack<string> strStack;
+    strStack.push("It's first string");           //定义一个字符串栈
+    strStack.push("It's second string");
+    while (!strStack.empty()) {                   //判断栈非空
+        cout<<"字符串为：";
+        cout<<strStack.top()<<endl;
+        strStack.pop();
+    }
+    return 0;
+}

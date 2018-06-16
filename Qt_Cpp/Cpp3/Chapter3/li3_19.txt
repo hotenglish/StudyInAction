@@ -1,0 +1,31 @@
+﻿//li3_19.cpp
+#include <iostream>
+#include <cstring>
+using namespace std;
+class String{
+
+    public:
+        String(char *s) {             //构造函数
+            str=new char[strlen(s)+1];
+            strcpy(str,s);
+        }
+        ~String(){
+            delete []str;
+        }
+        void Display(){
+            cout<<str<<endl;
+        }
+    private:
+        char *str;
+};
+
+int main(){
+
+    char *c="ascd";
+    cout<<c<<endl;
+    String str1{"Hello!"};             //定义一个存放"Hello!"字符串对象
+    str1.Display();
+    String str2("good morning!");
+    str2.Display();
+    return 0;
+}

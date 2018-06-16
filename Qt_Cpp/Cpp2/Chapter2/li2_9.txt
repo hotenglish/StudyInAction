@@ -1,0 +1,27 @@
+﻿//li2_7.cpp
+#include <iostream>
+using namespace std;
+
+int Fac(int n){
+    int i=1;
+    long f=1;
+    if(n<1){
+        return -1;
+    }
+    for(i=1;i<=n;i++){
+        f=i*f;
+    }
+    return f;
+}
+
+int main(){
+    int num;
+    long fac;
+    cout<<"please input a number(<=12):";
+    cin>>num;
+    fac=Fac(num);      //调出Fac函数，返回值赋给fac
+    if(fac==-1)
+        cout<<"error:num<1\n";
+    else
+        cout<<num<<"!="<<fac<<endl;
+}

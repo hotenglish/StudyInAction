@@ -1,0 +1,12 @@
+﻿//li2_5.cpp：顺序结构
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char ch;
+    cout<<"please input a character:";
+    cin>>ch;
+    cout<<ch<<endl;
+    return 0;
+}

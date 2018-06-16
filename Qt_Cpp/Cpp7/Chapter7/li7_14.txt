@@ -1,0 +1,26 @@
+﻿//li7_14.cpp
+#include <iostream>
+using namespace std;
+
+void Func(int code){
+    try{
+        if(code==0) throw 'a';           //引发char类型的异常
+        if(code==1) throw code;          //引发int类型的异常
+        if(code==2) throw 1.245;         //引发double类型的异常
+    }catch(char ch){
+        cout<<"捕获字符类型异常"<<endl;
+    }catch(int i){
+        cout<<"捕获整数类型异常"<<endl;
+    }catch(...){                         //捕获任何类型异常
+        cout<<"默认捕获"<<endl;
+    }
+    cout<<"ok"<<endl;                    //catch语句块后面的第一条语句
+}
+
+int main(){
+    Func(0);
+    Func(1);
+    Func(2);
+    Func(3);
+    return 0;
+}

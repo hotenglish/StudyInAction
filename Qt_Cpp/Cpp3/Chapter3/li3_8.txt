@@ -1,0 +1,45 @@
+﻿//li3_8.cpp
+#include <iostream>
+
+using namespace std;
+
+class Date{
+
+    public:
+
+       Date(){                //构造函数
+           year=2012;month=7;day=10;
+       }
+
+       void Set(int y,int m,int d);     //带参成员函数声明
+
+   /*    int GetYear(){            //根据需要定义，在此省略
+           return year;
+       }
+
+       int IsLeapYear();　　　　　　　　　　//根据需要定义，在此省略
+   */
+
+       void Print();
+
+    private:
+       int year,month,day;
+};
+
+void Date::Set(int y,int m,int d){
+    year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main()
+{
+    Date today,tomorrow;                       //定义两个对象today和tomorrow
+    today.Print();
+    tomorrow.Print();
+    tomorrow.Set(2012,7,11);                  //设置日期为2012-7-11
+    tomorrow.Print();
+    return 0;
+}

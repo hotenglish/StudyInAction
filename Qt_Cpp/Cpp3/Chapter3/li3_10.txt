@@ -1,0 +1,33 @@
+﻿//li3_10.cpp
+#include <iostream>
+using namespace std;
+class Date{
+
+public:
+    Date(int y,int m,int d);         //构造函数声明
+    void Set(int m,int d,int y);     //带参成员函数声明
+    void Print();
+private:
+    int year,month,day;
+
+};
+
+Date::Date(int y,int m,int d):year(y),month(m),day(d){   //成员初始化列表
+    cout<<"object constructor"<<endl;
+}
+
+void Date::Set(int y,int m,int d){
+     year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main(){
+    Date today(2012,7,10);            //定义对象today, 并为构造函数传递实参
+    today.Print();
+    Date tomorrow(2012,7,11);         //定义对象tomorrow, 并为构造函数传递实参
+    tomorrow.Print();
+    return 0;
+}

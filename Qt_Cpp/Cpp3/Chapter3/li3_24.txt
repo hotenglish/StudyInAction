@@ -1,0 +1,20 @@
+﻿//li3_24.cpp
+#include <iostream>
+using namespace std;
+class Sample{
+public:
+    Sample(char c){
+        ch=c;
+    }
+    void Disp(){
+        cout<<ch<<endl;
+    }
+private:
+    char ch;
+};
+
+int main(){
+    const Sample a('m');//a是常对象，定义时初始化
+    a.Disp();           //错误：a是常对象，不能调用非const成员函数
+    return 0;
+}

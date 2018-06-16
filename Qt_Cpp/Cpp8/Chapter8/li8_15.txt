@@ -1,0 +1,25 @@
+﻿//li8_15.cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(int argc,char *argv[]){
+    char ch;
+    if(argc!=2){
+        cout<<"Usage:programname filename"<<endl;
+        return -1;
+    }
+
+    ifstream inStream("test");
+    if(!inStream){
+        cout<<"Cannot open files.";
+        return -1;
+    }
+    while(inStream){
+        inStream.get(ch);
+        cout<<ch;
+    }
+    inStream.close();
+    return 0;
+}

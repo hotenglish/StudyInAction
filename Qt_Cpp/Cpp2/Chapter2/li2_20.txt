@@ -1,0 +1,12 @@
+﻿//li2_20.cpp
+#include <iostream>
+using namespace std;
+const double pi=3.14159;      //定义pi常量
+int main(){
+    double radius;
+    cout<<"input radius:";
+    cin>>radius;
+    //pi=3.1415926;           //示例：若改变常量pi，编译出错
+    cout<<" area:"<<pi*radius*radius<<endl;
+    return 0;
+}

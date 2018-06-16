@@ -1,0 +1,41 @@
+﻿//li3_27.cp
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+class Point
+{
+
+public:
+
+    Point(double x,double y){
+        X=x;Y=y;
+    }
+
+    double GetX(){
+        return X;
+    }
+
+    double GetY(){
+        return Y;
+    }
+
+    friend double Distance(Point &a,Point &b);
+
+private:
+    double X,Y;
+};
+
+double Distance(Point &a,Point &b){
+    double dx=a.X-b.X;
+    double dy=a.Y-b.Y;
+    return sqrt(dx*dx+dy*dy);
+}
+
+int main(){
+    Point p1(4.0,8.0),p2(5.0,9.0);
+    double dist=Distance(p1,p2);
+    cout<<"This distance is "<<dist<<endl;
+    return 0;
+}

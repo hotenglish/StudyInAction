@@ -1,0 +1,81 @@
+﻿//li3_31.cpp
+#include <iostream>
+using namespace std;
+const int MAX=20;
+class Set{
+    public:
+        Set(){count=0;}                             //构造函数
+        void Addnum(int n);                         //向有序数组中添加元素
+        void Disp();                                //输出有序数组
+        friend Set Union(Set &s1,Set &s2);          //合并数序S1和S2，返回s1与s2合并的结果
+    private:
+        int count;                                  //数序中元素的个数
+        int a[MAX];                                 //存放数序的数组
+};
+
+void Set::Addnum(int n){
+    int i=0,j;
+    while(i<count)
+        if(n>a[i])
+            i++;
+        else
+            break;                                       //条件合并可简化逻辑while(i<count&&n>a[i])i++;
+    if(n==a[i]) return;
+    for(j=count;j>i;j--){
+        a[j]=a[j-1];
+    }
+    a[i]=n;
+    count++;
+}
+
+void Set::Disp(){
+    for(int i=0;i<count;i++){
+        cout<<a[i]<<" ";
+    }
+    cout<<endl;
+}
+
+Set Union(Set &s1,Set &s2){
+    Set s;
+    int i=0,j=0;
+    while(i<s1.count && j<s2.count){
+        int v1=s1.a[i];
+        int v2=s2.a[j];
+        if(v1<v2){
+            s.Addnum(v1);i++;
+        }else if(v1>v2){
+            s.Addnum(v2);j++;
+        }else{
+            s.Addnum(v1);i++;j++;
+        }
+    }
+    while (i<s1.count) {
+        int v1=s1.a[i];
+        s.Addnum(v1);
+        i++;
+    }
+    while (j<s2.count) {
+        int v2=s2.a[j];
+        s.Addnum(v2);
+        j++;
+    }
+    return s;
+}
+
+int main(){
+    Set set1,set2,set3;
+    set1.Addnum(6);
+    set1.Addnum(2);
+    set1.Addnum(4);
+    cout<<"数序一为："<<endl;
+    set1.Disp();
+    set2.Addnum(3);
+    set2.Addnum(7);
+    set2.Addnum(5);
+    cout<<"数序二为："<<endl;
+    set2.Disp();
+    set3=Union(set1,set2);
+    cout<<"数序一与数序二合并为："<<endl;
+    set3.Disp();
+    return 0;
+}

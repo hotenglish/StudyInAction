@@ -1,0 +1,45 @@
+﻿//li3_12.cpp
+#include <iostream>
+using namespace std;
+class Date{
+public:
+    Date();                           //无参构造函数声明
+    Date(int m,int d);                //带２个参数构造函数声明
+    Date(int y,int m,int d);          //带３个参数构造函数声明
+    void Set(int m,int d,int y);      //带参成员函数声明
+    void Print();
+private:
+    int year,month,day;
+};
+
+Date::Date(){                         //无参构造函数
+    year=2012;month=7;day=10;
+    cout<<"object constructor"<<endl;
+}
+
+Date::Date(int m,int d):month(m),day(d){                    //带２个参数构造函数
+    year=2012;
+    cout<<"object constructor"<<endl;
+}
+
+Date::Date(int y,int m,int d):year(y),month(m),day(d){      //带３个参数构造函数
+    cout<<"object constructor"<<endl;
+}
+
+void Date::Set(int y,int m,int d){
+     year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main(){
+    Date today;                          //建立对象today,调用无参构造函数
+    today.Print();          
+    Date yesterday(7,8);                 //建立对象yesterday,调用带２个参数构造函数
+    yesterday.Print();
+    Date tomorrow(2012,7,11);            //建立对象tomorrow,调用带３个参数构造函数
+    tomorrow.Print();
+    return 0;
+}

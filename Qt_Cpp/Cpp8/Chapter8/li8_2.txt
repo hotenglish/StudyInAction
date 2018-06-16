@@ -1,0 +1,12 @@
+﻿//li8_2.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float pi=3.14259;
+    cout<<"pi=";
+    cout<<pi;
+    cout<<endl;
+    return 0;
+}

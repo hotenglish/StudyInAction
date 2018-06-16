@@ -1,0 +1,12 @@
+﻿//li2_18_4.cpp
+#include <iostream>
+using namespace std;
+int sum(const int &x,const int &y){      //常引用参数
+    return x+y;
+}
+
+int main(){
+    int a=10,b=30;
+    cout<<a<<"+"<<b<<"="<<sum(a,b)<<'\n';
+    return 0;
+}

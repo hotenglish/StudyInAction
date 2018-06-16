@@ -1,0 +1,13 @@
+﻿//li2_17.cpp
+#include <iostream>
+using namespace std;
+int main(){
+    int num=5;
+    int *p;
+    p=&num;
+    int &numref=num;
+    cout<<&num<<endl;
+    cout<<&numref<<endl;
+    cout<<*p<<endl;
+    return 0;
+}

@@ -1,0 +1,16 @@
+﻿//li2_18_3.cpp
+#include <iostream>
+using namespace std;
+//以整型引用作为参数
+void Swap(int &x,int &y){            //引用传递
+    int temp=x;
+    x=y;
+    y=temp;
+}
+
+int main(){
+    int i=10,j=20;
+    Swap(i,j);
+    cout<<i<<","<<j<<'\n';
+    return 0;
+}

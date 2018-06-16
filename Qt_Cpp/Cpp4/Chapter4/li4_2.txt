@@ -1,0 +1,57 @@
+//li4_2.cpp
+//基类 Box
+#include <iostream>
+
+using namespace std;
+
+class Box{
+    private:
+        int width,height;
+    public:
+        void SetWidth(int w){
+            width=w;
+        }
+        void SetHeight(int h){
+            height=h;
+        }
+        void ShowBox(){
+            cout<<"width="<<width<<" height="<<height<<endl;
+        }
+};
+
+//派生类 ColorBox
+class ColorBox:public Box{ //public 公有派生
+    //继承了什么成员
+    //继承成员的访问权限是什么
+    //新增加的成员，体现派生类的变化、进化
+    private:
+        int color;
+    public:
+        void Setcolor(int c){
+            color=c;
+            width=100;         //Error,因为继承后的权限为不可访问的
+        }
+
+        void ShowColorBox(){
+            cout<<"width="<<width<<" ";        //Error不可访问的权限
+            cout<<"height="<<height<<" ";      //Error
+            //修改为
+            //派生类的成员函数访问基类的成员函数
+            ShowBox();        //OK，继承下来的函数成员,public
+            cout<<"color="<<color<<endl;  //OK，private
+        }
+};
+
+//主程序
+int main(){
+    ColorBox ob1;                //定义派生类的对像，分配内存，初始化数据成员
+    ob1.Setcolor(1);
+    ob1.SetHeight(2);
+    ob1.SetWidth(3);
+    ob1.ShowColorBox();
+    //ColorBox ob2;
+    //ob2.width=1;               //Error不可访问的权限
+    //ob2.height=2;              //Error
+    //ob2.color=;                //Error,pivate的成员
+    return 0;
+}

@@ -1,0 +1,39 @@
+#include <iostream>
+#include <memory>
+
+using namespace std;
+
+class Retangle {
+
+private:
+    double length;
+    double width;
+
+public:
+    Retangle(double l, double w): length(l), width(w) {}
+
+    virtual ~Retangle() {}
+
+    double getLength() const {
+        return length;
+    }
+
+    double getWidth() const {
+        return width;
+    }
+
+    double getArea() const {
+        return length * width;
+    }
+
+};
+
+int main() {
+    double length, width;
+    cout << "请输入矩形的长与宽：" << endl;
+    cin >> length;
+    cin >> width;
+    Retangle r(length, width);
+    cout << "长为" << r.getLength() << "宽为" << r.getWidth() << "的矩形面积为:" << r.getArea() << endl;
+    return 0;
+}

@@ -1,0 +1,25 @@
+﻿#include <iostream>
+
+using namespace std;
+
+template<class Type>
+int Seqsearch(Type *a,const Type &k,int n){
+    int i=0;
+    while (a[i]!=k && i<=n-1) {
+        i++;
+    }
+    cout<<"tail="<<a[9];
+    if(i>n-1){
+        i=-1;
+    }
+    return i;
+}
+
+int main(){
+    //double d[]={1.0,3.0,5.0,8.0};
+    //int d[]={1,3,5,8};
+    char d[]={'1','2','8','9'};
+    int i=Seqsearch(d,'0',4);
+    cout<<"Result="<<i<<endl;
+    return 0;
+}

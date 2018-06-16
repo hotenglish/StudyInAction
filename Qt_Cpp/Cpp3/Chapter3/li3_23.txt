@@ -1,0 +1,78 @@
+﻿//li3_23.cpp
+#include <iostream>
+#include <iomanip>
+using namespace std;
+class Student{
+public:
+    Student();            //构造函数
+    void Init();
+    void Disp();
+    void Total();
+    static float Aver1(); //静态成员函数
+    static float Aver2(); //静态成员函数
+    static int number;    //静态数据成员定义
+    static float sum1;
+    static float sum2;
+private:
+    int num;
+    char name[10];
+    float english;
+    float math;
+};
+
+int Student::number=0;     //静态数据成员初始化
+float Student::sum1=0;
+float Student::sum2=0;
+
+Student::Student(){
+    Init();
+    number+=1;
+}
+
+void Student::Init(){
+    cout<<"请输入学号：";
+    cin>>num;
+    cout<<"请输入姓名：";
+    cin>>name;
+    cout<<"请输入英语成绩：";
+    cin>>english;
+    cout<<"请输入数学成绩：";
+    cin>>math;
+}
+
+void Student::Disp(){
+    cout<<"学生的基本信息："<<endl;
+    cout<<"学号："<<num;
+    cout<<"姓名："<<name;
+    cout<<"英语："<<english;
+    cout<<"数学："<<math;
+    cout<<endl;
+}
+
+void Student::Total(){
+    sum1=sum1+english;
+    sum2=sum2+math;
+}
+
+float Student::Aver1(){
+    return sum1/number;
+}
+
+
+float Student::Aver2(){
+    return sum2/number;
+}
+
+int main(){
+    Student stu[3];
+    for(int i=0;i<3;i++){
+        stu[i].Total();
+    }
+    cout<<"英语平均分为：";
+    cout<<setiosflags(ios::fixed)<<setprecision(1);   //设置小数形式输出，保留一位小数
+    cout<<Student::Aver1()<<endl;
+    cout<<"数据平均分为：";
+    cout<<setiosflags(ios::fixed)<<setprecision(1);   //设置小数形式输出，保留一位小数
+    cout<<Student::Aver2()<<endl;
+    return 0;
+}

@@ -1,0 +1,47 @@
+//li4_3.cpp
+//基类 Box
+#include <iostream>
+
+using namespace std;
+
+class Box{
+    private:
+        int width,height;
+    public:
+        void SetWidth(int w){
+            width=w;
+        }
+        void SetHeight(int h){
+            height=h;
+        }
+        void ShowBox(){
+            cout<<"width="<<width<<" height="<<height<<endl;
+        }
+};
+
+//派生类 ColorBox
+class ColorBox:private Box{   //private 私有派生
+    //继承了什么成员
+    //继承成员的访问权限是什么
+    //新增加的成员
+    private:
+        int color;
+    public:
+        void SetColor(int c){
+            color=c;
+        }
+};
+
+//主程序
+int main(){
+    ColorBox ob1;               //定义派生类的对像，分配内存，初始化数据成员
+    //ob1.Setcolor(1);          //Error,pivate
+    //ob1.SetHeight(2);         //Error,pivate
+    ob1.SetColor(3);            //OK,public
+
+    //ColorBox ob2;
+    //ob2.width=1;               //Error不可访问的权限
+    //ob2.height=2;              //Error
+    //ob2.color=3;               //Error,pivate的成员
+    return 0;
+}

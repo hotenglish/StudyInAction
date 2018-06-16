@@ -1,0 +1,25 @@
+﻿//li3_6.cpp
+#include <iostream>
+using namespace std;
+class Sample{
+public:
+    void Set(char c){
+        ch=c;
+    }
+    void Disp(){
+        cout<<",this="<<this<<endl;
+    }
+private:
+    char ch;
+};
+
+int main(){
+    Sample a,b;
+    a.Set('a');
+    b.Set('b');
+    cout<<"a的地址="<<&a;
+    a.Disp();
+    cout<<"b的地址="<<&b;
+    b.Disp();
+    return 0;
+}

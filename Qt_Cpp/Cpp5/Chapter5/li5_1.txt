@@ -1,0 +1,31 @@
+﻿//li5_1.cpp
+#include <iostream>
+
+using namespace std;
+
+class Student{
+  public:
+        void CalaTuition(){
+            cout<<"Call Student::CalaTuition()\n";
+        }
+};
+
+
+class GraduateStudent:public Student{
+  public:
+        void CalaTuition(){
+            cout<<"Call GraduateStudent::CalaTuition()\n";
+        }
+};
+
+int main()
+{
+    Student s;
+    GraduateStudent gs;
+    s.CalaTuition();                     //调用Student::calaTuition()
+    gs.CalaTuition();                    //调用GraduateStudent::calaTuition()
+    gs.Student::CalaTuition();           //用于作用符区分
+    s=gs;
+    s.CalaTuition();
+    return 0;
+}

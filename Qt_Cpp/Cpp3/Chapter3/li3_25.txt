@@ -1,0 +1,25 @@
+﻿//li3_15.cpp
+#include <iostream>
+using namespace std;
+class Sample{
+public:
+    Sample(char c1,char c2):ch1(c1),ch2(c2)  //带成员初始化列表的构造函数
+    {}
+
+/* 错误示例
+        void Set(char c1,char c2){
+        ch1=c1;ch2=c2;                       //错误：常数据成员不能被修改
+    }
+*/
+    void Disp(){
+        cout<<ch1<<","<<ch2<<endl;
+    }
+private:
+    const char ch1,ch2;                      //定义常数据成员
+};
+
+int main(){
+    Sample a('m','n');                       //定义对象a，为常数据成员传递实参
+    a.Disp();
+    return 0;
+}

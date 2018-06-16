@@ -1,0 +1,62 @@
+﻿//li7_7.cpp
+#include <iostream>
+using namespace std;
+const int n=10;
+
+template<class T>
+class Stack
+{
+    private:
+       T tStack[n];
+       int maxElement;
+       int top;
+    public:
+        Stack():maxElement(n),top(0){}
+        int GetTop(){return top;}
+        bool Push(T);                   //入栈函数
+        bool Pop(T&);                   //出栈函数
+};
+
+template<class T>
+bool Stack<T>::Push(T elem){
+    if(top<maxElement){
+        tStack[top]=elem;
+        top++;
+        return true;
+    }else{
+        return false;
+    }
+}
+
+template<class T>
+bool Stack<T>::Pop(T &elem){
+    if(top>0){
+        top--;
+        elem=tStack[top];
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+int main(){
+    int n;
+    char* s1;
+    Stack<int> iStack;         //定义一个整数栈
+    iStack.Push(5);
+    iStack.Push(6);
+    iStack.Pop(n);
+    cout<<"第一个出栈的整数＝"<<n<<endl;
+    iStack.Pop(n);
+    cout<<"第二个出栈的整数＝"<<n<<endl;
+
+    Stack<char *> strStack;    //定义一个字符串栈
+    strStack.Push("It's first string");
+    strStack.Push("It's second string");
+    strStack.Pop(s1);
+    cout<<"第一个出栈的字符串＝"<<s1<<endl;
+    strStack.Pop(s1);
+    cout<<"第二个出栈的字符串＝"<<s1<<endl;
+    return 0;
+}

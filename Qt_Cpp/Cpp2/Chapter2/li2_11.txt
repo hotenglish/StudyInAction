@@ -1,0 +1,15 @@
+﻿//li2_10.cpp
+#include <iostream>
+
+using namespace std;
+
+int Sum(int x=1,int y=2){
+    return (x+y);
+}
+
+int main(){
+    cout<<Sum(20,30)<<endl;     //用实参20和30初始化形参
+    cout<<Sum(10)<<endl;        //形参y用默认值2
+    cout<<Sum()<<endl;          //两个形参都采用默认值
+    return 0;
+}

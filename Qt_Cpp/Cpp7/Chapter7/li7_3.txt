@@ -1,0 +1,28 @@
+﻿//li7_3.cpp
+#include <iostream>
+using namespace std;
+template<class ElementType>                  //模板声明
+void SortBubble(ElementType *a,int size){
+    int i,work;
+    ElementType temp;                        //类属类型变量
+    for(int pass=1;pass<size;pass++){
+        work=1;
+        for(i=0;i<size-pass;i++){
+            if(a[i]>a[i+1]){
+                temp=a[i];a[i]=a[i+1];a[i+1]=temp;work=0;
+            }
+        }
+        if(work) break;
+    }
+}
+
+int main(){
+    double d[]={9.0,3.0,8.0,8.0};
+    //int d[]={7,1,9,8};
+    //char d[]={'d','e','c','a'};
+    SortBubble(d,4);
+    for(int i=0;i<4;i++){
+        cout<<" "<<d[i];
+    }
+    return 0;
+}

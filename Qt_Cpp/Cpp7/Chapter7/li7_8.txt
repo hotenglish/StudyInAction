@@ -1,0 +1,24 @@
+﻿//li7_8.cpp
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main(){
+    vector<int> iv(10,0);
+    for(int i=0;i<10;i++){
+        iv[i]=i;
+    }
+    cout<<"插入前："<<endl;
+    for(int i=0;i<iv.size();i++){
+        cout<<iv[i]<<" ";
+    }
+    cout<<endl;
+    iv.insert(iv.begin()+2,11);
+    cout<<"插入后："<<endl;
+    for(int i=0;i<iv.size();i++){
+        cout<<iv[i]<<" ";
+    }
+    cout<<endl;
+    return 0;
+}

@@ -1,0 +1,20 @@
+﻿//li3_26.cpp
+#include <iostream>
+using namespace std;
+class Sample{
+public:
+    Sample(char c){
+        ch=c;
+    }
+    void Disp() const{   //定义常成员函数
+        cout<<ch<<endl;
+    }
+private:
+    char ch;
+};
+
+int main(){
+    const Sample a('m');  //b是常对象
+    a.Disp();
+    return 0;
+}

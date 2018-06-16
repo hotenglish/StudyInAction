@@ -1,0 +1,17 @@
+﻿//li8_13.cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    ofstream outStream("test",ios::out);
+    if(!outStream){
+        cout<<"Cannot open files.";
+        return -1;
+    }
+    outStream<<10<<" "<<123.23<<endl;
+    outStream<<"This is a short text files.";
+    outStream.close();
+    return 0;
+}

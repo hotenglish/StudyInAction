@@ -1,0 +1,17 @@
+﻿//li8_1.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(int argc,char *argv[])
+{
+    if(argc!=2){
+        cerr<<"Error!Usage:progName anString<CR>";
+    }else{
+        cerr<<"Enter an integer:";
+        int data;
+        cout << "The user is" <<argv[1]<< endl;
+        cout << "The data you entered is "<<data<< endl;
+    }
+    return 0;
+}

@@ -1,0 +1,48 @@
+﻿//li7_15.cpp
+#include <iostream>
+using namespace std;
+
+class OutOfBounds{                        //自定义异常类
+  public:
+    OutOfBounds(){
+        cout<<"An exception has occurred\n";
+    }
+    ~OutOfBounds(){}
+};
+
+class Array{
+    private:
+        int size;
+        int *ptr;
+    public:
+       Array(int s=1){
+           size=s;
+           ptr=new int[s];                //为数组分配内存空间
+       }
+
+       int &operator[] (int offset);      //重载[]运算符
+
+       ~Array(){
+          delete[] ptr;
+       }
+};
+
+int &Array::operator[] (int offset){      //返回数组元素的引用
+    if(offset<0 || offset>=size)
+        throw OutOfBounds();              //抛出异常对象
+    return ptr[offset];
+}
+
+int main(){
+    Array array(4);
+    try{
+        for(int i=0;i<10;i++){            //依次为数组元素赋值0～3，当时i=4时抛出越界异常
+            array[i]=i;
+            cout<<array[i]<<" ";
+        }
+        cout<<endl;
+    }catch(OutOfBounds){
+        cout<<"Out of Bounds"<<endl;
+    }
+    return 0;
+}

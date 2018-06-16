@@ -1,0 +1,15 @@
+﻿//li2_10.cpp
+#include <iostream>
+using namespace std;
+
+inline int Abs(int x){    //函数定义前加关键字inline
+    return x>0?x:-x;
+}
+
+int main(){
+    int n;
+    cout<<"Enter a number:";
+    cin>>n;
+    cout<<"|"<<n<<"|="<<Abs(n)<<endl;
+    return 0;
+}

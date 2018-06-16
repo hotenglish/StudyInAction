@@ -1,0 +1,16 @@
+﻿//li2_4.cpp
+#include <iostream>
+#include <iomanip>      //包含控制符所在的头文件
+
+using namespace std;
+
+int main(){
+    double a=123.456,b=3.14159,c=-3214.67;
+    cout<<setiosflags(ios::fixed)   //设置浮点数以定点小数形式输出
+        <<setiosflags(ios::right)   //设置数据在输出域右对齐
+        <<setprecision(2);          //设置浮点数以定点输出的小数位数
+    cout<<setw(10)<<a<<endl;        //设置a 的输出宽度为10
+    cout<<setw(10)<<b<<endl;        //设置b 的输出宽度为10
+    cout<<setw(10)<<c<<endl;        //设置c 的输出宽度为10
+    return 0;
+}

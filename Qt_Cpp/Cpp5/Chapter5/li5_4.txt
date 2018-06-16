@@ -1,0 +1,31 @@
+﻿//li5_4.cpp
+#include <iostream>
+using namespace std;
+class Student{
+  public:
+    void CalaTuition(){
+        cout<<"Call Student::CalaTuition()\n";
+    }
+};
+
+class GraduateStudent:public Student{
+  public:
+    void CalaTuition(){          //函数的覆盖
+        cout<<"Call GraduateStudent::CalaTuition()\n"<<endl;
+    }
+    //Add
+    void CalaTuition(int i){     //函数的重载,参数表不同
+        cout<<"Call GraduateStudent::CalaTuition(int)"<<endl;
+    }
+};
+
+int main()
+{
+    Student s;
+    GraduateStudent gs;
+    //研究生类，有3个calaTuition
+    gs.CalaTuition();            //定义的,覆盖（1）
+    gs.CalaTuition(5);           //定义的,重载（2）
+    gs.Student::CalaTuition();   //继承的，::使用(3)
+    return 0;
+}

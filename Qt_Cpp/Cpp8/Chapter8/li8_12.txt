@@ -1,0 +1,15 @@
+﻿//li8_12.cpp
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(){
+    char s[80];
+    // 去除输入中前面的空格
+    cin>>ws>>s;
+    cout<<s<<endl;
+    return 0;
+}
+
+

@@ -1,0 +1,15 @@
+﻿//li2_6.cpp
+#include <iostream>
+#include <iomanip>              //使用格式控制符
+using namespace std;
+
+int main(){
+    int m,n;
+    for(m=1;m<10;m++){          //外层循环控制行输出
+        for(n=1;n<=m;n++){      //内层循环控制列输出
+            cout<<m<<"*"<<n<<"="<<setw(4)<<setiosflags(ios::left)<<m*n;
+            //乘积按4位宽度左对齐输出
+        }
+        cout<<endl;
+    }
+}

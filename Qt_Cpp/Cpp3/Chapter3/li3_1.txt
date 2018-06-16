@@ -1,0 +1,40 @@
+﻿//li3_1.cpp
+#include <iostream>
+using namespace std;
+struct Student{
+    // 数据成员
+    int num;
+    char name[10];
+    int age;
+    // 成员函数
+    void init(){
+        cout<<"请输入学号：";
+        cin>>num;
+        cout<<"请输入姓名：";
+        cin>>name;
+        cout<<"请输入年龄：";
+        cin>>age;
+    }
+    //成员函数
+    void Disp(){
+        cout<<"学生的基本信息："<<endl;
+        cout<<"学号："<<num;
+        cout<<"姓名："<<name;
+        cout<<"年龄："<<age;
+        cout<<endl;
+    }
+};
+
+int main()
+{
+    Student stu1,stu2;
+    stu1.init();           //结构变量调用成员函数实现数据成员的输入
+    stu1.Disp();           //结构变量调用成员函数实现数据成员的输出
+    Student *pstu=&stu2;
+    pstu->init();          //指针方式访问结构变更的成员函数
+    pstu->Disp();          //指针方式访问结构变更的成员函数
+    int i=4;
+    int *p=&i;
+    cout<<p<<endl;
+    return 0;
+}

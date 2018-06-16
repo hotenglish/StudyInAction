@@ -1,0 +1,25 @@
+﻿//li8_17.cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    int a[]={1,2,3,4,5};
+    register int i;
+    ofstream outStream("test");
+    if(!outStream){
+        cout<<"Can not open file.";
+        return -1;
+    }
+    outStream.write((const char*)a,sizeof(a));
+    outStream.close();
+    for(i=0;i<5;i++){
+        a[i]=0;
+    }
+    ifstream inStream("test");
+    inStream.read((char*)a,sizeof(a));
+    for(i=0;i<5;i++)cout<<a[i]<<" ";
+    inStream.close();
+    return 0;
+}

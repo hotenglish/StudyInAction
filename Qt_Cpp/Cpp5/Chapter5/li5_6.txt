@@ -1,0 +1,41 @@
+﻿//li5_6.cpp
+#include <iostream>
+
+using namespace std;
+
+class Parent{
+    public:
+        virtual void MyFun(){
+            cout<<"执行 Parent::MyFun()\n";
+        }
+};
+
+class Child:public Parent{
+    public:
+        virtual void MyFun(){             //Auto virtual
+            cout<<"执行 Child::MyFun()\n";
+        }
+};
+
+int main()
+{
+    //parent
+    Parent ob_pa;             //基类的对象
+    ob_pa.MyFun();
+    Parent * ptr_pa;          //基类的指针
+    ptr_pa=&ob_pa;            //指向基类的对象
+    ptr_pa->MyFun();
+    Parent &ref_pa=ob_pa;     //基类对象的引用
+    ref_pa.MyFun();
+
+    //child
+    Child ob_ch;
+    ob_ch.MyFun();
+    Child * ptr_ch;
+    ptr_ch=&ob_ch;
+    ptr_ch->MyFun();
+    Child &ref_ch=ob_ch;
+    ref_ch.MyFun();
+    //以上无基类和派生类的交叉调用，遵循一般成员函数的访问规则
+    return 0;
+}

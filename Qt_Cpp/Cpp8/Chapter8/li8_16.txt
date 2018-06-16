@@ -1,0 +1,17 @@
+﻿//li8_16.cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    char *p="Hello,there.";
+    ofstream outStream("test");
+    if(!outStream){
+        cout<<"Can not open file.";
+        return -1;
+    }
+    while(*p) outStream.put(*p++);
+    outStream.close();
+    return 0;
+}

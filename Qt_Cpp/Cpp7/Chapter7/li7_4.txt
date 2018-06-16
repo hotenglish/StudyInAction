@@ -1,0 +1,48 @@
+﻿//li7_4.cpp
+#include <iostream>
+using namespace std;
+class Point{
+    private:
+        int x,y;
+    public:
+        Point(int m,int n){
+            x=m;y=n;
+        }
+
+        int Getx(){
+            return x;
+        }
+
+
+        int Gety(){
+            return y;
+        }
+
+        bool operator<(Point &p){                //重载运算符“<”
+            if(x<p.x)
+                if(y<p.y){
+                    return 1;
+                }
+            return 0;
+        }
+};
+
+template<class T>                                //函数模板声明
+T min(T &T1,T &T2);
+
+int main(){
+    Point p1(6,9),p2(7,12);
+    Point p3=min(p1,p2);                         //调用重载的“<”运算符比较p1与p2
+    cout<<"较小的坐标：("<<p3.Getx()<<","<<p3.Gety()<<")"<<endl;
+    int n1=10,n2=8;
+    cout<<"较小的整数值："<<min(n1,n2)<<endl;      //调用标准“<”运算符
+    return 0;
+}
+
+template<class T>
+T min(T &T1,T &T2){
+    if(T1<T2){
+        return T1;
+    }
+    return T2;
+}

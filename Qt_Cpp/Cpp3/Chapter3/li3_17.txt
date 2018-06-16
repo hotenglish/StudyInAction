@@ -1,0 +1,52 @@
+﻿//li3_17.cpp
+#include <iostream>
+using namespace std;
+class Date{
+public:
+    Date(int y=2012,int m=1,int d=1);   //带默认参数值的构造函数
+    Date(const Date &d);                //复制构造函数
+    void Set(int m,int d,int y);        //带参成员函数声明
+    void Print();
+private:
+    int year,month,day;
+};
+
+Date::Date(const Date &d){              //复制构造函数,使日期增１
+    year=d.year;month=d.month;day=d.day+1;
+    cout<<"Copy constructor"<<endl;
+}
+
+Date::Date(int y,int m,int d):year(y),month(m),day(d){                //成员初始化列表
+    cout<<"object constructor"<<endl;
+}
+
+void Date::Set(int y,int m,int d){
+     year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+Date Func(Date day){
+    cout<<"day 的日期为：";
+    day.Print();
+    day.Set(2012,1,1);
+    return day;
+}
+
+int main(){
+    Date d1(2012,7,10);                //建立对象d1,调用构造函数
+    cout<<"d1 的日期为：";
+    d1.Print();
+    Date d2(d1);                       //建立对象d2,调用复制构造函数
+    cout<<"d2 的日期为：";
+    d2.Print();
+    Date d3(2012,7,12);                //建立对象d3,调用构造函数
+    cout<<"d3 的初始日期为：";
+    d3.Print();
+    d3=Func(d2);
+    cout<<"d3 的更新日期为：";
+    d3.Print();
+    return 0;
+}

@@ -1,0 +1,14 @@
+﻿//li2_3.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int x;
+    cout<<"Enter a decimal number:";
+    cin>>x;
+    cout<<hex<<x<<endl    //按十六进制输出
+       <<dec<<x<<endl     //按十进制输出
+       <<oct<<x<<endl;    //按八进制输出
+    return 0;
+}

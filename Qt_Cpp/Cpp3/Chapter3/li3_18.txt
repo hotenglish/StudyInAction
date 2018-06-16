@@ -1,0 +1,41 @@
+﻿//li3_18.cpp
+#include <iostream>
+using namespace std;
+class Date{
+    public:
+        Date(int y=2012,int m=1,int d=1);  //带默认参数值的构造函数
+        ~Date();                           //析构函数
+        void Set(int y,int m,int d);       //带参成员函数声明
+        void Print();
+    private:
+        int year,month,day;
+};
+
+Date::Date(int y,int m,int d):year(y),month(m),day(d){    //成员初始化列表
+    cout<<" object constructor"<<endl;
+}
+
+Date::~Date(){
+    cout<<year<<"."<<month<<"."<<day;
+    cout<<" object destructing"<<endl;
+}
+
+void Date::Set(int y,int m, int d){
+    year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main(){
+    Date d1(2012,7,10);         //建立对象d1
+    d1.Print();
+    Date *pd=new Date();        //建立动态对象
+    pd->Print();
+    Date d2(d1);                //建立对象d2,并用d1进行初始化，调用默认复制构造函数
+    d2.Set(2012,7,11);          //对象d2被设置为2012.7.11
+    d2.Print();
+    delete pd;
+    return 0;
+}

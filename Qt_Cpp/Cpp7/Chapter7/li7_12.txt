@@ -1,0 +1,22 @@
+﻿//li7_13.cpp
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+
+int main(){
+    vector<int> cv;
+    for(int i=0;i<10;++i){
+        cv.push_back('a'+i);
+    }
+    for(int i=0;i<cv.size();++i){
+        cout<<cv.at(i)<<" ";
+    }
+    cout<<endl;
+    vector<int>::iterator start=cv.begin();  //定义迭代器对象 start
+    cv.erase(start);                         //删除首元素
+    for(start=cv.begin();start!=cv.end();start++)
+        cout<<*start<<" ";
+    cout<<endl;
+    return 0;
+}

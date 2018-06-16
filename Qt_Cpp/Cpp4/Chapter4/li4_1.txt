@@ -1,0 +1,36 @@
+//li4_1.cpp
+//constructors and derived classes
+#include <iostream>
+
+using namespace std;
+
+class Mother{
+    public:
+       Mother(){
+           cout<<"mother:no parameters\n";
+       }
+       Mother(int a){
+           cout<<"mother:int parameters\n";
+       }
+};
+
+class Daughter:public Mother{
+    public:
+        Daughter(int a){
+            cout<<"daughter:int parameters\n\n";
+        }
+};
+
+class Son:public Mother{
+    public:
+        Son(int a):Mother(a){
+            cout<<"son:int parameter\n\n";
+        }
+};
+
+int main()
+{
+    Daughter cynthia(0);
+    Son daniel(0);
+    return 0;
+}

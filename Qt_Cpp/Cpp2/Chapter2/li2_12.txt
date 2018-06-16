@@ -1,0 +1,17 @@
+﻿//li2_12.cpp
+#include <iostream>
+
+using namespace std;
+
+int Abs(int x){           //重载函数: int 型参数
+    return x>0?x:-x;
+}
+
+double Abs(double x){     //重载函数: double 型参数
+    return x>0?x:-x;
+}
+
+int main(){
+    cout<<Abs(-10)<<endl;    //调用 int 型参数的Abs函数
+    cout<<Abs(3.6)<<endl;    //调用 double 型参数的Abs函数
+}

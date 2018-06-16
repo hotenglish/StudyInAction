@@ -1,0 +1,33 @@
+//li4_5.cpp
+#include <iostream>
+
+using namespace std;
+
+class CBase{
+    public:
+        void Print() const {
+            cout<<"CBase:mStatic="<<mStatic<<endl;
+        }
+        static int mStatic;
+};
+
+int CBase::mStatic=2;
+
+class CDerived: public CBase{
+  public:
+    void Print() const {
+        cout<<"CDerived:mStatic="<<mStatic<<endl;
+    }
+};
+
+int main(){
+    CBase base;
+    CDerived derived;
+    base.Print();
+    derived.Print();
+    cout<<endl;
+    base.mStatic=4;
+    base.Print();
+    derived.Print();
+    return 0;
+}

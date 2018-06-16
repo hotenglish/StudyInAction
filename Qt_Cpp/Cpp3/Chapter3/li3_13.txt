@@ -1,0 +1,34 @@
+﻿//li3_13.cpp
+#include <iostream>
+using namespace std;
+class Date{
+
+public:
+    Date(int y=2012,int m=1,int d=1);      //带默认参数值的构造函数
+    void Set(int m,int d,int y);           //带参成员函数声明
+    void Print();
+private:
+    int year,month,day;
+};
+
+Date::Date(int y,int m,int d):year(y),month(m),day(d){         //成员初始化列表
+    cout<<"object constructor"<<endl;
+}
+
+void Date::Set(int y,int m,int d){
+     year=y;month=m;day=d;
+}
+
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main(){
+    Date d1;                                                  //建立对象d1，省略全部实参
+    d1.Print();
+    Date d2(2013);                                            //建立对象d2，省略2个实参
+    d2.Print();
+    Date d3(2012,7,11);                                       //建立对象d3，省略3个实参
+    d3.Print();
+    return 0;
+}

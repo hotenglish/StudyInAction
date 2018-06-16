@@ -1,0 +1,38 @@
+﻿//li8_7.cpp
+#include <iostream>
+
+using namespace std;
+
+class three_d{
+        int x,y,z;
+    public:        
+        three_d(int a,int b,int c){x=a;y=b;z=c;}
+        friend ostream& operator<<(ostream& stream,three_d obj);
+        friend istream& operator>>(istream& stream,three_d &obj);
+};
+
+ostream& operator<<(ostream& stream,three_d obj){
+    stream<<obj.x<<",";
+    stream<<obj.y<<",";
+    stream<<obj.z<<endl;
+    return stream;
+}
+
+
+istream& operator>>(istream& stream,three_d &obj){
+    cout<<"Enter x,y,z value:";
+    stream>>obj.x>>obj.y>>obj.z;
+    return stream;
+}
+
+int main()
+{
+    three_d objA(1,2,3);
+    cout<<objA;
+    cin>>objA;
+    cout<<objA;
+    cout.setf(ios::showpos);
+    cout.setf(ios::scientific);
+    cout<<123<<" "<<123.23<<endl;
+    return 0;
+}

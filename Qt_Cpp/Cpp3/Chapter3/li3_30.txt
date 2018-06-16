@@ -1,0 +1,56 @@
+﻿//li3_30.cpp
+#include <iostream>
+using namespace std;
+class Student;                               //前向引用声明
+class Teacher{                               //Teacher类
+    public:
+        Teacher();
+        void SetGrade(Student &s);           //修改选课学生成绩
+        void Disps(Student &s);              //输出选课学生信息
+    private:
+        int tno;
+        char tname[10];
+};
+
+class Student{                               //声明Student类
+    public:
+        Student();
+    private:
+        int sno;
+        char sname[10];
+        float grade;
+        friend class Teacher;                //声明Teacher类为本类的友元类
+};
+
+Teacher::Teacher(){                          //实现Teacher类的成员函数
+    cout<<"请输入教师工号和姓名:";
+    cin>>tno;
+    cin>>tname;
+}
+
+void Teacher::Disps(Student &s){
+    cout<<"教师信息:"<<endl;
+    cout<<"学号:"<<s.sno;
+    cout<<"姓名:"<<s.sname;
+    cout<<"成绩:"<<s.grade;
+    cout<<endl;
+}
+
+void Teacher::SetGrade(Student &s){
+    cout<<"请输入学生的成绩：";
+    cin>>s.grade;
+}
+
+Student::Student(){                            //实现Student类的成员函数
+    cout<<"请输入学生编号和姓名:";
+    cin>>sno;
+    cin>>sname;
+}
+
+int main(){
+    Teacher t1;
+    Student s1;
+    t1.SetGrade(s1);
+    t1.Disps(s1);                              //输出选课学生s1的信息
+    return 0;
+}

@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+template <class SideType>
+class Retangle {
+
+private:
+    SideType  _length;
+    SideType  _width;
+
+public:
+    Retangle(SideType l, SideType w): _length(l), _width(w) {}
+
+    virtual ~Retangle() {}
+
+    SideType length() const {
+        return _length;
+    }
+    
+    void length(SideType l) { _length = l; }
+
+    SideType width() const {
+        return _width;
+    }
+    
+    void width(SideType w) { _width = w; }
+
+    SideType area() const {
+        return _length * _width;
+    }
+
+};
+
+int main() {
+    double length, width;
+    cout << "请输入矩形的长与宽：" << endl;
+    cin >> length;
+    cin >> width;
+    Retangle<double> r (length, width);
+    cout << "长为" << r.length() << "宽为" << r.width() << "的矩形面积为:" << r.area() << endl;
+    return 0;
+}

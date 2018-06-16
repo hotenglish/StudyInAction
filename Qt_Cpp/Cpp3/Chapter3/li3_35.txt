@@ -1,0 +1,58 @@
+﻿//li3_35.cpp
+#include <iostream>
+using namespace std;
+#include <cmath>
+class Point{
+    public:
+        Point(double x,double y);
+        double GetX();
+        double GetY();
+    private:
+        double X,Y;
+};
+
+Point::Point(double x,double y){
+    X=x;Y=y;
+}
+
+double Point::GetX(){
+    return X;
+}
+double Point::GetY(){
+    return Y;
+}
+
+class Line{
+    Point start;
+    Point end;
+    public:
+        Line(double x1,double y1,double x2,double y2):start(x1,y1),end(x2,y2){
+        }
+        void DispStart();     //输出起点位置
+        void DispEnd();       //输出终点位置
+        double Distance();    //返回线段位置
+};
+
+void Line::DispStart(){
+    cout<<"("<<start.GetX()<<","<<start.GetY()<<")"<<endl;
+}
+
+void Line::DispEnd(){
+    cout<<"("<<end.GetX()<<","<<end.GetY()<<")"<<endl;
+}
+
+double Line::Distance(){
+    double dx=end.GetX()-start.GetX();
+    double dy=end.GetY()-start.GetY();
+    return sqrt(dx*dx+dy*dy);
+}
+
+int main(){
+    Line line1(2,4,5,8);
+    cout<<"起点：";
+    line1.DispStart();
+    cout<<"终点";
+    line1.DispEnd();
+    cout<<"线段长度为："<<line1.Distance()<<endl;
+    return 0;
+}

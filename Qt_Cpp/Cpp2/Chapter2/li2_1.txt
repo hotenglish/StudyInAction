@@ -1,0 +1,19 @@
+﻿/***********************************
+  源程序名：  li2_1.cpp。
+  功能：     计算并输出矩形的面积。
+  输入数据：  矩形的长与宽。
+  输出数据：  矩形的面积。
+ ***********************************/
+#include <iostream>   //编译预处理命令
+using namespace std;  //使用命名空间std
+
+int main(){
+    double length,width,area;
+    cout<<"请输入矩形的长与宽："<<endl;    //cout输出流，向屏幕输出提示信息并换行
+    cin>>length;                       //cin输入流，从键盘输入数值存入变量width
+    cin>>width;                        //从键盘输入数值存入变量width
+    area=length*width;                 //计算矩形的面积
+    cout<<"长为"<<length<<"宽为"<<width //输出矩形的长、宽及面积，并换行
+       <<"的矩形面积为:"<<area<<endl;    //程序正常结束，向操作系统返回整数值0
+    return 0;
+}

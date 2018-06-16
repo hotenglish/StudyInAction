@@ -1,0 +1,25 @@
+﻿#include <QApplication>    //将类QApplication的定义包含到程序中
+#include <QHBoxLayout>     //将类QHBoxLayout的定义包含到程序中
+#include <QSlider>         //将类QSlider的定义包含到程序中
+#include <QSpinBox>        //将类QSpinBox的定义包含到程序中
+#include <QPushButton>     //将类QPushButton的定义包含到程序中
+
+
+int main(int argc,char *argv[]){
+    QApplication app(argc,argv);
+    QWidget *window=new QWidget;
+    window->setWindowTitle("Enter your Age");
+    QSpinBox *spinBox=new QSpinBox;
+    QSlider *slider=new QSlider(Qt::Horizontal);
+    spinBox->setRange(0,130);
+    slider->setRange(0,130);
+    QObject::connect(spinBox,SIGNAL(valueChanged(int)),slider,SLOT(setValue(int)));
+    QObject::connect(slider,SIGNAL(valueChanged(int)),spinBox,SLOT(setValue(int)));
+    spinBox->setValue(33);
+    QHBoxLayout *layout=new QHBoxLayout;
+    layout->addWidget(spinBox);
+    layout->addWidget(slider);
+    window->setLayout(layout);
+    window->show();
+    return app.exec();
+}

@@ -1,0 +1,35 @@
+﻿//li7_5.cpp
+#include <iostream>
+using namespace std;
+template<class T>                       //模板声明
+class Sample{                           //类定义
+    T x;
+    T y;
+    public:
+        Sample(T a,T b){
+            x=a;y=b;
+        }
+        T Getx();                           //类外定义成员函数
+        T Gety();                           //类外定义成员函数
+};
+
+template<class T>
+T Sample<T>::Getx(){
+    return x;
+}
+
+template<class T>
+T Sample<T>::Gety(){
+    return y;
+}
+
+int main(){
+    Sample<int> sam1(4,8);              //Sample<int>为模板类，sam1为对象
+    cout<<"sam1的数据为："<<sam1.Getx()<<","<<sam1.Gety()<<endl;
+    Sample<double> sam2(57.8,44.5);        //Sample<double>为模板类，sam2为对象
+    cout<<"sam2的数据为："<<sam2.Getx()<<","<<sam2.Gety()<<endl;
+    Sample<char> sam3('m','n');          //Sample<char>为模板类，sam3为对象
+    cout<<"sam3的数据为："<<sam3.Getx()<<","<<sam3.Gety()<<endl;
+    return 0;
+}
+

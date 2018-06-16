@@ -1,0 +1,33 @@
+﻿//li5_2.cpp
+#include <iostream>
+
+using namespace std;
+
+class Student{
+  public:
+    void CalaTuition(){
+        cout<<"Call Student::CalaTuition()\n";
+    }
+};
+
+
+class GraduateStudent:public Student{
+  public:
+    void CalaTuition(){          //成员函数的覆盖，有两个原型完全一样的函数，但作用域不同
+        cout<<"Call GraduateStudent::CalaTuition()\n";
+    }
+};
+
+void Fn(Student &x){             //x可以是学生、研究生，Student类型是基类
+    x.CalaTuition();             //应根据x的类型不同，调用不同的函数
+}
+
+int main()
+{
+    Student s;
+    GraduateStudent gs;
+    Fn(s);                       //调用学生的学费计算函数
+    Fn(gs);                      //gs->s类型转换，因为公有派生
+    //想调用研究生的学费计算，但现在不能实现，因为不是虚函数
+    return 0;
+}

@@ -1,0 +1,18 @@
+﻿//li2_13.cpp
+#include <iostream>
+using namespace std;
+int Max(int a,int b){            //重载函数: 2个int 型参数
+    return a>b?a:b;
+}
+
+int Max(int a,int b,int c){      //重载函数: 3个int 型参数
+    int t=Max(a,b);
+    return Max(t,c);
+}
+
+int main(){
+    cout<<Max(5,10)<<endl;       //调用2个int 型参数的Max函数
+    cout<<Max(-2,8,6)<<endl;     //调用2个int 型参数的Max函数
+    return 0;
+}
+

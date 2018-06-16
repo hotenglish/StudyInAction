@@ -1,0 +1,27 @@
+﻿//li2_21.cpp
+#include <iostream>
+using namespace std;
+#define N 100
+//求数组的最大值
+int GetMax(const int *p,int n){     //用指向常量的指针作为函数形参
+    int i,max=p[0];
+    for(i=1;i<n;i++){
+       if(max<p[i]){
+           max=p[i];
+       }
+    }
+    return max;
+}
+
+int main(){
+    int array[N],i,n,max;
+    cout<<"please input an integer no more than 100:";
+    cin>>n;                         //输入整数的个数
+    for(i=0;i<n;i++){
+        cout<<"\nPlease enter the NO"<<i+1<<" number:";
+        cin>>array[i];
+    }
+    max=GetMax(array,n);            //数组首地址传递给形参指针
+    cout<<"\n The maxinum number is:"<<max<<endl;
+    return 0;
+}

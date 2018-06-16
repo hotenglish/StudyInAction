@@ -1,0 +1,28 @@
+﻿//li3_7.cpp
+#include <iostream>
+using namespace std;
+class Sample{
+    public:
+        void Set(char c){
+            ch=c;
+        }
+        void Disp(){
+            cout<<"ch="<<ch<<",this="<<this<<endl;
+        }
+    private:
+        char ch;
+};
+
+void Func(){      //全局函数
+    ch='a';       //error C2065:'ch': undeclared identifier
+    Disp();       //error C2065:'Disp': undeclared identifier
+}
+
+int main(){
+    Sample a,b;
+    a.ch='a';      //error C2248:'ch':can not access private member declared is class 'Sample'
+    b.ch='b';      //error C2248:'ch':can not access private member declared is class 'Sample'
+    a.Disp();
+    b.Disp();
+    return 0;
+}

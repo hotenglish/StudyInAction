@@ -1,0 +1,42 @@
+﻿//li6_2.cpp
+#include <iostream>
+
+using namespace std;
+
+class Complex{
+    float real;
+    float imag;
+public:
+    Complex(float r=0,float i=0){ real =r; imag=i;}
+    void Show(){cout<<"("<<real<<","<<imag<<")"<<endl;}
+    Complex operator+(Complex &c){
+        float r,i;
+        r=real+c.real;
+        i=imag+c.imag;
+        return Complex(r,i);
+    }
+    Complex operator-(Complex &c){
+        float r,i;
+        r=real-c.real;
+        i=imag-c.imag;
+        return Complex(r,i);
+    }
+
+    Complex operator-(){
+        return Complex(-real,-imag);
+    }
+
+};
+
+int main()
+{
+    Complex c1(2.5,3.7),c2(4.2,6.5);
+    Complex c;
+    c=c1-c2;
+    c.Show();
+    c=c1+c2;
+    c.Show();
+    c=-c1;
+    c.Show();
+    return 0;
+}

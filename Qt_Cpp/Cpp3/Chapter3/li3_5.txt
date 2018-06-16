@@ -1,0 +1,41 @@
+﻿//li3_5.cpp
+#include <iostream>
+using namespace std;
+class Date{
+    public:
+       void Set(int y,int m,int d);  //带参成员函数声明
+       int GetYear(){
+           return year;
+       }
+       int IsLeapYear();
+       void Print();
+    private:
+       int year,month,day;
+};
+
+void Date::Set(int y,int m,int d){
+    year=y;month=m;day=d;
+}
+int Date::IsLeapYear(){
+    return (year%4==0 && year%100!=0) || (year%400==0);
+}
+void Date::Print(){
+    cout<<year<<"."<<month<<"."<<day<<endl;
+}
+
+int main()
+{
+    Date today,tomorrow;       //定义两个对象today和tomorrow
+    today.Set(2012,7,10);      //设置today日期为2012-7-10
+    today.Print();             //输出today的年
+    cout<<today.GetYear();     //判断today是否为闰年
+    if(today.IsLeapYear()){
+        cout << " is a leap year!" << endl;
+    }else{
+        cout << "is not a leap year!" << endl;
+    }
+    tomorrow.Set(2012,7,11);    //设置日期为 2012-7-11
+    Date *pd=&tomorrow;
+    pd->Print();                //通过指针访问对象成员
+    return 0;
+}

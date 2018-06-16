@@ -1,0 +1,43 @@
+﻿#include <iostream>
+
+using namespace std;
+
+class Student{
+
+    //数据成员
+    int num;
+    char name[10];
+    int age;
+
+public:
+    inline void init();   //内联成员函数声明
+    inline void Disp();   //内联成员函数声明
+};
+
+inline void Student::init(){    //内联成员函数定义
+    cout<<"请输入学号：";
+    cin>>num;
+    cout<<"请输入姓名：";
+    cin>>name;
+    cout<<"请输入年龄：";
+    cin>>age;
+}
+
+inline void Student::Disp(){     //内联成员函数定义
+    cout<<"学生的基本信息："<<endl;
+    cout<<"学号："<<num;
+    cout<<"姓名："<<name;
+    cout<<"年龄："<<age;
+    cout<<endl;
+}
+
+int main()
+{
+    Student stu1,stu2;
+    stu1.init();
+    stu1.Disp();
+    Student *pstu=&stu2;
+    pstu->init();
+    pstu->Disp();
+    return 0;
+}

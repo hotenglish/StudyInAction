@@ -1,0 +1,10 @@
+﻿#include <QApplication>      //将类QApplication的定义包含到程序中
+#include <QPushButton>       //将类QPushButton的定义包含到程序中
+
+int main(int argc,char *argv[]){
+    QApplication app(argc,argv);
+    QPushButton *button=new QPushButton("QUIT");
+    QObject::connect(button,SIGNAL(clicked()),&app,SLOT(quit()));
+    button->show();
+    return app.exec();
+}

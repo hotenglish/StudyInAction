@@ -1,0 +1,30 @@
+//li4_7.cpp
+#include <iostream>
+
+using namespace std;
+
+class Parent{
+    private:
+    int value;
+    public:
+        Parent(int v){
+            cout<<"执行构造函数 Parent(int v)"<<endl;
+        }
+
+};
+
+class Child: public Parent{
+    private:
+        int va;
+    public:
+        Child(int p,int v):Parent(p){        //初始化列表的使用
+            cout<<"执行构造函数 Child(int p,int v)"<<endl;
+            va=v;
+        }
+};
+
+int main(){
+    Child child(100,200);
+    Parent parent(100);
+    return 0;
+}

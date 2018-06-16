@@ -1,0 +1,33 @@
+﻿//li3_21.cpp
+#include <iostream>
+using namespace std;
+#include <cstring>
+class Student{
+    public:
+        Student(int n,char *p){
+            no=n;
+            pname=new char[10];
+            strcpy(pname,p);
+        }
+
+        Student(Student &s){
+            no=s.no;
+            pname=new char[strlen(s.pname+1)];
+            strcpy(pname,s.pname);
+        }
+
+        ~Student(){
+            delete []pname;
+        }
+    private:
+        int no;
+        char *pname;
+
+};
+
+int main(){
+    Student stu1(10,"Henry");
+    Student stu2(stu1);
+    return 0;
+}
+

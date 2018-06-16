@@ -1,0 +1,32 @@
+﻿//li5_3.cpp
+#include <iostream>
+
+using namespace std;
+
+class Name{
+        char *name;
+    public:
+        Name(char *nm){name=nm;}
+        void Show_name(){cout<<name<<endl;}
+};
+
+
+class Telephone:public Name{
+        char *telephone;
+    public:
+        Telephone(char *nm,char *tel):Name(nm){telephone=tel;}
+        void Show_Telephone(){cout<<telephone<<endl;}
+};
+
+int main(){
+    Name *p1,obj1("Wang");
+    Telephone *p2,obj2("Zhang","5681553");
+    p1=&obj1;
+    p1->Show_name();
+    p1=&obj2;
+    p1->Show_name();     //pi->show->telephone: error
+    p2=&obj2;
+    p2->Show_name();
+    p2->Show_Telephone();
+    return 0;
+}

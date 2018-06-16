@@ -1,0 +1,25 @@
+﻿//li8_14.cpp
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main(){
+    char ch;
+    int i;
+    float f;
+    char str[80];
+    ifstream inStream("test");
+    if(!inStream){
+        cout<<"Cannot open files.";
+        return -1;
+    }
+    inStream>>i;
+    inStream>>f;
+    inStream>>ch;
+    inStream>>str;
+    cout<<i<<" "<<f<<" "<<ch<<endl;
+    cout<<str;
+    inStream.close();
+    return 0;
+}

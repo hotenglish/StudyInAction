@@ -1,0 +1,72 @@
+﻿//li3_36.cpp
+#include <iostream>
+using namespace std;
+const int maxsize=6;
+class Stack{
+    float data[maxsize];
+    int top;                     //栈顶指针
+    public:
+        Stack();
+        ~Stack();
+        bool isEmpty();          //判断栈空
+        bool isFull();           //判断栈满
+        void Push(float a);      //将数据a"压入"栈顶
+        float Pop();             //将栈顶数据"弹出"并返回
+};
+
+Stack::Stack(){                    //将栈指针top置为-1
+    top=-1;
+    cout<<"stack initialized."<<endl;
+}
+
+Stack::~Stack(){
+    cout<<"stack destroyed."<<endl;
+}
+
+bool Stack::isEmpty(){
+    return top==-1?true:false;
+}
+
+bool Stack::isFull(){
+    return top==maxsize-1? true:false;
+}
+
+void Stack::Push(float a){
+    if(top==maxsize-1){
+        cout<<"Stack is full!"<<endl;
+    }else{
+        top++;
+        data[top]=a;
+    }
+}
+
+float Stack::Pop(){
+    float num;
+    if(top==-1){
+        cout<<"stack is empty!"<<endl;
+    }else{
+        num=data[top];
+        top--;
+        return num;
+    }
+}
+
+int main(){
+    Stack s1;
+    for(int i=0;i<=maxsize-1;i++){
+        s1.Push(i);              //依次压入0、1、2、3、4、5
+    }
+
+    if(s1.isFull()){
+        cout<<"Stack is full!"<<endl;
+    }
+
+    while (!s1.isEmpty()) {
+        cout<<s1.Pop()<<" ";     //依次弹出5、4、3、2、1、0
+    }
+
+    if(s1.isEmpty()){
+        cout<<"Stack is empty!"<<endl;
+    }
+    return 0;
+}

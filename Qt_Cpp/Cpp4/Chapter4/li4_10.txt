@@ -1,0 +1,55 @@
+//li4_10.cpp
+#include <iostream>
+
+using namespace std;
+
+class Bed{
+    protected:
+        int weight;
+    public:
+        Bed(){
+            cout<<"Bed constructor"<<endl;
+        };
+        void Sleep(){
+            cout<<"Bed Sleep"<<endl;
+        };
+        void SetWeight(int i){
+            cout<<"Bed SetWeight"<<endl;
+        };
+};
+
+class Sofa{
+    protected:
+        int weight;
+    public:
+        Sofa(){
+            cout<<"Sofa constructor"<<endl;
+        };
+        void WatchTV(){
+            cout<<"Sofa WatchTV"<<endl;
+        };
+        void SetWeight(int i){
+            cout<<"Sofa SetWeight"<<endl;
+        };
+};
+
+class SleeperSofa:public Bed,public Sofa{
+    public:
+        SleeperSofa(){
+            cout<<"SleeperSofa constructor"<<endl;
+        };
+        void FoldOut(){                      //折叠与打开
+             cout<<"SleeperSofa FoldOut"<<endl;
+        };
+};
+
+int main(){
+    SleeperSofa ss;                          //继承了两个基类的内容
+    ss.WatchTV();
+    ss.Sleep();
+    ss.FoldOut();
+    //ss.SetWeight(100);                     //不能明确是对哪一个类的Weight成员赋值
+    ss.Sofa::SetWeight(100);                 //：的使用
+    return 0;
+}
+

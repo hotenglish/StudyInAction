@@ -1,0 +1,48 @@
+﻿//li3_32.cpp
+#include <iostream>
+using namespace std;
+class Student{
+    public:
+      Student();                            //无参构造函数
+      ~Student();                           //析构函数
+      void Init();                          //成员函数声明
+      void Disp();                          //成员函数声明
+    private:
+      int num;
+      char name[10];
+      int age;
+};
+
+Student::Student(){
+    Init();                                  //调用Init进行数据输入
+}
+
+Student::~Student(){
+    cout<<"Destructor caller"<<endl;
+}
+
+void Student::Init(){                        //成员函数定义
+    cout<<"请输入学号：";
+    cin>>num;
+    cout<<"请输入姓名：";
+    cin>>name;
+    cout<<"请输入年龄：";
+    cin>>age;
+}
+
+void Student::Disp(){                        //成员函数定义
+    cout<<"学生的基本信息："<<endl;
+    cout<<"学号："<<num;
+    cout<<"姓名："<<name;
+    cout<<"年龄："<<age;
+    cout<<endl;
+}
+
+int main(){
+    Student stu[3];                          //用类Student定义对象数组，调用3次无参构造函数
+    for(int i=0;i<3;i++){
+        cout<<"第"<<i<<"个";
+        stu[i].Disp();                       //对象元素调用成员函数
+    }
+    return 0;
+}

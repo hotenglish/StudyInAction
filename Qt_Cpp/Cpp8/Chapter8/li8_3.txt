@@ -1,0 +1,12 @@
+﻿//li8_3.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float pi=1.4;
+    cout.put('A');
+    cout.write((const char*)&pi,sizeof(float));
+    cout<<sizeof(float)<<endl;
+    return 0;
+}

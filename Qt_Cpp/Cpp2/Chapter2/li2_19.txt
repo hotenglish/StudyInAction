@@ -1,0 +1,13 @@
+﻿//li12_19.cpp
+#include <iostream>
+using namespace std;
+int &min(int &m,int &n){
+    return m<n?m:n;
+}
+
+int main(){
+    int x=10,y=20;
+    min(x,y)=0;
+    cout<<x<<","<<y<<endl;
+    return 0;
+}

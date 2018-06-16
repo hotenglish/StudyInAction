@@ -1,0 +1,41 @@
+﻿#include <iostream>
+
+using namespace std;
+
+class Rectangle{      //定义成员矩形类Rectangle
+
+private:              //定义成员数据变量，存放矩形的长与宽
+    double length,width;
+
+public:
+    Rectangle(double l,double w){ //定义构造函数，用于创建和初始化对象
+        length=l;width=w;
+    }
+
+    ~Rectangle() {}               //定义析构函数，用于清理和撤销对象
+
+    double getLength(){
+        return length;
+    }
+
+    double getWidth(){
+        return width;
+    }
+
+    double getArea(){             //定义成员函数Area，用于计算矩形的面积
+        return length*width;
+    }
+
+};
+
+int main(){
+    double length,width;
+    cout<<"请输入矩形的长与宽："<<endl;    //cout输出流，向屏幕输出提示信息并换行
+    cin>>length;
+    cin>>width;
+    Rectangle r(length,width);         //定义Rectangle类的对象
+    cout<<"长为"<<r.getLength()<<"宽为"<<r.getWidth()
+        <<"的矩形面积为:"<<r.getArea()   //输出矩形r的面积
+        <<endl;                        //换行
+    return 0;
+}

@@ -1,0 +1,19 @@
+﻿//li8_4.cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    char ch;
+    cin>>ch;
+    float pi;
+    cin>>pi;
+    char str[20];
+    cin>>str;
+    cout<<"Pi="<<pi<<endl;
+    cout<<"n="<<n<<endl;
+    cout<<"ch="<<ch<<endl;
+    cout<<"string="<<str<<endl;
+}

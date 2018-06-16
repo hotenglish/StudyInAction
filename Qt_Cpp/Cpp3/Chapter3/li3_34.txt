@@ -1,0 +1,30 @@
+﻿//li3_34.cpp
+#include <iostream>
+using namespace std;
+class Sample1{
+    public:
+        Sample1(){cout<<"Sample1:constructor"<<endl;}
+        ~Sample1(){cout<<"Sample1:destructor"<<endl;}
+};
+
+class Sample2{
+    public:
+        Sample2(){cout<<"Sample2:constructor"<<endl;}
+        ~Sample2(){cout<<"Sample2:destructor"<<endl;}
+};
+
+class Sample{
+    public:
+        Sample():s1(),s2()//成员初始化列表
+        {cout<<"Sample:constructor"<<endl;}
+        ~Sample(){cout<<"Sample:destructor"<<endl;}
+    private:
+        Sample1 s1;
+        Sample2 s2;
+};
+
+int main(){
+    Sample s;
+    return 0;
+}
+
