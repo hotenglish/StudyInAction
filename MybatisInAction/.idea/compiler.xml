@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="annotation" />
+        <module name="auto_mapping" />
+        <module name="chapter1" />
+        <module name="chapter2" />
+        <module name="chapter3" />
+        <module name="chapter5" />
+        <module name="chapter6" />
+        <module name="collection" />
+        <module name="insert" />
+        <module name="mybatis_plugin" />
+        <module name="mybatis_plugin_1" />
+        <module name="mybatis_plugin_2" />
+        <module name="mybatis_plugin_2 (1)" />
+        <module name="save" />
+        <module name="select" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="annotation" target="1.8" />
+      <module name="auto_mapping" target="1.8" />
+      <module name="chapter1" target="1.8" />
+      <module name="chapter2" target="1.8" />
+      <module name="chapter3" target="1.8" />
+      <module name="chapter4" target="1.8" />
+      <module name="chapter5" target="1.8" />
+      <module name="chapter6" target="1.8" />
+      <module name="chapter7" target="1.8" />
+      <module name="collection" target="1.8" />
+      <module name="insert" target="1.8" />
+      <module name="mybatis_plugin" target="1.8" />
+      <module name="mybatis_plugin_1" target="1.8" />
+      <module name="mybatis_plugin_2" target="1.8" />
+      <module name="mybatis_plugin_2 (1)" target="1.8" />
+      <module name="MybatisInAction" target="1.8" />
+      <module name="save" target="1.8" />
+      <module name="select" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

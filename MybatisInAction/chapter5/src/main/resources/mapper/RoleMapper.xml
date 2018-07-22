@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elson.chapter5.dao.RoleDao">
+
+    <resultMap id="roleResultMap" type="com.elson.chapter5.pojo.Role">
+        <id property="id" column="role_no"/>
+        <result property="roleName" column="role_name"/>
+        <result property="note" column="note"/>
+    </resultMap>
+
+    <select id="findRolesIf" parameterType="String" resultMap="roleResultMap">
+        select id as role_no, role_name, note from t_role where 1=1
+        <if test="roleName != null and roleName != ''">
+            and role_name like concat('%',#{roleName},'%')
+        </if>
+    </select>
+
+    <!-- 5.3 choose,when,otherwise元素 -->
+    <select id="findChooseWhenOtherWise" parameterType="role" resultMap="roleResultMap">
+        SELECT id as role_no, role_name, note from t_role where 1=1
+        <choose>
+            <when test="roleNo != null and roleNo != ''">
+                And id = #{roleNo}
+            </when>
+            <when test="roleName!=null and roleName != ''">
+                And role_name like concat('%',#{roleName},'%')
+            </when>
+            <otherwise>
+                And note is not null
+            </otherwise>
+        </choose>
+    </select>
+    <!-- 5.3 choose,when,otherwise元素end -->
+
+    <!-- 5.4 trim,where,set元素 -->
+    <select id="findRolesWhere" parameterType="String" resultMap="roleResultMap">
+        select id as role_no, role_name, note from t_role
+        <where>
+            <if test="roleName != null and roleName != ''">
+                and role_name like concat('%',#{roleName},'%')
+            </if>
+        </where>
+    </select>
+
+    <select id="findRoleTrim" parameterType="String" resultMap="roleResultMap">
+        select id as role_no, role_name, note from t_role
+        <trim prefix="where" prefixOverrides="and">
+            <if test="roleName != null and roleName !=''">
+                and role_name like concat('%',#{roleName},'%')
+            </if>
+        </trim>
+    </select>
+    
+    <update id="updateRole" parameterType="role">
+        UPDATE t_role
+        <set>
+            <if test="roleName != null and roleName != ''">
+                role_name = #{roleName},
+            </if>
+            <if test="note != null and note != ''">
+                note = #{note}
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <!-- 5.6 test属性 -->
+    <select id="getRoleTest" parameterType="String" resultMap="roleResultMap">
+        select id as role_no, role_name, note from t_role
+        <if test='type == "Y"'>
+            where 1=1 and id=1
+        </if>
+    </select>
+    <!-- 5.6 test属性end -->
+
+    <!-- 5.7 使用bind元素 -->
+    <select id="findRoleMulBind" parameterType="String"  resultMap="roleResultMap">
+        <bind name="pattern_roleName" value="'%'+roleName+'%'"/>
+        <bind name="pattern_note" value="'%'+note+'%'"/>
+        select id as role_no, role_name, note from t_role
+        where role_name like #{pattern_roleName}
+        and note like #{pattern_note}
+    </select>
+    <!-- 5.7 使用bind元素end -->
+
+</mapper>

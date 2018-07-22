@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.chapter8.dao.RoleDao">
+    <insert id="insertRole" parameterType="role">
+        INSERT INTO t_role (role_name, create_date, note)
+        VALUES (#{roleName}, #{createDate}, #{note});
+    </insert>
+
+    <delete id="deleteRole" parameterType="int">
+        DELETE from t_role where id = #{id}
+    </delete>
+
+    <select id="getRole" parameterType="int" resultType="role">
+        SELECT role_name as roleName, create_date as createDate, note from t_role where id = #{id}
+    </select>
+
+    <select id="findRoles" parameterType="string" resultType="role">
+        SELECT role_name as roleName, create_date as createDate, note from t_role
+        where role_name like concat('%', #{roleName}, '%')
+    </select>
+
+    <update id="updateRole" parameterType="role">
+        UPDATE t_role
+        <set>
+            <if test="roleName != null">role_name = #{roleName}, </if>
+            <if test="note != null"> note = #{note} </if>
+        </set>
+        where id = #{id}
+    </update>
+</mapper>

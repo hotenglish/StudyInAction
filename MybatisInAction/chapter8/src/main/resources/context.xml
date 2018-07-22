@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ontext>
+    <!-- name 为JNDI名称
+         type 数据源类型
+         url 是数据库的 jdbc 链接
+         username 用户名
+         Password 数据库密码
+         maxActive 数据库连接池最大链接数
+         maxIdle 最大的空闲连接数
+         maxWait 最大等待毫秒数。
+    -->
+    <Resource name="jdbc/chapter8"
+              auth="Container"
+              type="javax.sql.DataSource"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/mybatis?useSSL=false"
+              username="root"
+              password="Elson188288"
+              maxActive="50"
+              maxIdle="30"
+              maxWait="10000"/>
+</ontext>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <properties resource="jdbc.properties"></properties>
+
+    <typeAliases>
+        <!--<typeAlias alias="role" type="com.elson.chapter3.po.Role"></typeAlias>-->
+        <package name="com.elson.chapter3.po"/>
+    </typeAliases>
+
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC">
+                <property name="autoCommit" value="false"/>
+            </transactionManager>
+<!--            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>-->
+            <dataSource type="com.elson.chapter3.datasource.DbcpDataSourceFactory">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+
+    <databaseIdProvider type="com.elson.chapter3.databaseidprovider.MydatabaseIdProvider">
+        <property name="MySQL" value="mysql"/>
+        <property name="Oracle" value="Oracle"/>
+    </databaseIdProvider>
+
+<!--    <databaseIdProvider type="DB_VENDOR">
+        <property name="MySQL" value="mysql"/>
+    </databaseIdProvider>-->
+
+    <mappers>
+        <!--
+            <mapper resource="mapper/RoleMapper.xml"/>
+        -->
+        <!--
+            请参考第二章关于注解的配置方法
+            <mapper class="com.elson.chapter2.mapper.RoleMapperAnnotation" />
+        -->
+        <package name="mapper"/>
+        <!--
+             <mapper url="file:///E:/StudyProject/MybatisInAction/chapter3/src/main/resources/mapper/RoleMapper.xml" />
+        -->
+    </mappers>
+</configuration>
