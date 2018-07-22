@@ -1,0 +1,23 @@
+error:
+  whitelabel:
+    enabled: false
+
+amazon:
+  associate_id: habuma-20
+
+logging:
+  level:
+    root: INFO
+    com:
+      h2: DEBUG
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    url: jdbc:mysql://localhost:3306/readinglist
+    username: root
+    password: Elson188288

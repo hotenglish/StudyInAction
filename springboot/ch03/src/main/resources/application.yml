@@ -1,0 +1,49 @@
+error:
+  whitelabel:
+    enabled: false
+
+amazon:
+  associate_id: habuma-20
+
+spring:
+  datasource:
+    data: classpath:db/data.sql
+  main:
+    show-banner: false
+  profiles:
+    active: production
+
+logging:
+  config: classpath:logging-config.xml
+  level:
+    root: INFO
+
+---
+
+spring:
+  profiles: development
+  thymeleaf:
+    cache: false
+
+logging:
+  config: classpath:logging-config.xml
+  level:
+    root: DEBUG
+
+---
+
+spring:
+  profiles: production
+  thymeleaf:
+    cache: true
+
+logging:
+  level:
+    root: warn
+
+server:
+  port: 443
+  ssl:
+    key-store: classpath:mykeys.jks
+    key-store-password: elson188288
+    key-password: elson188288

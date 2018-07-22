@@ -1,0 +1,13 @@
+readinglist\CustomErrorAttributes.class
+META-INF\spring-configuration-metadata.json
+readinglist\Reader.class
+readinglist\ReadingListController.class
+readinglist\ReadingListRepository.class
+readinglist\AmazonProperties.class
+readinglist\ReaderHandlerMethodArgumentResolver.class
+readinglist\SecurityConfig$1.class
+readinglist\ReaderRepository.class
+readinglist\SecurityConfig.class
+readinglist\InitializingApplicationData.class
+readinglist\ReadingListApplication.class
+readinglist\Book.class

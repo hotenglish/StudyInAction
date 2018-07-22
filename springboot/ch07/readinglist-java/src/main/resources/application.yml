@@ -1,0 +1,30 @@
+error:
+  whitelabel:
+    enabled: false
+
+amazon:
+  associate_id: habuma-20
+
+spring:
+  datasource:
+    data: classpath:db/data.sql
+  main:
+    show-banner: false
+
+logging:
+  config: classpath:logging-config.xml
+  level:
+    root: INFO
+
+endpoints:
+  jmx:
+    domain: readinglist
+    uniqueNames: true
+  beans:
+    sensitive: true
+
+management:
+  context-path: /mgmt
+  health:
+    mongo:
+      enabled: true

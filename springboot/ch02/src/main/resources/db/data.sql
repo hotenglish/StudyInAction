@@ -1,0 +1,1 @@
+INSERT INTO BOOK (READER, ISBN, TITLE, AUTHOR, DESCRIPTION) VALUES ('craig','GB210003','spring_boot_in_action','craig','technology');

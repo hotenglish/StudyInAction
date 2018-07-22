@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="readinglist.ReadinglistApplicationTests" time="0" tests="1" errors="0" skipped="1" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\StudyProject\springboot\ch03"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\StudyProject\springboot\ch03"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\B-36244\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="E:\apache-maven-3.5.0\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\Program Files\TortoiseSVN\bin;E:\apache-maven-3.5.0\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Git\cmd;E:\Compiler\bin;C:\Python27;C:\Program Files\Java\jrockit-jdk1.6.0_45-R28.2.7-4.1.0\bin;C:\Program Files\Java\jrockit-jdk1.6.0_45-R28.2.7-4.1.0\jre\bin;C:\spring-2.0.1.RELEASE\\bin;."/>
+    <property name="maven.conf" value="E:\apache-maven-3.5.0\bin\../conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="E:\apache-maven-3.5.0\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\B-36244"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="user.name" value="B-36244"/>
+    <property name="java.class.path" value="E:\apache-maven-3.5.0\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp65001"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="E:\apache-maven-3.5.0\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp65001"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="contextLoads" classname="readinglist.ReadinglistApplicationTests" time="0">
+    <skipped/>
+    <system-out><![CDATA[21:50:30.363 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class readinglist.ReadinglistApplicationTests]
+21:50:30.378 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:30.394 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:30.410 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [readinglist.ReadinglistApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:50:30.457 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [readinglist.ReadinglistApplicationTests], using SpringBootContextLoader
+21:50:30.457 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [readinglist.ReadinglistApplicationTests]: class path resource [readinglist/ReadinglistApplicationTests-context.xml] does not exist
+21:50:30.457 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [readinglist.ReadinglistApplicationTests]: class path resource [readinglist/ReadinglistApplicationTestsContext.groovy] does not exist
+21:50:30.457 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [readinglist.ReadinglistApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:50:30.535 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [readinglist.ReadinglistApplicationTests]
+21:50:30.595 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [readinglist.ReadinglistApplicationTests]: using defaults.
+21:50:30.595 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:30.658 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@68ceda24, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@281e3708, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@35a50a4c, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f021e6c, org.springframework.test.context.transaction.TransactionalTestExecutionListener@103f852, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@587c290d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4516af24, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4ae82894, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@543788f3, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6d3af739, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1da51a35, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@16022d9d]
+21:50:30.673 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [readinglist.ReadinglistApplicationTests]
+21:50:30.673 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [readinglist.ReadinglistApplicationTests]
+21:50:30.673 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class readinglist.ReadinglistApplicationTests]
+21:50:30.673 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+21:50:30.673 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+21:50:30.673 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [readinglist.ReadinglistApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+21:50:30.673 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [readinglist.ReadinglistApplicationTests], using SpringBootContextLoader
+21:50:30.673 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [readinglist.ReadinglistApplicationTests]: class path resource [readinglist/ReadinglistApplicationTests-context.xml] does not exist
+21:50:30.673 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [readinglist.ReadinglistApplicationTests]: class path resource [readinglist/ReadinglistApplicationTestsContext.groovy] does not exist
+21:50:30.673 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [readinglist.ReadinglistApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+21:50:30.689 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [readinglist.ReadinglistApplicationTests]
+21:50:30.689 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [readinglist.ReadinglistApplicationTests]: using defaults.
+21:50:30.705 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:50:30.720 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@290dbf45, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12028586, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@17776a8, org.springframework.test.context.support.DirtiesContextTestExecutionListener@69a10787, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2d127a61, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2bbaf4f0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@11c20519, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@70beb599, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4e41089d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32a068d1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@33cb5951, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@365c30cc]
+21:50:30.720 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [readinglist.ReadinglistApplicationTests]
+21:50:30.720 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [readinglist.ReadinglistApplicationTests]
+21:50:30.720 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [readinglist.ReadinglistApplicationTests]
+21:50:30.720 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [readinglist.ReadinglistApplicationTests]
+]]></system-out>
+  </testcase>
+</testsuite>

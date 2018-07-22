@@ -1,0 +1,12 @@
+endpoints:
+  enabled: false
+  metrics:
+    enabled: true
+  shutdown:
+    enabled: true
+    id: kill 
+
+info:
+  contact:
+    email: support@myreadinglist.com
+    phone: 1-888-555-1971
