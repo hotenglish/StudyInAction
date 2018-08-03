@@ -10,9 +10,8 @@
         <module name="JavaConcurrentProgramming" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="JavaConcurrencyProgramming" target="1.7" />
-      <module name="JavaConcurrentProgramming" target="1.7" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="JavaConcurrencyProgramming" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
