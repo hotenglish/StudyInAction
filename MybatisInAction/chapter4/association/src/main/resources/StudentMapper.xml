@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elson.chapter4.association.dao.StudentDao">
+    <resultMap id="studentMap" type="com.elson.chapter4.association.pojo.Student">
+        <id property="id" column="id"/>
+        <result property="cnName" column="cnname"/>
+        <result property="sex" column="sex" javaType="com.elson.chapter4.association.pojo.SexEnum"
+                jdbcType="INTEGER" typeHandler="com.elson.chapter4.association.pojo.SexTypeHandler"/>
+        <result property="note" column="note"/>
+        <result property="selfNo" column="selfcard_no"/>
+
+        <association property="studentSelfCard" column="id" fetchType="lazy"
+                     select="com.elson.chapter4.association.dao.StudentSelfCardDao.findStudentSelfCardByStudentId"/>
+
+        <collection property="studentLectureList" column="id" fetchType="eager"
+                    select="com.elson.chapter4.association.dao.StudentLectureDao.findStudentLectureByStudentId"/>
+        <discriminator javaType="int" column="sex">
+            <case value="1" resultMap="maleStudentMap"/>
+            <case value="2" resultMap="femaleStudentMap"/>
+        </discriminator>
+    </resultMap>
+
+    <select id="getStudent" parameterType="int" resultMap="studentMap">
+        select id, cnname, sex, note, selfcard_no from t_student where id = #{id}
+    </select>
+
+    <resultMap id="maleStudentMap" type="com.elson.chapter4.association.pojo.MaleStudent" extends="studentMap">
+        <collection property="studentHealthMaleList" column="id" fetchType="lazy"
+                    select="com.elson.chapter4.association.dao.StudentHealthMaleDao.findStudentHealthMaleByStudentId"/>
+    </resultMap>
+
+    <resultMap id="femaleStudentMap" type="com.elson.chapter4.association.pojo.FemaleStudent" extends="studentMap">
+        <collection property="studentHealthFemaleList" column="id"  fetchType="lazy"
+                    select="com.elson.chapter4.association.dao.StudentHealthFemaleDao.findStudentHealthFemaleByStudentId"/>
+    </resultMap>
+</mapper>

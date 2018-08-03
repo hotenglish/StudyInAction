@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.elson.chapter9.mapper.ColorMapper">
+
+    <resultMap id="colorResultMapper" type="com.elson.chapter9.pojo.ColorBean">
+        <id property="id" column="id"/>
+        <result property="color" column="color" jdbcType="INTEGER"
+                javaType="com.elson.chapter9.enums.Color"
+                typeHandler="com.elson.chapter9.handlers.ColorEnumTypeHandler"/>
+        <result property="note" column="note"/>
+    </resultMap>
+
+    <select id="getColor" parameterType="int" resultMap="colorResultMapper">
+        select id, color, note from t_color where id = #{id}
+    </select>
+
+</mapper>

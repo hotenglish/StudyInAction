@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elson.chapter9.mapper.BillMapper">
+    <select id="getBill" resultType="com.elson.chapter9.pojo.Bill">
+        SELECT id, bill_name as billName, note from t_bill_${year} where id = #{id}
+    </select>
+</mapper>

@@ -7,6 +7,4 @@ public interface RoleDao {
 
     Role getRole(Long id);
 
-    Map<Object, Object> findRoleByNote(String id);
-
 }

@@ -1,6 +1,8 @@
 package com.elson.chapter4.save.main;
 
+import com.elson.chapter4.save.dao.ColorDao;
 import com.elson.chapter4.save.dao.RoleDao;
+import com.elson.chapter4.save.pojo.ColorBean;
 import com.elson.chapter4.save.util.SqlSessionFactoryUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.log4j.LogManager;
@@ -24,10 +26,10 @@ public class C4Main {
         try {
             sqlSession = SqlSessionFactoryUtil.openSqlSession();
             RoleDao roleDao = sqlSession.getMapper(RoleDao.class);
-            System.out.println(roleDao.getRole(2L).toString());
+            System.out.println(roleDao.getRole(5L).toString());
             System.out.println("-------------------------------------------------------------->");
-            Map map=(HashMap)roleDao.findRoleByNote("te");
-            System.out.println(map);
+            ColorDao colorDao = sqlSession.getMapper(ColorDao.class);
+            colorDao.findColorByNote("yellow").forEach((y, z) -> System.out.println(y + "--->" + z));
             System.out.println("-------------------------------------------------------------->");
         } catch (Exception e) {
             e.printStackTrace();

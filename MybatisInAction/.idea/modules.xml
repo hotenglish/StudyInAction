@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MybatisInAction.iml" filepath="$PROJECT_DIR$/.idea/MybatisInAction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/association/association.iml" filepath="$PROJECT_DIR$/chapter4/association/association.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/auto_mapping/auto_mapping.iml" filepath="$PROJECT_DIR$/chapter4/auto_mapping/auto_mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/cache/cache.iml" filepath="$PROJECT_DIR$/chapter4/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/cascade/cascade.iml" filepath="$PROJECT_DIR$/chapter4/cascade/cascade.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter1/chapter1.iml" filepath="$PROJECT_DIR$/chapter1/chapter1.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/chapter2/chapter2.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/chapter3/chapter3.iml" />
@@ -11,12 +14,16 @@
       <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/chapter5/chapter5.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter6/chapter6.iml" filepath="$PROJECT_DIR$/chapter6/chapter6.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter7/chapter7.iml" filepath="$PROJECT_DIR$/chapter7/chapter7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/chapter4/collection/collection.iml" filepath="$PROJECT_DIR$/chapter4/collection/collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter9/chapter9.iml" filepath="$PROJECT_DIR$/chapter9/chapter9.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/includeparam/includeparam.iml" filepath="$PROJECT_DIR$/chapter4/includeparam/includeparam.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/insert/insert.iml" filepath="$PROJECT_DIR$/chapter4/insert/insert.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter7/mybatis_plugin_1/mybatis_plugin_1.iml" filepath="$PROJECT_DIR$/chapter7/mybatis_plugin_1/mybatis_plugin_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter7/mybatis_plugin_2/mybatis_plugin_2.iml" filepath="$PROJECT_DIR$/chapter7/mybatis_plugin_2/mybatis_plugin_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/parameter/parameter.iml" filepath="$PROJECT_DIR$/chapter4/parameter/parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/params/params.iml" filepath="$PROJECT_DIR$/chapter4/params/params.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/save/save.iml" filepath="$PROJECT_DIR$/chapter4/save/save.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter4/select/select.iml" filepath="$PROJECT_DIR$/chapter4/select/select.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/update_delete/update_delete.iml" filepath="$PROJECT_DIR$/chapter4/update_delete/update_delete.iml" />
     </modules>
   </component>
 </project>

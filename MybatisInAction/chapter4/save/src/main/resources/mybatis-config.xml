@@ -29,7 +29,8 @@
 
     <!-- 定义映射器 -->
     <mappers>
-        <mapper resource="com\elson\chapter4\save\dao\mapper\RoleDao.xml"/>
+        <mapper resource="mapper/RoleDao.xml"/>
+        <mapper resource="mapper/ColorDao.xml"/>
     </mappers>
 
 </configuration>

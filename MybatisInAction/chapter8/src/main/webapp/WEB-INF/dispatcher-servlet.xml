@@ -10,9 +10,30 @@
     <!-- 自动扫描包 -->
     <context:component-scan base-package="com.learn.chapter8.controller"/>
 
-    <context:annotation-config />
+    <context:annotation-config/>
 
-    <mvc:annotation-driven />
+    <!-- 开启mvc注解功能 -->
+    <mvc:annotation-driven/>
+
+    <!-- json 转化器，它可以将结果转化 -->
+    <bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass"
+                  value="org.springframework.web.servlet.view.JstlView"/>
+        <!--前缀 -->
+        <property name="prefix" value="/views/"/>
+        <!--后缀 -->
+        <property name="suffix" value=".jsp"/>
+    </bean>
 
     <!--Spring 视图拦截器-->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
@@ -24,13 +45,13 @@
         </property>
     </bean>
 
-    <!-- json 转化器，它可以将结果转化 -->
-    <bean id="mappingJacksonHttpMessageConverter"
-          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
-        <property name="supportedMediaTypes">
-            <list>
-                <value>application/json;charset=UTF-8</value>
-            </list>
-        </property>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 默认编码 -->
+        <property name="defaultEncoding" value="utf-8"></property>
+        <!-- 文件大小最大值 -->
+        <property name="maxUploadSize" value="10485760000"></property>
+        <!-- 内存中的最大值 -->
+        <property name="maxInMemorySize" value="40960"></property>
     </bean>
+
 </beans>

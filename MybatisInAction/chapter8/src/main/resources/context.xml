@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<ontext>
+<Context>
     <!-- name 为JNDI名称
          type 数据源类型
          url 是数据库的 jdbc 链接
@@ -15,8 +15,8 @@
               driverClassName="com.mysql.cj.jdbc.Driver"
               url="jdbc:mysql://localhost:3306/mybatis?useSSL=false"
               username="root"
-              password="Elson188288"
+              password=""
               maxActive="50"
               maxIdle="30"
               maxWait="10000"/>
-</ontext>
+</Context>
