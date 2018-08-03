@@ -7,4 +7,8 @@ public interface FileService {
 
     boolean insertFile(MultipartFile imgFile, FileBean file);
 
+    boolean insertFileVersion2(FileBean file);
+
+    void uploanFile(MultipartFile imgFile, String filePath);
+
 }

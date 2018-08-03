@@ -23,7 +23,6 @@
 </head>
 
 <body>
-<h3>you are good</h3>
 <div class="easyui-panel" title="New Topic" style="width:400px">
     <div style="padding:10px 60px 20px 60px">
         <form id="fileForm" method="post" enctype="multipart/form-data">
@@ -46,7 +45,7 @@
         <script>
             function submitForm() {
                 $('#fileForm').form('submit', {
-                    url: "<%=basePath%>file/upload.do", onSubmit: function () {
+                    url: "<%=basePath%>file/uploadVer2.do", onSubmit: function () {
                         return true;
                     }, success: function (result, a, b) {
                         var jsonResult = $.parseJSON(result);

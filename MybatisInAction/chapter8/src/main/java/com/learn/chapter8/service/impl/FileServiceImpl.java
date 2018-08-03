@@ -28,11 +28,19 @@ public class FileServiceImpl implements FileService {
         String filePath = "/home/laimaosheng/Server/" + new Date().getTime() + imgFile.getOriginalFilename();
         file.setFilePath(filePath);
         fileDao.insertFile(file);
-        this.uploanFile(imgFile, filePath);
+        uploanFile(imgFile, filePath);
         return true;
     }
 
-    private void uploanFile(MultipartFile imgFile, String filePath) {
+    @Override
+    @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
+    public boolean insertFileVersion2(FileBean file) {
+        fileDao.insertFile(file);
+        return true;
+    }
+
+    @Override
+    public void uploanFile(MultipartFile imgFile, String filePath) {
         FileOutputStream os = null;
         InputStream in = null;
         try {

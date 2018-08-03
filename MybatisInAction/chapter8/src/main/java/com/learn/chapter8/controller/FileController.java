@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
+import java.util.Date;
 
 @Controller
 public class FileController {
@@ -38,10 +39,36 @@ public class FileController {
         return msg;
     }
 
+    @RequestMapping(value = "/file/uploadVer2", method = RequestMethod.POST)
+    @ResponseBody
+    public Message uploadFileVersion2(@RequestParam("title") String title, HttpServletRequest request, ModelMap model) {
+        MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
+        MultipartFile imgFile = multipartRequest.getFile("imageFile");
+        FileBean file = new FileBean();
+        String filePath = "/home/laimaosheng/Server/" + new Date().getTime() + imgFile.getOriginalFilename();
+        fileService.uploanFile(imgFile, filePath);
+        file.setFilePath(filePath);
+        file.setTitle(title);
+        Message msg = new Message();
+        if (fileService.insertFileVersion2(file)) {
+            msg.setSuccess(true);
+            msg.setInfo("插入成功");
+        } else {
+            msg.setSuccess(false);
+            msg.setInfo("插入失败");
+        }
+        return msg;
+    }
+
 
     @RequestMapping("/index")
     public ModelAndView firstPage() {
         return new ModelAndView("uploadFile");
+    }
+
+    @RequestMapping("/indexVer2")
+    public ModelAndView firstPageVer2() {
+        return new ModelAndView("uploadFileVer2");
     }
 
 
@@ -66,5 +93,4 @@ public class FileController {
             this.info = info;
         }
     }
-
 }

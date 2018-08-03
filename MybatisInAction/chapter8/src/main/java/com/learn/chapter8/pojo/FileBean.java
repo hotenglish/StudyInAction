@@ -2,19 +2,9 @@ package com.learn.chapter8.pojo;
 
 public class FileBean {
 
-    private Integer id;
-
     private String title;
 
     private String filePath;
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
