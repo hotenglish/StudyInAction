@@ -10,8 +10,8 @@
         <result column="cnname" property="cnName"/>
         <result column="birthday" property="birthday"/>
         <!--<result column="sex" property="sex" typeHandler="org.apache.ibatis.type.EnumOrdinalTypeHandler"/>-->
-        <!--<result column="sex" property="sex" typeHandler="org.apache.ibatis.type.EnumTypeHandler" />-->
-        <result column="sex" property="sex" typeHandler="com.elson.chapter3.handlers.SexEnumTypeHandler"/>
+        <result column="sex" property="sex" typeHandler="org.apache.ibatis.type.EnumTypeHandler" />
+        <!--<result column="sex" property="sex" typeHandler="com.elson.chapter3.handlers.SexEnumTypeHandler"/>-->
         <result column="email" property="email"/>
         <result column="mobile" property="mobile"/>
         <result column="note" property="note"/>
@@ -21,22 +21,24 @@
         select id, user_name, cnname, birthday, sex, email, mobile, note from t_user where id = #{id}
     </select>
 
-<!--    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.elson.chapter3.po.User">
+<!--
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.elson.chapter3.po.User">
         insert into t_user(user_name, cnname, birthday, sex, email, mobile, note)
         values (#{userName}, #{cnName}, #{birthday}, #{sex, typeHandler=org.apache.ibatis.type.EnumOrdinalTypeHandler},
         #{email}, #{mobile}, #{note})
-    </insert>-->
-
-<!--    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.elson.chapter3.po.User">
-        insert into t_user(user_name, cnname, birthday, sex, email, mobile, note)
-        values (#{userName}, #{cnName}, #{birthday}, #{sex, typeHandler=org.apache.ibatis.type.EnumTypeHandler},
-        #{email}, #{mobile}, #{note})
-    </insert>-->
+    </insert>
+-->
 
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.elson.chapter3.po.User">
         insert into t_user(user_name, cnname, birthday, sex, email, mobile, note)
-        values (#{userName}, #{cnName}, #{birthday}, #{sex, typeHandler=com.elson.chapter3.handlers.SexEnumTypeHandler},
+        values (#{userName}, #{cnName}, #{birthday}, #{sex, typeHandler=org.apache.ibatis.type.EnumTypeHandler},
         #{email}, #{mobile}, #{note})
     </insert>
+
+<!--    <insert id="insertUser" useGeneratedKeys="true" keyProperty="id" parameterType="com.elson.chapter3.po.User">
+        insert into t_user(user_name, cnname, birthday, sex, email, mobile, note)
+        values (#{userName}, #{cnName}, #{birthday}, #{sex, typeHandler=com.elson.chapter3.handlers.SexEnumTypeHandler},
+        #{email}, #{mobile}, #{note})
+    </insert>-->
 
 </mapper>

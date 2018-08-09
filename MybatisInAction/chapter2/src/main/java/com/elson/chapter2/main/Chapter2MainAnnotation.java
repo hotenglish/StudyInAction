@@ -17,7 +17,7 @@ public class Chapter2MainAnnotation {
         try {
             sqlSession = SqlSessionFactoryUtil.openSqlSession();
             RoleMapperAnnotation roleMapperAnnotation = sqlSession.getMapper(RoleMapperAnnotation.class);
-            Role role=roleMapperAnnotation.getRole(1L);
+            Role role=roleMapperAnnotation.getRole(2L);
             logger.info(role);
             sqlSession.commit();
         } catch (Exception ex) {

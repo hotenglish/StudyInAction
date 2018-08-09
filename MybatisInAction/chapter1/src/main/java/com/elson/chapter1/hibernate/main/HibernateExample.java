@@ -9,7 +9,7 @@ public class HibernateExample {
         Session session = null;
         try {
             session= HibernateUtil.getSessionFactory().openSession();
-            TRole role=(TRole)session.get(TRole.class, 1L);
+            TRole role=(TRole)session.get(TRole.class, 2L);
             System.err.println("role_name=>" + role.getRoleName());
         } finally {
             if (session != null) {

@@ -12,7 +12,7 @@ public class MyBatisExample {
         try {
             sqlSession = MyBatisUtil.getSqlSessionFactory().openSession();
             RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
-            Role role = roleMapper.getRole(1L);
+            Role role = roleMapper.getRole(2L);
             System.err.println("role_name=>" + role.getRoleName());
         } finally {
             sqlSession.close();

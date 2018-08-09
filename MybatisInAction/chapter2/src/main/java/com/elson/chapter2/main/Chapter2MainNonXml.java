@@ -23,7 +23,7 @@ public class Chapter2MainNonXml {
         try {
             sqlSession = createSqlSessionFactory().openSession();
             RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
-            Role role = roleMapper.getRole(1L);
+            Role role = roleMapper.getRole(2L);
             System.out.println(role);
             sqlSession.commit();
         } catch (Exception ex) {
@@ -44,7 +44,7 @@ public class Chapter2MainNonXml {
         dataSource.setDriver("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost:3306/mybatis?useSSL=false");
         dataSource.setUsername("root");
-        dataSource.setPassword("Elson188288");
+        dataSource.setPassword("");
         //构建数据库事务方式
         TransactionFactory transactionFactory = new JdbcTransactionFactory();
         //创建了数据库运行环境

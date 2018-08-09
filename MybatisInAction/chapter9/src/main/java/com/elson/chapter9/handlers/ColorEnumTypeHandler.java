@@ -24,8 +24,8 @@ public class ColorEnumTypeHandler implements TypeHandler<Color> {
 
     @Override
     public Color getResult(ResultSet resultSet, int i) throws SQLException {
-        int reult = resultSet.getInt(i);
-        return Color.getEnumByCode(reult);
+        int result = resultSet.getInt(i);
+        return Color.getEnumByCode(result);
     }
 
     @Override

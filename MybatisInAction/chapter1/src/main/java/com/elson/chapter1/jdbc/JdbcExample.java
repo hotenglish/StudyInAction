@@ -14,7 +14,7 @@ public class JdbcExample {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/mybatis?useSSL=false";
             String user = "root";
-            String password = "Elson188288";
+            String password = "";
             connection = DriverManager.getConnection(url, user, password);
         } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(JdbcExample.class.getName()).log(Level.SEVERE, null, ex);
@@ -76,7 +76,7 @@ public class JdbcExample {
 
     public static void main(String[] args){
         JdbcExample example=new JdbcExample();
-        Role role=example.getRole(1L);
+        Role role=example.getRole(2L);
         System.err.println("role_name=>" + role.getRoleName());
     }
 }

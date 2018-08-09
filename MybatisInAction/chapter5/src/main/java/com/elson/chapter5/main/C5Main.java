@@ -28,7 +28,7 @@ public class C5Main {
     public static void main(String args[]) {
         SqlSession sqlSession = SqlSessionFactoryUtil.openSqlSession();
         RoleDao roleDao = sqlSession.getMapper(RoleDao.class);
-        execute52(roleDao);
+        //execute52(roleDao);
 
         //execute53(roleDao);
 
@@ -38,7 +38,7 @@ public class C5Main {
 
         //execute56(roleDao);
 
-        //execute57(roleDao);
+        execute57(roleDao);
 
         log.info("执行成功!");
     }
@@ -60,9 +60,9 @@ public class C5Main {
         System.out.println(roleDao.findRolesWhere("test"));
         System.out.println(roleDao.findRoleTrim("test"));
         Role role = new Role();
-        role.setId(1L);
-        role.setRoleName("更新之后");
-        role.setNote("更新备注");
+        role.setId(3L);
+        role.setRoleName("update post");
+        role.setNote("update note");
         System.out.println(roleDao.updateRole(role));
         sqlSession.commit();
     }
@@ -74,11 +74,11 @@ public class C5Main {
     }
 
     private static void execute56(RoleDao roleDao) {
-        System.out.println(roleDao.getRoleTest("Y"));
+        System.out.println(roleDao.getRoleTest("N"));
     }
 
     private static void execute57(RoleDao roleDao) {
-        System.out.println(roleDao.findRoleMulBind("更新", "更新"));
+        System.out.println(roleDao.findRoleMulBind("test", "4"));
     }
 
 }

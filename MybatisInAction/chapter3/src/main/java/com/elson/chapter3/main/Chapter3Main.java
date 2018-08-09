@@ -11,6 +11,7 @@ import org.apache.log4j.Logger;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.List;
 
 import static com.elson.chapter3.po.EnumTypeHandlerSex.MALE;
 
@@ -21,9 +22,9 @@ public class Chapter3Main {
     public static void main(String[] args) throws IOException {
         //execute32();
         //execute34();
-        testEnumOrdinalTypeHandler();
+        //testEnumOrdinalTypeHandler();
         //testEnumTypeHandler();
-        //execute38_1();
+        execute38_1();
     }
 
     public static void execute32() {
@@ -60,10 +61,10 @@ public class Chapter3Main {
         try {
             sqlSession = SqlSessionFactoryUtil.openSqlSession();
             RoleMapper roleMapper = sqlSession.getMapper(RoleMapper.class);
-            role = roleMapper.getRole(1L);
+            role = roleMapper.getRole(2L);
             System.out.println(role);
-            role = roleMapper.findRole("test");
-            System.out.println(role);
+            List<Role> roles = roleMapper.findRole("test");
+            System.out.println(roles);
             sqlSession.commit();
         } catch (Exception ex) {
             System.err.println(ex.getMessage());
@@ -76,7 +77,7 @@ public class Chapter3Main {
         logger.info("执行成功!");
     }
 
-    public static void testEnumOrdinalTypeHandler() {
+    public static void testEnumTypeHandler() {
         SqlSession sqlSession = null;
         try {
             sqlSession = SqlSessionFactoryUtil.openSqlSession();
@@ -85,7 +86,7 @@ public class Chapter3Main {
             user.setUserName("zhangsan");
             user.setCnName("张三");
             user.setMobile("18888888");
-            user.setSex(EnumOrdinalTypeHandlerSex.MALE);
+            user.setSex(EnumOrdinalTypeHandlerSex.FEMALE);
             user.setBirthday(new Date());
             user.setEmail("zhangsan@163.com");
             user.setNote("test EnumOrdinalTypeHandler!!");
@@ -103,34 +104,6 @@ public class Chapter3Main {
         }
         logger.info("执行成功!");
     }
-
-/*    public static void testEnumTypeHandler(){
-        SqlSession sqlSession=null;
-        try{
-            sqlSession = SqlSessionFactoryUtil.openSqlSession();
-            UserMapper userMapper=sqlSession.getMapper(UserMapper.class);
-            User user=new User();
-            user.setUserName("lishi");
-            user.setCnName("李四");
-            user.setMobile("18888888");
-            user.setSex(MALE);
-            user.setBirthday(new Date());
-            user.setEmail("zhangsan@163.com");
-            user.setNote("test EnumOrdinalTypeHandler!!");
-            userMapper.insertUser(user);
-            User user2=userMapper.getUser(1L);
-            System.out.println("Sex == "+user2.getSex());
-            sqlSession.commit();
-        }catch (Exception ex){
-            System.err.println(ex.getMessage());
-            sqlSession.rollback();
-        }finally {
-            if (sqlSession != null) {
-                sqlSession.close();
-            }
-        }
-        logger.info("执行成功!");
-    }*/
 
     public static void execute38_1() {
         SqlSession sqlSession=SqlSessionFactoryUtil.openSqlSession();
