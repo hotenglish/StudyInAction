@@ -1,0 +1,1 @@
+生成方法：mvn archetype:generate
