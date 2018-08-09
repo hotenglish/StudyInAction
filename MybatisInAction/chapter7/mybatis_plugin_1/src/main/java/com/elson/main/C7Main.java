@@ -27,7 +27,7 @@ public class C7Main {
         role.setNote("wong");
         role.setRoleName("elson");
         roleDao.insertRole(role);
-
+        sqlSession.commit();
         log.info("执行 C7Main 成功!");
     }
 
