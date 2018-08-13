@@ -1,0 +1,6 @@
+mvn help:describe -Dplugin=complier
+mvn help:describe -Dplugin=complier -Dgoal=compile
+mvn help:describe -Dplugin=complier -Ddetail
+mvn help: describe -Dplugin=org.apache.maven.plugins:maven-complier-plugin:2.1 
+
+

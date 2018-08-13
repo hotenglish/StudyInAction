@@ -1,0 +1,131 @@
+[laimaosheng@localhost chapter5]$ mvn dependency:list
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building account-email 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:list (default-cli) @ account-email ---
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    org.springframework:spring-beans:jar:2.5.6:compile
+[INFO]    javax.mail:mail:jar:1.4.1:compile
+[INFO]    javax.activation:activation:jar:1.1:compile
+[INFO]    commons-logging:commons-logging:jar:1.1.1:compile
+[INFO]    org.slf4j:slf4j-api:jar:1.3.1:test
+[INFO]    org.springframework:spring-context-support:jar:2.5.6:compile
+[INFO]    aopalliance:aopalliance:jar:1.0:compile
+[INFO]    junit:junit:jar:4.7:test
+[INFO]    com.icegreen:greenmail:jar:1.3.1b:test
+[INFO]    org.springframework:spring-core:jar:2.5.6:compile
+[INFO]    org.springframework:spring-context:jar:2.5.6:compile
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.177 s
+[INFO] Finished at: 2018-08-11T16:01:07+08:00
+[INFO] Final Memory: 12M/153M
+[INFO] ------------------------------------------------------------------------
+[laimaosheng@localhost chapter5]$ mvn dependency:tree
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building account-email 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ account-email ---
+[INFO] com.juvenxu.mvnbook.account:account-email:jar:1.0-SNAPSHOT
+[INFO] +- org.springframework:spring-core:jar:2.5.6:compile
+[INFO] |  \- commons-logging:commons-logging:jar:1.1.1:compile
+[INFO] +- org.springframework:spring-context:jar:2.5.6:compile
+[INFO] |  \- aopalliance:aopalliance:jar:1.0:compile
+[INFO] +- org.springframework:spring-beans:jar:2.5.6:compile
+[INFO] +- org.springframework:spring-context-support:jar:2.5.6:compile
+[INFO] +- javax.mail:mail:jar:1.4.1:compile
+[INFO] |  \- javax.activation:activation:jar:1.1:compile
+[INFO] +- junit:junit:jar:4.7:test
+[INFO] \- com.icegreen:greenmail:jar:1.3.1b:test
+[INFO]    \- org.slf4j:slf4j-api:jar:1.3.1:test
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.730 s
+[INFO] Finished at: 2018-08-11T16:01:23+08:00
+[INFO] Final Memory: 13M/153M
+[INFO] ------------------------------------------------------------------------
+[laimaosheng@localhost chapter5]$ mvn dependency:analyze
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building account-email 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-dependency-plugin:2.8:analyze (default-cli) > test-compile @ account-email >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ account-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ account-email ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ account-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/laimaosheng/StudyInAction/Maven3InAction/chapter5/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ account-email ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< maven-dependency-plugin:2.8:analyze (default-cli) < test-compile @ account-email <<<
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:analyze (default-cli) @ account-email ---
+[WARNING] Used undeclared dependencies found:
+[WARNING]    org.springframework:spring-context:jar:2.5.6:compile
+[WARNING] Unused declared dependencies found:
+[WARNING]    org.springframework:spring-core:jar:2.5.6:compile
+[WARNING]    org.springframework:spring-beans:jar:2.5.6:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.549 s
+[INFO] Finished at: 2018-08-11T16:02:26+08:00
+[INFO] Final Memory: 13M/153M
+[INFO] ------------------------------------------------------------------------
+[laimaosheng@localhost chapter5]$ mvn dependency:analyze
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building account-email 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-dependency-plugin:2.8:analyze (default-cli) > test-compile @ account-email >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ account-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ account-email ---
+[INFO] Compiling 3 source files to /home/laimaosheng/StudyInAction/Maven3InAction/chapter5/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ account-email ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/laimaosheng/StudyInAction/Maven3InAction/chapter5/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ account-email ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< maven-dependency-plugin:2.8:analyze (default-cli) < test-compile @ account-email <<<
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:analyze (default-cli) @ account-email ---
+[WARNING] Unused declared dependencies found:
+[WARNING]    org.springframework:spring-core:jar:2.5.6:compile
+[WARNING]    org.springframework:spring-beans:jar:2.5.6:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.910 s
+[INFO] Finished at: 2018-08-11T16:04:40+08:00
+[INFO] Final Memory: 18M/169M
+[INFO] ------------------------------------------------------------------------
+[laimaosheng@localhost chapter5]$ 
