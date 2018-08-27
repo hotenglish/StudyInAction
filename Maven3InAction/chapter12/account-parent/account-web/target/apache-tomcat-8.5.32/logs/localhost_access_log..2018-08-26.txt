@@ -1,0 +1,8 @@
+127.0.0.1 - - [26/Aug/2018:23:50:17 +0800] "GET /cargocpc/index.html HTTP/1.1" 200 124
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:50:36 +0800] "GET /account/signup.jsp HTTP/1.1" 200 1168
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:50:37 +0800] "GET /account/captcha_image?key=perjh7o0 HTTP/1.1" 200 3688
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:51:12 +0800] "POST /account/signup HTTP/1.1" 400 1174
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:51:41 +0800] "POST /account/signup HTTP/1.1" 400 1166
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:51:56 +0800] "GET /account/signup.jsp HTTP/1.1" 200 1168
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:51:56 +0800] "GET /account/captcha_image?key=mjd1vm8o HTTP/1.1" 200 3596
+0:0:0:0:0:0:0:1 - - [26/Aug/2018:23:52:17 +0800] "POST /account/signup HTTP/1.1" 500 5059
