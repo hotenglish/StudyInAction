@@ -1,0 +1,5 @@
+.text-field {position: absolute; left: 40%; background-color:#FFF68F;}
+label {display: inline-table; width: 90px; margin: 0px 0px 10px 20px; }
+input {display: inline-table; width: 150px; margin: 0px 20px 10px 0px;}
+h2 {margin: 20px 20px 20px 40px;}
+button {margin: 20px 20px 10px 110px}
