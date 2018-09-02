@@ -2,51 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44d362eb-384e-4453-8078-73f9c83ff644" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/resources/service.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/resources/account-service.properties" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/src/main/java/com/juvenxu/mvnbook/account/web/SignUpServlet.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/src/main/java/com/juvenxu/mvnbook/account/web/SignUpServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/account-email.iml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/account-email.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_context_2_5_6.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_context_2_5_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/pom.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_testng_testng_jdk15_5_9.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_testng_testng_jdk15_5_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_core_2_5_6.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_core_2_5_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_beans_2_5_6.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_beans_2_5_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/resources/account-persist.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/resources/account-persist.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/pom.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_mail_mail_1_4_1.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_mail_mail_1_4_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/test/java/com/juvenxu/mvnbook/account/account/persist/AccountPersistServiceTest.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/test/java/com/juvenxu/mvnbook/account/persist/AccountPersistServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-service/src/main/java/com/juvenxu/mvnbook/account/service/AccountServiceImpl.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-service/src/main/java/com/juvenxu/mvnbook/account/service/AccountServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_web_2_5_6.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_web_2_5_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/account/persist/AccountPersistServiceImpl.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/persist/AccountPersistServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/src/test/java/com/juvenxu/mvnbook/account/account/email/AccountEmailServiceTest.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/src/test/java/com/juvenxu/mvnbook/account/account/email/AccountEmailServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/pom.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/test/resources/account-service.properties" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/test/resources/service.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/account/persist/AccountPersistService.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/persist/AccountPersistService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__junit_junit_4_7.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__junit_junit_4_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_servlet_servlet_api_2_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_icegreen_greenmail_1_4_1.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_icegreen_greenmail_1_4_1.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/account/persist/Account.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/persist/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/src/main/resources/service.properties" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-email/src/main/resources/service.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/src/main/java/com/juvenxu/mvnbook/account/web/ActivateServlet.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-web/src/main/java/com/juvenxu/mvnbook/account/web/ActivateServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/account/persist/AccountPersistException.java" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/account-persist/src/main/java/com/juvenxu/mvnbook/account/persist/AccountPersistException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_0.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_context_support_2_5_6.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__org_springframework_spring_context_support_2_5_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_google_code_kaptcha_kaptcha_jdk15_2_3.xml" afterPath="$PROJECT_DIR$/../../chapter12/account-parent/.idea/libraries/Maven__com_google_code_kaptcha_kaptcha_jdk15_2_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../../JavaConcurrencyProgramming/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/account-persist/target/" />
@@ -225,8 +184,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -235,80 +195,16 @@
               <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="account-parent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="captcha" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-captcha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="account-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="account-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="account-web" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/下载/testng-1.0.dtd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chapter12/account-parent" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.41914192" />
@@ -725,6 +621,7 @@
       <workItem from="1535520644392" duration="9349000" />
       <workItem from="1535530338009" duration="18316000" />
       <workItem from="1535588610199" duration="8444000" />
+      <workItem from="1535616163546" duration="185000" />
     </task>
     <servers />
   </component>
@@ -761,7 +658,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188759000" />
+    <option name="totallyTimeSpent" value="188944000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -775,37 +672,37 @@
   <component name="ToolWindowManager">
     <frame x="-60" y="0" width="1282" height="740" extended-state="6" />
     <layout>
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35273367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41361257" sideWeight="0.5089577" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2247557" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35273367" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20458554" sideWeight="0.49104235" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3061889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33156967" sideWeight="0.49104235" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3004886" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39976552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329806" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

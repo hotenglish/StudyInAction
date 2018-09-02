@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: wjprakash
+Build-Jdk: 1.7.0_80
+Main-Class: org.eclipse.hudson.war.Executable
+Hudson-Version: 3.3.3
+Implementation-Version: 3.3.3
+

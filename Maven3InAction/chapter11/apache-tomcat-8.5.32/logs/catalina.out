@@ -1,0 +1,67 @@
+19-Aug-2018 01:50:36.352 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.32
+19-Aug-2018 01:50:36.372 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jun 20 2018 19:50:35 UTC
+19-Aug-2018 01:50:36.373 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.32.0
+19-Aug-2018 01:50:36.373 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+19-Aug-2018 01:50:36.374 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.13.0-1.el7.elrepo.x86_64
+19-Aug-2018 01:50:36.375 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Aug-2018 01:50:36.377 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /usr/local/java/jre
+19-Aug-2018 01:50:36.379 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_144-b01
+19-Aug-2018 01:50:36.379 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Aug-2018 01:50:36.383 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32
+19-Aug-2018 01:50:36.385 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32
+19-Aug-2018 01:50:36.387 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/conf/logging.properties
+19-Aug-2018 01:50:36.388 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Aug-2018 01:50:36.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Aug-2018 01:50:36.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Aug-2018 01:50:36.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+19-Aug-2018 01:50:36.389 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+19-Aug-2018 01:50:36.390 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32
+19-Aug-2018 01:50:36.390 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32
+19-Aug-2018 01:50:36.390 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/temp
+19-Aug-2018 01:50:36.391 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/share/Qt/Tools/QtCreator/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+19-Aug-2018 01:50:36.852 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+19-Aug-2018 01:50:36.903 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Aug-2018 01:50:36.928 信息 [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+19-Aug-2018 01:50:36.938 信息 [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+19-Aug-2018 01:50:36.939 信息 [main] org.apache.catalina.startup.Catalina.load Initialization processed in 2051 ms
+19-Aug-2018 01:50:37.049 信息 [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Aug-2018 01:50:37.051 信息 [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.32
+19-Aug-2018 01:50:37.119 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/hudson-3.3.3.war]
+19-Aug-2018 01:50:47.903 信息 [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Aug-2018 01:50:49.285 信息 [localhost-startStop-1] org.eclipse.hudson.HudsonServletContextListener.contextInitialized Home directory: /home/laimaosheng/.hudson
+19-Aug-2018 01:50:50.542 信息 [localhost-startStop-1] org.eclipse.hudson.security.HudsonSecurityManager.load Loading Security ..
+19-Aug-2018 01:51:08.780 信息 [localhost-startStop-1] org.eclipse.hudson.HudsonServletContextListener.contextInitialized 
+
+
+================>
+
+Initial setup required. Please go to the Hudson Dashboard and complete the setup.
+
+<================
+
+
+
+19-Aug-2018 01:51:08.826 信息 [localhost-startStop-1] hudson.util.CharacterEncodingFilter.init CharacterEncodingFilter initialized. DISABLE_FILTER: false FORCE_ENCODING: false
+19-Aug-2018 01:51:08.961 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/hudson-3.3.3.war] has finished in [31,840] ms
+19-Aug-2018 01:51:08.963 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/ROOT]
+19-Aug-2018 01:51:09.044 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/ROOT] has finished in [81] ms
+19-Aug-2018 01:51:09.048 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/docs]
+19-Aug-2018 01:51:09.099 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/docs] has finished in [52] ms
+19-Aug-2018 01:51:09.100 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/examples]
+19-Aug-2018 01:51:09.824 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/examples] has finished in [724] ms
+19-Aug-2018 01:51:09.826 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/host-manager]
+19-Aug-2018 01:51:09.915 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/host-manager] has finished in [89] ms
+19-Aug-2018 01:51:09.916 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/manager]
+19-Aug-2018 01:51:09.998 信息 [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/laimaosheng/StudyInAction/Maven3InAction/chapter11/apache-tomcat-8.5.32/webapps/manager] has finished in [81] ms
+19-Aug-2018 01:51:10.024 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+19-Aug-2018 01:51:10.071 信息 [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+19-Aug-2018 01:51:10.088 信息 [main] org.apache.catalina.startup.Catalina.start Server startup in 33147 ms
+19-Aug-2018 02:13:17.533 信息 [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+19-Aug-2018 02:13:17.535 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+19-Aug-2018 02:13:17.542 信息 [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+19-Aug-2018 02:13:17.546 信息 [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+19-Aug-2018 02:13:17.605 信息 [localhost-startStop-2] hudson.util.CharacterEncodingFilter.destroy CharacterEncodingFilter destroyed.
+19-Aug-2018 02:13:17.702 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+19-Aug-2018 02:13:17.714 信息 [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+19-Aug-2018 02:13:17.719 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+19-Aug-2018 02:13:17.721 信息 [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
