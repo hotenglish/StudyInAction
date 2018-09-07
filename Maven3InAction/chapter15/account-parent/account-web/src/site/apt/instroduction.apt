@@ -1,0 +1,19 @@
+            ------
+         Introduction
+            ------
+         Juven Xu
+            ------
+            2010-07-20
+
+  What is Maven?
+    Apache Maven is a software Project management and comprehension tool
+  Core Maven Concepts
+  * Coordinates and Dependency
+    description for maven coordinates and dependency...
+  * Repository
+    There are many kinds of repositories:
+    * Local Repository
+    * Central Repository
+    * Internal Repository Service
+  * Plugin and Lifecycle
+     descriptions for maven plugin and lifecycle...
