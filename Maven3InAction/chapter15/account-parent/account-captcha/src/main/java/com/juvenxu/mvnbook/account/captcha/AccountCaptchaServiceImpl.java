@@ -16,6 +16,9 @@ import java.util.Properties;
 
 public class AccountCaptchaServiceImpl implements AccountCaptchaService, InitializingBean {
 
+    //for testing pmd plugin--unused variable
+    private int testVariable;
+
     private DefaultKaptcha producer;
 
     private Map<String, String> captchaMap = new HashMap<String, String>();
@@ -23,6 +26,17 @@ public class AccountCaptchaServiceImpl implements AccountCaptchaService, Initial
     private List<String> preDefinedTexts;
 
     private int textCount = 0;
+
+    //for testing pmd plugin--duplicated code
+    public String generateCaptchaKey2() throws AccountCaptchaException {
+        String key = RandomGenerator.getRandomString();
+
+        String value = getCaptchaText();
+
+        captchaMap.put(key, value);
+
+        return key;
+    }
 
     @Override
     public String generateCaptchaKey() throws AccountCaptchaException {

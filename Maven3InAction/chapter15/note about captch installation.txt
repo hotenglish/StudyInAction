@@ -1,0 +1,4 @@
+mvn install:install-file -DgroupId=com.google.code.kaptcha -DartifactId=kaptcha -Dversion=2.3 -Dfile=/home/laimaosheng/下载/kaptcha-2.3.jar -Dpackaging=jar -DgeneratePom=true
+
+how to set rules about pmd plugins:
+https://pmd.sourceforge.io/pmd-5.2.3/customizing/howtomakearuleset.html

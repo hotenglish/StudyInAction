@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<faqs xmlns="http://maven.apache.org/FML/1.0.1"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/FML/1.0.1
+      http://maven.apache.org/xsd/fml-1.0.1.xsd"
+      title="Frequently Asked Question"
+      toplink="false">
+
+    <part id="install">
+        <title>Install</title>
+        <faq id="download">
+            <question>Where to Download?</question>
+            <answer>
+                <p>Maven:http://maven.apache.org/download.html</p>
+                <p>Maven:http://nexus.sonatype.org/download-nexus.html</p>
+            </answer>
+        </faq>
+        <faq id="do-install">
+            <question>How to Install?</question>
+            <answer>
+                <p>Description on the installation steps...</p>
+            </answer>
+        </faq>
+    </part>
+
+    <part id="run">
+        <title>Run</title>
+        <faq id="how-install">
+            <question>How to Run?</question>
+            <answer>
+                <p>Description on the installation steps...</p>
+            </answer>
+        </faq>
+    </part>
+
+</faqs>
