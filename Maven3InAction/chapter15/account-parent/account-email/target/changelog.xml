@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<changelog>
+  
+<changeset datePattern="yyyyMMdd HH:mm:ss z" start="20180714 21:56:37 CST" end="20180913 21:56:37 CST">
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2018-09-06</date>
+		<time pattern="HH:mm:ss">13:14:43</time>
+		<author><![CDATA[laimaosheng <hotenglish@outlook.com>]]></author>
+		<file>
+			<action>deleted</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/account-email.iml</name>
+			<revision>200a1ceb079d5690069eb3b6b6f9e93a35f09352</revision>
+		</file>
+		<msg><![CDATA[update all]]></msg>
+	</changelog-entry>
+	<changelog-entry>
+		<date pattern="yyyy-MM-dd">2018-09-02</date>
+		<time pattern="HH:mm:ss">08:06:27</time>
+		<author><![CDATA[hotenglish <hotenglish@outlook.com>]]></author>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/account-email.iml</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/pom.xml</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/main/java/com/juvenxu/mvnbook/account/account/email/AccountEmailService.java</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/main/java/com/juvenxu/mvnbook/account/account/email/AccountEmailServiceImpl.java</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/main/java/com/juvenxu/mvnbook/account/exception/AccountEmailException.java</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/main/resources/account-email.xml</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/main/resources/service.properties</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/test/java/com/juvenxu/mvnbook/account/account/email/AccountEmailServiceTest.java</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<file>
+			<action>added</action>
+			<name>Maven3InAction/chapter15/account-parent/account-email/src/test/resources/service.properties</name>
+			<revision>9a70f349c95ce3a27aa3fd3a21f9407ed3ebb64c</revision>
+		</file>
+		<msg><![CDATA[update Maven3InAction]]></msg>
+	</changelog-entry>
+</changeset>
+
+</changelog>
