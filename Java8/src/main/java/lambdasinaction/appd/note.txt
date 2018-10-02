@@ -1,0 +1,4 @@
+javap -help
+javap -c -v InnerClass\$1.class
+javap -c -v InnerClass.class
+javap -c -v AppcTest.class
