@@ -33,7 +33,7 @@ public class FilteringApples {
                                                                 "brown".equals(a.getColor()));
         System.out.println(weirdApples);
 
-        File[] hiddenFiles=new File("E:\\Servers\\apache-tomcat-7.0.82").listFiles(File::isHidden);
+        File[] hiddenFiles=new File("/home/laimaosheng/StudyInAction/Java8").listFiles(File::isHidden);
         for(File file:hiddenFiles){
             System.out.println(file.getName());
         }
