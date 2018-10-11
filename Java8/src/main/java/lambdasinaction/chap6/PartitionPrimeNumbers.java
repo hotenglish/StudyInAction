@@ -10,8 +10,8 @@ import static java.util.stream.Collector.Characteristics.*;
 public class PartitionPrimeNumbers {
 
     public static void main(String... args) {
-        System.out.println("Numbers partitioned in prime and non-prime: " + partitionPrimes(100));
-        System.out.println("Numbers partitioned in prime and non-prime: " + partitionPrimesWithCustomCollector(100));
+        //System.out.println("Numbers partitioned in prime and non-prime: " + partitionPrimes(100));
+        //System.out.println("Numbers partitioned in prime and non-prime: " + partitionPrimesWithCustomCollector(100));
         System.out.println("Numbers partitioned in prime and non-prime: " + partitionPrimesWithInlineCollector(99));
     }
 
@@ -33,7 +33,8 @@ public class PartitionPrimeNumbers {
     public static boolean isPrime(List<Integer> primes, Integer candidate) {
         double candidateRoot = Math.sqrt((double) candidate);
         //return primes.stream().filter(p -> p < candidateRoot).noneMatch(p -> candidate % p == 0);
-        return takeWhile(primes, i -> i <= candidateRoot).stream().noneMatch(i -> candidate % i == 0);
+        boolean isPrime = takeWhile(primes, i -> i <= candidateRoot).stream().noneMatch(i -> candidate % i == 0);
+        return isPrime;
     }
 
     public static <A> List<A> takeWhile(List<A> list, Predicate<A> p) {
@@ -95,7 +96,7 @@ public class PartitionPrimeNumbers {
                             put(false, new ArrayList<Integer>());
                         }},
                         (acc, candidate) -> {
-                            acc.get( isPrime(acc.get(true), candidate))
+                            acc.get(isPrime(acc.get(true), candidate))
                                     .add(candidate);
                         },
                         (map1, map2) -> {

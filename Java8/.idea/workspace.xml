@@ -2,14 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8bfcc3-a300-4492-87fc-1a6a7cb32a4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appb/AppBTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForkerExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/AppDTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/InnerClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/Lambda.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/note.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lambdasinaction.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Java8.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/chapter9.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/.idea/SpringLearning4.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/dictionaries/B_36244.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_7_2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter01/chapter01.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/.idea/dictionaries/B_36244.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/chapter02.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/../SpringLearning4/chapter02/stereo-autoconfig/stereo-autoconfig.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Maven3InAction/chapter11/account-parent" afterPath="$PROJECT_DIR$/../Maven3InAction/chapter11/account-parent" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Maven3InAction/chapter13" afterPath="$PROJECT_DIR$/../Maven3InAction/chapter13" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/build-Chapter9-Desktop_Qt_5_9_1_GCC_64bit-Debug/Chapter9" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/build-Chapter9-Desktop_Qt_5_9_1_GCC_64bit-Debug/Chapter9" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/Lambdas.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/Lambdas.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap4/Dish.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap4/Dish.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Grouping.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Grouping.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/GroupingTransactions.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/GroupingTransactions.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Summarizing.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Summarizing.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Debugging.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Debugging.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/FactoryMain.java" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/FactoryMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter1/src/main/java/com/elson/chapter1/mybatis/util/MyBatisUtil.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter1/src/main/java/com/elson/chapter1/mybatis/util/MyBatisUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter2/src/main/java/com/elson/chapter2/main/Chapter2Main.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter2/src/main/java/com/elson/chapter2/main/Chapter2Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter2/src/main/java/com/elson/chapter2/util/SqlSessionFactoryUtil.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter2/src/main/java/com/elson/chapter2/util/SqlSessionFactoryUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/databaseidprovider/MydatabaseIdProvider.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/databaseidprovider/MydatabaseIdProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/datasource/DbcpDataSourceFactory.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/datasource/DbcpDataSourceFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/main/Chapter3Main.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/main/Chapter3Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/po/User.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/po/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/util/SqlSessionFactoryUtil.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter3/src/main/java/com/elson/chapter3/util/SqlSessionFactoryUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/includeparam/src/main/java/com/elson/chapter4/includeparam/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/includeparam/src/main/java/com/elson/chapter4/includeparam/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/java/com/elson/chapter4/parameter/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/java/com/elson/chapter4/parameter/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/main/C4Main.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/main/C4Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/update_delete/src/main/java/com/elson/chapter4/updatedelete/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/update_delete/src/main/java/com/elson/chapter4/updatedelete/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_1/src/main/java/com/elson/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_1/src/main/java/com/elson/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_1/src/main/java/com/elson/dao/UserDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_1/src/main/java/com/elson/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_2/src/main/java/com/elson/interceptor/MyPluginTwo.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter7/mybatis_plugin_2/src/main/java/com/elson/interceptor/MyPluginTwo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/FileController.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/FileController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/RoleController.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/RoleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/dao/RoleDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/dao/RoleDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/dao/UserDao.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/dao/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/impl/FileServiceImpl.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/impl/FileServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/resources/mybatis-spring.xml" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/resources/mybatis-spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/webapp/views/uploadFile.jsp" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/webapp/views/uploadFile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/webapp/views/uploadFileVer2.jsp" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/webapp/views/uploadFileVer2.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/handlers/SexEnumTypeHandler.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/handlers/SexEnumTypeHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9MultipleRelationMain.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9MultipleRelationMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9PagingPluginMain.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9PagingPluginMain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/mapper/RoleMapperChapter9.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/mapper/RoleMapperChapter9.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/mapper/UserMapperChapter9.java" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/mapper/UserMapperChapter9.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp11/TextEditor/TextEditor.pro.user" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp11/TextEditor/TextEditor.pro.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp2/Chapter2/Chapter2.pro.user" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp2/Chapter2/Chapter2.pro.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp3/Chapter3/Chapter3.pro.user" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp3/Chapter3/Chapter3.pro.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp4/Chapter4/Chapter4.pro.user" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp4/Chapter4/Chapter4.pro.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/Chapter9/Chapter9.pro.user" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/Chapter9/Chapter9.pro.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/build-Chapter9-Desktop_Qt_5_9_1_GCC_64bit-Debug/Makefile" afterPath="$PROJECT_DIR$/../Qt_Cpp/Cpp9/build-Chapter9-Desktop_Qt_5_9_1_GCC_64bit-Debug/Makefile" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,130 +108,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StreamForkerExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForkerExample.java">
+      <file leaf-file-name="DateTimeExamples.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap12/DateTimeExamples.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#321#322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreamForker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#416#417#0" expanded="true" />
-                <element signature="e#452#453#0" expanded="true" />
-                <element signature="e#2488#2489#0" expanded="true" />
-                <element signature="e#2541#2542#0" expanded="true" />
-                <element signature="e#2810#2811#0" expanded="true" />
-                <element signature="e#2859#2860#0" expanded="true" />
-                <element signature="e#3053#3054#0" expanded="true" />
-                <element signature="e#3087#3088#0" expanded="true" />
-                <element signature="e#3616#3617#0" expanded="true" />
-                <element signature="e#3651#3652#0" expanded="true" />
-                <element signature="e#3707#3708#0" expanded="true" />
-                <element signature="e#3739#3740#0" expanded="true" />
-                <element signature="e#3797#3798#0" expanded="true" />
-                <element signature="e#3829#3830#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppBTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appb/AppBTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppDTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/AppDTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="28">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InnerClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/InnerClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lambda.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/Lambda.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/java/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4070" column="13" lean-forward="false" selection-start-line="4070" selection-start-column="13" selection-end-line="4070" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/java/src.zip!/java/util/HashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="473" column="11" lean-forward="false" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
-              <folding>
-                <element signature="e#19296#19297#0" expanded="true" />
-                <element signature="e#19379#19380#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/java/src.zip!/java/util/stream/Stream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="497" column="9" lean-forward="false" selection-start-line="497" selection-start-column="9" selection-end-line="497" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReferencePipeline.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/java/src.zip!/java/util/stream/ReferencePipeline.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="416" column="16" lean-forward="false" selection-start-line="416" selection-start-column="16" selection-end-line="416" selection-end-column="16" />
-              <folding>
-                <element signature="e#15146#15147#0" expanded="true" />
-                <element signature="e#15205#15206#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -167,12 +135,8 @@
       <find>isHidden</find>
       <find>sort</find>
       <find>readDurationWithOptional</find>
-      <find>lambdasinaction.chap10</find>
-      <find>lambdasinatcion.chap4</find>
+      <find>isPrime</find>
     </findStrings>
-    <replaceStrings>
-      <replace>lambdasinaction.chap10</replace>
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -185,57 +149,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/OnlineBankingLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/OnlineBanking.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/Peek.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/Debugging.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/StrategyMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/FactoryMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/ObserverMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/ChainOfResponsibilityMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap8/TransformAsLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Drawable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Square.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Triangle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Ellipse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Intro.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Letter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Ambiguous.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Diamond.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/MostSpecific.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/README" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Utils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9/Resizable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/ReadPositiveIntParam.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/Car.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/Insurance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/OptionalMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap10/OperationsWithOptional.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinatcion/chapter12/DateTimeExamples.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap1/FilteringApples.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/Lambdas.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap4/Dish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/GroupingTransactions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Grouping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Summarizing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/CollectorHarness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Reducing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/NumericStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/ParallelStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Debugging.java" />
         <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/FactoryMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/ObserverMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/OnlineBanking.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/OnlineBankingLambda.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Peek.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/StrategyMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/TransformAsLambda.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/ChainOfResponsibilityMain.java" />
         <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Ambiguous.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Diamond.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Drawable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Ellipse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Intro.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Letter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/MostSpecific.java" />
         <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Resizable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Square.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Triangle.java" />
         <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Quote.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Discount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/ShopMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Shop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/Shop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinderMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinderMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/ExchangeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Util.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShopClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Currying.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/LazyLists.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Combinators.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PatternMatching.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTrainJourney.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/Lambda.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/InnerClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/AppcTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/note.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForkerExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appb.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appb/AppBTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/InnerClass.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/Lambda.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appd/AppDTest.java" />
       </list>
     </option>
   </component>
@@ -248,9 +212,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="/usr/local/maven/repository" />
-        <option name="mavenHome" value="/usr/local/maven" />
-        <option name="userSettingsFile" value="/usr/local/maven/conf/settings.xml" />
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="$USER_HOME$/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="$USER_HOME$/apache-maven-3.5.2/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -285,82 +249,60 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambdasinaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lambdasinaction" type="462c0819:PsiDirectoryNode" />
-              <item name="appa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lambdasinaction" type="462c0819:PsiDirectoryNode" />
-              <item name="appb" type="462c0819:PsiDirectoryNode" />
+              <item name="chap12" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambdasinaction" type="462c0819:PsiDirectoryNode" />
-              <item name="appc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lambdasinaction" type="462c0819:PsiDirectoryNode" />
-              <item name="appd" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -370,14 +312,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaConcurrencyProgramming" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lambdasinaction" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="lambdasinaction.chap11.v1" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/lambdasinatcion/chap9" />
@@ -397,15 +336,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AppDTest">
-    <configuration name="AppBTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Intro">
+    <configuration name="Diamond" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="lambdasinaction.appb.*" />
+          <option name="PATTERN" value="lambdasinaction.chap9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.appb.AppBTest" />
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap9.Diamond" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -414,17 +353,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
+      <module name="lambdasinaction" />
       <envs />
     </configuration>
-    <configuration name="AppDTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Game" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="lambdasinaction.appd.*" />
+          <option name="PATTERN" value="lambdasinaction.chap9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.appd.AppDTest" />
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap9.Game" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -433,17 +372,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
+      <module name="lambdasinaction" />
       <envs />
     </configuration>
-    <configuration name="AppcTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Intro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="lambdasinaction.appd.*" />
+          <option name="PATTERN" value="lambdasinaction.chap9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.appd.AppcTest" />
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap9.Intro" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -452,17 +391,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
+      <module name="lambdasinaction" />
       <envs />
     </configuration>
-    <configuration name="Book" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Letter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="lambdasinaction.appa.*" />
+          <option name="PATTERN" value="lambdasinaction.chap9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.appa.Book" />
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap9.Letter" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -471,17 +410,17 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
+      <module name="lambdasinaction" />
       <envs />
     </configuration>
-    <configuration name="Currying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MostSpecific" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="lambdasinaction.chap14.*" />
+          <option name="PATTERN" value="lambdasinaction.chap9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap14.Currying" />
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap9.MostSpecific" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -490,26 +429,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
-      <envs />
-    </configuration>
-    <configuration name="StreamForkerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="lambdasinaction.appc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="lambdasinaction.appc.StreamForkerExample" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Java8" />
+      <module name="lambdasinaction" />
       <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -593,20 +513,32 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Book" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AppcTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.StreamForkerExample" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AppBTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AppDTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Diamond" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Letter" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Intro" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MostSpecific" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AppDTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AppBTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.StreamForkerExample" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Book" />
-        <item index="4" class="java.lang.String" itemvalue="Application.AppcTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Intro" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MostSpecific" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Letter" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Game" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Diamond" />
       </list>
     </recent_temporary>
   </component>
@@ -666,26 +598,29 @@
       <workItem from="1537091182190" duration="862000" />
       <workItem from="1537233806202" duration="15888000" />
       <workItem from="1537338829568" duration="4249000" />
-      <workItem from="1537443167092" duration="7331000" />
-      <workItem from="1537456521732" duration="6506000" />
-      <workItem from="1537489949897" duration="2483000" />
-      <workItem from="1537492831527" duration="3771000" />
-      <workItem from="1537525865654" duration="10531000" />
-      <workItem from="1537841940873" duration="20097000" />
-      <workItem from="1537869090964" duration="16179000" />
-      <workItem from="1537921790939" duration="26276000" />
-      <workItem from="1538012249206" duration="2689000" />
-      <workItem from="1538057460723" duration="6174000" />
-      <workItem from="1538091999698" duration="6248000" />
-      <workItem from="1538102255540" duration="1169000" />
-      <workItem from="1538103641330" duration="10993000" />
-      <workItem from="1538131776756" duration="11513000" />
-      <workItem from="1538184216859" duration="1955000" />
-      <workItem from="1538208096427" duration="20289000" />
-      <workItem from="1538278481124" duration="23785000" />
-      <workItem from="1538387134375" duration="9233000" />
-      <workItem from="1538439587667" duration="24165000" />
+      <workItem from="1537443167092" duration="7863000" />
+      <workItem from="1538550822377" duration="293000" />
+      <workItem from="1538551158173" duration="4289000" />
+      <workItem from="1538580772596" duration="3949000" />
+      <workItem from="1538645139003" duration="5378000" />
+      <workItem from="1538899911709" duration="3692000" />
+      <workItem from="1538910780967" duration="15013000" />
+      <workItem from="1538961081154" duration="23866000" />
+      <workItem from="1538992777645" duration="12665000" />
+      <workItem from="1539065711739" duration="7450000" />
+      <workItem from="1539080446799" duration="11058000" />
+      <workItem from="1539182778556" duration="3418000" />
+      <workItem from="1539259078710" duration="596000" />
+      <workItem from="1539261095400" duration="10000" />
     </task>
+    <task id="LOCAL-00001" summary="update java8">
+      <created>1538580891378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538580891379</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -697,37 +632,38 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474122000" />
+    <option name="totallyTimeSpent" value="362275000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="48" width="1282" height="740" extended-state="6" />
+    <frame x="10" y="48" width="1922" height="1020" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49785867" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27513227" sideWeight="0.52117264" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27513227" sideWeight="0.47882736" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4691358" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.338843" sideWeight="0.52141327" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.338843" sideWeight="0.47858673" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32585597" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25325733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19593148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.48615634" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.49785867" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -736,7 +672,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27513227" sideWeight="0.52117264" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.338843" sideWeight="0.52141327" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -745,21 +681,21 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3809524" sideWeight="0.48615634" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905548" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49785867" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821724" sideWeight="0.49785867" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27513227" sideWeight="0.47882736" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4691358" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25325733" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.338843" sideWeight="0.47858673" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32585597" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19593148" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -768,53 +704,57 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update java8" />
+    <option name="LAST_COMMIT_MESSAGE" value="update java8" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/Shop.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap2/FilteringApples.java</url>
+          <line>124</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java</url>
-          <line>15</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Summarizing.java</url>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java</url>
-          <line>28</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Summarizing.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java</url>
+          <line>23</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java</url>
-          <line>39</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java</url>
+          <line>91</line>
           <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTree.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java</url>
+          <line>109</line>
           <properties />
-          <option name="timeStamp" value="12" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PatternMatching.java</url>
-          <line>7</line>
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/OnlineBanking.java</url>
+          <line>5</line>
           <properties />
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -823,427 +763,366 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/local/java/src.zip!/java/util/concurrent/CompletableFuture.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Reducing.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="1931" column="13" lean-forward="false" selection-start-line="1931" selection-start-column="13" selection-end-line="1931" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/concurrent/ExecutorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="136" column="17" lean-forward="false" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/ShopMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinderMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="140" column="25" lean-forward="true" selection-start-line="140" selection-start-column="25" selection-end-line="140" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="149" column="34" lean-forward="false" selection-start-line="149" selection-start-column="34" selection-end-line="149" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Discount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="40" column="8" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/ExchangeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="2" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="38" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinderMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShopClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Quote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="56" lean-forward="true" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="47" lean-forward="true" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="58" column="50" lean-forward="true" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="707" column="12" lean-forward="false" selection-start-line="707" selection-start-column="12" selection-end-line="707" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/function/DoubleUnaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/MyList.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Currying.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="21" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/LazyLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Combinators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PatternMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3713#3714#0" expanded="true" />
-            <element signature="e#3751#3752#0" expanded="true" />
-            <element signature="e#3805#3806#0" expanded="true" />
-            <element signature="e#3844#3845#0" expanded="true" />
-            <element signature="e#4160#4161#0" expanded="true" />
-            <element signature="e#4236#4237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTrainJourney.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Authors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/stream/Collectors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="697" column="4" lean-forward="false" selection-start-line="697" selection-start-column="4" selection-end-line="697" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="76">
+          <caret line="8" column="48" lean-forward="true" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Dish.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="407">
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Grouping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="26" column="78" lean-forward="true" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/NumericStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="44" column="53" lean-forward="true" selection-start-line="44" selection-start-column="45" selection-end-line="44" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Laziness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Finding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Filtering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="440" column="25" lean-forward="false" selection-start-line="440" selection-start-column="25" selection-end-line="440" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="39" column="17" lean-forward="false" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/CollectorHarness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="90" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="211" column="6" lean-forward="false" selection-start-line="211" selection-start-column="6" selection-end-line="211" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="750" column="10" lean-forward="false" selection-start-line="750" selection-start-column="10" selection-end-line="750" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="92" column="21" lean-forward="false" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/concurrent/ForkJoinTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="695" column="7" lean-forward="true" selection-start-line="695" selection-start-column="7" selection-end-line="695" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/ParallelStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-216">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/ParallelStreamsHarness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="96" lean-forward="true" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/ForkJoinSumCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="71" column="26" lean-forward="false" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/ObserverMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-457">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/TransformAsLambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Debugging.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="48" lean-forward="true" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/OnlineBanking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
           <folding>
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
+            <element signature="e#117#278#0" expanded="true" />
+            <element signature="e#277#278#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/function/BinaryOperator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Peek.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="45" column="17" lean-forward="false" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/stream/BaseStream.java">
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/function/Function.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="-547">
+          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/stream/StreamSupport.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/OnlineBankingLambda.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="66" column="83" lean-forward="false" selection-start-line="66" selection-start-column="75" selection-end-line="66" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/Optional.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="132" column="13" lean-forward="false" selection-start-line="132" selection-start-column="13" selection-end-line="132" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="473" column="11" lean-forward="false" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
-          <folding>
-            <element signature="e#19296#19297#0" expanded="true" />
-            <element signature="e#19379#19380#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/stream/ReferencePipeline.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="416" column="16" lean-forward="false" selection-start-line="416" selection-start-column="16" selection-end-line="416" selection-end-column="16" />
-          <folding>
-            <element signature="e#15146#15147#0" expanded="true" />
-            <element signature="e#15205#15206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForkerExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#321#322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="497" column="9" lean-forward="false" selection-start-line="497" selection-start-column="9" selection-end-line="497" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appb.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/Objects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="992">
-          <caret line="202" column="0" lean-forward="false" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4070" column="13" lean-forward="false" selection-start-line="4070" selection-start-column="13" selection-end-line="4070" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appb/AppBTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#2488#2489#0" expanded="true" />
-            <element signature="e#2541#2542#0" expanded="true" />
-            <element signature="e#2810#2811#0" expanded="true" />
-            <element signature="e#2859#2860#0" expanded="true" />
-            <element signature="e#3053#3054#0" expanded="true" />
-            <element signature="e#3087#3088#0" expanded="true" />
-            <element signature="e#3616#3617#0" expanded="true" />
-            <element signature="e#3651#3652#0" expanded="true" />
-            <element signature="e#3707#3708#0" expanded="true" />
-            <element signature="e#3739#3740#0" expanded="true" />
-            <element signature="e#3797#3798#0" expanded="true" />
-            <element signature="e#3829#3830#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/InnerClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
+        <state relative-caret-position="72">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/Lambda.java">
+    <entry file="jar:///usr/share/jdk1.8.0_144/src.zip!/java/util/function/UnaryOperator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="209">
+          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/AppDTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/ChainOfResponsibilityMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" lean-forward="false" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="147">
+          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap10/Car.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap10/OperationsWithOptional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap10/ReadPositiveIntParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap10/Insurance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/StrategyMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/FactoryMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Diamond.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Ambiguous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="23" column="29" lean-forward="true" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Drawable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Square.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Ellipse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Resizable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Letter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Intro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="35" lean-forward="true" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/MostSpecific.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap12/DateTimeExamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1306,7 +1185,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

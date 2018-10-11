@@ -1,4 +1,4 @@
-package lambdasinatcion.chap5;
+package lambdasinaction.chap5;
 
 import java.util.*;
 import java.util.function.IntSupplier;
@@ -66,7 +66,7 @@ public class BuildingStreams {
         };
         IntStream.generate(fib).limit(10).forEach(System.out::println);
 
-        long uniqueWords = Files.lines(Paths.get("E:\\StudyProject\\Java8\\src\\main\\resources\\lambdasinaction\\chap5\\data.txt"), Charset.defaultCharset())
+        long uniqueWords = Files.lines(Paths.get("/home/laimaosheng/StudyInAction/Java8/lambdasinaction.iml"), Charset.defaultCharset())
                 .flatMap(line -> Arrays.stream(line.split(" ")))
                 .distinct()
                 .count();

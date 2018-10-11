@@ -23,7 +23,6 @@ public class GroupingTransactions {
     public static void main(String... args) {
         groupImperatively();
         groupFunctionally();
-
     }
 
     private static void groupImperatively() {

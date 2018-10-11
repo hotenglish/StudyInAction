@@ -43,7 +43,7 @@ public class FactoryMain {
 
     }
 
-    static private interface Product {
+    private interface Product {
     }
 
     static private class Loan implements Product {

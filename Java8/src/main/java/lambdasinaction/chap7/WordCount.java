@@ -94,7 +94,8 @@ public class WordCount {
                 return null;
             }
             for (int splitPos = currentSize / 2 + currentChar; splitPos < string.length(); splitPos++) {
-                if (Character.isWhitespace(string.charAt(splitPos))) {
+                char c=string.charAt(splitPos);
+                if (Character.isWhitespace(c)) {
                     Spliterator<Character> spliterator =
                             new WordCounterSpliterator(string.substring(currentChar, splitPos));
                     currentChar = splitPos;

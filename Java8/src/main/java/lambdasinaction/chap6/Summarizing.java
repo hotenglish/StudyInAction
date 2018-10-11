@@ -30,27 +30,27 @@ public class Summarizing {
 
     private static Dish findMostCaloricDishUsingComparator() {
         Comparator<Dish> dishCaloriesComparator = Comparator.comparingInt(Dish::getCalories);
-        BinaryOperator<Dish> moreCaloricOf=BinaryOperator.maxBy(dishCaloriesComparator);
+        BinaryOperator<Dish> moreCaloricOf = BinaryOperator.maxBy(dishCaloriesComparator);
         return menu.stream().collect(reducing(moreCaloricOf)).get();
     }
 
-    private static int calculateTotalCalories(){
+    private static int calculateTotalCalories() {
         return menu.stream().collect(summingInt(Dish::getCalories));
     }
 
-    private static Double calculateAverageCalories(){
+    private static Double calculateAverageCalories() {
         return menu.stream().collect(averagingInt(Dish::getCalories));
     }
 
-    private static IntSummaryStatistics calculateMenuStatistics(){
+    private static IntSummaryStatistics calculateMenuStatistics() {
         return menu.stream().collect(summarizingInt(Dish::getCalories));
     }
 
-    private static String getShortMenu(){
+    private static String getShortMenu() {
         return menu.stream().map(Dish::getName).collect(joining());
     }
 
-    private static String getShortMenuCommaSeparated(){
+    private static String getShortMenuCommaSeparated() {
         return menu.stream().map(Dish::getName).collect(joining(", "));
     }
 }

@@ -23,13 +23,13 @@ public class ExecuteAround {
     }
 
     public static String processFileLimited() throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader("E:\\test\\test_document.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("/home/laimaosheng/StudyInAction/Java8/lambdasinaction.iml"))) {
             return br.readLine();
         }
     }
 
     public static String processFile(BufferedReaderProcessor p) throws IOException {
-        try (BufferedReader br = new BufferedReader(new FileReader("E:\\test\\test_document.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("/home/laimaosheng/StudyInAction/Java8/lambdasinaction.iml"))) {
             return p.process(br);
         }
 

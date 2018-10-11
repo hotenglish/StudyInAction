@@ -22,6 +22,10 @@ public class Lambdas {
         // [Apple{color='green', weight=80}, Apple{color='red', weight=120}, Apple{color='green', weight=155}]
         inventory.sort(c);
         System.out.println(inventory);
+
+        int portNumber=1337;
+        Runnable r1=()->System.out.println(portNumber);
+        r1.run();
     }
 
     public static List<Apple> filter(List<Apple> inventory, ApplePredicate p) {
