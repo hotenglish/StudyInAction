@@ -33,6 +33,7 @@ public class SubsetsMain {
             copyList.addAll(l);
             result.add(copyList);
         }
+        System.out.println("first->" + first.toString() + " result->" + result + " lists->" + lists);
         return result;
     }
 

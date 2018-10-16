@@ -114,8 +114,15 @@ public class LazyLists {
 
         @Override
         public MyList<T> filter(Predicate<T> p) {
-            return isEmpty() ? this : p.test(head()) ? new LazyList<>(head(),
-                    () -> tail().filter(p)) : tail().filter(p);
+      /*      return isEmpty() ? this : p.test(head()) ? new LazyList<>(head(),
+                    () -> tail().filter(p)) : tail().filter(p);*/
+              if(isEmpty()){
+                  return this;
+              }else if(p.test(head())){
+                  return new LazyList<>(head(),()->tail().filter(p));
+              }else {
+                  return tail().filter(p);
+              }
         }
     }
 

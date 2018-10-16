@@ -14,6 +14,12 @@ public class OptionalMain {
                 .orElse("Unknown");
     }
 
+    public Optional<String> getCarInsuranceName2(Optional<Person> person) {
+        return person.flatMap(Person::getCar)
+                .flatMap(Car::getInsurance)
+                .map(Insurance::getName);
+    }
+
     public static void main(String... args){
         Person person1=new Person();
         Insurance pingAn=new Insurance();
@@ -30,5 +36,8 @@ public class OptionalMain {
         OptionalMain optionalMain=new OptionalMain();
         System.out.println(optionalMain.getCarInsuranceName(of(person1)));
         System.out.println(optionalMain.getCarInsuranceName(of(person2)));
+
+        System.out.println(optionalMain.getCarInsuranceName2(of(person1)));
+        System.out.println(optionalMain.getCarInsuranceName2(of(person2)));
     }
 }

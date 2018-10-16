@@ -17,7 +17,7 @@ public class PersistentTrainJourney {
         System.out.println();
 
         // tj1 is altered but it's still not visible in the results.
-        TrainJourney linked=link(tj1,tj2);
+        TrainJourney linked = link(tj1, tj2);
         visit(linked, tj -> { System.out.print(tj.price + " - "); });
         System.out.println();
 
