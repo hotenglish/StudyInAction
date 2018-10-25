@@ -9,6 +9,6 @@ public class DamselRescuingKnight implements Knight {
     }
 
     public void embarkOnQuest() {
-
+        quest.embark();
     }
 }

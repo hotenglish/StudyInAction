@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.elson.spring4.chapter02</groupId>
-    <artifactId>stereo-autoconfig</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <groupId>com.elson.spring4.chapter03</groupId>
+    <artifactId>profiles</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <spring-version>4.0.7.RELEASE</spring-version>
         <junit-version>4.11</junit-version>
         <systemRules-version>1.5.0</systemRules-version>
+        <h2Version>1.4.182</h2Version>
     </properties>
 
     <dependencies>
@@ -20,6 +21,18 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2Version}</version>
         </dependency>
 
         <dependency>
