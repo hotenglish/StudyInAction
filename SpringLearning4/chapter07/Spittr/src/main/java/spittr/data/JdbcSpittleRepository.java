@@ -1,10 +1,13 @@
 package spittr.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import spittr.Spittle;
+import spittr.web.DuplicateSpittleException;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -37,22 +40,32 @@ public class JdbcSpittleRepository implements SpittleRepository {
 
     @Override
     public Spittle findOne(Long id) {
-        return jdbc.queryForObject("select id, message, created_at, latitude, longitude" +
-                        " from Spittle" +
-                        " where id = ?",
-                new SpittleRowMapper(), id);
+        Spittle spittle = null;
+        try {
+            spittle = jdbc.queryForObject("select id, message, created_at, latitude, longitude" +
+                            " from Spittle" +
+                            " where id = ?",
+                    new SpittleRowMapper(), id);
+        } catch (EmptyResultDataAccessException e) {
+        }
+        return spittle;
     }
 
     @Override
     public void save(Spittle spittle) {
-        jdbc.update(
-                "insert into Spittle (message, created_at, latitude, longitude)" +
-                        " values (?, ?, ?, ?)",
-                spittle.getMessage(),
-                spittle.getTime(),
-                spittle.getLatitude(),
-                spittle.getLongitude()
-        );
+        try{
+            jdbc.update(
+                    "insert into Spittle (id, message, created_at, latitude, longitude)" +
+                            " values (?, ?, ?, ?)",
+                    spittle.getId(),
+                    spittle.getMessage(),
+                    spittle.getTime(),
+                    spittle.getLatitude(),
+                    spittle.getLongitude()
+            );
+        }catch (DataAccessException ae){
+            throw new DuplicateSpittleException();
+        }
     }
 
     private static class SpittleRowMapper implements RowMapper<Spittle> {
@@ -63,8 +76,8 @@ public class JdbcSpittleRepository implements SpittleRepository {
                     rs.getLong("id"),
                     rs.getString("message"),
                     rs.getDate("created_at"),
-                    rs.getDouble("longitude"),
-                    rs.getDouble("latitude"));
+                    rs.getDouble("latitude"),
+                    rs.getDouble("longitude"));
         }
     }
 

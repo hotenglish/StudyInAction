@@ -23,9 +23,11 @@ public class SpitterWebInitializer extends AbstractAnnotationConfigDispatcherSer
         return new String[]{"/"};
     }
 
+    // For StandardServletMultipartResolver
+    /*
     @Override
     protected void customizeRegistration(ServletRegistration.Dynamic registration) {
         registration.setMultipartConfig(new MultipartConfigElement("/tmp/spittr/uploads", 2097152, 4194304, 0));
-    }
+    }*/
 
 }

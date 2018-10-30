@@ -1,10 +1,12 @@
 package spittr.data;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 import spittr.Spitter;
+import spittr.web.DuplicateSpittleException;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,13 +23,17 @@ public class JdbcSpitterRepository implements SpitterRepository {
 
     @Override
     public Spitter save(Spitter spitter) {
-        jdbc.update("insert into Spitter (username, password, first_name, last_name, email)" +
-                        " values (?, ?, ?, ?, ?)",
-                spitter.getUsername(),
-                spitter.getPassword(),
-                spitter.getFirstName(),
-                spitter.getLastName(),
-                spitter.getEmail());
+        try {
+            jdbc.update("insert into Spitter (username, password, first_name, last_name, email)" +
+                            " values (?, ?, ?, ?, ?)",
+                    spitter.getUsername(),
+                    spitter.getPassword(),
+                    spitter.getFirstName(),
+                    spitter.getLastName(),
+                    spitter.getEmail());
+        } catch (DataAccessException dae) {
+            throw new DuplicateSpittleException();
+        }
         return spitter; // TODO: Determine value for id
     }
 
