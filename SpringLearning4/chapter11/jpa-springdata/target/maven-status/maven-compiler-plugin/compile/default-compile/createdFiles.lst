@@ -1,9 +1,0 @@
-spittr/db/SpitterRepositoryImpl.class
-spittr/domain/Spitter.class
-spittr/db/SpittleRepositoryCustom.class
-spittr/domain/Spittle.class
-spittr/db/SpittleRepositoryImpl.class
-spittr/db/SpitterRepository.class
-spittr/db/SpittleRepository.class
-spittr/db/SpitterSweeper.class
-spittr/db/SpringDataJpaConfig.class

@@ -1,9 +1,0 @@
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpittleRepositoryImpl.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpitterRepository.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpitterRepositoryImpl.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/domain/Spittle.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/domain/Spitter.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpittleRepository.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpitterSweeper.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpittleRepositoryCustom.java
-/home/laimaosheng/StudyInAction/SpringLearning4/chapter11/jpa-springdata/src/main/java/spittr/db/SpringDataJpaConfig.java
