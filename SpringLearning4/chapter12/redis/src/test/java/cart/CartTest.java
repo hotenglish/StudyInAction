@@ -110,7 +110,7 @@ public class CartTest {
         List<Product> products = redis.opsForList().range("cart", 2, 12);
         for (int i = 0; i < products.size(); i++) {
             Product product = products.get(i);
-            assertEquals("SKU" + (i + 2), product.getSku());
+            assertEquals("SKU-" + (i + 2), product.getSku());
             assertEquals("PRODUCT " + (i + 2), product.getName());
             assertEquals(i + 2 + 0.99f, product.getPrice(), 0.005);
         }
@@ -138,19 +138,19 @@ public class CartTest {
             if (i % 3 == 0) {
                 redis.opsForSet().add("cart2", product);
             }
-
-            Set<Product> diff = redis.opsForSet().difference("cart1", "cart2");
-            Set<Product> union = redis.opsForSet().union("cart1", "cart2");
-            Set<Product> isect = redis.opsForSet().intersect("cart1", "cart2");
-
-            assertEquals(20, diff.size());
-            assertEquals(30, union.size());
-            assertEquals(10, isect.size());
-
-            Product random = redis.opsForSet().randomMember("cart1");
-            // not sure what to assert here...the result will be random
-            assertNotNull(random);
         }
+
+        Set<Product> diff = redis.opsForSet().difference("cart1", "cart2");
+        Set<Product> union = redis.opsForSet().union("cart1", "cart2");
+        Set<Product> isect = redis.opsForSet().intersect("cart1", "cart2");
+
+        assertEquals(20, diff.size());
+        assertEquals(30, union.size());
+        assertEquals(10, isect.size());
+
+        Product random = redis.opsForSet().randomMember("cart1");
+        // not sure what to assert here...the result will be random
+        assertNotNull(random);
     }
 
     @Test
