@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:cache="http://www.springframework.org/schema/cache"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/cache
+                           http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+    <bean class="spittr.config.DataConfig"/>
+
+    <context:component-scan base-package="spittr.db"/>
+
+    <aop:config>
+        <aop:advisor advice-ref="cacheAdvice"
+                     pointcut="execution(* spittr.db.SpittleRepository.*(..))"/>
+    </aop:config>
+
+    <cache:advice id="cacheAdvice">
+        <cache:caching cache="spittleCache">
+            <cache:cacheable method="findRecent"/>
+            <cache:cacheable method="findOne"/>
+            <cache:cacheable method="findBySpitterId"/>
+            <cache:cache-put method="save" key="#result.id"/>
+            <cache:cache-evict method="remove"/>
+        </cache:caching>
+    </cache:advice>
+
+    <bean id="cacheManager" class="org.springframework.cache.concurrent.ConcurrentMapCacheManager"/>
+
+</beans>
