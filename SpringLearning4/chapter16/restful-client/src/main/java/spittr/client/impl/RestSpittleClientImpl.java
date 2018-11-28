@@ -1,8 +1,12 @@
 package spittr.client.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import spittr.Spittle;
 import spittr.client.RestSpittleClient;
@@ -29,7 +33,7 @@ public class RestSpittleClientImpl implements RestSpittleClient {
     public Spittle fetchSpittleM(String id) {
         Map<String, String> uriVariables = new HashMap<String, String>();
         uriVariables.put("id", id);
-        return restTemplate.getForObject(url+"/{id}", Spittle.class, uriVariables);
+        return restTemplate.getForObject(url + "/{id}", Spittle.class, uriVariables);
     }
 
     @Override
@@ -83,6 +87,17 @@ public class RestSpittleClientImpl implements RestSpittleClient {
     @Override
     public String postSpittleLocation(Spittle spittle) {
         return restTemplate.postForLocation(url, spittle).toString();
+    }
+
+    @Override
+    public Spittle getSpittleByExchange(Spittle spittle) {
+        MultiValueMap<String, String> headers = new LinkedMultiValueMap<String, String>();
+        headers.add("Accept", "application/json");
+        HttpEntity<Object> requestEntity = new HttpEntity<Object>(headers);
+        ResponseEntity<Spittle> responseEntity
+                = restTemplate.exchange(url + "/{spittle}", HttpMethod.GET,
+                requestEntity, Spittle.class, spittle.getId());
+        return responseEntity.getBody();
     }
 
 }

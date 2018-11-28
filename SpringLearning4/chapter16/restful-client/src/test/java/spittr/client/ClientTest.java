@@ -36,6 +36,9 @@ public class ClientTest {
         Spittle fetchSpittle = restSpittleClient.fetchSpittle(String.valueOf(postSpittle.getId()));
         assertEquals(spittle, fetchSpittle);
 
+        fetchSpittle = restSpittleClient.getSpittleByExchange(postSpittle);
+        assertEquals(spittle, fetchSpittle);
+
         spittle.setId(postSpittle.getId());
         spittle.setMessage("you are the first good message");
         spittle.setLatitude(0.2d);
@@ -62,5 +65,6 @@ public class ClientTest {
         restSpittleClient.deleteSpittleV(postSpittle.getId());
         Spittle deletedSpittle = restSpittleClient.fetchSpittle(String.valueOf(postSpittle.getId()));
         assertNull(deletedSpittle);
+
     }
 }

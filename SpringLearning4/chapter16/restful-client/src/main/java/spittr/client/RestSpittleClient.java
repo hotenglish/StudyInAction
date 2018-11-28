@@ -26,4 +26,6 @@ public interface RestSpittleClient {
 
     String postSpittleLocation(Spittle spittle);
 
+    Spittle getSpittleByExchange(Spittle spittle);
+
 }
