@@ -43,7 +43,7 @@
 
     <bean id="encoreableDelegate" class="concert.DefaultEncoreable"/>
 
-    <bean id="criticismEngine" class="concert.CriticismEngineImpl">
+<!--    <bean id="criticismEngine" class="concert.CriticismEngineImpl">
         <property name="criticismPool">
             <list>
                 <value>Worst performance ever!</value>
@@ -55,6 +55,6 @@
 
     <bean class="concert.CriticAspect" factory-method="aspectOf">
         <property name="criticismEngine" ref="criticismEngine"/>
-    </bean>
+    </bean>-->
 
 </beans>
