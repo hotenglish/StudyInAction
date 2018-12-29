@@ -1,2 +1,2 @@
-# StudyInAction test
+# StudyInAction
 
