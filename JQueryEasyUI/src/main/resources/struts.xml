@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+    <constant name="struts.ui.theme" value="simple"/>
+    <!-- 将Struts2的核心控制器转发给 转发给 Spring中是我的实际控制器 -->
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.locale" value="zh_CN"/>
+    <constant name="struts.i18n.encoding" value="UTF-8"/>
+    <constant name="struts.devMode" value="false"/>
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 定义资源文件的位置和类型 -->
+
+    <!-- 业务 -->
+<!--
+    <package name="json" extends="json-default">
+        <action name="USERROLEFind" class="MANAGE_USER_ROLEAction" method="find">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+    </package>-->
+
+    <package name="json" extends="json-default">
+
+        <interceptors>
+            <interceptor name="LoginInterceptor" class="com.manage.platform.LoginInterceptor"/>
+            <interceptor-stack name="mystack">
+                <interceptor-ref name="LoginInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+
+        <!-- 人员角色关系 -->
+        <action name="USERROLEFind" class="MANAGE_USER_ROLEAction" method="find">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERROLESave" class="MANAGE_USER_ROLEAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERROLEFindByUUID" class="MANAGE_USER_ROLEAction" method="findByUUID">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERROLEDelete" class="MANAGE_USER_ROLEAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <!-- 权限 -->
+        <action name="PERMISSIONFind" class="MANAGE_PERMISSIONAction" method="find">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="PERMISSIONSave" class="MANAGE_PERMISSIONAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="PERMISSIONFindByUUID" class="MANAGE_PERMISSIONAction" method="findByUUID">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="PERMISSIONDelete" class="MANAGE_PERMISSIONAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <!-- 角色 -->
+        <action name="ROLEFind" class="MANAGE_ROLEAction" method="find">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="ROLESave" class="MANAGE_ROLEAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="ROLEFindByUUID" class="MANAGE_ROLEAction" method="findByUUID">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="ROLEDelete" class="MANAGE_ROLEAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <!-- 菜单 -->
+        <action name="MODELFindLgoinFirstMenu" class="MANAGE_MODELAction" method="findLgoinFirstMenu">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="MODELFindLgoinSecondMenu" class="MANAGE_MODELAction" method="findLgoinSecondMenu">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="MODELFindGrid" class="MANAGE_MODELAction" method="findgrid">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="MODELFindTree" class="MANAGE_MODELAction" method="findtree">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="MODELSave" class="MANAGE_MODELAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="MODELFindByUUID" class="MANAGE_MODELAction" method="findByUUID">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="MODELDelete" class="MANAGE_MODELAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+
+        <!-- 地市 -->
+        <action name="AREAFindGrid" class="MANAGE_AREAAction" method="findgrid">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="AREAFindTree" class="MANAGE_AREAAction" method="findtree">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="AREASave" class="MANAGE_AREAAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="AREAFindByUUID" class="MANAGE_AREAAction" method="findByUUID">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="AREADelete" class="MANAGE_AREAAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <!-- 操作员 -->
+        <action name="USERFind" class="MANAGE_USERAction" method="findgrid">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERLogin" class="MANAGE_USERAction" method="login">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERFindGrid" class="MANAGE_USERAction" method="findgrid">
+            <result type="json">
+                <param name="root">jsonarr</param>
+            </result>
+        </action>
+        <action name="USERSave" class="MANAGE_USERAction" method="save">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERChangepassword" class="MANAGE_USERAction" method="changepassword">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERFindByUUID" class="MANAGE_USERAction" method="findByUUID">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="USERDelete" class="MANAGE_USERAction" method="delete">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <!-- 测试报表 -->
+        <action name="TestStrutsFind" class="TestStrutsAction" method="find">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+        <action name="FileDownload" class="com.manage.report.action.FileDownload">
+            <result name="success" type="stream">
+                <param name="contentType">application/ms-excel</param>
+                <param name="contentDisposition">attachment;fileName="${fileName}"</param>
+                <param name="inputName">downloadFile</param>
+                <param name="bufferSize">1024</param>
+            </result>
+        </action>
+
+        <action name="SendAmount" class="SendAmountAction">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="SendCity" class="SendCityAction">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+        <action name="AddGoods" class="AddGoodsAction">
+            <result type="json">
+                <param name="root">dataMap</param>
+            </result>
+        </action>
+
+    </package>
+
+    <!-- 公共 -->
+    <package name="wow" extends="struts-default">
+        <global-results>
+            <result name="sql">/error.jsp</result>
+            <result name="invalidInput">/error.jsp</result>
+            <result name="naming">/error.jsp</result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="java.sql.SQLException" result="sql"/>
+            <exception-mapping exception="cn.codeplus.exception.InvalidInputException" result="invalidInput"/>
+            <exception-mapping exception="javax.naming.NamingException" result="naming"/>
+        </global-exception-mappings>
+    </package>
+
+</struts>

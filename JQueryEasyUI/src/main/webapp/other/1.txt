@@ -1,0 +1,1 @@
+Ajax的XmlHttpRequest语法实例。学习Ajax可以让我们在Web开发当中如鱼得水，让我们一起携手走向Web3.0时代！
