@@ -1,0 +1,34 @@
+[{
+  "id":"HQ",
+  "text":"HQ",
+  "checked":"disabled",
+  "children":[{
+    "id":"R&D",
+    "text":"R&D",
+    "checked":"disabled",
+    "children":[{
+      "id":"JAVA_R&D",
+      "text":"JAVA_R&D"
+    },{
+      "id":".net_R&D",
+      "text":".net_R&D"
+    },{
+      "id":"PHP_R&D",
+      "text":"PHP_R&D"
+    }]
+  },{
+    "id":"PO",
+    "text":"PO",
+    "state":"closed",
+    "children":[{
+      "id":"JAVA_PO",
+      "text":"JAVA_PO"
+    },{
+      "id":".NET_PO",
+      "text":".NET_PO"
+    },{
+      "id":"PHP_PO",
+      "text":"PHP_PO"
+    }]
+  }]
+}]

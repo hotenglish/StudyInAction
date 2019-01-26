@@ -9,7 +9,7 @@ public class PublicinformationUtil {
 	public static String GetProperties(String key) {
 		try {
 			Properties procite = new Properties();
-			InputStream fis = PublicinformationUtil.class.getResourceAsStream("publicinformation.properties");
+			InputStream fis = PublicinformationUtil.class.getClassLoader().getResourceAsStream("publicinformation.properties");
 			procite.load(fis);
 			if (procite.containsKey(key))
 				return procite.getProperty(key);

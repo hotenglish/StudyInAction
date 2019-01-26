@@ -1,13 +1,16 @@
 package com.manage.platform.exception;
 
-import org.aopalliance.intercept.MethodInterceptor;
+
+import java.lang.reflect.Method;
+
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.aop.AfterReturningAdvice;
 import org.springframework.aop.MethodBeforeAdvice;
 import org.springframework.aop.ThrowsAdvice;
-import org.springframework.cglib.proxy.MethodProxy;
 
-import java.lang.reflect.Method;
 
 public class ExceptionDispose implements MethodBeforeAdvice, AfterReturningAdvice, MethodInterceptor, ThrowsAdvice {
 
@@ -24,21 +27,22 @@ public class ExceptionDispose implements MethodBeforeAdvice, AfterReturningAdvic
         return null;
     }
 
-    @Override
-    public void before(Method method, Object[] objects, Object o) throws Throwable {
+
+    public void before(Method arg0, Object[] arg1, Object arg2) throws Throwable {
         // TODO Auto-generated method stub
     }
 
     // 方法後通知
-    @Override
-    public void afterReturning(Object o, Method method, Object[] objects, Object o1) throws Throwable {
+    public void afterReturning(Object arg0, Method arg1, Object[] arg2, Object arg3) throws Throwable {
         // TODO Auto-generated method stub
+
     }
 
-    @Override
-    public Object invoke(MethodInvocation methodInvocation) throws Throwable {
-        System.out.println(methodInvocation.getMethod().getName() + " invoking.....");
-        return methodInvocation.proceed();
+    public Object invoke(MethodInvocation arg0) throws Throwable {
+        // TODO Auto-generated method stub
+        System.out.println(arg0.getMethod().getName() + " invoking.....");
+
+        return arg0.proceed();
     }
 
     public void afterThrowing(Throwable throwable) {
@@ -50,10 +54,11 @@ public class ExceptionDispose implements MethodBeforeAdvice, AfterReturningAdvic
         for (Object o : args) {
             System.out.println("方法的参数：   " + o.toString());
         }
+
         System.out.println("代理对象：   " + target.getClass().getName());
         System.out.println("抛出的异常:    " + throwable.getMessage() + ">>>>>>>" + throwable.getCause());
         System.out.println("异常详细信息：↓");
+
         throwable.printStackTrace();
     }
-
 }
