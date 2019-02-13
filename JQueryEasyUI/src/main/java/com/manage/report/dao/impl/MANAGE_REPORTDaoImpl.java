@@ -7,9 +7,7 @@ import net.sf.json.JSONObject;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.ss.usermodel.HorizontalAlignment;
 
-import java.io.FileOutputStream;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
@@ -202,7 +200,8 @@ public class MANAGE_REPORTDaoImpl extends DaoImplBase implements IMANAGE_REPORTD
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return fileName;
+        String flag = uuid.toString()+".xls";
+        return flag;
     }
 
     // 导出CSV文件代码
@@ -212,9 +211,12 @@ public class MANAGE_REPORTDaoImpl extends DaoImplBase implements IMANAGE_REPORTD
          * 把数据按一定的格式写到CSV文件中
          * @param fileName CSV文件完整路径
          */
-        FileWriter fw = null;
+        BufferedWriter fw = null;
+        OutputStreamWriter outputStreamWriter=null;
         try {
-            fw = new FileWriter(fileName);
+            outputStreamWriter=new OutputStreamWriter(new FileOutputStream(fileName),"UTF-8");
+            fw = new BufferedWriter(outputStreamWriter);
+
             //输出标题头
             String title = "城市,产品,数量,接收人,接收时间,发送时间,备注\r\n";
             fw.write(title);
@@ -229,6 +231,7 @@ public class MANAGE_REPORTDaoImpl extends DaoImplBase implements IMANAGE_REPORTD
                         + list.get(i).get("SENDDATE").toString() + ","
                         + list.get(i).get("REMARK").toString() + "\r\n";
                 fw.write(content);
+                fw.flush();
             }
         } catch (Exception e) {
             e.printStackTrace();

@@ -42,7 +42,10 @@ public class FileDownload extends ActionSupport {
             // 设置编码
             this.fileName = new String(this.fileName.getBytes("GBK"), "ISO-8859-1");
             return ServletActionContext.getServletContext().getResourceAsStream("upload/发货城市统计.rar");
-        } else {
+        }else if (4 == number) {
+            InputStream inputStream=ServletActionContext.getServletContext().getResourceAsStream("temp/" + fileName);
+            return inputStream;
+        }  else {
             return null;
         }
     }

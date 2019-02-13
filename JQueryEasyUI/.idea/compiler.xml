@@ -9,7 +9,7 @@
         <module name="jQueryEasyUI" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="jQueryEasyUI" target="1.8" />
     </bytecodeTargetLevel>
   </component>

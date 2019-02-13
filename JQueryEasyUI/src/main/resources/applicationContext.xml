@@ -34,7 +34,7 @@
 
     <!-- 配置一个NamedParameterJdbcTemplate模板 使用构造函数注入器 -->
     <bean id="namedjdbcTemplate" class="org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate">
-        <constructor-arg ref="dataSource"/>
+        <constructor-arg ref="dataSource" />
     </bean>
 
     <!-- 声明使用注解式事务 -->
@@ -68,8 +68,6 @@
         <aop:pointcut id="exPoint" expression="execution(* com.manage.platform..*.*(..))" />
         <aop:advisor advice-ref="throwsAdvice" pointcut-ref="exPoint" />
     </aop:config>
-
-    <bean id="jspAction" class="com.manage.data.action.JspAction"/>
 
     <!-- 人员角色关系 -->
     <bean id="MANAGE_USER_ROLEDAO" class="com.manage.platform.dao.impl.MANAGE_USER_ROLEDaoImpl">
@@ -150,7 +148,8 @@
         <property name="testStrutsDao" ref="testStrutsDao"/>
     </bean>
     <bean id="MANAGE_REPORTDao" class="com.manage.report.dao.impl.MANAGE_REPORTDaoImpl">
-        <property name="namedjdbcTemplate" ref="namedjdbcTemplate"/>
+        <property name="jdbcTemplate" ref="jdbcTemplate"></property>
+        <property name="namedjdbcTemplate" ref="namedjdbcTemplate"></property>
     </bean>
 
     <bean id="SendAmountAction" class="com.manage.report.action.SendAmountAction">

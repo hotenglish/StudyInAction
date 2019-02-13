@@ -32,7 +32,7 @@ public class AddGoodsAction extends ActionBase implements Action {
     public String execute() throws Exception {
 
         HttpServletRequest request = ServletActionContext.getRequest();
-        HttpSession session = (request).getSession(true);
+        HttpSession session = request.getSession(true);
         MANAGE_AREAEntity usercode = (MANAGE_AREAEntity) session.getAttribute("area");
         //其他权限预留方法
         if (usercode.getNAME().equals("成都")) {
@@ -87,12 +87,13 @@ public class AddGoodsAction extends ActionBase implements Action {
             StringBuffer sbwhere = new StringBuffer();
             if (null != condition && !condition.isEmpty()) {
                 JSONObject obj = JSONObject.fromObject(condition);
-                String dateStart = obj.containsKey("dateStart") ? obj.getString("dateStart") : "";
-                String dateEnd = obj.containsKey("dateEnd") ? obj.getString("dateEnd") : "";
+                String dateStart = obj.containsKey("SENDDATE") ? obj.getString("SENDDATE") : "";
+                String dateEnd = obj.containsKey("TAKEDATE") ? obj.getString("TAKEDATE") : "";
+                String city = obj.containsKey("CITY") ? obj.getString("CITY") : "";
                 dateStart = dateStart.replace("-", "");
                 dateEnd = dateEnd.replace("-", "");
                 if ((null != dateStart && dateStart.length() > 0) && (null != dateEnd && dateEnd.length() > 0)) {
-                    sbwhere.append(" WHERE to_char(SENDDATE,'yyyymmdd')>=" + "'" + dateStart +
+                    sbwhere.append(" WHERE CITY='" + city + "' and to_char(SENDDATE,'yyyymmdd')>=" + "'" + dateStart +
                             "'" + " and to_char(TAKEDATE,'yyyymmdd')<=" + "'" + dateEnd + "'");
                 }
             }

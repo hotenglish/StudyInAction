@@ -172,7 +172,7 @@
                 <param name="root">dataMap</param>
             </result>
         </action>
-        <action name="USERChangepassword" class="MANAGE_USERAction" method="changepassword">
+        <action name="USERChangepassword" class="MANAGE_USERAction" method="changePassword">
             <result type="json">
                 <param name="root">dataMap</param>
             </result>
@@ -198,7 +198,7 @@
 
         <action name="FileDownload" class="com.manage.report.action.FileDownload" >
             <result name="success" type="stream">
-                <param name="contentType">application/ms-excel</param>
+                <param name="contentType">application/vnd.excel</param>
                 <param name="contentDisposition">attachment;fileName="${fileName}"</param>
                 <param name="inputName">downloadFile</param>
                 <param name="bufferSize">1024</param>
@@ -221,7 +221,6 @@
             <result type="json">
                 <param name="root">dataMap</param>
             </result>
-
         </action>
 
 

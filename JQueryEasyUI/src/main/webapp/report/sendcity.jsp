@@ -36,11 +36,11 @@
 
 <!-- 显示结果 -->
 <table id="datagrid"></table>
-<script type="javascript">
+<script type="text/javascript">
     $(function () {
 
         //查询按钮
-        $("#btnQuery").click(function () {
+        $('#btnQuery').click(function () {
             binddatagrid();
         });
 
@@ -52,14 +52,16 @@
         //绑定数据列表
         function binddatagrid() {
             //获取查询条件
-            var condition = $("#formdata").toJsonString();
+            var condition = $('#formdata').toJsonString();
             condition = escape(encodeURIComponent(condition));
 
+            //ajax查询数据
+            var url="SendCity.action";
             if (condition && condition.length > 0) {
                 url += "?condition=" + condition;
             }
 
-            $("#datagrid").datagrid({
+            $('#datagrid').datagrid({
                 nowrap: false,
                 fitColumns: true,
                 pageList: [20, 50, 100],
@@ -115,23 +117,23 @@
             });
 
 
-            $("#datagrid").datagrid.pagination({
+            $('#datagrid').datagrid.pagination({
                 beforeText: '第',
                 afterText: '页    共 {pages} 页',
                 displayMsg: '当前显示从{from}到{to}共{total}记录',
                 onBeforeRefresh: function () {
-                    $("#datagrid").datagrid('clearSelections');
+                    $('#datagrid').datagrid('clearSelections');
                 }
             });
         }
     });
 
-    $("#btnSaveFile").click(function () {
+    $('#btnSaveFile').click(function () {
         $.messager.progress({
             title: '请等待',
             msg: '数据处理中...'
         });
-        var condition = $("#formdata").toJsonString();
+        var condition = $('#formdata').toJsonString();
         var exportFlag = "csv";
         condition = escape(encodeURIComponent(condition));
         var url = 'SendCity.action?condition=' + condition + '&exportflag=' + exportFlag;
@@ -141,21 +143,22 @@
             url: url,
             error: function (event, request, settings) {
                 $.messager.alert("提示消息", "请求失败", "info");
+                $.messager.progress('close');
             },
             success: function (data) {
-                $.messager.progress("close");
+                $.messager.progress('close');
                 var name = data.rows;
                 window.location.href = "FileDownload.action?number=1&fileName=" + name;
             }
         });
     });
 
-    $("#btnSaveExcel").click(function () {
+    $('#btnSaveExcel').click(function () {
         $.messager.progress({
             title: '请等待',
             msg: '数据处理中...'
         });
-        var condition = $("#formdata").toJsonString();
+        var condition = $('#formdata').toJsonString();
         var exportFlag = "excel";
         condition = escape(encodeURIComponent(condition));
         var url = 'SendCity.action?condition=' + condition + '&exportflag=' + exportFlag;
@@ -167,9 +170,9 @@
                 $.messager.alert("提示消息", "请求失败", "info");
             },
             success: function (data) {
-                $.messager.progress("close");
+                $.messager.progress('close');
                 var name = data.rows;
-                window.location.href = "FileDownload.action?number=1&fileName=" + name;
+                window.location.href = "FileDownload.action?number=4&fileName=" + name;
             }
         });
     });

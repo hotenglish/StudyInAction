@@ -80,7 +80,7 @@ public class SendCityAction extends ActionBase implements Action {
                     sbwhere.append(" FULLNAME like'%" + tbUsername + "%' ");
                 }
                 if ((null != dateStart && dateStart.length() > 0) && (null != dateEnd && dateEnd.length() > 0)) {
-                    sbwhere.append("  where to_char(carddate,'yyyymmdd')>=" + "'" + dateStart + "'" + " and to_char(carddate,'yyyymmdd')<=" + "'" + dateEnd + "'");
+                    sbwhere.append(" where to_char(SENDDATE,'yyyymmdd')>=" + "'" + dateStart + "'" + " and to_char(SENDDATE,'yyyymmdd')<=" + "'" + dateEnd + "'");
                 }
             }
 
@@ -261,7 +261,7 @@ public class SendCityAction extends ActionBase implements Action {
                 }
 
                 if ((null != dateStart && dateStart.length() > 0) && (null != dateEnd && dateEnd.length() > 0)) {
-                    sbwhere.append(" AND   to_char(carddate,'yyyymmdd')>=" + "'" + dateStart + "'" + " and to_char(carddate,'yyyymmdd')<=" + "'" + dateEnd + "'");
+                    sbwhere.append(" where to_char(SENDDATE,'yyyymmdd')>=" + "'" + dateStart + "'" + " and to_char(SENDDATE,'yyyymmdd')<=" + "'" + dateEnd + "'");
                 }
             }
 
@@ -297,7 +297,7 @@ public class SendCityAction extends ActionBase implements Action {
             if (exportflag != null && exportflag.equals("excel")) {
                 String srcDir = request.getRealPath("/");
                 UUID uuid = UUID.randomUUID();
-                String path = srcDir + "/temp/" + uuid + ".xls";
+                String path = srcDir + "temp/" + uuid + ".xls";
                 String flag = imanage_reportdao.exportExcel(list, path, uuid);
                 dataMap.put("rows", flag);
                 logger.info(dataMap.toString());
@@ -308,7 +308,7 @@ public class SendCityAction extends ActionBase implements Action {
             if (exportflag != null && exportflag.equals("csv")) {
                 String srcDir = request.getRealPath("/");
                 UUID uuid = UUID.randomUUID();
-                String path = srcDir + "/temp/" + uuid + ".csv";
+                String path = srcDir + "temp/" + uuid + ".csv";
                 String flag = imanage_reportdao.exportCsv(list, path, uuid);
                 dataMap.put("rows", flag);
                 logger.info(dataMap.toString());

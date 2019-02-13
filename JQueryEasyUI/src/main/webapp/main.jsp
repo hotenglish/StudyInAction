@@ -48,7 +48,7 @@
     <div region="center">
         <div class="easyui-tabs" fit="true" id="tt">
             <div  title="首页" data-options="closable:true">
-                <iframe width="100%" height="100%" id="frame" name='iframe' frameborder='0' scrolling="auto" src="welcome.jsp"/>
+                <iframe width="100%" height="100%" id="iframe" name='iframe' frameborder='0' scrolling="auto" src="welcome.jsp"/>
             </div>
         </div>
     </div>

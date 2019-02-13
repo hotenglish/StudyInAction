@@ -21,6 +21,6 @@
 
     <!-- 指定映射文件或者映射类 -->
     <mappers>
-        <mapper resource="com/manage/data/dao/impl/CustomMapper.xml"/>
+        <mapper resource="CustomMapper.xml"/>
     </mappers>
 </configuration>

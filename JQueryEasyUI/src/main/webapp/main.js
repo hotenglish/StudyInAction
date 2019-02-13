@@ -51,18 +51,18 @@ function view(url) {
 /*
 *添加选项卡方法
 */
-function addTab(title,url){
+function addTab(title, url) {
     //先判断是否存在标题为title的选项卡
-    var tab=$("#tt").tabs("exists",title);
-    if(tab){
+    var tab = $('#tt').tabs('exists', title);
+    if (tab) {
         //若存在则直接打开
-        $("#tt").tabs("select",title);
-    }else{
+        $('#tt').tabs("select", title);
+    } else {
         //否则创建
-        $("#tt").tabs("add",{
-            title:title,
-            content:"<iframe width='100%' height='100%'  id='iframe' frameborder='0' scrolling='auto'  src='"+url+"'></iframe>",
-            closable:true
+        $('#tt').tabs('add', {
+            title: title,
+            content: "<iframe width='100%' height='100%'  id='iframe' frameborder='0' scrolling='auto'  src='" + url + "'></iframe>",
+            closable: true
         });
     }
 }
@@ -80,7 +80,7 @@ function selectAccordion(title) {
 function showTime() {
     var date = new Date();
     $("#timeInfo").html();
-    $("#timeInfo").html('&nbsp;&nbsp;&nbsp;&nbsp;' + date.toLocaleString() + "&nbsp;&nbsp;");
+    $("#timeInfo").html('&nbsp;&nbsp;&nbsp;&nbsp;' + date.toLocaleString() + '&nbsp;&nbsp;');
 }
 
 setInterval(showTime, 1000);
@@ -90,6 +90,6 @@ setInterval(showTime, 1000);
 */
 $(function () {
     $(window).resize(function () {
-        $('#cc').layout('resize');
+        $('#dd').layout('resize');
     });
 });
