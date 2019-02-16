@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="jQueryEasyUI:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="jQueryEasyUI.war">
-      <element id="artifact" artifact-name="jQueryEasyUI:war exploded" />
-    </root>
-  </artifact>
-</component>
