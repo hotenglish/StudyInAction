@@ -116,3 +116,34 @@ INSERT INTO S_GRADE1(S#,C_NUM,AVG_GRADE) VALUES('S9','C3',80);
 CREATE VIEW S_MALE AS SELECT S#,SNAME,AGE FROM S WHERE SEX='M';
 INSERT INTO S_MALE VALUES('S28','WU',18);
 COMMIT;
+
+--3.2
+SELECT SNAME FROM S WHERE SEX='F' AND
+EXISTS (SELECT * FROM SC,C WHERE SC.S#=S.S# AND SC.C#=C.C# AND C.TEACHER='LIU');
+
+SELECT SNAME FROM S WHERE SEX='F' AND
+EXISTS (SELECT 1 FROM C WHERE C.TEACHER='LIU' AND EXISTS (SELECT 1 FROM SC WHERE sc.c#=C.C# AND SC.S#=S.S#));
+
+SELECT SNAME FROM S WHERE SEX='F' AND 
+EXISTS (SELECT * FROM SC WHERE S.S#=SC.S# AND EXISTS (SELECT * FROM C WHERE SC.C#=C.C# AND TEACHER='LIU'));
+
+--4)
+select c# from c where exists 
+(select * from s where sname='WANG' and not exists (select * from sc where sc.s#=s.s# and sc.c#=c.c#));
+
+--6)
+select c#,cname from c where not exists (select * from s where not exists (select * from sc where sc.s#=s.s# and sc.c#=c.c#));
+
+--7)
+select s# from s  where not exists 
+(select * from c where c.teacher='LIU' and not exists (select * from sc Y where Y.s#=s.s# and Y.c#=C.c#));
+
+select distinct s# from sc X where not exists 
+(select * from c where c.teacher='LIU' and not exists (select * from sc Y where Y.s#=X.s# and Y.c#=C.c#));
+
+
+--3.7
+select s#,sname,sex from s where not exists 
+(select distinct c# from sc x where not exists (select * from sc y where s.s#=Y.s# and x.c#=y.c# and y.grade>=80));
+
+select s#,sname,sex from s where not exists (SELECT * FROM SC WHERE SC.S#=S.S# AND sc.grade<80);
