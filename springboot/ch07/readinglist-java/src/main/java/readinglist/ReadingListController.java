@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.actuate.metrics.CounterService;
 import org.springframework.boot.actuate.metrics.GaugeService;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
@@ -17,11 +16,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Controller
 @RequestMapping("/")
-@ConfigurationProperties("amazon")
 public class ReadingListController {
 
     private ReadingListRepository readingListRepository;
-    private AmazonProperties amazonConfig;
+    private AmazonProperties amazonProperties;
 
     private CounterService counterService;
 
@@ -32,11 +30,11 @@ public class ReadingListController {
 
     @Autowired
     public ReadingListController(ReadingListRepository readingListRepository,
-                                 AmazonProperties amazonConfig,
+                                 AmazonProperties amazonProperties,
                                  @Qualifier("counterService") CounterService counterService,
                                  @Qualifier("gaugeService") GaugeService gaugeService) {
         this.readingListRepository = readingListRepository;
-        this.amazonConfig = amazonConfig;
+        this.amazonProperties = amazonProperties;
         this.counterService = counterService;
         this.gaugeService = gaugeService;
     }
@@ -65,7 +63,7 @@ public class ReadingListController {
         if (readingList != null) {
             model.addAttribute("books", readingList);
             model.addAttribute("reader", reader);
-            model.addAttribute("amazonID", amazonConfig.getAssociateId());
+            model.addAttribute("amazonID", amazonProperties.getAssociateId());
         }
         return "readingList";
     }

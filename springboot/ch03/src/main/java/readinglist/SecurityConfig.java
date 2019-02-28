@@ -23,9 +23,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private ReaderRepository readerRepository;
 
+    @Autowired
+    InitializingApplicationData initializingApplicationDatal;
+
+
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        InitializingApplicationData.toInitializingApplicationData(readerRepository);
+        initializingApplicationDatal.insertData();
         http.csrf().disable();
         http
             .authorizeRequests()

@@ -5,12 +5,6 @@ error:
 amazon:
   associate_id: habuma-20
 
-spring:
-  datasource:
-    data: classpath:db/data.sql
-  main:
-    show-banner: false
-
 logging:
   config: classpath:logging-config.xml
   level:
@@ -22,6 +16,13 @@ endpoints:
     uniqueNames: true
   beans:
     sensitive: true
+  shutdown:
+    enabled: true
+
+info:
+  contact:
+    email: hotenglish@163.com
+    phone: 13138654828
 
 management:
   context-path: /mgmt

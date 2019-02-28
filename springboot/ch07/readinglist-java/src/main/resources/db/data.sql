@@ -1,2 +1,2 @@
-INSERT INTO READER (USERNAME, PASSWORD, FULLNAME) VALUES ('walt', 'marceline', 'Walt Disney');
-INSERT INTO BOOK (USERNAME, ISBN, TITLE, AUTHOR, DESCRIPTION) VALUES ('walt','GB210004','spring_in_action','walt','technology');
+INSERT INTO reader(username, password, fullname) VALUES('craig', 'password', 'Craig Walls');
+INSERT INTO book(username, isbn, title, author, description) VALUES('craig','GB210004','spring_in_action','walt','technology');

@@ -12,6 +12,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import java.util.List;
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -45,7 +47,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 public UserDetails loadUserByUsername(String username)
                         throws UsernameNotFoundException {
                     UserDetails user = readerRepository.findOne(username);
+                    List<Reader> users = readerRepository.findAll();
                     logger.info("username:" + username + " userDetials:" + user);
+                    logger.info("users:" + users.size());
                     if (user != null) {
                         return user;
                     }
