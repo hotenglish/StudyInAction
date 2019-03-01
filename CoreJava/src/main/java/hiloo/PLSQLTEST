@@ -1,0 +1,70 @@
+declare v_num number;
+begin
+select c1 into v_num from sq  where c1=3;
+DBMS_OUTPUT.PUT_LINE('v_char2='||v_num);
+end;
+/
+
+
+declare i number:=1;
+begin
+loop
+if i>5 then
+exit;
+else
+begin
+DBMS_OUTPUT.PUT_LINE(i);
+i:=i+1;
+end;
+end if;
+end loop;
+end;
+
+
+
+declare cursor s_empsql IS
+     select dept_id,first_name,last_name from s_emp where dept_id=42;
+v_temprecord s_empsql%rowtype;
+begin
+open s_empsql;
+loop
+fetch s_empsql into v_temprecord;
+DBMS_OUTPUT.PUT_LINE(v_temprecord.dept_id||v_temprecord.first_name||v_temprecord.last_name);
+exit when s_empsql%notfound;
+end loop;
+close s_empsql;
+end;
+
+declare 
+e_toomany EXCEPTION;
+c number;
+begin
+select count(*) into c from s_emp where dept_id=42;
+if c>2 then
+raise e_toomany;
+end if;
+EXCEPTION
+WHEN e_toomany then
+DBMS_OUTPUT.PUT_LINE('too many people.');
+end;
+
+
+create or replace procedure printx(c1 in boolean)
+IS
+begin
+if c1=true then
+DBMS_OUTPUT.PUT_LINE('true');
+else
+DBMS_OUTPUT.PUT_LINE('false');
+end if;
+end printx;
+
+create or replace function queryx(dep in number)
+return number
+is
+result number;
+begin
+select avg(salary) into result from s_emp where dept_id=dep;
+return result;
+end queryx;
+   

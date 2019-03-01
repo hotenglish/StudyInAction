@@ -1,0 +1,22 @@
+练习1：
+通过运行时参数输入一个类名，列出这个类所有的方法。
+
+
+
+练习2：
+构建一个程序运行框架，根据一个配置文件来动态的生成对象并调用方法
+
+配置文件示例如下：
+
+className=Student
+Name=liucy
+method=study
+parameter=CoreJava
+
+根据这个配置文件，程序会运行的代码为（不用反射的情况）
+Student s=new Student();
+s.setName("lili");
+s.study("CoreJava");
+
+练习要求：应用反射完成对象生成以及方法的调用，为简单起见，类的所有属性以及方法的参数都是字符串。所有方法只有一个参数
+

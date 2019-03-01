@@ -1,0 +1,152 @@
+一、
+UDP socket 
+这种信息传输方式相当于传真，信息打包，在接受端准备纸。
+特点：
+1) 基于UDP无连接协议 
+2) 不保证消息的可靠传输 
+3) 它们由Java技术中的DatagramSocket和DatagramPacket类支持
+DatagramSocket（邮递员）：对应数据报的Socket概念，不需要创建两个socket，不可使用输入输出流。
+DatagramPacket（信件）：数据包，是UDP下进行传输数据的单位，数据存放在字节数组中，其中包括了目标地址和端口以及传送的信息（所以不用建立点对点的连接）。
+DatagramPacket的分类：
+用于接收：DatagramPacket(byte[] buf,int length)
+		   DatagramPacket(byte[] buf,int offset,int length)
+用于发送：DatagramPacket(byte[] buf,int length, InetAddress address,int port )
+		   DatagramPacket(byte[] buf,int offset,int length,InetAddress address,int port)
+注：InetAddress类网址用于封装IP地址
+没有构造方法，通过
+InetAddress.getByAddress(byte[] addr):InetAddress
+InetAddress.getByName(String host):InetAddress
+等。
+
+建立UDP 发送端
+创建一个UDP的发送方的程序的步骤：
+    1). 创建一个DatagramPacket，其中包含发送的数据和接收方的IP地址和端口
+号。
+    2). 创建一个DatagramSocket，其中包含了发送方的IP地址和端口号。
+    3). 发送数据
+    4). 关闭DatagramSocket
+byte[] buf = new byte[1024];
+DatagramSocket datagramSocket = new DatagramSocket(13);// set port
+DatagramPackage intputPackage = new DatagramPackage(buf,buf.length);
+datagramSocket.receive(inputPackage);
+DatagramPackage outputPackage = new DatagramPackage(buf,buf.length,
+inetAddress,port);
+datagramSocket.send(outputPackage);
+没建立流所以不用断开。
+
+建立UDP 接受端
+创建一个UDP的接收方的程序的步骤：
+    1). 创建一个DatagramPacket，用于存储发送方发送的数据及发送方的IP地址和端口号。
+    2). 创建一个DatagramSocket，其中指定了接收方的IP地址和端口号。
+    3). 接收数据
+    4). 关闭DatagramSocket
+byte[] buf = new byte[1024];
+DatagramSocket datagramSocket = new DatagramSocket();
+DatagramPackage outputPackage=new DatagramPackage(
+Buf,buf.length,serverAddress,serverPort);
+DatagramPackage inputPackage=new DatagramPackage(buf,buf.length);
+datagramSocket.receive(inputPackage);
+
+
+二、URL
+
+三、JDK5.0
+for-each循环，静态导入，可变长参数，自动封箱/自动解封
+泛型，枚举，注释，并发
+
+四、for-each循环
+Iterable可迭代的
+for(Object obj:set){ //Object o 表示每个元素的类型 ，set 表示要遍历的数组或集合的名字
+      System.out.println(obj);
+}
+
+Iterator iter = set.iterator();
+for(Object obj;iter.hasNext();){
+        obj = iter.next();
+        //..........
+}
+
+
+五、静态导入
+
+使用类中静态方法或属性时不用写类名 
+import static java.lang.System.*;
+import static java.lang.Math.*;
+   out.println(round(PI));
+
+六、自动封箱、自动解封Autoboxing/Unboxing
+   实现了简单类型和封装类型的相互转化时，实现了自动转化。  
+    byte b     -128~127
+    Byte b     在以上数量的基础上多一个null
+
+   简单类型和封装类型之间的差别
+   封装类可以等于null  ，避免数字得0时的二义性。
+   Integer i=null；
+   int ii=i；  //会抛出NullException 异常。相当于 int ii=i.intValue();
+   Integer i=1； //相当于Integer i=new Integer(1);
+   i++;    // i = new Integer(i.intValue()+1);
+
+   在基本数据类型和封装类之间的自动转换
+   5.0之前
+   Integer i=new Integer（4）；
+   int  ii= i.intValue();
+
+   5.0之后
+   Integer i=4；
+   Long l=4.3;
+   
+   public void m(int i){......}
+   public void m(Integer i){......}
+   以上两个函数也叫方法重载
+   自动封箱解箱只在必要的时候才进行。能不封箱找到匹配的就不封箱。
+
+   对象池
+   不变模式
+
+
+七、可变长参数
+ 1、优先原则：当有可变长的参数方法和不可变长的参数方法都匹配时，优先调用有不可变长参数的方法
+ 2、在一个方法中只能有一个可变长参数，可变长参数必须作为一个方法的最后一个参数
+  3、int... is 相当于一个 int[] is，编译器会把给定的参数封装到一个数组中，再传给方法，而且，必须放在最后一个参数的位置
+
+
+
+
+八、枚举
+概念：
+1.5之前的版本，两种方式实现枚举
+不安全的方式：this.add(button,BorderLayout.center)
+	          this.add(button,"hello");
+安全的方式： public static final Color RED = new Color();
+	       public static final Color Green = new Color();
+
+
+ 在5.0之前使用模式做出一个面向对象的枚举
+    final class Season{
+	public static final Season SPRING=new Season();
+	public static final Season WINTER=new Season();
+	public static final Season SUMMER=new Season();
+        	public static final Season AUTUMN=new Season();
+        	private Season(){}
+    } 
+    完全等价于
+    enum Season2{
+	SPRING(..),//枚举值
+	SUMMER(..),
+	AUTUMN(..),
+	WINTER(..)
+    }      
+  
+    枚举本质上也是一个类，Enum是枚举的父类。
+    枚举中可以定义抽象方法，可以在枚举值的值中实现抽象方法。
+    枚举值就是枚举的对象，枚举默认是final，枚举值可以隐含的匿名内部类来实现枚举中定义抽象方法。
+    枚举不能继承类（本身有父类），但可以实现接口，枚举不能有子类也就是final的，枚举的构造方法是private（私有的）。
+
+
+
+
+
+
+
+
+

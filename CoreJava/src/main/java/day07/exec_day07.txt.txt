@@ -1,0 +1,14 @@
+第一题：
+栈是一种常用的数据结构，它采用“先进后出”的方式来存储数据，要求写一个类来模拟栈这种数据类型，要求底层采用ArrayList来存储数据，并且让这一类型实现Iterable接口，使之成为可循环遍历的类。
+
+队列是一种常用的数据结构，它采用“先进先出”的方式来存储数据，要求写一个类来模拟队列这种数据类型，要求底层采用LinkedList来存储数据，并且让这一类型实现Iterable接口，使之成为可循环遍历的类。
+
+第二题：
+1，定义一个Course类，代表课程；定义一个Student类，代表学生，在Student类中包含一个属性是一个HashSet的对象，用来存储该学生所选的所有课程，并提供相应的addCourse(Course c)方法和removeCourse(String name)方法，表示添加一门选课和删除一门选课（删除选课时通过传课程名参数来确定）。
+2，定义一个类SchoolClass代表班级，该类中包含一个属性是一个HashSet的对象，用来存储该班级中所有的Student,并提供相应的addStudent(Student s)方法和removeStudent(String name)方法，表示添加一名学生和删除一名学生（删除学生时通过传学生姓名参数来确定）。
+3，在主方法中生成一个SchoolClass对象，添加若干个学生，并且为每个学生添加若干门课程，最后要统计出每门课程的选课人数。
+
+第三题：
+1，定义一个Teacher类，包含3个属性：name,age,salary。并且定义若两个对象的name和age都相同，则认为这两个对象相等。
+要求该Teacher类对象能比较大小，按照age的大小来排序，如果age相同的则按salary大小来排。
+最后，生成一些Teacher对象，加入到HashSet和TreeSet中验证以上程序的正确性。

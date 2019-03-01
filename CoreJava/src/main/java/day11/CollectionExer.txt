@@ -1,0 +1,25 @@
+Exam类   考试类
+属性： 若干学生  一张考卷
+提示：学生采用HashSet存放
+
+Paper类   考卷类  
+属性：若干试题
+提示：试题采用HashMap存放，key为String，表示题号，value为试题对象
+
+Student类     学生类
+属性：姓名   一张答卷   一张考卷
+
+Question类    试题类
+属性：题号 题目描述    若干选项    正确答案
+提示：若干选项用ArrayList
+
+AnswerSheet类    答卷类
+属性：每道题的答案    
+提示：答卷中每道题的答案用HashMap存放，key为String，表示题号，value为学生的答案
+
+
+问题：为Exam类添加一个方法，用来为所有学生判卷，并打印成绩排名（名次、姓名）
+
+
+
+

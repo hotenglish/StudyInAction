@@ -1,0 +1,790 @@
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                        NOT NULL NUMBER
+ C2                                        NOT NULL NUMBER
+ C4                                                 VARCHAR2(10)
+
+SQL> clear screen
+SQL> BEGIN
+  2    EXECUTE IMMEDIATE 'DROP TABLE test';
+  3  END;
+  4  /
+
+PL/SQL procedure successfully completed.
+
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> set serveroutput on
+SQL> clear screen
+SQL> desc dbms_output
+PROCEDURE DISABLE
+PROCEDURE ENABLE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ BUFFER_SIZE                    NUMBER(38)              IN     DEFAULT
+PROCEDURE GET_LINE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ LINE                           VARCHAR2                OUT   
+ STATUS                         NUMBER(38)              OUT   
+PROCEDURE GET_LINES
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ LINES                          TABLE OF VARCHAR2(255)  OUT   
+ NUMLINES                       NUMBER(38)              IN/OUT
+PROCEDURE NEW_LINE
+PROCEDURE PUT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ A                              VARCHAR2                IN    
+PROCEDURE PUT_LINE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ A                              VARCHAR2                IN    
+
+SQL> clear screen
+SQL> BEGIN
+  2    proc_name;
+  3  END;
+  4  /
+  proc_name;
+  *
+ERROR at line 2:
+ORA-06550: line 2, column 3:
+PLS-00201: identifier 'PROC_NAME' must be declared
+ORA-06550: line 2, column 3:
+PL/SQL: Statement ignored 
+
+
+SQL> exec DBMS_OUTPUT.PUT_LINE('a');
+a                                                                               
+
+PL/SQL procedure successfully completed.
+
+SQL> clear screen
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> clear screen
+SQL> CREATE OR REPLACE PROCEDURE proc1
+  2  IS
+  3  /
+
+Warning: Procedure created with compilation errors.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3  BEGIN
+  4     EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5     INSERT INTO test VALUES (p_c1,p_c2);
+  6     COMMIT;
+  7* END;
+SQL> /
+
+Warning: Procedure created with compilation errors.
+
+SQL> clear screen
+SQL> l
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3  BEGIN
+  4     EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5     INSERT INTO test VALUES (p_c1,p_c2);
+  6     COMMIT;
+  7* END;
+SQL> /
+
+Warning: Procedure created with compilation errors.
+
+SQL> show error
+Errors for PROCEDURE PROC1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+4/9      PLS-00103: Encountered the symbol "IMMDIATE" when expecting one        
+         of the following:                                                      
+         := . ( @ % ; immediate                                                 
+         The symbol ":= was inserted before "IMMDIATE" to continue.             
+                                                                                
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3  BEGIN
+  4     EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5     INSERT INTO test VALUES (p_c1,p_c2);
+  6     COMMIT;
+  7* END;
+SQL> /
+
+Warning: Procedure created with compilation errors.
+
+SQL> show error
+Errors for PROCEDURE PROC1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/4      PL/SQL: SQL Statement ignored                                          
+5/16     PL/SQL: ORA-00942: table or view does not exist                        
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3  BEGIN
+  4     EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5     --INSERT INTO test VALUES (p_c1,p_c2);
+  6     --COMMIT;
+  7* END;
+SQL> /
+
+Procedure created.
+
+SQL> clear screen
+SQL> exec proc1
+BEGIN proc1; END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00306: wrong number or types of arguments in call to 'PROC1'
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored 
+
+
+SQL> exec proc1(1,2);
+BEGIN proc1(1,2); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00905: object SD0706.PROC1 is invalid
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored 
+
+
+SQL> clear screen
+SQL> select object_name,object_type,status
+  2  from user_objects
+  3  where object_name = 'PROC1';
+
+OBJECT_NAME                                                                     
+--------------------------------------------------------------------------------
+OBJECT_TYPE         STATUS                                                      
+------------------- -------                                                     
+PROC1                                                                           
+PROCEDURE           VALID                                                       
+                                                                                
+
+SQL> clear screen
+SQL> desc user_source
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ NAME                                               VARCHAR2(30)
+ TYPE                                               VARCHAR2(12)
+ LINE                                               NUMBER
+ TEXT                                               VARCHAR2(4000)
+
+SQL> select text from user_source
+  2  where name = 'PROC1';
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)                                       
+IS                                                                              
+BEGIN                                                                           
+	EXECUTE IMMEDIATE 'CREATE TABLE test2(c1 NUMBER,c2 NUMBER)';                   
+	INSERT INTO test VALUES(p_c1,p_c2);                                            
+	COMMIT;                                                                        
+END;                                                                            
+
+7 rows selected.
+
+SQL> CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2    2  IS
+  3    3  BEGIN
+  4    4     EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5    5     --INSERT INTO test VALUES (p_c1,p_c2);
+  6    6     --COMMIT;
+  7    7* END;
+  8  
+  9  /
+
+Warning: Procedure created with compilation errors.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2      IS
+  3      BEGIN
+  4         EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NUMBER)';
+  5         --INSERT INTO test VALUES (p_c1,p_c2);
+  6         --COMMIT;
+  7*    END;
+  8  /
+
+Procedure created.
+
+SQL> exec proc1(1,2)
+BEGIN proc1(1,2); END;
+
+*
+ERROR at line 1:
+ORA-01031: insufficient privileges
+ORA-06512: at "SD0706.PROC1", line 4
+ORA-06512: at line 1 
+
+
+SQL> create table test(c1 number);
+
+Table created.
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+SQL> show user
+USER is "SD0706"
+SQL> exec proc1
+BEGIN proc1; END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00905: object SD0706.PROC1 is invalid
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored 
+
+
+SQL> exec proc1(1,2)
+BEGIN proc1(1,2); END;
+
+      *
+ERROR at line 1:
+ORA-06550: line 1, column 7:
+PLS-00905: object SD0706.PROC1 is invalid
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored 
+
+
+SQL> REATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+SP2-0734: unknown command beginning "REATE OR R..." - rest of line ignored.
+SQL>     IS
+SP2-0042: unknown command "IS" - rest of line ignored.
+SQL>     BEGIN
+  2         EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NU
+  3  MBER)';
+  4         --INSERT INTO test VALUES (p_c1,p_c2);
+  5         --COMMIT;
+  6     END;
+  7  /
+    BEGIN
+*
+ERROR at line 1:
+ORA-00922: missing or invalid option
+ORA-06512: at line 2 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2      BEGIN
+  3         EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NU
+  4  MBER)';
+  5         --INSERT INTO test VALUES (p_c1,p_c2);
+  6         --COMMIT;
+  7*    END;
+SQL> /
+
+Warning: Procedure created with compilation errors.
+
+SQL> show error
+Errors for PROCEDURE PROC1:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+2/5      PLS-00103: Encountered the symbol "BEGIN" when expecting one of        
+         the following:                                                         
+         ; is with authid as cluster order using external                       
+         deterministic parallel_enable pipelined                                
+         The symbol "is" was substituted for "BEGIN" to continue.               
+                                                                                
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3      BEGIN
+  4         EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NU
+  5  MBER)';
+  6         --INSERT INTO test VALUES (p_c1,p_c2);
+  7         --COMMIT;
+  8*    END;
+SQL> /
+
+Procedure created.
+
+SQL> exec proc1(1,2)
+BEGIN proc1(1,2); END;
+
+*
+ERROR at line 1:
+ORA-00911: invalid character
+ORA-06512: at "SD0706.PROC1", line 4
+ORA-06512: at line 1 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  CREATE OR REPLACE PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)
+  2  IS
+  3      BEGIN
+  4         EXECUTE IMMEDIATE 'CREATE TABLE test(c1 NUMBER,c2 NU
+  5  MBER)';
+  6         --INSERT INTO test VALUES (p_c1,p_c2);
+  7         --COMMIT;
+  8*    END;
+SQL> /
+
+Procedure created.
+
+SQL> exec proc1(1,2);
+
+PL/SQL procedure successfully completed.
+
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> clear screen
+SQL> select text from user_source
+  2  where name like 'PROC%';
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+procedure proc(p1 number,p2 number) is                                          
+begin                                                                           
+	execute immediate 'create table lsy2',insert into lsy2 values(p1,p2);          
+end;                                                                            
+PROCEDURE proc1 (p_c1 NUMBER,p_c2 NUMBER)                                       
+IS                                                                              
+BEGIN                                                                           
+        EXECUTE IMMEDIATE 'CREATE TABLE test2222(c1 NUMBER,c2 NUMBER)';         
+        EXECUTE IMMEDIATE 'INSERT INTO test2222 VALUES(p_c1,p_c2)';             
+        EXECUTE IMMEDIATE 'COMMIT';                                             
+END;                                                                            
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+PROCEDURE proc2(p_c1 number,p_c2 number)                                        
+IS                                                                              
+BEGIN                                                                           
+	EXECUTE IMMEDIATE ' CREATE TABLE hansung1(c1 NUMBER,c2 NUMNBER)';              
+	--INSERT INTO hansung1 VALUES(p_c1,p_c2);                                      
+	--COMMIT;                                                                      
+END;                                                                            
+procedure proc22( n boolean)                                                    
+is                                                                              
+begin                                                                           
+ if n then                                                                      
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+ dbms_output.put_line('true');                                                  
+else                                                                            
+ dbms_output.put_line('false');                                                 
+end if;                                                                         
+end;                                                                            
+PROCEDURE proce1 (p_a1 NUMBER,p_a2 NUMBER)                                      
+IS                                                                              
+ BEGIN                                                                          
+  EXECUTE IMMEDIATE 'CREATE TABLE Lilingtest (a1 NUMBER,a2 NUMBER)';            
+END;                                                                            
+PROCEDURE procl_zhong (                                                         
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+p_c1 number,                                                                    
+p_c2 number)                                                                    
+IS                                                                              
+BEGIN                                                                           
+EXECUTE IMMEDIATE 'CREATE TABLE mytable(c NUMBER)';                             
+END;                                                                            
+procedure procw(p_c1 number,p_c2 number)                                        
+is                                                                              
+begin                                                                           
+insert into test values(p_c1,p_c2);                                             
+commit;                                                                         
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+end;                                                                            
+PROCEDURE proc_bool (v_bool BOOLEAN)                                            
+IS                                                                              
+BEGIN                                                                           
+	IF v_bool=TRUE THEN                                                            
+      DBMS_OUTPUT.PUT_LINE('TRUE');                                             
+   ELSE                                                                         
+	   DBMS_OUTPUT.PUT_LINE('FALSE');                                              
+   END IF;                                                                      
+END;                                                                            
+procedure proc_jxh(p_tf boolean)                                                
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+is                                                                              
+begin                                                                           
+ if p_tf=true then                                                              
+    DBMS_OUTPUT.PUT_LINE(true);                                                 
+ elsif p_tf=false then                                                          
+     DBMS_OUTPUT.PUT_LINE(false);                                               
+ else                                                                           
+     DBMS_OUTPUT.PUT_LINE(null);                                                
+  end if;                                                                       
+end;                                                                            
+procedure proc_me(flag boolean)                                                 
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+is                                                                              
+begin                                                                           
+	if flag then                                                                   
+		dbms_output.out_line(flag);                                                   
+	else                                                                           
+		dbmz_output.out_line(flag);                                                   
+	end if;                                                                        
+end;                                                                            
+procedure proc_name                                                             
+PROCEDURE proc_sr(                                                              
+	 user testchenxs%rowtype)                                                      
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+IS                                                                              
+BEGIN                                                                           
+	EXECUTE IMMEDIATE 'SELECT * INTO user FROM testchenxs';                        
+END;                                                                            
+
+81 rows selected.
+
+SQL> desc proc2
+PROCEDURE proc2
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ P_C1                           NUMBER                  IN    
+ P_C2                           NUMBER                  IN    
+
+SQL> desc proc1
+ERROR:
+ORA-24372: invalid object for describe 
+
+
+SQL> rename proc2 to proc1;
+rename proc2 to proc1
+       *
+ERROR at line 1:
+ORA-03001: unimplemented feature 
+
+
+SQL> clear screen
+SQL> desc dbms_unused_space
+ERROR:
+ORA-04043: object dbms_unused_space does not exist 
+
+
+SQL> desc dbms_rowid
+FUNCTION ROWID_BLOCK_NUMBER RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+ TS_TYPE_IN                     VARCHAR2                IN     DEFAULT
+FUNCTION ROWID_CREATE RETURNS ROWID
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROWID_TYPE                     NUMBER                  IN    
+ OBJECT_NUMBER                  NUMBER                  IN    
+ RELATIVE_FNO                   NUMBER                  IN    
+ BLOCK_NUMBER                   NUMBER                  IN    
+ ROW_NUMBER                     NUMBER                  IN    
+PROCEDURE ROWID_INFO
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROWID_IN                       ROWID                   IN    
+ ROWID_TYPE                     NUMBER                  OUT   
+ OBJECT_NUMBER                  NUMBER                  OUT   
+ RELATIVE_FNO                   NUMBER                  OUT   
+ BLOCK_NUMBER                   NUMBER                  OUT   
+ ROW_NUMBER                     NUMBER                  OUT   
+ TS_TYPE_IN                     VARCHAR2                IN     DEFAULT
+FUNCTION ROWID_OBJECT RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+FUNCTION ROWID_RELATIVE_FNO RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+ TS_TYPE_IN                     VARCHAR2                IN     DEFAULT
+FUNCTION ROWID_ROW_NUMBER RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+FUNCTION ROWID_TO_ABSOLUTE_FNO RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+ SCHEMA_NAME                    VARCHAR2                IN    
+ OBJECT_NAME                    VARCHAR2                IN    
+FUNCTION ROWID_TO_EXTENDED RETURNS ROWID
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ OLD_ROWID                      ROWID                   IN    
+ SCHEMA_NAME                    VARCHAR2                IN    
+ OBJECT_NAME                    VARCHAR2                IN    
+ CONVERSION_TYPE                NUMBER(38)              IN    
+FUNCTION ROWID_TO_RESTRICTED RETURNS ROWID
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ OLD_ROWID                      ROWID                   IN    
+ CONVERSION_TYPE                NUMBER(38)              IN    
+FUNCTION ROWID_TYPE RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROW_ID                         ROWID                   IN    
+FUNCTION ROWID_VERIFY RETURNS NUMBER
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ ROWID_IN                       ROWID                   IN    
+ SCHEMA_NAME                    VARCHAR2                IN    
+ OBJECT_NAME                    VARCHAR2                IN    
+ CONVERSION_TYPE                NUMBER(38)              IN    
+
+SQL> clear screen
+SQL> select distinct object_type
+  2  from user_objects;
+
+OBJECT_TYPE                                                                     
+-------------------                                                             
+FUNCTION                                                                        
+INDEX                                                                           
+PROCEDURE                                                                       
+SEQUENCE                                                                        
+TABLE                                                                           
+VIEW                                                                            
+
+6 rows selected.
+
+SQL> clear screen
+SQL> select text from user_source
+  2  where name like 'AVG%';
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+FUNCTION avgsal (i s_emp.dept_id%TYPE)                                          
+Return NUMBER                                                                   
+IS                                                                              
+  ii s_emp.salary%TYPE;                                                         
+ BEGIN                                                                          
+   SELECT AVG(salary) into ii from s_emp where dept_id = i;                     
+   RETURN ii;                                                                   
+END avgsal;                                                                     
+FUNCTION avgsalary( de_id number)                                               
+RETURN NUMBER                                                                   
+IS v_sa NUMBER;                                                                 
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+BEGIN                                                                           
+		SELECT AVG(salary) INTO v_sa FROM s_emp  WHERE dept_id=de_id;                 
+RETURN v_sa;                                                                    
+END;                                                                            
+FUNCTION avg_dept(                                                              
+              dept_val OUT NUMBER,                                              
+            (  avg_val OUT NUMBER)                                              
+RETURN NUMBER                                                                   
+IS                                                                              
+BEGIN                                                                           
+SELECT avg(salary) INTO avg_val FROM S_EMP WHERE S_DEPT=dept_val;               
+
+TEXT                                                                            
+--------------------------------------------------------------------------------
+RETURN avg_val;                                                                 
+END;                                                                            
+function avg_sala(dept_id number) return number is                              
+salary number;                                                                  
+begin                                                                           
+select avg(salary) into salary from s_emp where dept_id=dept_id;                
+return salary;                                                                  
+end;                                                                            
+
+30 rows selected.
+
+SQL> sleect avg_sala(42) from dual;
+SP2-0734: unknown command beginning "sleect avg..." - rest of line ignored.
+SQL> select avg_sala(42) from dual;
+
+AVG_SALA(42)                                                                    
+------------                                                                    
+     1255.08                                                                    
+
+SQL> clear screen
+SQL> select sysdate from dual;
+
+SYSDATE                                                                         
+------------                                                                    
+25-OCT-07                                                                       
+
+SQL> declare
+  2   v_avgsal number;
+  3  begin
+  4    v_avgsal := avg_sala(42);
+  5  end;
+  6  /
+
+PL/SQL procedure successfully completed.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> clear screen
+SQL> insert into asd0706.test values (1,1);
+insert into asd0706.test values (1,1)
+                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> show user
+USER is "SD0706"
+SQL> connect asd0706/asd0706
+Connected.
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> create table test (c1 number,c2 number);
+
+Table created.
+
+SQL> connect sd0706/sd0706
+Connected.
+SQL> insert into asd0706.test values (1,1);
+insert into asd0706.test values (1,1)
+                    *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> clear screen
+SQL> connect asd0706/asd0706
+Connected.
+SQL> CREATE OR REPLACE PROCEDURE hiloo_prc
+  2  IS
+  3  BEGIN
+  4     INSERT INTO test VALUES (1,1);
+  5     COMMIT;
+  6  END;
+  7  /
+
+Procedure created.
+
+SQL> grant execute on hiloo_prc to sd0706;
+
+Grant succeeded.
+
+SQL> connect sd0706/sd0706
+Connected.
+SQL> select * from asd0706.test;
+select * from asd0706.test
+                      *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> connect asd0706/asd0706
+Connected.
+SQL> create table test(c1 number,c2 number);
+create table test(c1 number,c2 number)
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 NUMBER
+ C2                                                 NUMBER
+
+SQL> select * from test;
+
+no rows selected
+
+SQL> connect sd0706/sd0706
+Connected.
+SQL> exec asd0706.hiloo_prc
+BEGIN asd0706.hiloo_prc; END;
+
+              *
+ERROR at line 1:
+ORA-06550: line 1, column 15:
+PLS-00905: object ASD0706.HILOO_PRC is invalid
+ORA-06550: line 1, column 7:
+PL/SQL: Statement ignored 
+
+
+SQL> clear screen
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> show user
+USER is "SD0706"
+SQL> create table test(c1 number);
+
+Table created.
+
+SQL> insert into test values (1);
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select * from test;
+
+        C1                                                                      
+----------                                                                      
+         1                                                                      
+
+SQL> clear screen
+SQL> select c1 from test for update;
+
+        C1                                                                      
+----------                                                                      
+         1                                                                      
+
+SQL> exit

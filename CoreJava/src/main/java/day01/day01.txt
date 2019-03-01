@@ -1,0 +1,140 @@
+һ��Java����
+�򵥵ģ��������ա�����ռ�
+��ƽ̨�ģ�
+C++Դ��-----------Ŀ���루�����룩-----------------EXE�ļ�
+JavaԴ��-----------�ֽ��루bytecode��---------------JVM����
+��ȫ�ģ����κͷ�װ��ָ��
+
+����Java����
+SDK������������߰���java SDK��
+JDK�� 
+JRE��
+JVM��JAVA �����
+
+�����Java��������
+
+192.168.0.23
+openlab/open123
+
+/export/home/openlab/wudi/jdk.1.5.0_09.tar.gz
+/export/home/openlab/wudi/.bash_profile
+
+�Ҽ���ѹ
+source .bash_profile
+
+JAVA_HOME=/opt/JDK1.5.0_06
+CLASSPATH=.
+PATH=:$JAVA_HOME/bin
+export JAVA_HOME
+export CLASSPATH
+
+WINDOWSϵͳ
+JAVA_HOME=C:\Program Files\Java\jdk1.5.0_02
+CLASSPATH=.
+PATH=;%JAVA_HOME%/bin
+
+�ġ����ṹ
+Ŀ�ģ���ֹ������ͻ
+�ؼ��֣�package 
+�����淶��ȫ��Сд��com.tarena.xxx.xxx
+
+
+�塢��һ��JAVA����
+д����Ļ����淶��ÿһ���ԷֺŽ�����ÿ�������Դ��������������м����������Ŀո�
+D:\0706>javac MyFirstJava.java
+D:\0706>java MyFirstJava
+name: luowei
+age: 22
+address: guangzhou
+
+D:\0706>javac -d d: MyFirstJava.java
+
+D:\0706>javac -d . MyFirstJava.java
+
+Exception in thread "main" java.lang.NoClassDefFoundError: MyFirstJava
+
+D:\0706>java com.tarena.sd0706.corejava.day01.MyFirstJava
+name: luowei
+age: 22
+address: guangzhou
+
+����Java����
+javac
+java
+jar��
+	D:\0706>jar cvf my.jar *.java
+	�����嵥(manifest)
+	���ӣ�MyFirstJava.java(����= 278) (д��= 167)(ѹ���� 39%)
+javadoc��D:\0706>javadoc MyFirstJava.java
+	Loading source file MyFirstJava.java...
+	Constructing Javadoc information...
+API��
+
+�ߡ�ע��
+����ע�ͣ�
+����ע�ͣ�
+�ĵ�ע�ͣ�
+
+�ˡ�import��Java�л����İ�����
+java.lang.String
+
+import java.util.HashSet;
+import java.util.Map;
+import java.util.HashMap;
+
+import java.util.*;
+
+
+�š���ʶ�������淶
+��ĸ�����֡��»��ߺ���Ԫ������ɣ����ֲ��ܿ�ͷ����ʾ����Сд���У��ϸ����ִ�Сд�����ܸ��ؼ��ֳ�ͻ��û�г������ơ��������ĸ��������Ӣ����ĸ��Ҳ�����Ǻ��֣�Ʃ���������߷�������
+
+ʮ��Java�ؼ���
+
+ʮһ��������������
+java����UNICODE����
+boolean
+char = 'a';
+byte 
+short
+int
+long l = 100;���͵��Զ�����
+float
+double�����ƴ洢�����Ǿ�ȷ�洢
+
+byte b = (byte)0x2FFF;  -1ǿ��ת��
+0
+int a = 5��Դ��00000101------����11111010------------����11111011
+11111111-----------11111110-------------00000001
+a<<2;00000101------------00010100
+a>>2;00000101
+
+ʮ����Java��������
+��Ϊ���ࣺ
+�����������ͣ�
+�������ͣ�
+
+
+ʮ����Java�����
+
+ʮ�ģ����̿���
+if���
+switch��
+ѭ�����
+while
+do while
+for 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

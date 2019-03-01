@@ -1,0 +1,8 @@
+001:UNIX:4
+002:Oracle:4
+003:core Java:25
+004:JDBC:7
+005:HTML&JavaScript:2
+006:servlet:10
+007:JSP:15
+008:EJB:20

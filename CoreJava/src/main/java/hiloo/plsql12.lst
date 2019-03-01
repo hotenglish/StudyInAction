@@ -1,0 +1,471 @@
+DECLARE
+  CURSOR emp_cur IS
+DECLARE
+  CURSOR emp_cur(p_dept_id NUMBER) IS
+    SELECT e.first_name,d.name FROM s_emp e,s_dept d
+    WHERE e.dept_id = d.id
+    AND e.dept_id = p_dept_id;
+  v_emp emp_cur%ROWTYPE;
+BEGIN
+  OPEN emp_cur(42);
+  LOOP
+     FETCH emp_cur INTO v_emp;
+     EXIT WHEN emp_cur%NOTFOUND;
+     DBMS_OUTPUT.PUT_LINE(v_emp.first_name||' '||v_emp.name
+);
+  END LOOP;
+  CLOSE emp_cur;
+/*  FOR i_cur IN emp_cur LOOP
+     DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+  END lOOP; */
+END;
+/
+"afiedt.buf" 19 ÐÐ£¬467 ×Ö·û 
+
+  1  DECLARE
+  2    CURSOR emp_cur(p_dept_id NUMBER) IS
+  3      SELECT e.first_name,d.name FROM s_emp e,s_dept d
+  4      WHERE e.dept_id = d.id
+  5      AND e.dept_id = p_dept_id;
+  6    v_emp emp_cur%ROWTYPE;
+  7  BEGIN
+  8    OPEN emp_cur(42);
+  9    LOOP
+ 10       FETCH emp_cur INTO v_emp;
+ 11       EXIT WHEN emp_cur%NOTFOUND;
+ 12       DBMS_OUTPUT.PUT_LINE(v_emp.first_name||' '||v_emp.name);
+ 13    END LOOP;
+ 14    CLOSE emp_cur;
+ 15  /*  FOR i_cur IN emp_cur LOOP
+ 16       DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+ 17    END lOOP; */
+ 18* END;
+SQL> /
+Roberta Operations
+Akira Operations
+Vikram Operations
+
+PL/SQL procedure successfully completed.
+
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 19 ÐÐ£¬467 ×Ö·û 
+DECLARE
+  CURSOR emp_cur(p_dept_id NUMBER) IS
+    SELECT e.first_name,d.name FROM s_emp e,s_dept d
+    WHERE e.dept_id = d.id
+    AND e.dept_id = p_dept_id;
+  v_emp emp_cur%ROWTYPE;
+BEGIN
+  OPEN emp_cur(42);
+  LOOP
+     FETCH emp_cur INTO v_emp;
+     EXIT WHEN emp_cur%NOTFOUND;
+     DBMS_OUTPUT.PUT_LINE(v_emp.first_name||' '||v_emp.name
+);
+  END LOOP;
+  CLOSE emp_cur;
+/*  FOR i_cur IN emp_cur LOOP
+     DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+  END lOOP; */
+"afiedt.buf" 19 ÐÐ£¬467 ×Ö·û 
+
+  1  DECLARE
+  2    CURSOR emp_cur(p_dept_id NUMBER) IS
+  3      SELECT e.first_name,d.name FROM s_emp e,s_dept d
+  4      WHERE e.dept_id = d.id
+  5      AND e.dept_id = p_dept_id;
+  6    v_emp emp_cur%ROWTYPE;
+  7  BEGIN
+  8    OPEN emp_cur(42);
+  9    LOOP
+ 10       FETCH emp_cur INTO v_emp;
+ 11       EXIT WHEN emp_cur%NOTFOUND;
+ 12       DBMS_OUTPUT.PUT_LINE(v_emp.first_name||' '||v_emp.name);
+ 13    END LOOP;
+ 14    CLOSE emp_cur;
+ 15  /*  FOR i_cur IN emp_cur LOOP
+ 16       DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+ 17    END lOOP; */
+ 18* END;
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 19 ÐÐ£¬467 ×Ö·û 
+DECLARE
+  CURSOR emp_cur(p_dept_id NUMBER) IS
+    SELECT e.first_name,d.name FROM s_emp e,s_dept d
+    WHERE e.dept_id = d.id
+    AND e.dept_id = p_dept_id;
+  TYPE emp_tab_type IS TABLE OF emp_cur%ROWTYPE INDEX BY BI
+NARY_INTEGER;
+  v_emp_tab emp_tab_type;
+  v_emp emp_cur%ROWTYPE;
+  v_index BINARY_INTEGER :=1;
+BEGIN
+  OPEN emp_cur(42);
+  LOOP
+     FETCH emp_cur INTO v_emp_tab(v_index);
+     EXIT WHEN emp_cur%NOTFOUND;
+     DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).first_name);
+     DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).name);
+     v_index := v_index + 1;
+  END LOOP;
+  CLOSE emp_cur;
+/*  FOR i_cur IN emp_cur LOOP
+     DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+  END lOOP; */
+END;
+"afiedt.buf" 24 ÐÐ£¬686 ×Ö·û 
+
+  1  DECLARE
+  2    CURSOR emp_cur(p_dept_id NUMBER) IS
+  3      SELECT e.first_name,d.name FROM s_emp e,s_dept d
+  4      WHERE e.dept_id = d.id
+  5      AND e.dept_id = p_dept_id;
+  6    TYPE emp_tab_type IS TABLE OF emp_cur%ROWTYPE INDEX BY BINARY_INTEGER;
+  7    v_emp_tab emp_tab_type;
+  8    v_emp emp_cur%ROWTYPE;
+  9    v_index BINARY_INTEGER :=1;
+ 10  BEGIN
+ 11    OPEN emp_cur(42);
+ 12    LOOP
+ 13       FETCH emp_cur INTO v_emp_tab(v_index);
+ 14       EXIT WHEN emp_cur%NOTFOUND;
+ 15       DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).first_name);
+ 16       DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).name);
+ 17       v_index := v_index + 1;
+ 18    END LOOP;
+ 19    CLOSE emp_cur;
+ 20  /*  FOR i_cur IN emp_cur LOOP
+ 21       DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+ 22    END lOOP; */
+ 23* END;
+SQL> /
+Roberta
+Operations
+Akira
+Operations
+Vikram
+Operations
+
+PL/SQL procedure successfully completed.
+
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 24 ÐÐ£¬686 ×Ö·û 
+DECLARE
+  CURSOR emp_cur(p_dept_id NUMBER) IS
+    SELECT e.first_name,d.name FROM s_emp e,s_dept d
+    WHERE e.dept_id = d.id
+    AND e.dept_id = p_dept_id;
+  TYPE emp_tab_type IS TABLE OF emp_cur%ROWTYPE INDEX BY BI
+NARY_INTEGER;
+  v_emp_tab emp_tab_type;
+  v_emp emp_cur%ROWTYPE;
+  v_index BINARY_INTEGER :=1;
+BEGIN
+  OPEN emp_cur(42);
+  LOOP
+     FETCH emp_cur INTO v_emp_tab(v_index);
+     EXIT WHEN emp_cur%NOTFOUND;
+     DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).first_name);
+     DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).name);
+     v_index := v_index + 1;
+:q!
+
+  1  DECLARE
+  2    CURSOR emp_cur(p_dept_id NUMBER) IS
+  3      SELECT e.first_name,d.name FROM s_emp e,s_dept d
+  4      WHERE e.dept_id = d.id
+  5      AND e.dept_id = p_dept_id;
+  6    TYPE emp_tab_type IS TABLE OF emp_cur%ROWTYPE INDEX BY BINARY_INTEGER;
+  7    v_emp_tab emp_tab_type;
+  8    v_emp emp_cur%ROWTYPE;
+  9    v_index BINARY_INTEGER :=1;
+ 10  BEGIN
+ 11    OPEN emp_cur(42);
+ 12    LOOP
+ 13       FETCH emp_cur INTO v_emp_tab(v_index);
+ 14       EXIT WHEN emp_cur%NOTFOUND;
+ 15       DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).first_name);
+ 16       DBMS_OUTPUT.PUT_LINE(v_emp_tab(v_index).name);
+ 17       v_index := v_index + 1;
+ 18    END LOOP;
+ 19    CLOSE emp_cur;
+ 20  /*  FOR i_cur IN emp_cur LOOP
+ 21       DBMS_OUTPUT.PUT_LINE(i_cur.first_name);
+ 22    END lOOP; */
+ 23* END;
+SQL> clear screen
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 NUMBER
+ C2                                                 NUMBER
+
+SQL> select * from test;
+
+        C1         C2
+---------- ----------
+         3          1
+
+SQL> insert into test values (2,2);
+
+1 row created.
+
+SQL> /
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> clear screen
+
+SQL> select * fromt test;
+select * fromt test
+         *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected
+
+
+SQL> select * from test;
+
+        C1         C2
+---------- ----------
+         3          1
+         2          2
+         2          2
+
+SQL> DECLARE 
+  2   v_num test.c1%TYPE;
+  3  BEGIn
+  4   SELECT c1 INTO v_num FROM test
+  5   WHERE c1 = 5;
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found
+ORA-06512: at line 4
+
+
+SQL> clear screen
+
+SQL> l
+  1  DECLARE
+  2   v_num test.c1%TYPE;
+  3  BEGIn
+  4   SELECT c1 INTO v_num FROM test
+  5   WHERE c1 = 5;
+  6* END;
+SQL> /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found
+ORA-06512: at line 4
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+"afiedt.buf" 7 ÐÐ£¬89 ×Ö·û 
+DECLARE
+ v_num test.c1%TYPE;
+BEGIn
+ SELECT c1 INTO v_num FROM test
+ WHERE c1 = 5;
+EXCEPTION 
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('no data found');
+END;
+/
+~
+~
+~
+~
+~
+~
+~
+~
+"afiedt.buf" 10 ÐÐ£¬169 ×Ö·û 
+
+  1  DECLARE
+  2   v_num test.c1%TYPE;
+  3  BEGIn
+  4   SELECT c1 INTO v_num FROM test
+  5   WHERE c1 = 5;
+  6  EXCEPTION
+  7    WHEN NO_DATA_FOUND THEN
+  8      DBMS_OUTPUT.PUT_LINE('no data found');
+  9* END;
+SQL> /
+no data found
+
+PL/SQL procedure successfully completed.
+
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 10 ÐÐ£¬169 ×Ö·û 
+DECLARE
+ v_num test.c1%TYPE;
+BEGIn
+ SELECT c1 INTO v_num FROM test
+ WHERE c1 = 2;
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('no data found');
+END;
+/
+~
+~
+~
+~
+~
+~
+~
+~
+"afiedt.buf" 10 ÐÐ£¬169 ×Ö·û 
+
+  1  DECLARE
+  2   v_num test.c1%TYPE;
+  3  BEGIn
+  4   SELECT c1 INTO v_num FROM test
+  5   WHERE c1 = 2;
+  6  EXCEPTION
+  7    WHEN NO_DATA_FOUND THEN
+  8      DBMS_OUTPUT.PUT_LINE('no data found');
+  9* END;
+SQL> /
+DECLARE
+*
+ERROR at line 1:
+ORA-01422: exact fetch returns more than requested number of rows
+ORA-06512: at line 4
+
+
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 10 ÐÐ£¬169 ×Ö·û 
+DECLARE
+ v_num test.c1%TYPE;
+BEGIn
+ SELECT c1 INTO v_num FROM test
+ WHERE c1 = 2;
+EXCEPTION
+  WHEN NO_DATA_FOUND THEN
+    DBMS_OUTPUT.PUT_LINE('no data found');
+  WHEN TOO_MANY_ROWS THEN 
+    DBMS_OUTPUT.PUT_LINE('too many rows');
+END;
+/
+~
+~
+~
+~
+~
+~
+"afiedt.buf" 12 ÐÐ£¬239 ×Ö·û 
+
+  1  DECLARE
+  2   v_num test.c1%TYPE;
+  3  BEGIn
+  4   SELECT c1 INTO v_num FROM test
+  5   WHERE c1 = 2;
+  6  EXCEPTION
+  7    WHEN NO_DATA_FOUND THEN
+  8      DBMS_OUTPUT.PUT_LINE('no data found');
+  9    WHEN TOO_MANY_ROWS THEN
+ 10      DBMS_OUTPUT.PUT_LINE('too many rows');
+ 11* END;
+SQL> /
+too many rows
+
+PL/SQL procedure successfully completed.
+
+SQL> clear screen
+
+SQL> DECLARE
+  2    e1 EXCEPTION;
+  3    v_num BINARY_INTEGER;
+  4  BEGIN
+  5    SELECT COUNT(*) INTO v_num 
+  6    WHERE dept_id = 42;
+  7    IF v_num > 2 THEN
+  8      RAISE e1;
+  9    END IF;
+ 10  EXCEPTION
+ 11    WHEN e1 THEN 
+ 12      DBMS_OUTPUT.PUT_LINE('>2');
+ 13  END;
+ 14  /
+  WHERE dept_id = 42;
+  *
+ERROR at line 6:
+ORA-06550: line 6, column 3:
+PL/SQL: ORA-00923: FROM keyword not found where expected
+ORA-06550: line 5, column 3:
+PL/SQL: SQL Statement ignored
+
+
+SQL> edit
+Wrote file afiedt.buf
+"afiedt.buf" 14 ÐÐ£¬213 ×Ö·û 
+DECLARE
+  e1 EXCEPTION;
+  v_num BINARY_INTEGER;
+BEGIN
+  SELECT COUNT(*) INTO v_num FROM s_emp
+  WHERE dept_id = 42;
+  IF v_num > 2 THEN
+    RAISE e1;
+  END IF;
+EXCEPTION
+  WHEN e1 THEN
+    DBMS_OUTPUT.PUT_LINE('>2');
+END;
+/
+~
+~
+~
+~
+"afiedt.buf" 14 ÐÐ£¬224 ×Ö·û 
+
+  1  DECLARE
+  2    e1 EXCEPTION;
+  3    v_num BINARY_INTEGER;
+  4  BEGIN
+  5    SELECT COUNT(*) INTO v_num FROM s_emp
+  6    WHERE dept_id = 42;
+  7    IF v_num > 2 THEN
+  8      RAISE e1;
+  9    END IF;
+ 10  EXCEPTION
+ 11    WHEN e1 THEN
+ 12      DBMS_OUTPUT.PUT_LINE('>2');
+ 13* END;
+SQL> /
+>2
+
+PL/SQL procedure successfully completed.
+
+SQL> clear screen
+
+SQL> DECLARE
+  2    v_num number;
+  3  BEGIN
+  4    SELECT count(c1) INTO v_num FROM test WHERE c1=1100;
+  5    IF v_num = 0 THEN
+  6      RAISE_APPLICATION_ERROR(-20001,'=0');
+  7    END IF;
+  8  END;
+  9  /
+DECLARE
+*
+ERROR at line 1:
+ORA-20001: =0
+ORA-06512: at line 6

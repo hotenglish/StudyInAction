@@ -1,0 +1,57 @@
+一、回顾
+万物皆对象-------抽象出类型---------数据类型（类：对象的模版）
+抽象出什么东西？静态特征、动态行为（属性和方法）
+属性和方法的定义
+构造方法（重载）
+
+封装（属性尽可能私有，方法能公开的公开，能私有的私有）
+公共组件javaBean 
+
+继承：里氏代换原则 extends
+继承关系三大定理：
+this
+super
+覆盖（重写）
+
+
+二、多态
+多态：一个对象多种形态
+重载（编译时多态）
+一般情况下，多态指把子类对象当作父类对象来看 
+Student s = new Student();当成是自己的对象
+Person p = new Student();子类对象当成父类对象来看了
+两大定理：
+1、我们可以把子类对象当成父类对象来看，但是，一旦你这么做了，就只能去调用父类中原有定义的属性和方法。
+2、我们把子类对象当成父类对象来看时，如果子类覆盖了父类的方法，那么调用的是子类覆盖后的方法。
+3、我们把子类对象当成父类对象来看时，如果子类定义了与父类同名属性，那么调用的是父类中的属性。
+
+Person p = new Student();
+右边new Student()，客观存在
+左边Person p，主观认为
+
+Person，Student，LittleStudent
+Person p = new LittleStudent(); 自动类型提升。
+
+把任何父类对象强转成子类对象，编译器都不会报错
+强制转换的前提：要转换的本身就是这个对象
+Animal a = new Bird();
+Bird b = (Bird)a;可以的
+Fish f = (Fish)a;错误
+
+a instanceof B： a是不是B类的实例
+Student s = new Student(); if(s instanceof Student){}
+Animal a = new Bird(); if(a instanceof Bird){}
+
+三、对象的比较
+==
+equals
+
+
+
+
+
+
+
+
+
+

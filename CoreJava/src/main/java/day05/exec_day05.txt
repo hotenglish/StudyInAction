@@ -1,0 +1,6 @@
+1,定义一个接口Assaultable(可攻击的)，该接口有一个抽象方法attack()。
+2,定义一个接口Mobile（可移动的）,该接口有一个抽象方法move()。
+3,定义一个抽象类Weapon,实现Assaultable接口，但并没有给出方法的具体实现。
+4,定义3个类：Tank,Flighter,MissileTurret都继承自Weapon,分别给出attack()方法的不同实现。Tank和Flighter类还实现了Mobile接口，也给出了move()方法的不同实现。
+5,写一个类Army,代表一支军队，这个类有一个属性Weapon数组w（用来存储该军队所拥有的所有武器）；该类还提供一个构造方法，在构造方法里通过传一个int类型的参数来限定该类所能拥有的最大武器数量,并用这一大小来初始化数组w。该类还提供一个方法addWeapon(Weapon wa),表示把参数wa所代表的武器加入到数组w中。在这个类中还定义两个方法attackAll()让w数组中的所有武器攻击；以及moveAll()让w数组中的所有可移动的武器移动。
+6，写一个主方法去测试以上程序。

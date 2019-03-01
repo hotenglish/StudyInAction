@@ -1,0 +1,2357 @@
+SQL> select first_name from s_emp
+  2  where to_char(start_date,'MON') = 'MAR';
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Carmen                                                                          
+LaDoris                                                                         
+Audry                                                                           
+George                                                                          
+Bela                                                                            
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,start_date from s_emp
+  2* where to_char(start_date,'MONTH') = 'MARCH'
+SQL> /
+
+no rows selected
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select first_name,start_date,to_char(start_date,'MONTH') from s_emp
+SQL> /
+
+FIRST_NAME                START_DAT TO_CHAR(START                               
+------------------------- --------- -------------                               
+Carmen                    03-MAR-90 MARCH                                       
+LaDoris                   08-MAR-90 MARCH                                       
+Midori                    17-JUN-91 JUNE                                        
+Mark                      07-APR-90 APRIL                                       
+Audry                     04-MAR-90 MARCH                                       
+Molly                     18-JAN-91 JANUARY                                     
+Roberta                   14-MAY-90 MAY                                         
+Ben                       07-APR-90 APRIL                                       
+Antoinette                09-FEB-92 FEBRUARY                                    
+Marta                     27-FEB-91 FEBRUARY                                    
+Colin                     14-MAY-90 MAY                                         
+
+FIRST_NAME                START_DAT TO_CHAR(START                               
+------------------------- --------- -------------                               
+Henry                     18-JAN-92 JANUARY                                     
+Yasmin                    18-FEB-91 FEBRUARY                                    
+Mai                       22-JAN-92 JANUARY                                     
+Andre                     09-OCT-91 OCTOBER                                     
+Elena                     07-FEB-92 FEBRUARY                                    
+George                    08-MAR-90 MARCH                                       
+Akira                     09-FEB-91 FEBRUARY                                    
+Vikram                    06-AUG-91 AUGUST                                      
+Chad                      21-JUL-91 JULY                                        
+Alexander                 26-MAY-91 MAY                                         
+Eddie                     30-NOV-90 NOVEMBER                                    
+
+FIRST_NAME                START_DAT TO_CHAR(START                               
+------------------------- --------- -------------                               
+Radha                     17-OCT-90 OCTOBER                                     
+Bela                      17-MAR-91 MARCH                                       
+Sylvie                    09-MAY-91 MAY                                         
+
+25 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select first_name,start_date,length(to_char(start_date,'MONTH')) from s_emp
+SQL> /
+
+FIRST_NAME                START_DAT LENGTH(TO_CHAR(START_DATE,'MONTH'))         
+------------------------- --------- -----------------------------------         
+Carmen                    03-MAR-90                                   9         
+LaDoris                   08-MAR-90                                   9         
+Midori                    17-JUN-91                                   9         
+Mark                      07-APR-90                                   9         
+Audry                     04-MAR-90                                   9         
+Molly                     18-JAN-91                                   9         
+Roberta                   14-MAY-90                                   9         
+Ben                       07-APR-90                                   9         
+Antoinette                09-FEB-92                                   9         
+Marta                     27-FEB-91                                   9         
+Colin                     14-MAY-90                                   9         
+
+FIRST_NAME                START_DAT LENGTH(TO_CHAR(START_DATE,'MONTH'))         
+------------------------- --------- -----------------------------------         
+Henry                     18-JAN-92                                   9         
+Yasmin                    18-FEB-91                                   9         
+Mai                       22-JAN-92                                   9         
+Andre                     09-OCT-91                                   9         
+Elena                     07-FEB-92                                   9         
+George                    08-MAR-90                                   9         
+Akira                     09-FEB-91                                   9         
+Vikram                    06-AUG-91                                   9         
+Chad                      21-JUL-91                                   9         
+Alexander                 26-MAY-91                                   9         
+Eddie                     30-NOV-90                                   9         
+
+FIRST_NAME                START_DAT LENGTH(TO_CHAR(START_DATE,'MONTH'))         
+------------------------- --------- -----------------------------------         
+Radha                     17-OCT-90                                   9         
+Bela                      17-MAR-91                                   9         
+Sylvie                    09-MAY-91                                   9         
+
+25 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,start_date,
+  2  rtrim(to_char(start_date,'MONTH'))) from s_emp
+  3* where rtrim(to_char(start_date,'MONTH')))='MARCH'
+SQL> /
+rtrim(to_char(start_date,'MONTH'))) from s_emp
+                                  *
+ERROR at line 2:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,start_date,
+  2  rtrim(to_char(start_date,'MONTH')) from s_emp
+  3* where rtrim(to_char(start_date,'MONTH')))='MARCH'
+SQL> /
+where rtrim(to_char(start_date,'MONTH')))='MARCH'
+                                        *
+ERROR at line 3:
+ORA-00920: invalid relational operator 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,start_date,
+  2  rtrim(to_char(start_date,'MONTH')) from s_emp
+  3* where rtrim(to_char(start_date,'MONTH'))='MARCH'
+SQL> /
+
+FIRST_NAME                START_DAT RTRIM(TO_CHAR                               
+------------------------- --------- -------------                               
+Carmen                    03-MAR-90 MARCH                                       
+LaDoris                   08-MAR-90 MARCH                                       
+Audry                     04-MAR-90 MARCH                                       
+George                    08-MAR-90 MARCH                                       
+Bela                      17-MAR-91 MARCH                                       
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,start_date,
+  2  to_char(start_date,'MONTH')||'d' from s_emp
+  3* where rtrim(to_char(start_date,'MONTH'))='MARCH'
+SQL> /
+
+FIRST_NAME                START_DAT TO_CHAR(START_                              
+------------------------- --------- --------------                              
+Carmen                    03-MAR-90 MARCH    d                                  
+LaDoris                   08-MAR-90 MARCH    d                                  
+Audry                     04-MAR-90 MARCH    d                                  
+George                    08-MAR-90 MARCH    d                                  
+Bela                      17-MAR-91 MARCH    d                                  
+
+SQL> clear screen
+SQL> select start_date  from s_emp
+  2  where to_char(start_date,'MONTH')='MARCH';
+
+no rows selected
+
+SQL> select to_char(start_date,'MONTH') from s_emp;
+
+TO_CHAR(START                                                                   
+-------------                                                                   
+MARCH                                                                           
+MARCH                                                                           
+JUNE                                                                            
+APRIL                                                                           
+MARCH                                                                           
+JANUARY                                                                         
+MAY                                                                             
+APRIL                                                                           
+FEBRUARY                                                                        
+FEBRUARY                                                                        
+MAY                                                                             
+
+TO_CHAR(START                                                                   
+-------------                                                                   
+JANUARY                                                                         
+FEBRUARY                                                                        
+JANUARY                                                                         
+OCTOBER                                                                         
+FEBRUARY                                                                        
+MARCH                                                                           
+FEBRUARY                                                                        
+AUGUST                                                                          
+JULY                                                                            
+MAY                                                                             
+NOVEMBER                                                                        
+
+TO_CHAR(START                                                                   
+-------------                                                                   
+OCTOBER                                                                         
+MARCH                                                                           
+MAY                                                                             
+
+25 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select length(to_char(start_date,'MONTH')) from s_emp
+SQL> /
+
+LENGTH(TO_CHAR(START_DATE,'MONTH'))                                             
+-----------------------------------                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+
+LENGTH(TO_CHAR(START_DATE,'MONTH'))                                             
+-----------------------------------                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+
+LENGTH(TO_CHAR(START_DATE,'MONTH'))                                             
+-----------------------------------                                             
+                                  9                                             
+                                  9                                             
+                                  9                                             
+
+25 rows selected.
+
+SQL> 
+SQL> clear screen
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select to_char(start_date,'MONTH')||'d' from s_emp
+SQL> /
+
+TO_CHAR(START_                                                                  
+--------------                                                                  
+MARCH    d                                                                      
+MARCH    d                                                                      
+JUNE     d                                                                      
+APRIL    d                                                                      
+MARCH    d                                                                      
+JANUARY  d                                                                      
+MAY      d                                                                      
+APRIL    d                                                                      
+FEBRUARY d                                                                      
+FEBRUARY d                                                                      
+MAY      d                                                                      
+
+TO_CHAR(START_                                                                  
+--------------                                                                  
+JANUARY  d                                                                      
+FEBRUARY d                                                                      
+JANUARY  d                                                                      
+OCTOBER  d                                                                      
+FEBRUARY d                                                                      
+MARCH    d                                                                      
+FEBRUARY d                                                                      
+AUGUST   d                                                                      
+JULY     d                                                                      
+MAY      d                                                                      
+NOVEMBER d                                                                      
+
+TO_CHAR(START_                                                                  
+--------------                                                                  
+OCTOBER  d                                                                      
+MARCH    d                                                                      
+MAY      d                                                                      
+
+25 rows selected.
+
+SQL> clear screen
+SQL> !
+
+SQL> clear
+SQL> clear screen
+SQL> select first_name,name from s_emp,s_dept;
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Carmen                    Administration                                        
+Carmen                    Finance                                               
+Carmen                    Operations                                            
+Carmen                    Operations                                            
+Carmen                    Operations                                            
+Carmen                    Operations                                            
+Carmen                    Operations                                            
+Carmen                    Sales                                                 
+Carmen                    Sales                                                 
+Carmen                    Sales                                                 
+Carmen                    Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Carmen                    Sales                                                 
+LaDoris                   Administration                                        
+LaDoris                   Finance                                               
+LaDoris                   Operations                                            
+LaDoris                   Operations                                            
+LaDoris                   Operations                                            
+LaDoris                   Operations                                            
+LaDoris                   Operations                                            
+LaDoris                   Sales                                                 
+LaDoris                   Sales                                                 
+LaDoris                   Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+LaDoris                   Sales                                                 
+LaDoris                   Sales                                                 
+Midori                    Administration                                        
+Midori                    Finance                                               
+Midori                    Operations                                            
+Midori                    Operations                                            
+Midori                    Operations                                            
+Midori                    Operations                                            
+Midori                    Operations                                            
+Midori                    Sales                                                 
+Midori                    Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Midori                    Sales                                                 
+Midori                    Sales                                                 
+Midori                    Sales                                                 
+Mark                      Administration                                        
+Mark                      Finance                                               
+Mark                      Operations                                            
+Mark                      Operations                                            
+Mark                      Operations                                            
+Mark                      Operations                                            
+Mark                      Operations                                            
+Mark                      Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Mark                      Sales                                                 
+Mark                      Sales                                                 
+Mark                      Sales                                                 
+Mark                      Sales                                                 
+Audry                     Administration                                        
+Audry                     Finance                                               
+Audry                     Operations                                            
+Audry                     Operations                                            
+Audry                     Operations                                            
+Audry                     Operations                                            
+Audry                     Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Audry                     Sales                                                 
+Audry                     Sales                                                 
+Audry                     Sales                                                 
+Audry                     Sales                                                 
+Audry                     Sales                                                 
+Molly                     Administration                                        
+Molly                     Finance                                               
+Molly                     Operations                                            
+Molly                     Operations                                            
+Molly                     Operations                                            
+Molly                     Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Molly                     Operations                                            
+Molly                     Sales                                                 
+Molly                     Sales                                                 
+Molly                     Sales                                                 
+Molly                     Sales                                                 
+Molly                     Sales                                                 
+Roberta                   Administration                                        
+Roberta                   Finance                                               
+Roberta                   Operations                                            
+Roberta                   Operations                                            
+Roberta                   Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Roberta                   Operations                                            
+Roberta                   Operations                                            
+Roberta                   Sales                                                 
+Roberta                   Sales                                                 
+Roberta                   Sales                                                 
+Roberta                   Sales                                                 
+Roberta                   Sales                                                 
+Ben                       Administration                                        
+Ben                       Finance                                               
+Ben                       Operations                                            
+Ben                       Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Ben                       Operations                                            
+Ben                       Operations                                            
+Ben                       Operations                                            
+Ben                       Sales                                                 
+Ben                       Sales                                                 
+Ben                       Sales                                                 
+Ben                       Sales                                                 
+Ben                       Sales                                                 
+Antoinette                Administration                                        
+Antoinette                Finance                                               
+Antoinette                Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Antoinette                Operations                                            
+Antoinette                Operations                                            
+Antoinette                Operations                                            
+Antoinette                Operations                                            
+Antoinette                Sales                                                 
+Antoinette                Sales                                                 
+Antoinette                Sales                                                 
+Antoinette                Sales                                                 
+Antoinette                Sales                                                 
+Marta                     Administration                                        
+Marta                     Finance                                               
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Marta                     Operations                                            
+Marta                     Operations                                            
+Marta                     Operations                                            
+Marta                     Operations                                            
+Marta                     Operations                                            
+Marta                     Sales                                                 
+Marta                     Sales                                                 
+Marta                     Sales                                                 
+Marta                     Sales                                                 
+Marta                     Sales                                                 
+Colin                     Administration                                        
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Colin                     Finance                                               
+Colin                     Operations                                            
+Colin                     Operations                                            
+Colin                     Operations                                            
+Colin                     Operations                                            
+Colin                     Operations                                            
+Colin                     Sales                                                 
+Colin                     Sales                                                 
+Colin                     Sales                                                 
+Colin                     Sales                                                 
+Colin                     Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Henry                     Administration                                        
+Henry                     Finance                                               
+Henry                     Operations                                            
+Henry                     Operations                                            
+Henry                     Operations                                            
+Henry                     Operations                                            
+Henry                     Operations                                            
+Henry                     Sales                                                 
+Henry                     Sales                                                 
+Henry                     Sales                                                 
+Henry                     Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Henry                     Sales                                                 
+Yasmin                    Administration                                        
+Yasmin                    Finance                                               
+Yasmin                    Operations                                            
+Yasmin                    Operations                                            
+Yasmin                    Operations                                            
+Yasmin                    Operations                                            
+Yasmin                    Operations                                            
+Yasmin                    Sales                                                 
+Yasmin                    Sales                                                 
+Yasmin                    Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Yasmin                    Sales                                                 
+Yasmin                    Sales                                                 
+Mai                       Administration                                        
+Mai                       Finance                                               
+Mai                       Operations                                            
+Mai                       Operations                                            
+Mai                       Operations                                            
+Mai                       Operations                                            
+Mai                       Operations                                            
+Mai                       Sales                                                 
+Mai                       Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Mai                       Sales                                                 
+Mai                       Sales                                                 
+Mai                       Sales                                                 
+Andre                     Administration                                        
+Andre                     Finance                                               
+Andre                     Operations                                            
+Andre                     Operations                                            
+Andre                     Operations                                            
+Andre                     Operations                                            
+Andre                     Operations                                            
+Andre                     Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Andre                     Sales                                                 
+Andre                     Sales                                                 
+Andre                     Sales                                                 
+Andre                     Sales                                                 
+Elena                     Administration                                        
+Elena                     Finance                                               
+Elena                     Operations                                            
+Elena                     Operations                                            
+Elena                     Operations                                            
+Elena                     Operations                                            
+Elena                     Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Elena                     Sales                                                 
+Elena                     Sales                                                 
+Elena                     Sales                                                 
+Elena                     Sales                                                 
+Elena                     Sales                                                 
+George                    Administration                                        
+George                    Finance                                               
+George                    Operations                                            
+George                    Operations                                            
+George                    Operations                                            
+George                    Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+George                    Operations                                            
+George                    Sales                                                 
+George                    Sales                                                 
+George                    Sales                                                 
+George                    Sales                                                 
+George                    Sales                                                 
+Akira                     Administration                                        
+Akira                     Finance                                               
+Akira                     Operations                                            
+Akira                     Operations                                            
+Akira                     Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Akira                     Operations                                            
+Akira                     Operations                                            
+Akira                     Sales                                                 
+Akira                     Sales                                                 
+Akira                     Sales                                                 
+Akira                     Sales                                                 
+Akira                     Sales                                                 
+Vikram                    Administration                                        
+Vikram                    Finance                                               
+Vikram                    Operations                                            
+Vikram                    Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Vikram                    Operations                                            
+Vikram                    Operations                                            
+Vikram                    Operations                                            
+Vikram                    Sales                                                 
+Vikram                    Sales                                                 
+Vikram                    Sales                                                 
+Vikram                    Sales                                                 
+Vikram                    Sales                                                 
+Chad                      Administration                                        
+Chad                      Finance                                               
+Chad                      Operations                                            
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Chad                      Operations                                            
+Chad                      Operations                                            
+Chad                      Operations                                            
+Chad                      Operations                                            
+Chad                      Sales                                                 
+Chad                      Sales                                                 
+Chad                      Sales                                                 
+Chad                      Sales                                                 
+Chad                      Sales                                                 
+Alexander                 Administration                                        
+Alexander                 Finance                                               
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Alexander                 Operations                                            
+Alexander                 Operations                                            
+Alexander                 Operations                                            
+Alexander                 Operations                                            
+Alexander                 Operations                                            
+Alexander                 Sales                                                 
+Alexander                 Sales                                                 
+Alexander                 Sales                                                 
+Alexander                 Sales                                                 
+Alexander                 Sales                                                 
+Eddie                     Administration                                        
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Eddie                     Finance                                               
+Eddie                     Operations                                            
+Eddie                     Operations                                            
+Eddie                     Operations                                            
+Eddie                     Operations                                            
+Eddie                     Operations                                            
+Eddie                     Sales                                                 
+Eddie                     Sales                                                 
+Eddie                     Sales                                                 
+Eddie                     Sales                                                 
+Eddie                     Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Radha                     Administration                                        
+Radha                     Finance                                               
+Radha                     Operations                                            
+Radha                     Operations                                            
+Radha                     Operations                                            
+Radha                     Operations                                            
+Radha                     Operations                                            
+Radha                     Sales                                                 
+Radha                     Sales                                                 
+Radha                     Sales                                                 
+Radha                     Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Radha                     Sales                                                 
+Bela                      Administration                                        
+Bela                      Finance                                               
+Bela                      Operations                                            
+Bela                      Operations                                            
+Bela                      Operations                                            
+Bela                      Operations                                            
+Bela                      Operations                                            
+Bela                      Sales                                                 
+Bela                      Sales                                                 
+Bela                      Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Bela                      Sales                                                 
+Bela                      Sales                                                 
+Sylvie                    Administration                                        
+Sylvie                    Finance                                               
+Sylvie                    Operations                                            
+Sylvie                    Operations                                            
+Sylvie                    Operations                                            
+Sylvie                    Operations                                            
+Sylvie                    Operations                                            
+Sylvie                    Sales                                                 
+Sylvie                    Sales                                                 
+
+FIRST_NAME                NAME                                                  
+------------------------- -------------------------                             
+Sylvie                    Sales                                                 
+Sylvie                    Sales                                                 
+Sylvie                    Sales                                                 
+
+300 rows selected.
+
+SQL> select first_name from s_emp;
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Carmen                                                                          
+LaDoris                                                                         
+Midori                                                                          
+Mark                                                                            
+Audry                                                                           
+Molly                                                                           
+Roberta                                                                         
+Ben                                                                             
+Antoinette                                                                      
+Marta                                                                           
+Colin                                                                           
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Henry                                                                           
+Yasmin                                                                          
+Mai                                                                             
+Andre                                                                           
+Elena                                                                           
+George                                                                          
+Akira                                                                           
+Vikram                                                                          
+Chad                                                                            
+Alexander                                                                       
+Eddie                                                                           
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Radha                                                                           
+Bela                                                                            
+Sylvie                                                                          
+
+25 rows selected.
+
+SQL> select * from s_dept;
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        10 Finance                            1                                 
+        31 Sales                              1                                 
+        32 Sales                              2                                 
+        33 Sales                              3                                 
+        34 Sales                              4                                 
+        35 Sales                              5                                 
+        41 Operations                         1                                 
+        42 Operations                         2                                 
+        43 Operations                         3                                 
+        44 Operations                         4                                 
+        45 Operations                         5                                 
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        50 Administration                     1                                 
+
+12 rows selected.
+
+SQL> clear screen
+SQL> select 25*12 from dual;
+
+     25*12                                                                      
+----------                                                                      
+       300                                                                      
+
+SQL> 
+SQL> clear screen
+SQL> select first_name,dept_id,id,name
+  2  from s_emp,s_dept;
+select first_name,dept_id,id,name
+                          *
+ERROR at line 1:
+ORA-00918: column ambiguously defined 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select e.first_name,e.dept_id,d.id,d.name
+  2* from s_emp e,s_dept d
+SQL> /
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Carmen                            50         50 Administration                  
+LaDoris                           41         50 Administration                  
+Midori                            31         50 Administration                  
+Mark                              10         50 Administration                  
+Audry                             50         50 Administration                  
+Molly                             41         50 Administration                  
+Roberta                           42         50 Administration                  
+Ben                               43         50 Administration                  
+Antoinette                        44         50 Administration                  
+Marta                             45         50 Administration                  
+Colin                             31         50 Administration                  
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Henry                             32         50 Administration                  
+Yasmin                            33         50 Administration                  
+Mai                               34         50 Administration                  
+Andre                             35         50 Administration                  
+Elena                             41         50 Administration                  
+George                            41         50 Administration                  
+Akira                             42         50 Administration                  
+Vikram                            42         50 Administration                  
+Chad                              43         50 Administration                  
+Alexander                         43         50 Administration                  
+Eddie                             44         50 Administration                  
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Radha                             34         50 Administration                  
+Bela                              45         50 Administration                  
+Sylvie                            45         50 Administration                  
+Carmen                            50         10 Finance                         
+LaDoris                           41         10 Finance                         
+Midori                            31         10 Finance                         
+Mark                              10         10 Finance                         
+Audry                             50         10 Finance                         
+Molly                             41         10 Finance                         
+Roberta                           42         10 Finance                         
+Ben                               43         10 Finance                         
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Antoinette                        44         10 Finance                         
+Marta                             45         10 Finance                         
+Colin                             31         10 Finance                         
+Henry                             32         10 Finance                         
+Yasmin                            33         10 Finance                         
+Mai                               34         10 Finance                         
+Andre                             35         10 Finance                         
+Elena                             41         10 Finance                         
+George                            41         10 Finance                         
+Akira                             42         10 Finance                         
+Vikram                            42         10 Finance                         
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Chad                              43         10 Finance                         
+Alexander                         43         10 Finance                         
+Eddie                             44         10 Finance                         
+Radha                             34         10 Finance                         
+Bela                              45         10 Finance                         
+Sylvie                            45         10 Finance                         
+Carmen                            50         41 Operations                      
+LaDoris                           41         41 Operations                      
+Midori                            31         41 Operations                      
+Mark                              10         41 Operations                      
+Audry                             50         41 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Molly                             41         41 Operations                      
+Roberta                           42         41 Operations                      
+Ben                               43         41 Operations                      
+Antoinette                        44         41 Operations                      
+Marta                             45         41 Operations                      
+Colin                             31         41 Operations                      
+Henry                             32         41 Operations                      
+Yasmin                            33         41 Operations                      
+Mai                               34         41 Operations                      
+Andre                             35         41 Operations                      
+Elena                             41         41 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+George                            41         41 Operations                      
+Akira                             42         41 Operations                      
+Vikram                            42         41 Operations                      
+Chad                              43         41 Operations                      
+Alexander                         43         41 Operations                      
+Eddie                             44         41 Operations                      
+Radha                             34         41 Operations                      
+Bela                              45         41 Operations                      
+Sylvie                            45         41 Operations                      
+Carmen                            50         42 Operations                      
+LaDoris                           41         42 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Midori                            31         42 Operations                      
+Mark                              10         42 Operations                      
+Audry                             50         42 Operations                      
+Molly                             41         42 Operations                      
+Roberta                           42         42 Operations                      
+Ben                               43         42 Operations                      
+Antoinette                        44         42 Operations                      
+Marta                             45         42 Operations                      
+Colin                             31         42 Operations                      
+Henry                             32         42 Operations                      
+Yasmin                            33         42 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Mai                               34         42 Operations                      
+Andre                             35         42 Operations                      
+Elena                             41         42 Operations                      
+George                            41         42 Operations                      
+Akira                             42         42 Operations                      
+Vikram                            42         42 Operations                      
+Chad                              43         42 Operations                      
+Alexander                         43         42 Operations                      
+Eddie                             44         42 Operations                      
+Radha                             34         42 Operations                      
+Bela                              45         42 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Sylvie                            45         42 Operations                      
+Carmen                            50         43 Operations                      
+LaDoris                           41         43 Operations                      
+Midori                            31         43 Operations                      
+Mark                              10         43 Operations                      
+Audry                             50         43 Operations                      
+Molly                             41         43 Operations                      
+Roberta                           42         43 Operations                      
+Ben                               43         43 Operations                      
+Antoinette                        44         43 Operations                      
+Marta                             45         43 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Colin                             31         43 Operations                      
+Henry                             32         43 Operations                      
+Yasmin                            33         43 Operations                      
+Mai                               34         43 Operations                      
+Andre                             35         43 Operations                      
+Elena                             41         43 Operations                      
+George                            41         43 Operations                      
+Akira                             42         43 Operations                      
+Vikram                            42         43 Operations                      
+Chad                              43         43 Operations                      
+Alexander                         43         43 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Eddie                             44         43 Operations                      
+Radha                             34         43 Operations                      
+Bela                              45         43 Operations                      
+Sylvie                            45         43 Operations                      
+Carmen                            50         44 Operations                      
+LaDoris                           41         44 Operations                      
+Midori                            31         44 Operations                      
+Mark                              10         44 Operations                      
+Audry                             50         44 Operations                      
+Molly                             41         44 Operations                      
+Roberta                           42         44 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Ben                               43         44 Operations                      
+Antoinette                        44         44 Operations                      
+Marta                             45         44 Operations                      
+Colin                             31         44 Operations                      
+Henry                             32         44 Operations                      
+Yasmin                            33         44 Operations                      
+Mai                               34         44 Operations                      
+Andre                             35         44 Operations                      
+Elena                             41         44 Operations                      
+George                            41         44 Operations                      
+Akira                             42         44 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Vikram                            42         44 Operations                      
+Chad                              43         44 Operations                      
+Alexander                         43         44 Operations                      
+Eddie                             44         44 Operations                      
+Radha                             34         44 Operations                      
+Bela                              45         44 Operations                      
+Sylvie                            45         44 Operations                      
+Carmen                            50         45 Operations                      
+LaDoris                           41         45 Operations                      
+Midori                            31         45 Operations                      
+Mark                              10         45 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Audry                             50         45 Operations                      
+Molly                             41         45 Operations                      
+Roberta                           42         45 Operations                      
+Ben                               43         45 Operations                      
+Antoinette                        44         45 Operations                      
+Marta                             45         45 Operations                      
+Colin                             31         45 Operations                      
+Henry                             32         45 Operations                      
+Yasmin                            33         45 Operations                      
+Mai                               34         45 Operations                      
+Andre                             35         45 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Elena                             41         45 Operations                      
+George                            41         45 Operations                      
+Akira                             42         45 Operations                      
+Vikram                            42         45 Operations                      
+Chad                              43         45 Operations                      
+Alexander                         43         45 Operations                      
+Eddie                             44         45 Operations                      
+Radha                             34         45 Operations                      
+Bela                              45         45 Operations                      
+Sylvie                            45         45 Operations                      
+Carmen                            50         31 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+LaDoris                           41         31 Sales                           
+Midori                            31         31 Sales                           
+Mark                              10         31 Sales                           
+Audry                             50         31 Sales                           
+Molly                             41         31 Sales                           
+Roberta                           42         31 Sales                           
+Ben                               43         31 Sales                           
+Antoinette                        44         31 Sales                           
+Marta                             45         31 Sales                           
+Colin                             31         31 Sales                           
+Henry                             32         31 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Yasmin                            33         31 Sales                           
+Mai                               34         31 Sales                           
+Andre                             35         31 Sales                           
+Elena                             41         31 Sales                           
+George                            41         31 Sales                           
+Akira                             42         31 Sales                           
+Vikram                            42         31 Sales                           
+Chad                              43         31 Sales                           
+Alexander                         43         31 Sales                           
+Eddie                             44         31 Sales                           
+Radha                             34         31 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Bela                              45         31 Sales                           
+Sylvie                            45         31 Sales                           
+Carmen                            50         32 Sales                           
+LaDoris                           41         32 Sales                           
+Midori                            31         32 Sales                           
+Mark                              10         32 Sales                           
+Audry                             50         32 Sales                           
+Molly                             41         32 Sales                           
+Roberta                           42         32 Sales                           
+Ben                               43         32 Sales                           
+Antoinette                        44         32 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Marta                             45         32 Sales                           
+Colin                             31         32 Sales                           
+Henry                             32         32 Sales                           
+Yasmin                            33         32 Sales                           
+Mai                               34         32 Sales                           
+Andre                             35         32 Sales                           
+Elena                             41         32 Sales                           
+George                            41         32 Sales                           
+Akira                             42         32 Sales                           
+Vikram                            42         32 Sales                           
+Chad                              43         32 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Alexander                         43         32 Sales                           
+Eddie                             44         32 Sales                           
+Radha                             34         32 Sales                           
+Bela                              45         32 Sales                           
+Sylvie                            45         32 Sales                           
+Carmen                            50         33 Sales                           
+LaDoris                           41         33 Sales                           
+Midori                            31         33 Sales                           
+Mark                              10         33 Sales                           
+Audry                             50         33 Sales                           
+Molly                             41         33 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Roberta                           42         33 Sales                           
+Ben                               43         33 Sales                           
+Antoinette                        44         33 Sales                           
+Marta                             45         33 Sales                           
+Colin                             31         33 Sales                           
+Henry                             32         33 Sales                           
+Yasmin                            33         33 Sales                           
+Mai                               34         33 Sales                           
+Andre                             35         33 Sales                           
+Elena                             41         33 Sales                           
+George                            41         33 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Akira                             42         33 Sales                           
+Vikram                            42         33 Sales                           
+Chad                              43         33 Sales                           
+Alexander                         43         33 Sales                           
+Eddie                             44         33 Sales                           
+Radha                             34         33 Sales                           
+Bela                              45         33 Sales                           
+Sylvie                            45         33 Sales                           
+Carmen                            50         34 Sales                           
+LaDoris                           41         34 Sales                           
+Midori                            31         34 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Mark                              10         34 Sales                           
+Audry                             50         34 Sales                           
+Molly                             41         34 Sales                           
+Roberta                           42         34 Sales                           
+Ben                               43         34 Sales                           
+Antoinette                        44         34 Sales                           
+Marta                             45         34 Sales                           
+Colin                             31         34 Sales                           
+Henry                             32         34 Sales                           
+Yasmin                            33         34 Sales                           
+Mai                               34         34 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Andre                             35         34 Sales                           
+Elena                             41         34 Sales                           
+George                            41         34 Sales                           
+Akira                             42         34 Sales                           
+Vikram                            42         34 Sales                           
+Chad                              43         34 Sales                           
+Alexander                         43         34 Sales                           
+Eddie                             44         34 Sales                           
+Radha                             34         34 Sales                           
+Bela                              45         34 Sales                           
+Sylvie                            45         34 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Carmen                            50         35 Sales                           
+LaDoris                           41         35 Sales                           
+Midori                            31         35 Sales                           
+Mark                              10         35 Sales                           
+Audry                             50         35 Sales                           
+Molly                             41         35 Sales                           
+Roberta                           42         35 Sales                           
+Ben                               43         35 Sales                           
+Antoinette                        44         35 Sales                           
+Marta                             45         35 Sales                           
+Colin                             31         35 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Henry                             32         35 Sales                           
+Yasmin                            33         35 Sales                           
+Mai                               34         35 Sales                           
+Andre                             35         35 Sales                           
+Elena                             41         35 Sales                           
+George                            41         35 Sales                           
+Akira                             42         35 Sales                           
+Vikram                            42         35 Sales                           
+Chad                              43         35 Sales                           
+Alexander                         43         35 Sales                           
+Eddie                             44         35 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Radha                             34         35 Sales                           
+Bela                              45         35 Sales                           
+Sylvie                            45         35 Sales                           
+
+300 rows selected.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select e.first_name,e.dept_id,d.id,d.name
+  2  from s_emp e,s_dept d
+  3* where e.dept_id = d.id
+SQL> /
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Carmen                            50         50 Administration                  
+LaDoris                           41         41 Operations                      
+Midori                            31         31 Sales                           
+Mark                              10         10 Finance                         
+Audry                             50         50 Administration                  
+Molly                             41         41 Operations                      
+Roberta                           42         42 Operations                      
+Ben                               43         43 Operations                      
+Antoinette                        44         44 Operations                      
+Marta                             45         45 Operations                      
+Colin                             31         31 Sales                           
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Henry                             32         32 Sales                           
+Yasmin                            33         33 Sales                           
+Mai                               34         34 Sales                           
+Andre                             35         35 Sales                           
+Elena                             41         41 Operations                      
+George                            41         41 Operations                      
+Akira                             42         42 Operations                      
+Vikram                            42         42 Operations                      
+Chad                              43         43 Operations                      
+Alexander                         43         43 Operations                      
+Eddie                             44         44 Operations                      
+
+FIRST_NAME                   DEPT_ID         ID NAME                            
+------------------------- ---------- ---------- -------------------------       
+Radha                             34         34 Sales                           
+Bela                              45         45 Operations                      
+Sylvie                            45         45 Operations                      
+
+25 rows selected.
+
+SQL> clear screen
+SQL> desc s_dept
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(7)
+ NAME                                      NOT NULL VARCHAR2(25)
+ REGION_ID                                          NUMBER(7)
+
+SQL> desc s_region
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(7)
+ NAME                                      NOT NULL VARCHAR2(50)
+
+SQL> select d.id,d.name,r.name
+  2  from s_dept d,s_region r
+  3  where d.region_id = r.id;
+
+        ID NAME                                                                 
+---------- -------------------------                                            
+NAME                                                                            
+--------------------------------------------------                              
+        50 Administration                                                       
+North America                                                                   
+                                                                                
+        10 Finance                                                              
+North America                                                                   
+                                                                                
+        41 Operations                                                           
+North America                                                                   
+                                                                                
+
+        ID NAME                                                                 
+---------- -------------------------                                            
+NAME                                                                            
+--------------------------------------------------                              
+        42 Operations                                                           
+South America                                                                   
+                                                                                
+        43 Operations                                                           
+Africa / Middle East                                                            
+                                                                                
+        44 Operations                                                           
+Asia                                                                            
+                                                                                
+
+        ID NAME                                                                 
+---------- -------------------------                                            
+NAME                                                                            
+--------------------------------------------------                              
+        45 Operations                                                           
+Europe                                                                          
+                                                                                
+        31 Sales                                                                
+North America                                                                   
+                                                                                
+        32 Sales                                                                
+South America                                                                   
+                                                                                
+
+        ID NAME                                                                 
+---------- -------------------------                                            
+NAME                                                                            
+--------------------------------------------------                              
+        33 Sales                                                                
+Africa / Middle East                                                            
+                                                                                
+        34 Sales                                                                
+Asia                                                                            
+                                                                                
+        35 Sales                                                                
+Europe                                                                          
+                                                                                
+
+12 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select d.id,d.name,r.name
+  2  from s_dept d,s_region r
+  3  where d.region_id = r.id
+  4* and r.name = 'Asia'
+SQL> /
+
+        ID NAME                                                                 
+---------- -------------------------                                            
+NAME                                                                            
+--------------------------------------------------                              
+        34 Sales                                                                
+Asia                                                                            
+                                                                                
+        44 Operations                                                           
+Asia                                                                            
+                                                                                
+
+SQL> clear screen
+SQL> select e.first_name,r.name
+  2  from s_emp e,s_dept d,s_region r
+  3  where e.dept_id = d.id
+  4  and d.region_id = r.id
+  5  and e.first_name = 'Ben';
+
+FIRST_NAME                NAME                                                  
+------------------------- --------------------------------------------------    
+Ben                       Africa / Middle East                                  
+
+SQL> clear screen
+SQL> desc emp
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR                                                NUMBER(4)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             NUMBER(2)
+
+SQL> desc salgrade
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ GRADE                                              NUMBER
+ LOSAL                                              NUMBER
+ HISAL                                              NUMBER
+
+SQL> select * from salgrade;
+
+     GRADE      LOSAL      HISAL                                                
+---------- ---------- ----------                                                
+         1        700       1200                                                
+         2       1201       1400                                                
+         3       1401       2000                                                
+         4       2001       3000                                                
+         5       3001       9999                                                
+
+SQL> clear screen
+SQL> select ename,sal from emp;
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+SMITH             800                                                           
+ALLEN            1600                                                           
+WARD             1250                                                           
+JONES            2975                                                           
+MARTIN           1250                                                           
+BLAKE            2850                                                           
+CLARK            2450                                                           
+SCOTT            3000                                                           
+KING             5000                                                           
+TURNER           1500                                                           
+ADAMS            1100                                                           
+
+ENAME             SAL                                                           
+---------- ----------                                                           
+JAMES             950                                                           
+FORD             3000                                                           
+MILLER           1300                                                           
+
+14 rows selected.
+
+SQL> clear screen
+SQL> desc emp
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(4)
+ ENAME                                              VARCHAR2(10)
+ JOB                                                VARCHAR2(9)
+ MGR                                                NUMBER(4)
+ HIREDATE                                           DATE
+ SAL                                                NUMBER(7,2)
+ COMM                                               NUMBER(7,2)
+ DEPTNO                                             NUMBER(2)
+
+SQL> desc salgrade
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ GRADE                                              NUMBER
+ LOSAL                                              NUMBER
+ HISAL                                              NUMBER
+
+SQL> clear screen
+SQL> select e.ename,e.sal,s.grade
+  2  from emp e,salgrade s
+  3  where e.sal > s.losal and e.sal < s.hisal;
+
+ENAME             SAL      GRADE                                                
+---------- ---------- ----------                                                
+SMITH             800          1                                                
+JAMES             950          1                                                
+ADAMS            1100          1                                                
+WARD             1250          2                                                
+MARTIN           1250          2                                                
+MILLER           1300          2                                                
+TURNER           1500          3                                                
+ALLEN            1600          3                                                
+CLARK            2450          4                                                
+BLAKE            2850          4                                                
+JONES            2975          4                                                
+
+ENAME             SAL      GRADE                                                
+---------- ---------- ----------                                                
+KING             5000          5                                                
+
+12 rows selected.
+
+SQL> select ename from emp;
+
+ENAME                                                                           
+----------                                                                      
+SMITH                                                                           
+ALLEN                                                                           
+WARD                                                                            
+JONES                                                                           
+MARTIN                                                                          
+BLAKE                                                                           
+CLARK                                                                           
+SCOTT                                                                           
+KING                                                                            
+TURNER                                                                          
+ADAMS                                                                           
+
+ENAME                                                                           
+----------                                                                      
+JAMES                                                                           
+FORD                                                                            
+MILLER                                                                          
+
+14 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select ename from emp
+SQL> clear screen
+SQL> select e.ename,e.sal,s.grade
+  2  from emp e,salgrade s
+  3  where e.sal between s.losal and s.hisal;
+
+ENAME             SAL      GRADE                                                
+---------- ---------- ----------                                                
+SMITH             800          1                                                
+JAMES             950          1                                                
+ADAMS            1100          1                                                
+WARD             1250          2                                                
+MARTIN           1250          2                                                
+MILLER           1300          2                                                
+TURNER           1500          3                                                
+ALLEN            1600          3                                                
+CLARK            2450          4                                                
+BLAKE            2850          4                                                
+JONES            2975          4                                                
+
+ENAME             SAL      GRADE                                                
+---------- ---------- ----------                                                
+SCOTT            3000          4                                                
+FORD             3000          4                                                
+KING             5000          5                                                
+
+14 rows selected.
+
+SQL> 
+SQL> 
+SQL> clear screen
+SQL> desc s_emp
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL NUMBER(7)
+ LAST_NAME                                 NOT NULL VARCHAR2(25)
+ FIRST_NAME                                         VARCHAR2(25)
+ USERID                                             VARCHAR2(8)
+ START_DATE                                         DATE
+ COMMENTS                                           VARCHAR2(255)
+ MANAGER_ID                                         NUMBER(7)
+ TITLE                                              VARCHAR2(25)
+ DEPT_ID                                            NUMBER(7)
+ SALARY                                             NUMBER(11,2)
+ COMMISSION_PCT                                     NUMBER(4,2)
+
+SQL> clear screen
+SQL> select first_name,manager_id
+  2  from s_emp;
+
+FIRST_NAME                MANAGER_ID                                            
+------------------------- ----------                                            
+Carmen                                                                          
+LaDoris                            1                                            
+Midori                             1                                            
+Mark                               1                                            
+Audry                              1                                            
+Molly                              2                                            
+Roberta                            2                                            
+Ben                                2                                            
+Antoinette                         2                                            
+Marta                              2                                            
+Colin                              3                                            
+
+FIRST_NAME                MANAGER_ID                                            
+------------------------- ----------                                            
+Henry                              3                                            
+Yasmin                             3                                            
+Mai                                3                                            
+Andre                              3                                            
+Elena                              6                                            
+George                             6                                            
+Akira                              7                                            
+Vikram                             7                                            
+Chad                               8                                            
+Alexander                          8                                            
+Eddie                              9                                            
+
+FIRST_NAME                MANAGER_ID                                            
+------------------------- ----------                                            
+Radha                              9                                            
+Bela                              10                                            
+Sylvie                            10                                            
+
+25 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,id,manager_id
+  2* from s_emp
+SQL> /
+
+FIRST_NAME                        ID MANAGER_ID                                 
+------------------------- ---------- ----------                                 
+Carmen                             1                                            
+LaDoris                            2          1                                 
+Midori                             3          1                                 
+Mark                               4          1                                 
+Audry                              5          1                                 
+Molly                              6          2                                 
+Roberta                            7          2                                 
+Ben                                8          2                                 
+Antoinette                         9          2                                 
+Marta                             10          2                                 
+Colin                             11          3                                 
+
+FIRST_NAME                        ID MANAGER_ID                                 
+------------------------- ---------- ----------                                 
+Henry                             12          3                                 
+Yasmin                            13          3                                 
+Mai                               14          3                                 
+Andre                             15          3                                 
+Elena                             16          6                                 
+George                            17          6                                 
+Akira                             18          7                                 
+Vikram                            19          7                                 
+Chad                              20          8                                 
+Alexander                         21          8                                 
+Eddie                             22          9                                 
+
+FIRST_NAME                        ID MANAGER_ID                                 
+------------------------- ---------- ----------                                 
+Radha                             23          9                                 
+Bela                              24         10                                 
+Sylvie                            25         10                                 
+
+25 rows selected.
+
+SQL> clear screen
+SQL> select e.first_name,m.first_name
+  2  from s_emp e,s_emp m
+  3  where e.manager_id = m.id;
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+LaDoris                   Carmen                                                
+Midori                    Carmen                                                
+Mark                      Carmen                                                
+Audry                     Carmen                                                
+Molly                     LaDoris                                               
+Marta                     LaDoris                                               
+Antoinette                LaDoris                                               
+Roberta                   LaDoris                                               
+Ben                       LaDoris                                               
+Colin                     Midori                                                
+Yasmin                    Midori                                                
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+Mai                       Midori                                                
+Andre                     Midori                                                
+Henry                     Midori                                                
+Elena                     Molly                                                 
+George                    Molly                                                 
+Akira                     Roberta                                               
+Vikram                    Roberta                                               
+Chad                      Ben                                                   
+Alexander                 Ben                                                   
+Eddie                     Antoinette                                            
+Radha                     Antoinette                                            
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+Bela                      Marta                                                 
+Sylvie                    Marta                                                 
+
+24 rows selected.
+
+SQL> 
+SQL> 
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select e.first_name,m.first_name
+  2  from s_emp e,s_emp m
+  3* where e.manager_id = m.id(+)
+SQL> /
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+Audry                     Carmen                                                
+Mark                      Carmen                                                
+Midori                    Carmen                                                
+LaDoris                   Carmen                                                
+Marta                     LaDoris                                               
+Antoinette                LaDoris                                               
+Ben                       LaDoris                                               
+Roberta                   LaDoris                                               
+Molly                     LaDoris                                               
+Andre                     Midori                                                
+Mai                       Midori                                                
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+Yasmin                    Midori                                                
+Henry                     Midori                                                
+Colin                     Midori                                                
+George                    Molly                                                 
+Elena                     Molly                                                 
+Vikram                    Roberta                                               
+Akira                     Roberta                                               
+Alexander                 Ben                                                   
+Chad                      Ben                                                   
+Radha                     Antoinette                                            
+Eddie                     Antoinette                                            
+
+FIRST_NAME                FIRST_NAME                                            
+------------------------- -------------------------                             
+Sylvie                    Marta                                                 
+Bela                      Marta                                                 
+Carmen                                                                          
+
+25 rows selected.
+
+SQL> clear screen
+SQL> select distinct deptno from emp;
+
+    DEPTNO                                                                      
+----------                                                                      
+        10                                                                      
+        20                                                                      
+        30                                                                      
+
+SQL> select deptno from dept;
+
+    DEPTNO                                                                      
+----------                                                                      
+        10                                                                      
+        20                                                                      
+        30                                                                      
+        40                                                                      
+
+SQL> clear screen
+SQL> select d.deptno.d.dname
+  2  from emp e,dept d
+  3  where e.deptno
+  4  
+SQL> 
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select d.deptno,d.dname
+  2  from emp e,dept d
+  3* where e.deptno(+)=d.deptno
+SQL> /
+
+    DEPTNO DNAME                                                                
+---------- --------------                                                       
+        20 RESEARCH                                                             
+        30 SALES                                                                
+        30 SALES                                                                
+        20 RESEARCH                                                             
+        30 SALES                                                                
+        30 SALES                                                                
+        10 ACCOUNTING                                                           
+        20 RESEARCH                                                             
+        10 ACCOUNTING                                                           
+        30 SALES                                                                
+        20 RESEARCH                                                             
+
+    DEPTNO DNAME                                                                
+---------- --------------                                                       
+        30 SALES                                                                
+        20 RESEARCH                                                             
+        10 ACCOUNTING                                                           
+        40 OPERATIONS                                                           
+
+15 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select e.deptno,d.deptno,d.dname
+  2  from emp e,dept d
+  3* where e.deptno(+)=d.deptno
+SQL> /
+
+    DEPTNO     DEPTNO DNAME                                                     
+---------- ---------- --------------                                            
+        20         20 RESEARCH                                                  
+        30         30 SALES                                                     
+        30         30 SALES                                                     
+        20         20 RESEARCH                                                  
+        30         30 SALES                                                     
+        30         30 SALES                                                     
+        10         10 ACCOUNTING                                                
+        20         20 RESEARCH                                                  
+        10         10 ACCOUNTING                                                
+        30         30 SALES                                                     
+        20         20 RESEARCH                                                  
+
+    DEPTNO     DEPTNO DNAME                                                     
+---------- ---------- --------------                                            
+        30         30 SALES                                                     
+        20         20 RESEARCH                                                  
+        10         10 ACCOUNTING                                                
+                   40 OPERATIONS                                                
+
+15 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select e.deptno,d.deptno,d.dname
+  2  from emp e,dept d
+  3  where e.deptno(+)=d.deptno
+  4* and e.deptno is null
+SQL> /
+
+    DEPTNO     DEPTNO DNAME                                                     
+---------- ---------- --------------                                            
+                   40 OPERATIONS                                                
+
+SQL> clear screen
+SQL> l
+  1  select e.deptno,d.deptno,d.dname
+  2  from emp e,dept d
+  3  where e.deptno(+)=d.deptno
+  4* and e.deptno is null
+SQL> select avg(commission_pct) from s_emp;
+
+AVG(COMMISSION_PCT)                                                             
+-------------------                                                             
+                 13                                                             
+
+SQL> select avg(nvl(commission_pct,0)) from s_emp;
+
+AVG(NVL(COMMISSION_PCT,0))                                                      
+--------------------------                                                      
+                       2.6                                                      
+
+SQL> select count(commission_pct) from s_emp;
+
+COUNT(COMMISSION_PCT)                                                           
+---------------------                                                           
+                    5                                                           
+
+SQL> clear screen
+SQL> select count(*) from s_emp
+  2  where commission_pct is not null;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         5                                                                      
+
+SQL> clear screen
+SQL> select count(distinct dept_id) from s_emp;
+
+COUNT(DISTINCTDEPT_ID)                                                          
+----------------------                                                          
+                    12                                                          
+
+SQL> select count(all commission_pct) from s_emp;
+
+COUNT(ALLCOMMISSION_PCT)                                                        
+------------------------                                                        
+                       5                                                        
+
+SQL> clear screen
+SQL> select dept_id,avg(salary)
+  2  from s_emp
+  3  group by dept_id;
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        32        1490                                                          
+        33        1515                                                          
+        34        1160                                                          
+        35        1450                                                          
+        41      1247.5                                                          
+        42  1081.66667                                                          
+        43         900                                                          
+        44        1050                                                          
+        45        1089                                                          
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        50        2025                                                          
+
+12 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select dept_id,round(avg(salary),2)
+  2  from s_emp
+  3* group by dept_id
+SQL> /
+
+   DEPT_ID ROUND(AVG(SALARY),2)                                                 
+---------- --------------------                                                 
+        10                 1450                                                 
+        31                 1400                                                 
+        32                 1490                                                 
+        33                 1515                                                 
+        34                 1160                                                 
+        35                 1450                                                 
+        41               1247.5                                                 
+        42              1081.67                                                 
+        43                  900                                                 
+        44                 1050                                                 
+        45                 1089                                                 
+
+   DEPT_ID ROUND(AVG(SALARY),2)                                                 
+---------- --------------------                                                 
+        50                 2025                                                 
+
+12 rows selected.
+
+SQL> 
+SQL> 
+SQL> 
+SQL> clear screen
+SQL> select dept_id,title,avg(salary)
+  2  from s_emp
+  3  group by dept_id,title ;
+
+   DEPT_ID TITLE                     AVG(SALARY)                                
+---------- ------------------------- -----------                                
+        10 VP, Finance                      1450                                
+        31 VP, Sales                        1400                                
+        31 Sales Representative             1400                                
+        32 Sales Representative             1490                                
+        33 Sales Representative             1515                                
+        34 Stock Clerk                       795                                
+        34 Sales Representative             1525                                
+        35 Sales Representative             1450                                
+        41 Stock Clerk                      1170                                
+        41 VP, Operations                   1450                                
+        41 Warehouse Manager                1200                                
+
+   DEPT_ID TITLE                     AVG(SALARY)                                
+---------- ------------------------- -----------                                
+        42 Stock Clerk                     997.5                                
+        42 Warehouse Manager                1250                                
+        43 Stock Clerk                       800                                
+        43 Warehouse Manager                1100                                
+        44 Stock Clerk                       800                                
+        44 Warehouse Manager                1300                                
+        45 Stock Clerk                       980                                
+        45 Warehouse Manager                1307                                
+        50 President                        2500                                
+        50 VP, Administration               1550                                
+
+21 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select dept_id,avg(salary)
+  2  from s_emp
+  3* group by dept_id,title 
+SQL> /
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        31        1400                                                          
+        32        1490                                                          
+        33        1515                                                          
+        34         795                                                          
+        34        1525                                                          
+        35        1450                                                          
+        41        1170                                                          
+        41        1450                                                          
+        41        1200                                                          
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        42       997.5                                                          
+        42        1250                                                          
+        43         800                                                          
+        43        1100                                                          
+        44         800                                                          
+        44        1300                                                          
+        45         980                                                          
+        45        1307                                                          
+        50        2500                                                          
+        50        1550                                                          
+
+21 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select dept_id,title,avg(salary)
+  2  from s_emp
+  3* group by dept_id,title 
+SQL> /
+
+   DEPT_ID TITLE                     AVG(SALARY)                                
+---------- ------------------------- -----------                                
+        10 VP, Finance                      1450                                
+        31 VP, Sales                        1400                                
+        31 Sales Representative             1400                                
+        32 Sales Representative             1490                                
+        33 Sales Representative             1515                                
+        34 Stock Clerk                       795                                
+        34 Sales Representative             1525                                
+        35 Sales Representative             1450                                
+        41 Stock Clerk                      1170                                
+        41 VP, Operations                   1450                                
+        41 Warehouse Manager                1200                                
+
+   DEPT_ID TITLE                     AVG(SALARY)                                
+---------- ------------------------- -----------                                
+        42 Stock Clerk                     997.5                                
+        42 Warehouse Manager                1250                                
+        43 Stock Clerk                       800                                
+        43 Warehouse Manager                1100                                
+        44 Stock Clerk                       800                                
+        44 Warehouse Manager                1300                                
+        45 Stock Clerk                       980                                
+        45 Warehouse Manager                1307                                
+        50 President                        2500                                
+        50 VP, Administration               1550                                
+
+21 rows selected.
+
+SQL> clear screen
+SQL> select d.name,avg(e.salary)
+  2  from s_emp e,s_dept d
+  3  where e.dept_id = d.id
+  4  group bye e.dept_id;
+group bye e.dept_id
+      *
+ERROR at line 4:
+ORA-00924: missing BY keyword 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select d.name,avg(e.salary)
+  2  from s_emp e,s_dept d
+  3  where e.dept_id = d.id
+  4* group by e.dept_id
+SQL> /
+select d.name,avg(e.salary)
+       *
+ERROR at line 1:
+ORA-00979: not a GROUP BY expression 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select d.name,avg(e.salary)
+  2  from s_emp e,s_dept d
+  3  where e.dept_id = d.id
+  4* group by d.name
+SQL> /
+
+NAME                      AVG(E.SALARY)                                         
+------------------------- -------------                                         
+Administration                     2025                                         
+Finance                            1450                                         
+Operations                       1086.8                                         
+Sales                        1367.85714                                         
+
+SQL> clear screen
+SQL> l
+  1  select d.name,avg(e.salary)
+  2  from s_emp e,s_dept d
+  3  where e.dept_id = d.id
+  4* group by d.name
+SQL> select * from s_dept;
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        10 Finance                            1                                 
+        31 Sales                              1                                 
+        32 Sales                              2                                 
+        33 Sales                              3                                 
+        34 Sales                              4                                 
+        35 Sales                              5                                 
+        41 Operations                         1                                 
+        42 Operations                         2                                 
+        43 Operations                         3                                 
+        44 Operations                         4                                 
+        45 Operations                         5                                 
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        50 Administration                     1                                 
+
+12 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select d.name,r.name,avg(salary)
+  2  from s_emp e,s_dept d,s_region r
+  3  where e.dept_id = d.id
+  4  and d.region_id = r.id
+  5* group by d.name,r.name
+SQL> /
+
+NAME                      NAME                                                  
+------------------------- --------------------------------------------------    
+AVG(SALARY)                                                                     
+-----------                                                                     
+Sales                     Asia                                                  
+       1160                                                                     
+                                                                                
+Sales                     Europe                                                
+       1450                                                                     
+                                                                                
+Sales                     North America                                         
+       1400                                                                     
+                                                                                
+
+NAME                      NAME                                                  
+------------------------- --------------------------------------------------    
+AVG(SALARY)                                                                     
+-----------                                                                     
+Sales                     South America                                         
+       1490                                                                     
+                                                                                
+Sales                     Africa / Middle East                                  
+       1515                                                                     
+                                                                                
+Finance                   North America                                         
+       1450                                                                     
+                                                                                
+
+NAME                      NAME                                                  
+------------------------- --------------------------------------------------    
+AVG(SALARY)                                                                     
+-----------                                                                     
+Operations                Asia                                                  
+       1050                                                                     
+                                                                                
+Operations                Europe                                                
+       1089                                                                     
+                                                                                
+Operations                North America                                         
+     1247.5                                                                     
+                                                                                
+
+NAME                      NAME                                                  
+------------------------- --------------------------------------------------    
+AVG(SALARY)                                                                     
+-----------                                                                     
+Operations                South America                                         
+ 1081.66667                                                                     
+                                                                                
+Operations                Africa / Middle East                                  
+        900                                                                     
+                                                                                
+Administration            North America                                         
+       2025                                                                     
+                                                                                
+
+12 rows selected.
+
+SQL> clear screen
+SQL> l
+  1  select d.name,r.name,avg(salary)
+  2  from s_emp e,s_dept d,s_region r
+  3  where e.dept_id = d.id
+  4  and d.region_id = r.id
+  5* group by d.name,r.name
+SQL> select max(d.name),max(r.name),avg(e.salary)
+  2  from s_emp e,s_dept d,s_region r
+  3  where e.dept_id = d.id
+  4  and d.region_id = r.id
+  5  group by dept_id;
+
+MAX(D.NAME)               MAX(R.NAME)                                           
+------------------------- --------------------------------------------------    
+AVG(E.SALARY)                                                                   
+-------------                                                                   
+Finance                   North America                                         
+         1450                                                                   
+                                                                                
+Sales                     North America                                         
+         1400                                                                   
+                                                                                
+Sales                     South America                                         
+         1490                                                                   
+                                                                                
+
+MAX(D.NAME)               MAX(R.NAME)                                           
+------------------------- --------------------------------------------------    
+AVG(E.SALARY)                                                                   
+-------------                                                                   
+Sales                     Africa / Middle East                                  
+         1515                                                                   
+                                                                                
+Sales                     Asia                                                  
+         1160                                                                   
+                                                                                
+Sales                     Europe                                                
+         1450                                                                   
+                                                                                
+
+MAX(D.NAME)               MAX(R.NAME)                                           
+------------------------- --------------------------------------------------    
+AVG(E.SALARY)                                                                   
+-------------                                                                   
+Operations                North America                                         
+       1247.5                                                                   
+                                                                                
+Operations                South America                                         
+   1081.66667                                                                   
+                                                                                
+Operations                Africa / Middle East                                  
+          900                                                                   
+                                                                                
+
+MAX(D.NAME)               MAX(R.NAME)                                           
+------------------------- --------------------------------------------------    
+AVG(E.SALARY)                                                                   
+-------------                                                                   
+Operations                Asia                                                  
+         1050                                                                   
+                                                                                
+Operations                Europe                                                
+         1089                                                                   
+                                                                                
+Administration            North America                                         
+         2025                                                                   
+                                                                                
+
+12 rows selected.
+
+SQL> 
+SQL> select * from s_dept;
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        10 Finance                            1                                 
+        31 Sales                              1                                 
+        32 Sales                              2                                 
+        33 Sales                              3                                 
+        34 Sales                              4                                 
+        35 Sales                              5                                 
+        41 Operations                         1                                 
+        42 Operations                         2                                 
+        43 Operations                         3                                 
+        44 Operations                         4                                 
+        45 Operations                         5                                 
+
+        ID NAME                       REGION_ID                                 
+---------- ------------------------- ----------                                 
+        50 Administration                     1                                 
+
+12 rows selected.
+
+SQL> clear screen
+SQL> select dept_id,avg(salary)
+  2  from s_emp
+  3  group by dept_id
+  4  having avg(salary) > 2000;
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        50        2025                                                          
+
+SQL> clear screen
+SQL> select dept_id,avg(salary)
+  2  from s_emp
+  3  where dept_id <> 42
+  4  group by dept_id;
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        32        1490                                                          
+        33        1515                                                          
+        34        1160                                                          
+        35        1450                                                          
+        41      1247.5                                                          
+        43         900                                                          
+        44        1050                                                          
+        45        1089                                                          
+        50        2025                                                          
+
+11 rows selected.
+
+SQL> select dept_id,avg(salary)
+  2  from s_emp
+  3  group by dept_id
+  4  having dept_id <> 42;
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        32        1490                                                          
+        33        1515                                                          
+        34        1160                                                          
+        35        1450                                                          
+        41      1247.5                                                          
+        43         900                                                          
+        44        1050                                                          
+        45        1089                                                          
+        50        2025                                                          
+
+11 rows selected.
+
+SQL> select dept_id,avg(salary)
+  2  from s_emp
+  3  where dept_id <> 42
+  4  group by dept_id;
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        32        1490                                                          
+        33        1515                                                          
+        34        1160                                                          
+        35        1450                                                          
+        41      1247.5                                                          
+        43         900                                                          
+        44        1050                                                          
+        45        1089                                                          
+        50        2025                                                          
+
+11 rows selected.
+
+SQL> 
+SQL> 
+SQL> clear screen
+SQL> select first_name,min(salary)
+  2  from s_emp;
+select first_name,min(salary)
+       *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> select region_id,count(*) from s_regions;
+select region_id,count(*) from s_regions
+                               *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> select region_id,count(*) from s_region;
+select region_id,count(*) from s_region
+       *
+ERROR at line 1:
+ORA-00904: "REGION_ID": invalid identifier 
+
+
+SQL> select region_id,count(*) from s_dept;
+select region_id,count(*) from s_dept
+       *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select region_id,count(*) from s_dept
+SQL> clear screen
+SQL> select first_name,min(salary)
+  2  from s_emp
+  3  group by first_name;
+
+FIRST_NAME                MIN(SALARY)                                           
+------------------------- -----------                                           
+Akira                            1200                                           
+Alexander                         850                                           
+Andre                            1450                                           
+Antoinette                       1300                                           
+Audry                            1550                                           
+Bela                              860                                           
+Ben                              1100                                           
+Carmen                           2500                                           
+Chad                              750                                           
+Colin                            1400                                           
+Eddie                             800                                           
+
+FIRST_NAME                MIN(SALARY)                                           
+------------------------- -----------                                           
+Elena                            1400                                           
+George                            940                                           
+Henry                            1490                                           
+LaDoris                          1450                                           
+Mai                              1525                                           
+Mark                             1450                                           
+Marta                            1307                                           
+Midori                           1400                                           
+Molly                            1200                                           
+Radha                             795                                           
+Roberta                          1250                                           
+
+FIRST_NAME                MIN(SALARY)                                           
+------------------------- -----------                                           
+Sylvie                           1100                                           
+Vikram                            795                                           
+Yasmin                           1515                                           
+
+25 rows selected.
+
+SQL> clear screen
+SQL> select min(salary) from s_emp;
+
+MIN(SALARY)                                                                     
+-----------                                                                     
+        750                                                                     
+
+SQL> select first_name,salary
+  2  from s_emp
+  3  where salary = 750;
+
+FIRST_NAME                    SALARY                                            
+------------------------- ----------                                            
+Chad                             750                                            
+
+SQL> exit

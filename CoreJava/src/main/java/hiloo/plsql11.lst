@@ -1,0 +1,359 @@
+SQL> desc test
+ERROR:
+ORA-04043: object test does not exist 
+
+
+SQL> create table test(c1 number,c2 number);
+
+Table created.
+
+SQL> clear creen
+SP2-0158: unknown CLEAR option "creen"
+SQL> clear screen
+SQL> BEGIN
+  2    INSERT INTO test VALUES (1,1);
+  3    INSERT INTO test VALUES (2,2);
+  4    COMMIT;
+  5  END;
+  6  /
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from test;
+
+        C1         C2                                                           
+---------- ----------                                                           
+         1          1                                                           
+         2          2                                                           
+
+SQL> clear screen
+SQL> BEGIN
+  2     CREATE TABLE test1(c1 NUMBER);
+  3  END;
+  4  /
+   CREATE TABLE test1(c1 NUMBER);
+   *
+ERROR at line 2:
+ORA-06550: line 2, column 4: 
+PLS-00103: Encountered the symbol "CREATE" when expecting one of the following: 
+begin case declare exit for goto if loop mod null pragma 
+raise return select update while with <an identifier> 
+<a double-quoted delimited-identifier> <a bind variable> << 
+close current delete fetch lock insert open rollback 
+savepoint set sql execute commit forall merge 
+<a single-quoted SQL string> pipe 
+<an alternatively-quoted SQL string> 
+
+
+SQL> clear screen
+SQL> DECLARE
+  2    v_num NUMBER;
+  3  BEGIN
+  4    SELECT c1 INTO v_num FROM test
+  5    WHERE c1=1;
+  6  END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01422: exact fetch returns more than requested number of rows 
+ORA-06512: at line 4 
+
+
+SQL> select * from test;
+
+        C1         C2                                                           
+---------- ----------                                                           
+         1          2                                                           
+         1          1                                                           
+         2          2                                                           
+         3          2                                                           
+         1          1                                                           
+         2          2                                                           
+
+6 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1* select * from test
+SQL> DECLARE
+  2    2    v_num NUMBER;
+  3    3  BEGIN
+  4    4    SELECT c1 INTO v_num FROM test
+  5    5    WHERE c1=1;
+  6    6  END;
+  7  
+  8  /
+  2    v_num NUMBER;
+  *
+ERROR at line 2:
+ORA-06550: line 2, column 3: 
+PLS-00103: Encountered the symbol "2" when expecting one of the following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  DECLARE
+  2        v_num NUMBER;
+  3      BEGIN
+  4        SELECT c1 INTO v_num FROM test
+  5        WHERE c1=10;
+  6*     END;
+  7  /
+DECLARE
+*
+ERROR at line 1:
+ORA-01403: no data found 
+ORA-06512: at line 4 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  DECLARE
+  2        v_num NUMBER;
+  3      BEGIN
+  4        SELECT c1 INTO v_num FROM test
+  5        WHERE c1=3;
+  6*     END;
+SQL> /
+
+PL/SQL procedure successfully completed.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  DECLARE
+  2        v_num NUMBER;
+  3  BEGIN
+  4        SELECT c1 INTO v_num FROM test
+  5        WHERE c1=3;
+  6        DBMS_OUTPUT.PUT_LINE('v_num='||v_num);
+  7* END;
+SQL> /
+
+PL/SQL procedure successfully completed.
+
+SQL> set serveroutput on
+SQL> clear screen
+SQL> set serveroutput on
+SQL> /
+v_num=3                                                                         
+
+PL/SQL procedure successfully completed.
+
+SQL> l
+  1  DECLARE
+  2        v_num NUMBER;
+  3  BEGIN
+  4        SELECT c1 INTO v_num FROM test
+  5        WHERE c1=3;
+  6        DBMS_OUTPUT.PUT_LINE('v_num='||v_num);
+  7* END;
+SQL> desc dbms_output
+PROCEDURE DISABLE
+PROCEDURE ENABLE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ BUFFER_SIZE                    NUMBER(38)              IN     DEFAULT
+PROCEDURE GET_LINE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ LINE                           VARCHAR2                OUT   
+ STATUS                         NUMBER(38)              OUT   
+PROCEDURE GET_LINES
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ LINES                          TABLE OF VARCHAR2(255)  OUT   
+ NUMLINES                       NUMBER(38)              IN/OUT
+PROCEDURE NEW_LINE
+PROCEDURE PUT
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ A                              VARCHAR2                IN    
+PROCEDURE PUT_LINE
+ Argument Name                  Type                    In/Out Default?
+ ------------------------------ ----------------------- ------ --------
+ A                              VARCHAR2                IN    
+
+SQL> clear screen
+SQL> DECLARE
+  2    v_char1 VARCHAR1(10) := 'abc';
+  3    v_char2 VARCHAR1(10);
+  4  BEGIn
+  5    v_char2 := UPPER(v_char1);
+  6  END;
+  7  /
+  v_char1 VARCHAR1(10) := 'abc';
+          *
+ERROR at line 2:
+ORA-06550: line 2, column 11: 
+PLS-00201: identifier 'VARCHAR1' must be declared 
+ORA-06550: line 2, column 11: 
+PL/SQL: Item ignored 
+ORA-06550: line 3, column 11: 
+PLS-00201: identifier 'VARCHAR1' must be declared 
+ORA-06550: line 3, column 11: 
+PL/SQL: Item ignored 
+ORA-06550: line 5, column 3: 
+PLS-00320: the declaration of the type of this expression is incomplete or 
+malformed 
+ORA-06550: line 5, column 3: 
+PL/SQL: Statement ignored 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  DECLARE
+  2    v_char1 VARCHAR2(10) := 'abc';
+  3    v_char2 VARCHAR2(10);
+  4  BEGIn
+  5    v_char2 := UPPER(v_char1);
+  6* END;
+SQL> /
+
+PL/SQL procedure successfully completed.
+
+SQL> clear screen
+SQL> DECLARE
+  2  
+  3  /
+DECLARE
+*
+ERROR at line 1:
+ORA-06550: line 2, column 0: 
+PLS-00103: Encountered the symbol "end-of-file" when expecting one of the 
+following: 
+begin function package pragma procedure subtype type use 
+<an identifier> <a double-quoted delimited-identifier> form 
+current cursor 
+
+
+SQL> clear screen
+SQL> declare
+  2    v_num number(5,2);
+  3  begin
+  4    v_num :=123.45;
+  5        dbms_output.put_line(v_num);
+  6      declare
+  7        v_ch varchar2(10);
+  8      begin
+  9        v_num :=321.45;
+ 10        v_ch :='Hello';
+ 11        dbms_output.put_line(v_num||'   '||v_ch);
+ 12      end;
+ 13        dbms_output.put_line(v_num);
+ 14        --dbms_output.put_line(v_ch);
+ 15  end;
+ 16  
+ 17  
+ 18  /
+123.45                                                                          
+321.45   Hello                                                                  
+321.45                                                                          
+
+PL/SQL procedure successfully completed.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  declare
+  2    v_num number(5,2);
+  3  begin
+  4      v_num :=123.45;
+  5      dbms_output.put_line(v_num);
+  6      declare
+  7        v_ch varchar2(10);
+  8      begin
+  9        v_num :=321.45;
+ 10        v_ch :='Hello';
+ 11        dbms_output.put_line(v_num||'   '||v_ch);
+ 12      end;
+ 13        dbms_output.put_line(v_num);
+ 14        dbms_output.put_line(v_ch);
+ 15* end;
+ 16  /
+      dbms_output.put_line(v_ch);
+                           *
+ERROR at line 14:
+ORA-06550: line 14, column 28: 
+PLS-00201: identifier 'V_CH' must be declared 
+ORA-06550: line 14, column 7: 
+PL/SQL: Statement ignored 
+
+
+SQL> clear screen
+SQL> declare
+  2    v_num number(5,2);
+  3  begin
+  4    v_num :=123.45;
+  5        dbms_output.put_line(v_num);
+  6      declare
+  7        v_ch varchar2(10);
+  8        v_num number(3) :=100;
+  9      begin
+ 10        v_num :=321.45;
+ 11        v_ch :='Hello';
+ 12        outer.v_num := 234.56;
+ 13        dbms_output.put_line(v_num||'   '||v_ch);
+ 14        dbms_output.put_line(outer.v_num);
+ 15      end;
+ 16        dbms_output.put_line(v_num);
+ 17        --dbms_output.put_line(v_ch);
+ 18  end;
+ 19  edit
+ 20  /
+edit
+*
+ERROR at line 19:
+ORA-06550: line 19, column 1: 
+PLS-00103: Encountered the symbol "EDIT" The symbol "EDIT" was ignored. 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  declare
+  2    v_num number(5,2);
+  3  begin
+  4    v_num :=123.45;
+  5        dbms_output.put_line(v_num);
+  6      declare
+  7        v_ch varchar2(10);
+  8        v_num number(3) :=100;
+  9      begin
+ 10        v_num :=321.45;
+ 11        v_ch :='Hello';
+ 12        outer.v_num := 234.56;
+ 13        dbms_output.put_line(v_num||'   '||v_ch);
+ 14        dbms_output.put_line(outer.v_num);
+ 15      end;
+ 16        dbms_output.put_line(v_num);
+ 17        --dbms_output.put_line(v_ch);
+ 18  end;
+ 19* edit
+SQL> clear screen
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 NUMBER
+ C2                                                 NUMBER
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 NUMBER
+ C2                                                 NUMBER
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+SQL> exit

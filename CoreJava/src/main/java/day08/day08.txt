@@ -1,0 +1,57 @@
+一、回顾
+
+二、Map
+键值对: key--value
+HashTable是线程安全的HashMap 
+HashMap与HashSet之间的关系
+
+SortedMap
+TreeMap
+
+三、作业
+
+四、For Each循环
+
+五、内部类
+概念：定义在另外一个类内部的类 
+存在的必要性：实际业务的需要，A类的存在以B类的存在为前提；内部类可以访问外部类的私有成员
+
+分类：
+成员式的：静态内部类和成员内部类
+局部式的：局部内部类和匿名内部类
+用途：
+
+六、静态内部类
+静态内部类只能访问外部类的静态属性或者方法
+怎么样定义一个静态内部类
+怎么样在第三方类里生成静态内部类的对象：
+OuterA.InnerA inner = new OuterA.InnerA("donghang",8);
+怎么样在外部类里生成静态内部类的对象：
+InnerA inner = new InnerA("Mary",24);
+怎么样在静态内部类中访问外部类的同名属性：OuterA.name
+
+
+
+七、成员内部类
+可以访问外部类的所有静态或非静态的属性或方法
+怎么样定义一个成员内部类
+怎么样在第三方类里生成成员内部类的对象：
+OuterB.InnerB inner1 = out.new InnerB("chensheng",3);
+怎么样在外部类中生成成员内部类的对象：
+InnerB inner = this.new InnerB("liuxiao",30);
+怎么样在成员内部类中访问外部类的同名属性：
+OuterB.this.age
+
+
+八、编译时概念
+OuterA$InnerA.class
+OuterA.class
+编译时概念：编译器检查语法.....内部类、访问权限控制、范型
+运行时概念：
+
+九、实际应用
+航班计划
+航班
+
+
+

@@ -1,0 +1,50 @@
+Wed, 10 Oct 2007 16:52:53 GMT
+Apache/2.0.58 (Unix)
+Wed, 10 Oct 2007 16:52:42 GMT
+"1fa7fd-8b933-50640a80"
+bytes
+mod_xlayout_jh/0.0.1vhs.markII.remix
+max-age=60
+Wed, 10 Oct 2007 16:53:53 GMT
+Accept-Encoding
+text/html
+11
+HIT from sh-17.sina.com.cn
+close
+-------------------------------
+ContentType：text/html
+ContentLength：-1
+ContentEncoding：null
+Date: 1192035173000
+LastModified: 1192035162000
+<!--[1,45,1] published at 2007-10-11 00:52:42 from #152 by system-->
+<base href=http://news.sina.com.cn/>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=gb2312">
+<title>新闻中心首页_新浪网</title>
+<meta name="keywords" content="新闻,时事,时政,国际,国内,社会,法治,聚焦,评论,文化,教育,新视点,深度,网评,专题,环球,传播,论坛,图片,军事,焦点,排行,环保,校园,法治,奇闻,真情">
+<meta name="description" content="新浪网新闻中心是新浪网最重要的频道之一，24小时滚动报道国内、国际及社会新闻。每日编发新闻数以万计。">
+<meta name="stencil" content="PGLS000023">
+<meta name="publishid" content="1,45,1">
+<meta name="verify-v1" content="6HtwmypggdgP1NLw7NOuQBI2TW8+CfkYCoyeB8IDbn8=" />
+<script type="text/javascript" src="http://www.sinaimg.cn/home/sinaflash.js"></script>
+<style>
+*{font-family:"宋体";}
+TD,INPUT,SELECT {FONT-SIZE: 12px}
+TD.ttd {FONT-SIZE: 12px; LINE-HEIGHT: 150%}
+.newsp0 {COLOR: #ffffff; FONT-SIZE: 12px}
+A:link {COLOR: #0000ff; TEXT-DECORATION: underline}
+A:visited {COLOR: #800080; TEXT-DECORATION: underline}
+A:active {COLOR: #ff0000; TEXT-DECORATION: underline}
+A:hover {COLOR: #ff0000; TEXT-DECORATION: underline}
+.l15 {LINE-HEIGHT: 150%}
+.l18 {LINE-HEIGHT: 180%}
+.l16 {line-height:160%; font-size:14px;}
+.f12 {font-size:12px}
+.title0 {font-size:17px;font-family:arial;font-weight:bold;text-decoration:none;color:#000000;}
+A.title1:link {COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 17px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.title1:visited {COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 17px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.title1:active {COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 17px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+A.title1:hover {COLOR: #000000; FONT-FAMILY: arial; FONT-SIZE: 17px; FONT-WEIGHT: bold; TEXT-DECORATION: none}
+.....

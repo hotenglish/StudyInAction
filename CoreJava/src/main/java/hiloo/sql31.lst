@@ -1,0 +1,661 @@
+SQL> clear screen
+SQL> select last_name,title from s_emp
+  2  where title = (select title from s_emp
+  3                 where last_name = 'Smith');
+
+LAST_NAME                 TITLE                                                 
+------------------------- -------------------------                             
+Maduro                    Stock Clerk                                           
+Smith                     Stock Clerk                                           
+Nozaki                    Stock Clerk                                           
+Patel                     Stock Clerk                                           
+Newman                    Stock Clerk                                           
+Markarian                 Stock Clerk                                           
+Chang                     Stock Clerk                                           
+Patel                     Stock Clerk                                           
+Dancs                     Stock Clerk                                           
+Schwartz                  Stock Clerk                                           
+
+10 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select last_name,title from s_emp
+  2  where title = (select title from s_emp
+  3                 where last_name = 'Smith')
+  4* and last_name <> 'Smith'
+SQL> /
+
+LAST_NAME                 TITLE                                                 
+------------------------- -------------------------                             
+Maduro                    Stock Clerk                                           
+Nozaki                    Stock Clerk                                           
+Patel                     Stock Clerk                                           
+Newman                    Stock Clerk                                           
+Markarian                 Stock Clerk                                           
+Chang                     Stock Clerk                                           
+Patel                     Stock Clerk                                           
+Dancs                     Stock Clerk                                           
+Schwartz                  Stock Clerk                                           
+
+9 rows selected.
+
+SQL> clear screen
+SQL> select first_name,salary from s_emp
+  2  where salary = (select min(salary) from s_emp);
+
+FIRST_NAME                    SALARY                                            
+------------------------- ----------                                            
+Chad                             750                                            
+
+SQL> select first_name from s_emp
+  2  where id = (select manager_id from s_emp);
+where id = (select manager_id from s_emp)
+            *
+ERROR at line 2:
+ORA-01427: single-row subquery returns more than one row 
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name from s_emp
+  2* where id in (select manager_id from s_emp)
+SQL> /
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Carmen                                                                          
+LaDoris                                                                         
+Midori                                                                          
+Molly                                                                           
+Roberta                                                                         
+Ben                                                                             
+Antoinette                                                                      
+Marta                                                                           
+
+8 rows selected.
+
+SQL> clear screen
+SQL> select distinct manager_id from s_emp;
+
+MANAGER_ID                                                                      
+----------                                                                      
+         1                                                                      
+         2                                                                      
+         3                                                                      
+         6                                                                      
+         7                                                                      
+         8                                                                      
+         9                                                                      
+        10                                                                      
+                                                                                
+
+9 rows selected.
+
+SQL> clear screen
+SQL> select first_name from s_emp
+  2  where id not in (select manager_id from s_emp);
+
+no rows selected
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name from s_emp
+  2  where id not in (select manager_id from s_emp
+  3*                  where manager_id is not null )
+SQL> /
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Mark                                                                            
+Audry                                                                           
+Colin                                                                           
+Henry                                                                           
+Yasmin                                                                          
+Mai                                                                             
+Andre                                                                           
+Elena                                                                           
+George                                                                          
+Akira                                                                           
+Vikram                                                                          
+
+FIRST_NAME                                                                      
+-------------------------                                                       
+Chad                                                                            
+Alexander                                                                       
+Eddie                                                                           
+Radha                                                                           
+Bela                                                                            
+Sylvie                                                                          
+
+17 rows selected.
+
+SQL> clear screen
+SQL> select dept_id,avg(salary) from s_emp
+  2  group by dept_id
+  3  having avg(salary) < (select avg(salary) from s_emp
+  4                        where dept_id = 32);
+
+   DEPT_ID AVG(SALARY)                                                          
+---------- -----------                                                          
+        10        1450                                                          
+        31        1400                                                          
+        34        1160                                                          
+        35        1450                                                          
+        41      1247.5                                                          
+        42  1081.66667                                                          
+        43         900                                                          
+        44        1050                                                          
+        45        1089                                                          
+
+9 rows selected.
+
+SQL> clear screen
+SQL> select first_name,salary
+  2  from s_emp e,(select dept_id,avg(salary) from s_emp
+  3                group by dept_id) deptavg
+  4  
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,salary
+  2  from s_emp e,(select dept_id,avg(salary) avgsal from s_emp
+  3                group by dept_id) v
+  4  where e.dept_id = v.dept_id
+  5* and e.salary > v.avgsal
+SQL> clear screen
+SQL> l
+  1  select first_name,salary
+  2  from s_emp e,(select dept_id,avg(salary) avgsal from s_emp
+  3                group by dept_id) v
+  4  where e.dept_id = v.dept_id
+  5* and e.salary > v.avgsal
+SQL> /
+
+FIRST_NAME                    SALARY                                            
+------------------------- ----------                                            
+Carmen                          2500                                            
+LaDoris                         1450                                            
+Roberta                         1250                                            
+Ben                             1100                                            
+Antoinette                      1300                                            
+Marta                           1307                                            
+Mai                             1525                                            
+Elena                           1400                                            
+Akira                           1200                                            
+Sylvie                          1100                                            
+
+10 rows selected.
+
+SQL> edit
+Wrote file afiedt.buf
+
+  1  select first_name,salary,v.avgsal
+  2  from s_emp e,(select dept_id,avg(salary) avgsal from s_emp
+  3                group by dept_id) v
+  4  where e.dept_id = v.dept_id
+  5* and e.salary > v.avgsal
+SQL> /
+
+FIRST_NAME                    SALARY     AVGSAL                                 
+------------------------- ---------- ----------                                 
+Carmen                          2500       2025                                 
+LaDoris                         1450     1247.5                                 
+Roberta                         1250 1081.66667                                 
+Ben                             1100        900                                 
+Antoinette                      1300       1050                                 
+Marta                           1307       1089                                 
+Mai                             1525       1160                                 
+Elena                           1400     1247.5                                 
+Akira                           1200 1081.66667                                 
+Sylvie                          1100       1089                                 
+
+10 rows selected.
+
+SQL> clear
+SQL> clear screen
+SQL> spool off
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+SQL> select count(*) from s_emp;
+
+  COUNT(*)
+----------
+        25
+
+SQL> select count(*) from sd0706.s_emp;
+
+  COUNT(*)
+----------
+        25
+
+SQL> select count(*) from asd0706.s_emp;
+select count(*) from asd0706.s_emp
+                             *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> show user
+USER is "SD0706"
+SQL> clear screen
+
+SQL> connect asd0706/asd0706
+Connected.
+SQL> grant select on s_emp to sd0706;
+
+Grant succeeded.
+
+SQL> connect sd0706/sd0706
+Connected.
+SQL> select count(*) from asd0706.s_emp;
+
+  COUNT(*)
+----------
+        25
+
+SQL> clear screen     
+
+
+
+
+
+
+
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 VARCHAR2(10)
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+
+SQL> create table test(c1 varchar2(10),c2 char(10));
+
+Table created.
+
+SQL> desc test
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 VARCHAR2(10)
+ C2                                                 CHAR(10)
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+SQL> insert into test values ('abc','abc');
+
+1 row created.
+
+SQL> select * from test;
+
+C1         C2
+---------- ----------
+abc        abc
+
+SQL> commit;
+
+Commit complete.
+
+SQL> select c1||'d',length(c1),
+  2  c2||'d',length(c2)
+  3  from test;
+
+C1||'D'     LENGTH(C1) C2||'D'     LENGTH(C2)
+----------- ---------- ----------- ----------
+abcd                 3 abc       d         10
+
+SQL> clear screen
+
+SQL> l
+  1  select c1||'d',length(c1),
+  2  c2||'d',length(c2)
+  3* from test
+SQL> /
+
+C1||'D'     LENGTH(C1) C2||'D'     LENGTH(C2)
+----------- ---------- ----------- ----------
+abcd                 3 abc       d         10
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> create table test(c1 number(3),number(4,2));
+create table test(c1 number(3),number(4,2))
+                               *
+ERROR at line 1:
+ORA-00904: : invalid identifier
+
+
+SQL> edit
+Wrote file afiedt.buf
+
+
+
+
+
+
+
+
+
+"afiedt.buf" 2 lines, 46 characters 
+create table test(c1 number(3),c2 number(4,2))
+/
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"afiedt.buf" 2 lines, 49 characters 
+
+  1* create table test(c1 number(3),c2 number(4,2))
+SQL> /
+
+Table created.
+
+SQL> clear screen
+
+SQL> insert into test values (1000,99.99); 
+insert into test values (1000,99.99)
+                         *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allows for this column
+
+
+SQL>  insert into test values (99,99.995);
+ insert into test values (99,99.995)
+                             *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allows for this column
+
+
+SQL>  insert into test values (99,99.991);
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+
+SQL> create table test(c1 number(2,4));
+
+Table created.
+
+SQL> create table test(c1 date);
+create table test(c1 date)
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object
+
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+SQL> desc test    
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ C1                                                 NUMBER(2,4)
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+
+SQL> create table test(c1 number(2),c2 varchar2(2), 
+  2  c3 char(10),c4 date);
+
+Table created.
+
+SQL> insert into test values (10,'ab','abc',
+  2  to_date('2007 10 22 14:57:30','yyyy mm dd hh24:mi:ss'));
+
+1 row created.
+
+SQL> select * from test;
+
+        C1 C2 C3         C4
+---------- -- ---------- ---------
+        10 ab abc        22-OCT-07
+
+SQL> commit;
+
+Commit complete.
+
+SQL> clear screen
+
+
+SQL> create table order (c1 number);
+create table order (c1 number)
+             *
+ERROR at line 1:
+ORA-00903: invalid table name
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+SQL> create table test(c1 number default 1 ,c2 number );
+
+Table created.
+
+SQL> insert into test(c2) values (2);
+
+1 row created.
+
+SQL> select * from test;
+
+        C1         C2
+---------- ----------
+         1          2
+
+SQL> insert into test(c1) values (3);
+
+1 row created.
+
+SQL> select * from test;
+
+        C1         C2
+---------- ----------
+         1          2
+         3
+
+SQL> clear screen
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> create table test(c1 number(3) primary key);
+
+Table created.
+
+SQL> insert into test values (1);
+
+1 row created.
+
+SQL> /
+insert into test values (1)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SD0706.SYS_C0019125) violated
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> clear screen
+
+SQL> create table test(c1 number(3)            
+  2  constraints test_c1_pk primary key);
+
+Table created.
+
+SQL> insert into test values (1);
+
+1 row created.
+
+SQL> /
+insert into test values (1)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SD0706.TEST_C1_PK) violated
+
+
+SQL> clear screen
+
+
+
+
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> create table test(c1 number ,
+  2  primary key(c1));
+
+Table created.
+
+SQL> clear screen
+
+
+
+
+
+
+
+
+
+
+
+
+
+SQL> drop table test;
+
+Table dropped.
+
+SQL> create table test(c1 number primary key,
+  2  c2 number primary key);
+c2 number primary key)
+          *
+ERROR at line 2:
+ORA-02260: table can have only one primary key
+
+
+SQL> create table test(c1 number,
+  2  c2 number,
+  3  primary key(c1,c2));
+
+Table created.
+
+SQL> spool off
+not spooling currently
+SQL> 
+
+
