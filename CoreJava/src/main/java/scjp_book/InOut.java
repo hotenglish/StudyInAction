@@ -10,9 +10,9 @@ public class InOut {
 		class Bicycle {
 			int inner = 0;
 			public void sayHello() {
-				int methodinner = 0;
+				int methodInner = 0;
 				// System.out.println(iam); 不可访问方法中的iam变量。
-				System.out.println(methodinner);
+				System.out.println(methodInner);
 				System.out.println(inner);
 				System.out.println(s);
 				System.out.println(iArgs);
