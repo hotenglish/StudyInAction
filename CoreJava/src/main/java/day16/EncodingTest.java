@@ -15,6 +15,10 @@ public class EncodingTest {
 		while(it.hasNext()){
 			System.out.println(m.get(it.next()));
 		}
+
+		System.out.println();
+
+		//m.forEach((t,u)->System.out.println("key:"+t+" value:"+u));
 		
 		//获取当前系统平台的编码集 
 		String code = System.getProperty("file.encoding");

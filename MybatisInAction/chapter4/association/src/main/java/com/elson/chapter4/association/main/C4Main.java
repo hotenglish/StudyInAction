@@ -26,10 +26,10 @@ public class C4Main {
             session = SqlSessionFactoryUtil.openSqlSession();
             StudentDao studentDao = session.getMapper(StudentDao.class);
             Student student = studentDao.getStudent(1);
-            System.out.println("---------------eager-------------------");
+/*            System.out.println("---------------eager-------------------");
             System.out.println(student.getStudentLectureList());
             System.out.println("---------------lazy-------------------");
-            System.out.println(student.getStudentSelfCard());
+            System.out.println(student.getStudentSelfCard());*/
         } catch (Exception e) {
             System.err.println(e.getMessage());
         } finally {

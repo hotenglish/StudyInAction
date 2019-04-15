@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/association" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/auto_mapping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cascade" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/includeparam" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/insert" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/parameter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/params" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/save" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/select" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/update_delete" charset="UTF-8" />
+  </component>
+</project>

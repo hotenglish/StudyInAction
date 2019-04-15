@@ -15,9 +15,9 @@ public class FileStreamTest3 {
 		FileOutputStream fos = null;
 		try {
 			//构造文件输入流对象
-			fis = new FileInputStream("D:\\0706\\abc.txt");
+			fis = new FileInputStream("/home/oracle/Downloads/temp.dat");
 			//构造文件输出流对象
-			fos = new FileOutputStream("D:\\0706\\haha.txt");
+			fos = new FileOutputStream("/home/oracle/Downloads/haha.txt");
 			while(fis.available()>0){
 				fos.write(fis.read());
 			}

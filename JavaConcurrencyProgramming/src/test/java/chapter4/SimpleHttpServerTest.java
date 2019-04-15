@@ -45,7 +45,7 @@ public class SimpleHttpServerTest {
 
     @Test
     public void simpleHttpServerTest() throws Exception {
-        String basePath="C:\\Users\\B-36244\\Documents\\360截图";
+        String basePath="/home/oracle/learn/StudyInAction/paste.ico";
         SimpleHttpServer.setBasePath(basePath);
         SimpleHttpServer.start();
     }

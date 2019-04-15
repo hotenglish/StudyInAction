@@ -9,6 +9,6 @@ public interface FileService {
 
     boolean insertFileVersion2(FileBean file);
 
-    void uploanFile(MultipartFile imgFile, String filePath);
+    void uploadFile(MultipartFile imgFile, String filePath);
 
 }

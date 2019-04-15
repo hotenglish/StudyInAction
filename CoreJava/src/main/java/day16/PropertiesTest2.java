@@ -13,7 +13,7 @@ public class PropertiesTest2 {
 		FileInputStream fis = null;
 		try {
 			fis = new FileInputStream(
-					"src\\day16\\student.properties");
+					"/home/oracle/Downloads/student.properties");
 			p.load(fis);
 		} catch (FileNotFoundException ex) {
 			System.out.println(ex.getMessage());

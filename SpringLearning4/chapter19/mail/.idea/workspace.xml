@@ -1,23 +1,232 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c6635c8-f4ab-4b33-852d-0f12a35e7991" name="Default" comment="" />
+    <list default="true" id="1c6635c8-f4ab-4b33-852d-0f12a35e7991" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../CoreJava/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CoreJava/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CoreJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../CoreJava/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../CoreJava/src/main/java/day19/IBM公司面试题.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjtools_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_aop_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_beans_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_context_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_core_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_expression_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_test_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter04/aspect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter04/aspect/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter05/.idea/artifacts/chapter05_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter05/.idea/artifacts/chapter05_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter05/.idea/artifacts/chapter05_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter05/.idea/artifacts/chapter05_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/artifacts/jsp_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter06/jsp/.idea/artifacts/jsp_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/artifacts/jsp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter06/jsp/.idea/artifacts/jsp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter06/jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter06/tiles/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/artifacts/Spittr_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/artifacts/Spittr_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/artifacts/Spittr_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/artifacts/Spittr_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter07/Spittr/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/artifacts/thymeleaf_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/artifacts/thymeleaf_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/artifacts/thymeleaf_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/artifacts/thymeleaf_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_6_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_6_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_aop_3_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_aop_3_2_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity3_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity3_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter09/thymeleaf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_8_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_5_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_tx_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/mongo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter12/mongo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_3_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_context_support_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__org_springframework_spring_tx_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/libraries/Maven__redis_clients_jedis_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter12/redis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter12/redis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chapter14/methodsecurity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_icegreen_greenmail_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_icegreen_greenmail_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_icegreen_greenmail_spring_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_icegreen_greenmail_spring_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ooad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ooad/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MailConfig.java" pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/spittr/config/MailConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="578">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -25,41 +234,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputStream.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/java/src.zip!/java/io/InputStream.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/spittr/email/SpitterMailServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
-              <folding />
+            <state relative-caret-position="663">
+              <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MimeMessage.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/local/maven/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar!/javax/mail/internet/MimeMessage.class">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="505" column="0" lean-forward="true" selection-start-line="505" selection-start-column="0" selection-end-line="505" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="34">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpitterMailService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpitterMailServiceImpl.java" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="476">
+              <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#638#639#0" expanded="true" />
@@ -69,14 +269,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpitterMailServiceImplTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/spittr/email/SpitterMailServiceImplTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spittle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="58" column="69" lean-forward="false" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="39" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -91,10 +297,8 @@
       </list>
     </option>
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -107,18 +311,12 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="/usr/local/maven/repository" />
-        <option name="mavenHome" value="/usr/local/maven" />
-        <option name="userSettingsFile" value="/usr/local/maven/conf/settings.xml" />
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="/usr/local/maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="/usr/local/maven/apache-maven-3.6.0/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -133,21 +331,13 @@
     <option name="width" value="1504" />
     <option name="height" value="994" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,84 +398,18 @@
               <item name="spittr" type="462c0819:PsiDirectoryNode" />
               <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="collateral" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="email" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mail" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="collateral" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mail" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552320548642" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -309,177 +433,105 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.SpitterMailServiceImplTest">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpitterMailServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="mail" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spittr.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="mail" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="spittr.email" />
       <option name="MAIN_CLASS_NAME" value="spittr.email.SpitterMailServiceImplTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpitterMailServiceImplTest.sendSimpleSpittleEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="mail" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spittr.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="mail" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="spittr.email" />
       <option name="MAIN_CLASS_NAME" value="spittr.email.SpitterMailServiceImplTest" />
       <option name="METHOD_NAME" value="sendSimpleSpittleEmail" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="SpitterMailServiceImplTest.testSendSpittleEmailWithAttachment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <module name="mail" />
+      <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="spittr.email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="mail" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="spittr.email" />
       <option name="MAIN_CLASS_NAME" value="spittr.email.SpitterMailServiceImplTest" />
       <option name="METHOD_NAME" value="testSendSpittleEmailWithAttachment" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+    <configuration default="true" type="TestNG">
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-    </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest.sendSimpleSpittleEmail" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest.testSendSpittleEmailWithAttachment" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest" />
+    <list>
+      <item itemvalue="JUnit.SpitterMailServiceImplTest.sendSimpleSpittleEmail" />
+      <item itemvalue="JUnit.SpitterMailServiceImplTest.testSendSpittleEmailWithAttachment" />
+      <item itemvalue="JUnit.SpitterMailServiceImplTest" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest.testSendSpittleEmailWithAttachment" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SpitterMailServiceImplTest.sendSimpleSpittleEmail" />
+      <list>
+        <item itemvalue="JUnit.SpitterMailServiceImplTest" />
+        <item itemvalue="JUnit.SpitterMailServiceImplTest.testSendSpittleEmailWithAttachment" />
+        <item itemvalue="JUnit.SpitterMailServiceImplTest.sendSimpleSpittleEmail" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -489,13 +541,14 @@
       <option name="presentableId" value="Default" />
       <updated>1542251043842</updated>
       <workItem from="1542251052880" duration="11998000" />
+      <workItem from="1552316117934" duration="440000" />
+      <workItem from="1552319847351" duration="1307000" />
+      <workItem from="1552358077934" duration="66000" />
+      <workItem from="1552358155494" duration="1604000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpitterMailServiceImplTest - 2018.11.15 at 14h 53m 03s.xml">
-      <configuration name="SpitterMailServiceImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SpitterMailServiceImplTest - 2018.11.15 at 14h 54m 22s.xml">
       <configuration name="SpitterMailServiceImplTest" configurationId="JUnit" />
     </history-entry>
@@ -523,79 +576,82 @@
     <history-entry file="SpitterMailServiceImplTest - 2018.11.15 at 15h 12m 21s.xml">
       <configuration name="SpitterMailServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SpitterMailServiceImplTest - 2019.03.12 at 00h 09m 25s.xml">
+      <configuration name="SpitterMailServiceImplTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11998000" />
+    <option name="totallyTimeSpent" value="15415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="28" width="1282" height="740" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3184039" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965096" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32959402" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39965096" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="right" id="Maven" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39965096" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3184039" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="5" weight="0.3184039" />
+      <window_info id="Structure" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32984293" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.39965096" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="11" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Database" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -607,114 +663,57 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/maven/repository/org/springframework/spring-context/4.0.7.RELEASE/spring-context-4.0.7.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/local/maven/repository/org/springframework/spring-context/4.0.7.RELEASE/spring-context-4.0.7.RELEASE.jar!/org/springframework/context/annotation/ComponentScan.class" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="44" column="38" lean-forward="false" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spittle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
+          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mail.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/maven/repository/org/springframework/spring-context-support/4.0.7.RELEASE/spring-context-support-4.0.7.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSender.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///usr/local/maven/repository/org/springframework/spring-context-support/4.0.7.RELEASE/spring-context-support-4.0.7.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSender.class" />
+    <entry file="jar:///usr/local/maven/repository/com/icegreen/greenmail-spring/1.4.0/greenmail-spring-1.4.0.jar!/com/icegreen/greenmail/spring/GreenMailBean.class" />
+    <entry file="jar:///usr/local/java/src.zip!/java/io/InputStream.java" />
+    <entry file="jar:///usr/local/maven/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar!/javax/mail/internet/MimeMessage.class" />
+    <entry file="jar:///usr/local/maven/repository/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/mail.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
-          <folding />
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/local/maven/repository/com/icegreen/greenmail-spring/1.4.0/greenmail-spring-1.4.0.jar!/com/icegreen/greenmail/spring/GreenMailBean.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spitter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1920">
-          <caret line="128" column="25" lean-forward="false" selection-start-line="128" selection-start-column="25" selection-end-line="128" selection-end-column="25" />
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/spittr/email/SpitterMailServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="40" column="54" lean-forward="true" selection-start-line="40" selection-start-column="54" selection-end-line="40" selection-end-column="54" />
           <folding>
-            <element signature="e#4247#4248#0" expanded="true" />
-            <element signature="e#4306#4307#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/java/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="99" column="15" lean-forward="false" selection-start-line="99" selection-start-column="15" selection-end-line="99" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/maven/repository/javax/mail/mail/1.4.7/mail-1.4.7.jar!/javax/mail/internet/MimeMessage.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="505" column="0" lean-forward="true" selection-start-line="505" selection-start-column="0" selection-end-line="505" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/local/maven/repository/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spittr/config/MailConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="578">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -723,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="476">
+          <caret line="28" column="51" lean-forward="true" selection-start-line="28" selection-start-column="51" selection-end-line="28" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#638#639#0" expanded="true" />
@@ -733,13 +732,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/spittr/email/SpitterMailServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/domain/Spittle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="58" column="69" lean-forward="false" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/spittr/mail/SpitterMailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="39" />
         </state>
       </provider>
     </entry>

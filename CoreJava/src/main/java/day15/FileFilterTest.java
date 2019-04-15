@@ -2,7 +2,7 @@ package day15;
 import java.io.*;
 public class FileFilterTest {
 		public static void main(String[] args) {
-			File f=new File("c:\\");
+			File f=new File("//home//oracle//Downloads");
 			filter(f);
 		}
 		// 列举出dir下面所有的以.java后缀的文件
@@ -15,7 +15,7 @@ public class FileFilterTest {
 					else {
 						//为文件，则以.java为后缀返回true，否则，返回false
 						String name=f.getName();
-						int index = name.indexOf(".txt");
+						int index = name.indexOf(".doc");
 						boolean flag = (index!=-1);
 						return flag;
 					

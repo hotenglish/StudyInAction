@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b0cc258-6014-4955-90be-38bb34529b76" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SSM/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM/demo-user-web/src/test/java/consumer/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SSM/demo-user-web/src/test/resources/dubbo-demo-consumer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day10/tarenaCorejava.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/DataStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/DataStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/DataStreamTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/DataStreamTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day15/FileStreamTest3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/BufferedReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/BufferedReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/EncodingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/EncodingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/FileReraderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/FileReraderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/FileWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/FileWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/OutputStreamWriterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/OutputStreamWriterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/PropertiesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/PropertiesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/PropertiesTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/PropertiesTest2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/SystemOutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day16/SystemOutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day17/ServerD.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day17/ServerD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day17/ServerE.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day17/ServerE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day18/exec/TicketType.java" beforeDir="false" afterPath="$PROJECT_DIR$/../CoreJava/src/main/java/day18/exec/TicketType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/day19/IBM公司面试题.odt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/Database Error Messages.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/Database Reference.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/Oracle.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/PLSQLTEST" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/SQL Reference.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/afiedt.buf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/decode.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/demobld.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/forupdate.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/gensele.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/myproc.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/plsql11.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/plsql12.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/plsql21.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/plsql_demo.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/seletab.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql11.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql21.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql22.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql31.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql32.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql41.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql42.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sql43.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sqlcombak.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/sqlcombak2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/src/main/java/hiloo/summit2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/CollectorHarness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/CollectorHarness.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/log.log" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/src/test/java/chapter4/SimpleHttpServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaConcurrencyProgramming/src/test/java/chapter4/SimpleHttpServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven3InAction/chapter15/account-parent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven3InAction/chapter15/account-parent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/association/association.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/association/src/main/java/com/elson/chapter4/association/main/C4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/association/src/main/java/com/elson/chapter4/association/main/C4Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/association/src/main/resources/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/association/src/main/resources/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/auto_mapping/auto_mapping.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/cache/cache.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/cascade/cascade.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/chapter4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/includeparam/includeparam.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/insert/insert.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/parameter.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/java/com/elson/chapter4/parameter/main/C4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/java/com/elson/chapter4/parameter/main/C4Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/resources/RoleDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/parameter/src/main/resources/RoleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/params/paramams.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/save.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/main/C4Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter4/save/src/main/java/com/elson/chapter4/save/main/C4Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/select/select.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter4/update_delete/update_delete.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter5/chapter5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/impl/FileServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter8/src/main/java/com/learn/chapter8/service/impl/FileServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9MultipleRelationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/java/com/elson/chapter9/main/C9MultipleRelationMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/chapter9/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__com_github_stefanbirkner_system_rules_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjtools_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_aop_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_beans_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_context_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_core_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_expression_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/libraries/Maven__org_springframework_spring_test_4_3_19_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter04/aspect/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/artifacts/chapter05_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/artifacts/chapter05_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/artifacts/chapter05_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/artifacts/chapter05_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/artifacts/jsp_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/artifacts/jsp_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/artifacts/jsp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/artifacts/jsp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/jsp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/tiles/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/artifacts/Spittr_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/artifacts/Spittr_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/artifacts/Spittr_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/artifacts/Spittr_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter07/Spittr/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/artifacts/thymeleaf_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/artifacts/thymeleaf_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/artifacts/thymeleaf_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/artifacts/thymeleaf_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_6_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_6_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_0_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_ldap_spring_ldap_core_2_0_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_aop_3_2_8_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_aop_3_2_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity3_2_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity3_2_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter09/thymeleaf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_mongodb_mongo_java_driver_2_11_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_8_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_data_spring_data_mongodb_1_5_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/libraries/Maven__org_springframework_spring_tx_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter12/mongo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_3_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_context_support_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__org_springframework_spring_tx_3_2_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/libraries/Maven__redis_clients_jedis_2_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter12/redis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__javax_annotation_jsr250_api_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter14/methodsecurity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/restful-client/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/artifacts/spitter_api_message_converters_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/artifacts/spitter_api_message_converters_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/artifacts/spitter_api_message_converters_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/artifacts/spitter_api_message_converters_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/src/main/java/spittr/web/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter16/spitter-api-message-converters/src/main/java/spittr/web/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__com_rabbitmq_amqp_client_2_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__commons_io_commons_io_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__commons_logging_commons_logging_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_activemq_activemq_spring_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_activemq_kahadb_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_0_1B_spec_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_apache_xbean_xbean_spring_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_jasypt_jasypt_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_osgi_spring_osgi_core_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_osgi_spring_osgi_io_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/libraries/Maven__org_springframework_spring_tx_3_0_5_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter17/amqp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__commons_logging_commons_logging_1_0_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__commons_pool_commons_pool_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_activemq_activemq_core_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_activemq_activemq_pool_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_activemq_activemq_spring_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_activemq_kahadb_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_activemq_protobuf_activemq_protobuf_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_j2ee_management_1_1_spec_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jms_1_1_spec_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_geronimo_specs_geronimo_jta_1_0_1B_spec_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_apache_xbean_xbean_spring_3_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_fusesource_hawtbuf_hawtbuf_1_9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_fusesource_hawtdispatch_hawtdispatch_transport_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_fusesource_mqtt_client_mqtt_client_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_jasypt_jasypt_1_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_osgi_spring_osgi_core_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_osgi_spring_osgi_io_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_jms_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter17/jms/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/artifacts/STOMP_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/artifacts/STOMP_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/artifacts/STOMP_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/artifacts/STOMP_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_lmax_disruptor_3_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_lmax_disruptor_3_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_rabbitmq_amqp_client_3_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__com_rabbitmq_amqp_client_3_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__io_netty_netty_all_4_0_11_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__io_netty_netty_all_4_0_11_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_projectreactor_reactor_core_1_0_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_projectreactor_reactor_core_1_0_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_projectreactor_reactor_tcp_1_0_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_projectreactor_reactor_tcp_1_0_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_2_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_2_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_aop_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_beans_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_context_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_core_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_expression_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_tx_3_1_4_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_tx_3_1_4_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_web_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_springframework_spring_websocket_4_3_20_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_jquery_2_0_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_jquery_2_0_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_sockjs_client_0_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_sockjs_client_0_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_stomp_websocket_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/libraries/Maven__org_webjars_stomp_websocket_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/STOMP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMP/STOMP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/artifacts/STOMPUser_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/artifacts/STOMPUser_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/artifacts/STOMPUser_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/artifacts/STOMPUser_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__com_lmax_disruptor_3_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__com_rabbitmq_amqp_client_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__io_netty_netty_all_4_0_11_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_projectreactor_reactor_core_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_projectreactor_reactor_tcp_1_0_0_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_2_1_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_security_spring_security_config_3_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_security_spring_security_core_3_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_security_spring_security_web_3_2_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_messaging_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_tx_3_1_4_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_springframework_spring_websocket_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_webjars_jquery_2_0_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_webjars_sockjs_client_0_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/libraries/Maven__org_webjars_stomp_websocket_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/STOMPUser/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/artifacts/WebSocket_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/artifacts/WebSocket_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/artifacts/WebSocket_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/artifacts/WebSocket_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_springframework_spring_websocket_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_2_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_webjars_jquery_2_0_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_webjars_sockjs_client_0_3_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/libraries/Maven__org_webjars_stomp_websocket_2_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter18/WebSocket/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_icegreen_greenmail_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_icegreen_greenmail_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_icegreen_greenmail_spring_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_icegreen_greenmail_spring_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_context_support_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter19/mail/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ooad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ooad/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ForkJoinSumCalculator</find>
+      <find>getO</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap2/FilteringApples.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap3/ExecuteAround.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/Reducing.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/GroupingTransactions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/CollectorHarness.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap6/PartitionPrimeNumbers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/WordCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Authors.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="/usr/local/maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="/usr/local/maven/apache-maven-3.6.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="48" />
+    <option name="width" value="1104" />
+    <option name="height" value="659" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Java8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lambdasinaction" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553274678350" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AsyncShopClient">
+    <configuration name="AsyncShopClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap11.AsyncShopClient" />
+      <module name="lambdasinaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambdasinaction.chap11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestPriceFinderMain (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap11.BestPriceFinderMain" />
+      <module name="lambdasinaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambdasinaction.chap11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BestPriceFinderMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap11.v1.BestPriceFinderMain" />
+      <module name="lambdasinaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambdasinaction.chap11.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Currying" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap14.Currying" />
+      <module name="lambdasinaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambdasinaction.chap14.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lambdasinaction.chap11.v1.ShopMain" />
+      <module name="lambdasinaction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lambdasinaction.chap11.v1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AsyncShopClient" />
+        <item itemvalue="Application.BestPriceFinderMain (1)" />
+        <item itemvalue="Application.BestPriceFinderMain" />
+        <item itemvalue="Application.ShopMain" />
+        <item itemvalue="Application.Currying" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b0cc258-6014-4955-90be-38bb34529b76" name="Default Changelist" comment="" />
+      <created>1552404220312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1552404220312</updated>
+      <workItem from="1552404223851" duration="4262000" />
+      <workItem from="1552434885656" duration="3253000" />
+      <workItem from="1552446890785" duration="36506000" />
+      <workItem from="1552550275362" duration="24881000" />
+      <workItem from="1552609117024" duration="11217000" />
+      <workItem from="1552817857819" duration="823000" />
+      <workItem from="1552821702851" duration="597000" />
+      <workItem from="1553094292813" duration="1416000" />
+      <workItem from="1553262922976" duration="10627000" />
+      <workItem from="1555255492733" duration="691000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="94273000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27884614" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44588235" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27564102" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32941177" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Filtering.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Mapping.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/PuttingIntoPractice.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/Debugging.java</url>
+          <line>8</line>
+          <properties>
+            <option name="lambda-ordinal" value="0" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Triangle.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/function/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Letter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#199#200#0" expanded="true" />
+            <element signature="e#250#251#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Triangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#264#265#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/MostSpecific.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Intro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap9/Ambiguous.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <element signature="e#101#102#0" expanded="true" />
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap12/DateTimeExamples.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-781">
+          <caret line="96" column="58" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#873#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap7/ForkJoinSumCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/Filtering.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap5/BuildingStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-748">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appb/AppBTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap8/FactoryMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="57" column="27" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="587" column="50" lean-forward="true" selection-start-line="587" selection-start-column="50" selection-end-line="587" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="4072" column="19" selection-start-line="4072" selection-start-column="12" selection-end-line="4072" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Authors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appa/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForkerExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appc/StreamForker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-901">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/InnerClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/AppDTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/Recursion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding>
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#831#832#0" expanded="true" />
+            <element signature="e#875#876#0" expanded="true" />
+            <element signature="e#935#936#0" expanded="true" />
+            <element signature="e#1004#1005#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap13/SubsetsMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" column="29" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Combinators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/LazyLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/Currying.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTrainJourney.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PersistentTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/Lambda.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/appd/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap14/PatternMatching.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/ShopMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#1094#1095#0" expanded="true" />
+            <element signature="e#1155#1156#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#1003#1004#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinderMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/v1/BestPriceFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="132" column="44" lean-forward="true" selection-start-line="132" selection-start-column="44" selection-end-line="132" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/ExchangeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="31" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Discount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+          <folding>
+            <element signature="e#823#824#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="183" column="18" selection-start-line="183" selection-start-column="18" selection-end-line="183" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/concurrent/Executor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinderMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="31" column="42" lean-forward="true" selection-start-line="31" selection-start-column="42" selection-end-line="31" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/concurrent/CompletableFuture.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="1812" column="43" selection-start-line="1812" selection-start-column="43" selection-end-line="1812" selection-end-column="43" />
+          <folding>
+            <element signature="e#75214#75215#0" expanded="true" />
+            <element signature="e#75265#75266#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/util/concurrent/Executors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="123" column="30" selection-start-line="123" selection-start-column="30" selection-end-line="123" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/BestPriceFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="67" column="27" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/AsyncShopClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lambdasinaction/chap11/Quote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

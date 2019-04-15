@@ -10,7 +10,7 @@ public class PropertiesTest {
 		FileInputStream fis = null;
 		Properties p = new Properties();
 		try {
-			fis = new FileInputStream("src//day16//student.properties");
+			fis = new FileInputStream("/home/oracle/Downloads/student.properties");
 			//从输入流中读取属性列表（键和元素对）
 			p.load(fis);
 			Set set = p.keySet();

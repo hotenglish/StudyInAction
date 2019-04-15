@@ -9,7 +9,7 @@ public class DataStreamTest2 {
 		DataOutputStream dos = null;
 		FileOutputStream fos = null;
 		try {
-			fos = new FileOutputStream("D:\\temp.dat");
+			fos = new FileOutputStream("/home/oracle/Downloads/temp.dat");
 			dos = new DataOutputStream(fos);			
 			System.out.println("写到文件中的值：");
 			byte b = 5;
@@ -52,7 +52,7 @@ public class DataStreamTest2 {
 		DataInputStream dis = null;
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("D:\\temp.dat");
+			fis = new FileInputStream("/home/oracle/Downloads/temp.dat");
 			dis = new DataInputStream(fis);		
 			System.out.println("从文件中读出的值：");
 			System.out.println(dis.readByte());

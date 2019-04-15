@@ -14,8 +14,8 @@ public class ServerD {
 	public static void main(String[] args) {
 		ServerSocket ss = null;
 		Socket s = null;
-		BufferedReader br=null;
-		PrintStream ps =null;
+		//BufferedReader br=null;
+		//PrintStream ps =null;
 		try {
 			ss = new ServerSocket(8888);
 			System.out.println("服务器已启动，在8888端口...");
@@ -28,12 +28,12 @@ public class ServerD {
 			e.printStackTrace();
 		} finally{
 			try {
-				if(br!=null){
+/*				if(br!=null){
 					br.close();
 				}
 				if(ps!=null){
 					ps.close();
-				}
+				}*/
 				if(s!=null){
 					s.close();
 				}

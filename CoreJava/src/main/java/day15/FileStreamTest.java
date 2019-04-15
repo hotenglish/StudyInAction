@@ -8,7 +8,7 @@ public class FileStreamTest {
 	public static void main(String[] args) {
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("D:\\temp.dat");
+			fis = new FileInputStream("/home/oracle/Downloads/temp.dat");
 			while(fis.available()>0){
 				System.out.print((char)fis.read());
 			}

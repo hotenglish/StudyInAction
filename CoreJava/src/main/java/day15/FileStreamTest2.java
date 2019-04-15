@@ -11,7 +11,8 @@ public class FileStreamTest2 {
 		System.out.println(File.pathSeparator);
 		//获取当前系统平台的目录分隔符
 		System.out.println(File.separator);
-		String pathName = "D:"+File.separator+"0706"+File.separator+"abc.txt";
+		String pathName = "/home/oracle"+File.separator+"Downloads"+File.separator+"temp.dat";
+		///home/oracle/Downloads/temp.dat
 		try {
 			fis = new FileInputStream(pathName);
 			while(fis.available()>0){

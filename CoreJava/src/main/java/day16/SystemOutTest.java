@@ -8,7 +8,7 @@ public class SystemOutTest {
 	public static void main(String[] args) {
 		PrintStream ps = null;
 		try {
-			ps = new PrintStream("D:\\temp.dat");
+			ps = new PrintStream("/home/oracle/Downloads/temp.dat");
 			//设置标准输出流
 			System.setOut(ps);
 			System.out.println("hello!");

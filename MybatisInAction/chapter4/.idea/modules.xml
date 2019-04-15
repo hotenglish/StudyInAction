@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/association/association.iml" filepath="$PROJECT_DIR$/association/association.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auto_mapping/auto_mapping.iml" filepath="$PROJECT_DIR$/auto_mapping/auto_mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cascade/cascade.iml" filepath="$PROJECT_DIR$/cascade/cascade.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4.iml" filepath="$PROJECT_DIR$/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/includeparam/includeparam.iml" filepath="$PROJECT_DIR$/includeparam/includeparam.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insert/insert.iml" filepath="$PROJECT_DIR$/insert/insert.iml" />
+      <module fileurl="file://$PROJECT_DIR$/params/paramams.iml" filepath="$PROJECT_DIR$/params/paramams.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parameter/parameter.iml" filepath="$PROJECT_DIR$/parameter/parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/save/save.iml" filepath="$PROJECT_DIR$/save/save.iml" />
+      <module fileurl="file://$PROJECT_DIR$/select/select.iml" filepath="$PROJECT_DIR$/select/select.iml" />
+      <module fileurl="file://$PROJECT_DIR$/update_delete/update_delete.iml" filepath="$PROJECT_DIR$/update_delete/update_delete.iml" />
+    </modules>
+  </component>
+</project>

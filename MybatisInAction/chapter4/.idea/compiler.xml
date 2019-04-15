@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="USE_RELEASE_OPTION" value="false" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="association" />
+        <module name="auto_mapping" />
+        <module name="cache" />
+        <module name="cascade" />
+        <module name="includeparam" />
+        <module name="insert" />
+        <module name="paramams" />
+        <module name="parameter" />
+        <module name="save" />
+        <module name="select" />
+        <module name="update_delete" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="association" target="1.8" />
+      <module name="auto_mapping" target="1.8" />
+      <module name="cache" target="1.8" />
+      <module name="cascade" target="1.8" />
+      <module name="chapter4" target="1.8" />
+      <module name="includeparam" target="1.8" />
+      <module name="insert" target="1.8" />
+      <module name="paramams" target="1.8" />
+      <module name="parameter" target="1.8" />
+      <module name="save" target="1.8" />
+      <module name="select" target="1.8" />
+      <module name="update_delete" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
