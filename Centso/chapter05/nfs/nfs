@@ -1,0 +1,10 @@
+rpm -qa| grep -i nfs
+cat /etc/exports
+cd /data
+vim /etc/exports
+systemctl restart rpcbind
+systemctl status rpcbind
+systemctl restart nfs-server
+systemctl status nfs-server
+rpcinfo -p
+showmount -e 127.0.0.1

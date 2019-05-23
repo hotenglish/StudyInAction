@@ -1,0 +1,83 @@
+语法cp [options] source dest参数
+-a：此选项通常在复制目录时使用，它保留链接、文件属性，并复制目录下的所有内容。其作用等于dpR参数组合。
+-d：复制时保留链接。这里所说的链接相当于Windows系统中的快捷方式。-f：覆盖已经存在的目标文件而不给出提示。
+-i：与-f选项相反，在覆盖目标文件之前给出提示，要求用户确认是否覆盖，回答"y"时目标文件将被覆盖。
+-p：除复制文件的内容外，还把修改时间和访问权限也复制到新文件中。
+-r：若给出的源文件是一个目录文件，此时将复制该目录下所有的子目录和文件。
+-l：不复制文件，只是生成链接文件。
+
+[root@localhost conf]# cp -v nginx.conf nginx.conf.20150412
+cp：是否覆盖"nginx.conf.20150412"？ y
+"nginx.conf" -> "nginx.conf.20150412"
+[root@localhost conf]# ls -l nginx.conf nginx.conf.20150412 
+-rw-r--r-- 1 root root 2681 4月  18 18:09 nginx.conf
+-rw-r--r-- 1 root root 2681 4月  28 08:30 nginx.conf.20150412
+
+[root@localhost conf]# ls
+fastcgi.conf          fastcgi_params          koi-utf  mime.types          nginx.conf           nginx.conf.default  scgi_params          uwsgi_params          vhost
+fastcgi.conf.default  fastcgi_params.default  koi-win  mime.types.default  nginx.conf.20150412  proxy.conf          scgi_params.default  uwsgi_params.default  win-utf
+[root@localhost conf]# cp -v nginx.conf nginx.conf.20150412 backup/
+cp: 目标"backup/" 不是目录
+
+[root@localhost conf]# mkdir backup
+[root@localhost conf]# cp -v nginx.conf nginx.conf.20150412 backup/
+"nginx.conf" -> "backup/nginx.conf"
+"nginx.conf.20150412" -> "backup/nginx.conf.20150412"
+
+[root@localhost conf]# cd ..
+[root@localhost nginx]# ls
+client_body_temp  conf  fastcgi_temp  html  logs  proxy_temp  sbin  scgi_temp  uwsgi_temp
+[root@localhost nginx]# cp conf conf.bak
+cp: 略过目录"conf"
+
+[root@localhost nginx]# ll
+总用量 0
+drwx------ 1 nobody root   0 4月  17 19:42 client_body_temp
+drwxr-xr-x 1 root   root 494 4月  28 08:32 conf
+drwx------ 1 nobody root   0 4月  17 19:42 fastcgi_temp
+drwxr-xr-x 1 root   root  36 4月  17 19:11 html
+drwxr-xr-x 1 root   root  44 4月  18 18:18 logs
+drwx------ 1 nobody root   0 4月  17 19:42 proxy_temp
+drwxr-xr-x 1 root   root  10 4月  17 19:11 sbin
+drwx------ 1 nobody root   0 4月  17 19:42 scgi_temp
+drwx------ 1 nobody root   0 4月  17 19:42 uwsgi_temp
+
+[root@localhost nginx]# ls
+client_body_temp  conf  fastcgi_temp  html  logs  proxy_temp  sbin  scgi_temp  uwsgi_temp
+
+[root@localhost nginx]# cp -r conf conf.20150412
+[root@localhost nginx]# ls -l
+总用量 0
+drwx------ 1 nobody root   0 4月  17 19:42 client_body_temp
+drwxr-xr-x 1 root   root 494 4月  28 08:32 conf
+drwxr-xr-x 1 root   root 494 4月  28 08:35 conf.20150412
+drwx------ 1 nobody root   0 4月  17 19:42 fastcgi_temp
+drwxr-xr-x 1 root   root  36 4月  17 19:11 html
+drwxr-xr-x 1 root   root  44 4月  18 18:18 logs
+drwx------ 1 nobody root   0 4月  17 19:42 proxy_temp
+drwxr-xr-x 1 root   root  10 4月  17 19:11 sbin
+drwx------ 1 nobody root   0 4月  17 19:42 scgi_temp
+drwx------ 1 nobody root   0 4月  17 19:42 uwsgi_temp
+
+[root@localhost nginx]# cd conf.20150412/
+[root@localhost conf.20150412]# ls
+
+[root@localhost local]# cp -a nginx/ nginx.bak
+
+[root@localhost local]# ls
+bin  etc  games  include  lib  lib64  libexec  maven  nginx  nginx.bak  sbin  share  src
+
+[root@localhost local]# cd nginx.bak
+[root@localhost nginx.bak]# ls
+client_body_temp  conf  conf.20150412  fastcgi_temp  html  logs  proxy_temp  sbin  scgi_temp  uwsgi_temp
+
+[root@localhost nginx.bak]# cp -f /usr/local/nginx/conf/nginx.conf .
+
+[root@localhost nginx.bak]# ls
+client_body_temp  conf  conf.20150412  fastcgi_temp  html  logs  nginx.conf  proxy_temp  sbin  scgi_temp  uwsgi_temp
+
+[root@localhost nginx.bak]# md5sum nginx.conf /usr/local/nginx/conf/nginx.conf
+c060ca8b4e480ab17e71e177504e4c8a  nginx.conf
+c060ca8b4e480ab17e71e177504e4c8a  /usr/local/nginx/conf/nginx.conf
+
+

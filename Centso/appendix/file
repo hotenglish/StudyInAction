@@ -1,0 +1,39 @@
+[oracle@localhost appendix]$ ls -l
+总用量 64
+-rw-r--r-- 1 oracle dba   13 4月  28 12:39 a
+-rw-r--r-- 1 oracle dba  956 4月  28 13:02 cat_example
+-rw-r--r-- 1 oracle dba 4016 4月  28 11:48 cp_example
+-rw-r--r-- 1 oracle dba  637 4月  28 13:58 diff_example
+-rw-r--r-- 1 oracle dba    4 4月  28 16:57 dst_hard
+-rw-r--r-- 1 oracle dba    6 4月  28 12:41 file1
+-rw-r--r-- 1 oracle dba   16 4月  28 12:44 file_1_2
+-rw-r--r-- 1 oracle dba    6 4月  28 12:43 file2
+lrwxrwxrwx 1 oracle dba    8 4月  28 18:12 ln2 -> test.txt
+-rw-r--r-- 1 oracle dba 1857 4月  28 13:19 more_example
+-rw-r--r-- 1 oracle dba   12 4月  28 13:03 more.txt
+-rw-r--r-- 1 oracle dba  907 4月  28 11:48 mv_example
+-rw-r--r-- 1 oracle dba 1958 4月  28 12:20 rm_example
+-rw-r--r-- 1 oracle dba    0 4月  28 11:48 test.hard.link
+-rw-r--r-- 1 oracle dba    5 4月  28 16:33 test.txt
+-rw-r--r-- 1 oracle dba 4526 4月  28 11:50 touch_example
+[oracle@localhost appendix]$ file a
+a: ASCII text
+[oracle@localhost appendix]$ file file1
+file1: ASCII text
+[oracle@localhost appendix]$ file ln2
+ln2: symbolic link to `test.txt'
+[oracle@localhost appendix]$ file t
+test.hard.link  test.txt        touch_example   
+[oracle@localhost appendix]$ file test.hard.link
+test.hard.link: empty
+[oracle@localhost appendix]$ file -b magic
+cannot open (No such file or directory)
+[oracle@localhost appendix]$ file /bin/cp
+/bin/cp: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=d5e29bd19107fc7c0a75cffa392da6ac299add6d, stripped
+[oracle@localhost appendix]$ file -L cp
+cp: cannot open (No such file or directory)
+[oracle@localhost appendix]$ ln -s /bin/cp cp
+[oracle@localhost appendix]$ file-L cp
+bash: file-L: 未找到命令...
+[oracle@localhost appendix]$ file -L cp
+cp: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=d5e29bd19107fc7c0a75cffa392da6ac299add6d, stripped

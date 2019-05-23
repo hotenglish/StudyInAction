@@ -1,0 +1,43 @@
+[oracle@localhost appendix]$ split -l 3  file_1_2
+[oracle@localhost appendix]$ ls -l
+总用量 84
+-rw-r--r-- 1 oracle dba   13 4月  28 12:39 a
+-rw-r--r-- 1 oracle dba  956 4月  28 13:02 cat_example
+lrwxrwxrwx 1 oracle dba    7 4月  28 18:19 cp -> /bin/cp
+-rw-r--r-- 1 oracle dba 4016 4月  28 11:48 cp_example
+-rw-r--r-- 1 oracle dba  637 4月  28 13:58 diff_example
+-rw-r--r-- 1 oracle dba    4 4月  28 16:57 dst_hard
+-rw-r--r-- 1 oracle dba 1991 4月  28 18:21 file
+-rw-r--r-- 1 oracle dba    6 4月  28 12:41 file1
+-rw-r--r-- 1 oracle dba   16 4月  28 12:44 file_1_2
+-rw-r--r-- 1 oracle dba    6 4月  28 12:43 file2
+lrwxrwxrwx 1 oracle dba    8 4月  28 18:12 ln2 -> test.txt
+-rw-r--r-- 1 oracle dba 1857 4月  28 13:19 more_example
+-rw-r--r-- 1 oracle dba   12 4月  28 13:03 more.txt
+-rw-r--r-- 1 oracle dba  907 4月  28 11:48 mv_example
+-rw-r--r-- 1 oracle dba 1958 4月  28 12:20 rm_example
+-rw-r--r-- 1 oracle dba    0 4月  28 11:48 test.hard.link
+-rw-r--r-- 1 oracle dba    5 4月  28 16:33 test.txt
+-rw-r--r-- 1 oracle dba 4526 4月  28 11:50 touch_example
+-rw-r--r-- 1 oracle dba    6 4月  28 18:56 xaa
+-rw-r--r-- 1 oracle dba    7 4月  28 18:56 xab
+-rw-r--r-- 1 oracle dba    3 4月  28 18:56 xac
+[oracle@localhost appendix]$ cat xa*
+a
+b
+c
+d
+e
+cc
+dd
+[oracle@localhost appendix]$ cat xaa
+a
+b
+c
+[oracle@localhost appendix]$ cat xab
+d
+e
+cc
+[oracle@localhost appendix]$ cat xac
+dd
+

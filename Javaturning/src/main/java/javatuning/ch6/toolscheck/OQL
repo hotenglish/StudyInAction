@@ -1,0 +1,74 @@
+select s from java.lang.String s where s.count<100
+select a from int[] a where  a.length>=256
+select {content:file.path.toString(), instance:file} from java.io.File file
+select c1 from instanceof java.lang.ClassLoader c1
+select heap.findClass("java.util.Vector")
+select heap.findClass("java.util.Vector").superclasses()
+select filter(heap.classes(),"/java.io./(it.name)")
+select heap.livepaths(s) from java.lang.String s where s.toString()=='56'
+select heap.roots()
+select heap.objects("java.io.File",true);
+select classof(v) from instanceof java.util.Vector v
+select objectid(v) from instanceof java.util.Vector v
+select reachables(s) from java.lang.String s where s.toString()=='56'
+select reachables(s,"java.lang.String.value") from java.lang.String s where s.toString()=='56'
+select referrers(s) from java.lang.String s where s.toString()=='56'
+select s.toString() from java.lang.String s where (s.count==2 && count(referrers(s)) >=2)
+select referees(heap.findClass("java.io.File"));
+select referees(s) from java.lang.String s where (s.count==2 && count(referrers(s)) >=2)
+select {size:sizeof(o), Object:o} from int[] o
+select {size:sizeof(o), Object:o} from java.util.Vector o
+select {size:sizeof(o), rsize:rsizeof(o)} from java.util.Vector o
+select "<b><em>"+toHtml(o)+"</em></b>" from java.util.Vector o
+select s.toString() from java.lang.String s where contains(referrers(s), "classof(it).name=='java.io.File'")
+select count(heap.classes(),'/java.io./(it.name)')
+select count(heap.classes())
+select filter(referrers(f),"!/java.io./(classof(it).name)") from java.io.File f
+select length(heap.classes())
+select map(heap.objects("java.io.File"),"index+'='+it.path.toString()")
+select max(map(heap.objects('java.lang.String',false),'it.count'))
+select max(heap.objects('java.lang.String'),'lhs.count > rhs.count')
+select min(map(heap.objects('java.util.Vector',false),'it.elementData.length'))
+select min(heap.objects('java.util.Vector'), 'lhs.elementData.length > rhs.elementData.length')
+select sort(heap.objects('java.util.Vector'), 'lhs.elementData.length - rhs.elementData.length')
+select map(sort(heap.objects('java.util.Vector'), 'lhs.elementData.length - rhs.elementData.length'), '{size: rsizeof(it),obj:it}')
+select top(heap.objects('java.lang.String'),'rhs.count - lhs.count',5)
+select map(top(heap.objects('java.lang.String'),'rhs.count - lhs.count',5), '{size: rsizeof(it),obj:it}')
+select sum(map(reachables(p),'sizeof(it)')) from java.util.Properties p
+select sum(reachables(p),'sizeof(it)') from java.util.Properties p
+select count(unique(map(heap.objects('java.lang.String'),'it.value')))
+
+
+select * from java.util.Vector v
+select v.elementData From java.util.Vector v
+select s.count, s.value FROM java.lang.String s
+select v.elementData as "Data Array" From java.util.Vector v
+select s.count,s.value from java.lang.String s
+select objects v.elementData from java.util.Vector v
+select distinct objects classof(s) from java.lang.String s
+select * FROM java.lang.String s
+select * FROM  "javatuning\.ch6\..*"
+select * from instanceof java.util.AbstractCollection
+select * from objects java.lang.String
+select * from objects "javatuning\.ch6\..*"
+select * from java.lang.String s where s.count>=100
+select * from java.lang.String s where toString(s) like ".*java.*"
+select * from java.lang.String s where s.value!=null
+select * from java.lang.String s where s.offset>0 and s.count>10
+select * from java.lang.String s where s.value!=null and (s.count>10 or s.value.@length>100)
+select * from java.lang.String s where s.count>200
+select f.path.value from java.io.File f
+select s.value.@length, s from java.lang.String s where (s.count>100)
+select f.@objectId,f.@objectAddress,f.@class,f.@clazz,f.@usedHeapSize,f.@displayName from java.io.File f
+select v.elementData.@length From java.util.Vector v
+select s.value.@valueArray.get(2) from java.lang.String s where (s.count>100)
+select s.getValueAt(2) from int[] s where (s.@length >2)
+select OBJECTS s.@referenceArray.get(2) from java.lang.Object[]  s where (s.@length >2)
+select * from ${snapshot}.getClasses()
+select * from ${snapshot}.getClassesByName("java.util.Vector",true)
+select c, classof(c).isArrayType() from ${snapshot}.getClasses() c
+select toString(s) FROM java.lang.String s where ((s.count =15) and (s.value!=null))
+select objects dominators(line) from javatuning.ch6.toolscheck.shallowretained.Line line
+select objects dominatorof(line) from javatuning.ch6.toolscheck.shallowretained.Line line
+select objects inbounds(line) from javatuning.ch6.toolscheck.shallowretained.Line line
+select distinct objects classof(obj) from "javatuning.*ch6.*" obj

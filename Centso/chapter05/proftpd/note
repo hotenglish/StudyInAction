@@ -1,0 +1,22 @@
+一、安装
+
+略。
+
+二、匿名配置
+
+请见配置文件。
+
+三、测试注意点
+
+（1）检测/sbin/nologin 是否有列在 /etc/shells 中，没见，加入即可。有助解决登录530问题
+
+（2）ls －l 进行ftp pub 目录，即可上传或者下载文件。
+
+ 实名制时记住　
+useradd -d /data/user1 -m user1
+useradd -d /data/user2 -m user2
+passwd user1
+passwd user2
+
+
+再登录，改变目录至/data/guest，即可上传或者下载文件
