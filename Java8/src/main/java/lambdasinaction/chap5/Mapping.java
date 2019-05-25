@@ -24,6 +24,13 @@ public class Mapping {
                 .collect(toList());
         System.out.println(wordLengths);
 
+
+/*        words.stream()
+                .map(word->word.split(""))
+                .map(Arrays::stream)
+                .distinct()
+                .forEach(System.out::println);*/
+
         // flatMap
         words.stream()
                 .flatMap((String line) -> {

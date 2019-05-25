@@ -9,7 +9,7 @@ public class DataStreamTest {
 		DataOutputStream dos = null;
 		FileOutputStream fos = null;
 		try {
-			fos = new FileOutputStream("D:\\0706\\temp.dat");
+			fos = new FileOutputStream("/home/oracle/Downloads/temp.dat");
 			dos = new DataOutputStream(fos);
 			
 			int i=0;
@@ -46,7 +46,7 @@ public class DataStreamTest {
 		DataInputStream dis = null;
 		FileInputStream fis = null;
 		try {
-			fis = new FileInputStream("D:\\0706\\temp.dat");
+			fis = new FileInputStream("/home/oracle/Downloads/temp.dat");
 			dis = new DataInputStream(fis);
 			int i=0;
 			System.out.println("从文件中读出的值：");

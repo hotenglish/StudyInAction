@@ -1,0 +1,298 @@
+Mysql:
+
+1. 卸载:
+
+      先停掉mysql进程   没有安装过的可以直接跳过
+
+      pkill -9 mysqld
+
+      rpm -qa|grep -i mysql
+
+      用命令 yum -y remove mysql-community-client-5.6.38-2.el7.x86_64
+
+      卸载不掉的用 rpm -ev 
+
+      依次卸载 直到没有
+
+      rpm -qa|grep -i mysql
+
+2. 下载mysql的repo源 这个安装的mysql5.7.20  /**纠正一下，这源下载的是最新的版本  ****/
+
+   [root@localhost ~]#cd /usr/local/src/
+
+   [root@localhost src]#wget http://repo.mysql.com/mysql57-community-release-el7-8.noarch.rpm 
+
+   [root@localhost src]#rpm -ivh mysql57-community-release-el7-8.noarch.rpm 
+
+   [root@localhost src]#yum -y install mysql-server 
+
+	根据步骤安装就可以了，
+
+不过安装完成后，密码为随机密码，需要重置密码。 
+
+3.  启动mysql服务
+
+service mysqld restart
+
+  重置密码
+
+  [root@localhost ~]# grep "password" /var/log/mysqld.log  查出相关原始密码 
+
+  输入 mysql -u root -p   密码 进入      第一次登陆 ，需要重置密码 要不什么也不能操作  
+
+  接下来重置密码：5.7.20 为了安全密码必须包含 数字字母符号
+
+  alter user 'root'@'localhost' identified by 'Root!!2018';  
+
+  最后记得刷新权限；
+
+  flush privileges 
+
+  也可以 直接再添加新用户     
+
+  CREATE USER ‘root‘@‘%‘ IDENTIFIED BY ‘您的密码‘;
+
+  grant all on *.* to 'root001'@'%' identified by 'Root@@'  with grant option;
+
+
+4. 日常启停与相关配置:
+
+	默认配置文件路径： 
+	配置文件：/etc/my.cnf 
+	日志文件：/var/log/mysqld.log 
+	服务启动脚本：/usr/lib/systemd/system/mysqld.service 
+	socket文件：/var/run/mysqld/mysqld.pid
+
+设置操作系统开机或者重启后不自动启动mysql:systemctl disable mysqld.service
+
+设置操作系统开机或者重启后自动启动mysql:systemctl enable mysqld.service
+
+查状态:systemctl status mysqld.service
+
+启动mysql服务:systemctl start mysqld.service
+
+停止mysql服务:systemctl stop mysqld.service
+
+查看mysql进程信息:ps -ef| grep mysql
+
+查看数据目录: ls -lh /var/lib/mysql
+
+
+6.5 数据库维护
+
+准备教学数据:
+
+SHOW DATABASES
+
+CREATE DATABASE ACCOUNT;
+
+CREATE TABLE IF NOT EXISTS `user`(
+   `id` INT UNSIGNED AUTO_INCREMENT,
+   `name` VARCHAR(64) NOT NULL,
+   `password` VARCHAR(40) NOT NULL,
+   `submission_date` DATE,
+   PRIMARY KEY ( `id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO user (name, password, submission_date) VALUES ("ELSON", "123456", NOW());
+INSERT INTO user (name, password, submission_date) VALUES ("Laimaosheng", "123456", NOW());
+
+
+一 分配账号
+
+MySql中添加用户,新建数据库,用户授权,删除用户,修改密码(注意每行后边都跟个;表示一个命令语句结束):
+
+1.新建用户
+
+　　1.1 登录MYSQL：
+
+　　@>mysql -u root -p
+
+　　@>密码
+
+　　1.2 创建用户：
+
+　　mysql> insert into mysql.user(Host,User,Password,ssl_cipher,x509_issuer,x509_subject) values("localhost","user1",password("pass123456"),"","","");
+
+　　这样就创建了一个名为：user1 密码为：1234 的用户。
+
+　　注意：此处的"localhost"，是指该用户只能在本地登录，不能在另外一台机器上远程登录。如果想远程登录的话，将"localhost"改为"%"，表示在任何一台电脑上都可以登录。也可以指定某台机器可以远程登录。
+
+　　1.3 然后登录一下：
+
+　　mysql>exit;
+
+　　@>mysql -u test -p
+
+　　@>输入密码
+
+　　mysql>登录成功 
+
+2.为用户授权
+
+　　授权格式：grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";　
+
+　　2.1 登录MYSQL（有ROOT权限），这里以ROOT身份登录：
+
+　　@>mysql -u root -p
+
+　　@>密码
+
+ 　2.2 授权test用户拥有testDB数据库的所有权限（某个数据库的所有权限）：
+
+　　 mysql>grant all privileges on account.* to user1@localhost identified by 'pass123456';
+
+ 　　mysql>flush privileges;//刷新系统权限表
+
+　　格式：grant 权限 on 数据库.* to 用户名@登录主机 identified by "密码";　
+
+　　2.3 如果想指定部分权限给一用户，可以这样来写:
+
+　　mysql>grant select,update on account.* to user1@localhost identified by 'pass123456';
+
+　　mysql>flush privileges; //刷新系统权限表
+
+　　2.4 授权test用户拥有所有数据库的某些权限： 　 
+
+　　mysql>grant select,delete,update,create,drop on *.* to user1@"%" identified by "pass123456";
+
+     //user1用户对所有数据库都有select,delete,update,create,drop 权限。
+
+　   //@"%" 表示对所有非本地主机授权，不包括localhost。（localhost地址设为127.0.0.1，如果设为真实的本地地址，不知道是否可以，没有验证。）
+
+　   //对localhost授权：加上一句grant all privileges on testDB.* to test@localhost identified by '1234';即可。
+
+   2.5 查看权限
+   select * from mysql.user where user='user1'\G (注意:此查询尾部不要加';'号)
+   select * from db where user='user1'\G
+   select * from tables_priv where user='user1'\G
+
+3. 删除用户
+
+ 　　@>mysql -u root -p
+
+　　@>密码
+
+ 　　mysql>Delete FROM user Where User='test' and Host='localhost';
+
+ 　　mysql>flush privileges;
+
+ 　　mysql>drop database testDB; //删除用户的数据库
+
+删除账户及权限：>drop user 用户名@'%';
+
+　　　　　　　　>drop user 用户名@ localhost; 
+ 
+
+4. 修改指定用户密码
+
+  　　@>mysql -u root -p
+
+  　　@>密码
+
+  　　mysql>update mysql.user set password=password('新密码') where User="test" and Host="localhost";
+
+  　　mysql>flush privileges;
+ 
+
+5. 列出所有数据库
+
+　　mysql>show database; 
+
+6. 切换数据库
+
+　　mysql>use '数据库名'; 
+
+7. 列出所有表
+
+　　mysql>show tables; 
+
+8. 显示数据表结构
+
+　　mysql>describe 表名; 
+
+9. 删除数据库和数据表
+
+　　mysql>drop database 数据库名;
+
+　　mysql>drop table 数据表名;
+
+
+二 日志管理
+
+(1) 二进制日志 略
+(2) 操作错误日志
+1.查mysql配置文件/etc/my.cnf
+2.找到log-error配置项,就是该种日志存放的位置.
+3. cat -n 日志存放的路径
+
+(3) 访问日志
+show variables like '%general_log%';
+
+mysql> show variables like '%general_log%';
++------------------+------------------------------+
+| Variable_name    | Value                        |
++------------------+------------------------------+
+| general_log      | OFF                          |
+| general_log_file | /var/lib/mysql/localhost.log |
++------------------+------------------------------+
+
+mysql> set global general_log=on;
+
+mysql> show variables like '%general_log%';
++------------------+------------------------------+
+| Variable_name    | Value                        |
++------------------+------------------------------+
+| general_log      | ON                           |
+| general_log_file | /var/lib/mysql/localhost.log |
++------------------+------------------------------+
+2 rows in set (0.00 sec)
+
+root@localhost oracle]# cat -n /var/lib/mysql/localhost.log
+
+4.慢查询日志
+
+修改mysql配置文件/etc/my.cnf,增加以下几项:
+
+slow_query_log=1
+long_query_time=1
+low-query-log-file=/var/lib/mysql/localhost-slow.log
+log-queries-not-using-indexes
+
+三.mysql备份与恢复
+
+(1) mysqldump
+1.备份 mysqldump -u root test>test.sql
+
+   mysqldump -u root test user>test.user.sql
+
+   mysqldump -u root -d test>test.sql
+
+2.恢复 mysqldump -u root test
+
+mysql> source test.sql
+
+
+(2)Xtrabackup
+
+1.全备份
+innobackupex --defaults-file=/etc/my.cnf --socket=/var/lib/mysql/mysql.sock --user=root --password= --slave-info /data/backup/
+
+2.全恢复
+innobackupex --apply-log /data/backup/2019-04-17_14-08-31 --user=root --password=
+
+mysqladmin -uroot -p shutdown
+
+cd /var/lib/mysql
+
+mv * /data/backup/ 
+
+innobackupex --copy-back /data/backup/2019-04-17_14-08-31 --user=root --password=
+
+
+
+
+
+
+

@@ -25,10 +25,10 @@ public class FileServiceImpl implements FileService {
     @Override
     @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
     public boolean insertFile(MultipartFile imgFile, FileBean file) {
-        String filePath = "/home/laimaosheng/Server/" + new Date().getTime() + imgFile.getOriginalFilename();
+        String filePath = "/home/oracle/learn/Servers" + new Date().getTime() + imgFile.getOriginalFilename();
         file.setFilePath(filePath);
         fileDao.insertFile(file);
-        uploanFile(imgFile, filePath);
+        uploadFile(imgFile, filePath);
         return true;
     }
 
@@ -40,7 +40,7 @@ public class FileServiceImpl implements FileService {
     }
 
     @Override
-    public void uploanFile(MultipartFile imgFile, String filePath) {
+    public void uploadFile(MultipartFile imgFile, String filePath) {
         FileOutputStream os = null;
         InputStream in = null;
         try {

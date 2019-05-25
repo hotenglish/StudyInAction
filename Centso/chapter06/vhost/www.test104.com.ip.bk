@@ -1,0 +1,9 @@
+<VirtualHost 192.168.1.104:80>
+ ServerName www.test104.com
+ DocumentRoot /data/www/104
+	<Directory "/data/www/104">
+		Options Indexes FollowSymLinks
+		AllowOverride None
+		Require all granted
+	</Directory>
+</VirtualHost>

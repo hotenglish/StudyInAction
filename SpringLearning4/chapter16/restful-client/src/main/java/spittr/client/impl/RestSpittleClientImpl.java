@@ -53,7 +53,7 @@ public class RestSpittleClientImpl implements RestSpittleClient {
         String newUrl = url + "/{id}";
         Map<String, String> params = new HashMap<String, String>();
         params.put("id", String.valueOf(spittle.getId()));
-        restTemplate.put(newUrl, spittle, spittle.getId());
+        restTemplate.put(newUrl, spittle, params);
     }
 
     @Override

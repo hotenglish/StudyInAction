@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d2f714de-53a5-411a-bd47-fa761a150bd7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CoreJava/CoreJava.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.attach_pid21951" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.attach_pid26699" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java8/lambdasinaction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/Maven__commons_net_commons_net_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/libraries/hsqldb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyPatternInAction/JavaConcurrencyPatternInAction.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/dictionaries/laimaosheng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/JavaConcurrencyProgramming.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter01/ConcurrencyTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter01/ConcurrencyTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter01/DeadLockDemo$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter01/DeadLockDemo$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter01/DeadLockDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter02/Counter$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter02/Counter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/DoubleCheckedLocking$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/DoubleCheckedLocking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/FinalExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/FinalReferenceEscapeExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/FinalReferenceExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/InstanceFactory$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/InstanceFactory$InstanceHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/InstanceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/MonitorExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/ReentrantLockExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/ReorderExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/SafeDoubleCheckedLocking$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/SafeDoubleCheckedLocking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/SafeLazyInitialization$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/SafeLazyInitialization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/SynchronizedExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/UnsafeLazyInitialization$Instance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/UnsafeLazyInitialization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/VolatileBarrierExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/VolatileExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/VolatileFeaturesExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter03/VolatileFeaturesExample1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ConnectionDriver$ConnectionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ConnectionDriver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ConnectionPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ConnectionPoolTest$ConnetionRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ConnectionPoolTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Daemon$DaemonRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Daemon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/DefaultThreadPool$Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/DefaultThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Deprecated$Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Deprecated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Interrupted$BusyRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Interrupted$SleepRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Interrupted.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Join$Domino.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Join.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/MultiThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Piped$Print.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Piped.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Priority$Job.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Priority.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Profiler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Profiler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Shutdown$Runner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Shutdown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/SimpleHttpServer$HttpRequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/SimpleHttpServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/SleepUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/Synchronized.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadPool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadState$Blocked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadState$Sync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadState$TimeWaiting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadState$Waiting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/ThreadState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/WaitNotify$Notify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/WaitNotify$Wait.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter04/WaitNotify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/BoundedQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/Cache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/ConditionUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/FairAndUnfairTest$Job.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/FairAndUnfairTest$ReentrantLock2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/FairAndUnfairTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/LockUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/Mutex$Sync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/Mutex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/ProcessData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/TwinsLock$Sync.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/TwinsLock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/TwinsLockTest$1Worker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter05/TwinsLockTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter06/ConcurrentPutHashMap$1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter06/ConcurrentPutHashMap$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter06/ConcurrentPutHashMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter06/CountTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicIntegerArrayTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicIntegerFieldUpdaterTest$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicIntegerFieldUpdaterTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicIntegerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicReferenceTest$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter07/AtomicReferenceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CountDownLatchTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CountDownLatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest2$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest2$A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest3$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/CyclicBarrierTest3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/ExchangerTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/ExchangerTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/ExchangerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/JoinCountDownLatchTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/JoinCountDownLatchTest$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/JoinCountDownLatchTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/SemaphoreTest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter08/SemaphoreTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter10/ConcurrentTask$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter10/ConcurrentTask.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter11/IMsgQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter11/Message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/code/ArtConcurrentBook/bin/chapter11/MsgQueueManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaConcurrencyProgramming/log.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MybatisInAction/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MybatisInAction/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter05/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/artifacts/Spittr_Thymeleaf_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/artifacts/Spittr_Thymeleaf_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/artifacts/Spittr_Thymeleaf_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/artifacts/Spittr_Thymeleaf_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__com_h2database_h2_1_4_182.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_el_javax_el_api_2_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_javaee_web_api_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_servlet_jsp_jsp_api_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__ognl_ognl_3_0_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_javassist_javassist_3_16_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_aop_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_beans_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_context_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_core_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_expression_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_jdbc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_test_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_tx_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_web_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_springframework_spring_webmvc_4_0_7_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/libraries/Maven__org_unbescape_unbescape_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/Spittr-Thymeleaf.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringLearning4/chapter06/thymeleaf/Spittr-Thymeleaf.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/javaturning$TestHeapGC.ic" NAME="TestHeapGC Coverage Results" MODIFIED="1557814891438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>javatuning.ch5.memory.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/tech/TestStaticMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/tech/TestArray.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>MyClassLoader</find>
+      <find>-XX:+PrintGCDetails -Xmx20M -Xms20M</find>
+      <find>fire</find>
+      <find>paint</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/WordResueGC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestPermClassGC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestHeapGC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestXmx.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestPermMax.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/memory/TestRatio.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/gc/StopWorldTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/gc/GCTimeTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/tuning/PutInEden.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/jvmpara/TestJIT.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch5/jvmpara/TraceClassInstance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch6/toolscheck/HoldLockMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch6/toolscheck/OQLPragram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch6/toolscheck/OQL" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/EHCacheUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch2/singleton/TestSingleton.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/javatuning/ch2/proxy/hibernate/User.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/output/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/TestEHCacheUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch2/timespace/SpaceSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/javatuning/ch3/stringappend/TestStringBuffer.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="/usr/local/maven/apache-maven-3.6.0" />
+        <option name="userSettingsFile" value="/usr/local/maven/apache-maven-3.6.0/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="javaturning" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="28" />
+    <option name="width" value="1280" />
+    <option name="height" value="739" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javatuning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javatuning" type="462c0819:PsiDirectoryNode" />
+              <item name="ch3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javatuning" type="462c0819:PsiDirectoryNode" />
+              <item name="ch3" type="462c0819:PsiDirectoryNode" />
+              <item name="stringappend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="javatuning" type="462c0819:PsiDirectoryNode" />
+              <item name="ch3" type="462c0819:PsiDirectoryNode" />
+              <item name="tech" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javaturning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javaturning" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558627362906" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/resources/javatuning/ch2/proxy/hibernate" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.TestStaticMethod.test">
+    <configuration name="BigObj2Old" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch5.tuning.BigObj2Old" />
+      <module name="Javaturning" />
+      <option name="VM_PARAMETERS" value="-XX:+PrintGCDetails -Xmx20M -Xms20M -XX:PretenureSizeThreshold=100" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch5.tuning.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwapValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch2.timespace.SwapValue" />
+      <module name="Javaturning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch2.timespace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnsignedByte" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch2.timespace.UnsignedByte" />
+      <module name="Javaturning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch2.timespace.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAppendString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaturning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch3.stringappend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javatuning.ch3.stringappend" />
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch3.stringappend.TestAppendString" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethod.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaturning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch3.tech.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javatuning.ch3.tech" />
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch3.tech.TestStaticMethod" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStringBuffer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Javaturning" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="javatuning.ch3.stringappend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="javatuning.ch3.stringappend" />
+      <option name="MAIN_CLASS_NAME" value="javatuning.ch3.stringappend.TestStringBuffer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.BigObj2Old" />
+      <item itemvalue="Application.SwapValue" />
+      <item itemvalue="Application.UnsignedByte" />
+      <item itemvalue="JUnit.TestStringBuffer" />
+      <item itemvalue="JUnit.TestAppendString" />
+      <item itemvalue="JUnit.TestStaticMethod.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestStaticMethod.test" />
+        <item itemvalue="JUnit.TestAppendString" />
+        <item itemvalue="JUnit.TestStringBuffer" />
+        <item itemvalue="Application.UnsignedByte" />
+        <item itemvalue="Application.SwapValue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2f714de-53a5-411a-bd47-fa761a150bd7" name="Default Changelist" comment="" />
+      <created>1557799681618</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557799681618</updated>
+      <workItem from="1557799685647" duration="3732000" />
+      <workItem from="1557803474772" duration="8775000" />
+      <workItem from="1557889037540" duration="2032000" />
+      <workItem from="1557919826329" duration="7092000" />
+      <workItem from="1557962108577" duration="11044000" />
+      <workItem from="1557974569168" duration="13145000" />
+      <workItem from="1557991610987" duration="5265000" />
+      <workItem from="1558017621876" duration="1198000" />
+      <workItem from="1558067770793" duration="7340000" />
+      <workItem from="1558269803308" duration="2531000" />
+      <workItem from="1558275547102" duration="2036000" />
+      <workItem from="1558278246926" duration="1292000" />
+      <workItem from="1558308189885" duration="3754000" />
+      <workItem from="1558314998836" duration="21575000" />
+      <workItem from="1558359426747" duration="1542000" />
+      <workItem from="1558362334680" duration="7980000" />
+      <workItem from="1558425647395" duration="901000" />
+      <workItem from="1558487977662" duration="27847000" />
+      <workItem from="1558516435486" duration="100000" />
+      <workItem from="1558522437364" duration="8013000" />
+      <workItem from="1558536946346" duration="959000" />
+      <workItem from="1558537968646" duration="2659000" />
+      <workItem from="1558542888281" duration="117000" />
+      <workItem from="1558606095493" duration="2164000" />
+      <workItem from="1558616486916" duration="3394000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestEHCacheUtil_test1 - 2019.05.22 at 20h 59m 48s.xml">
+      <configuration name="TestEHCacheUtil.test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStringBuffer - 2019.05.22 at 23h 24m 16s.xml">
+      <configuration name="TestStringBuffer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStringBuffer - 2019.05.22 at 23h 27m 04s.xml">
+      <configuration name="TestStringBuffer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStringBuffer - 2019.05.22 at 23h 29m 27s.xml">
+      <configuration name="TestStringBuffer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestAppendString - 2019.05.22 at 23h 38m 59s.xml">
+      <configuration name="TestAppendString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStringBuffer - 2019.05.22 at 23h 55m 15s.xml">
+      <configuration name="TestStringBuffer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStaticMethod_test - 2019.05.23 at 18h 37m 49s.xml">
+      <configuration name="TestStaticMethod.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStaticMethod_test - 2019.05.23 at 19h 02m 04s.xml">
+      <configuration name="TestStaticMethod.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStaticMethod_test - 2019.05.23 at 19h 02m 12s.xml">
+      <configuration name="TestStaticMethod.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestStaticMethod_test - 2019.05.23 at 22h 25m 06s.xml">
+      <configuration name="TestStaticMethod.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="146487000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="28" width="1920" height="1018" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32799146" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44470587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3282353" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="bottom" id="JProfiler" order="13" weight="0.32941177" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32959402" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32959402" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="jclasslib" order="9" sideWeight="0.49824563" weight="0.40918803" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5017544" side_tool="true" weight="0.40918803" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32051283" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44470587" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3282353" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
+      <window_info anchor="bottom" id="JProfiler" order="13" weight="0.32941177" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="14" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32959402" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.32959402" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="jclasslib" order="9" sideWeight="0.49824563" weight="0.40918803" />
+      <window_info anchor="right" id="Coverage" order="10" sideWeight="0.5017544" side_tool="true" weight="0.40918803" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/IOrderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/OrderManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/OrderManagerServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/BusinessDelegateClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/bd/BusinessDelegate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+          <folding>
+            <element signature="e#589#590#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#800#801#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/PacketHTMLHeaderCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/PacketHTTPHeaderCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/PacketDecorator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/PacketBodyCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/IPacketCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/decorator/output/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/observor/IObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="3378" column="16" selection-start-line="3378" selection-start-column="16" selection-end-line="3378" selection-end-column="16" />
+          <folding>
+            <element signature="e#114480#114481#0" expanded="true" />
+            <element signature="e#114527#114528#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/ehcache.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/javatuning/ch2/proxy/hibernate/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/javatuning/ch2/proxy/hibernate/User.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="49" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/lang/Runnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="55" column="17" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/java/awt/Container.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="1960" column="16" selection-start-line="1960" selection-start-column="16" selection-end-line="1960" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/java/jdk1.8.0_191-amd64/src.zip!/javax/swing/JApplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="227" column="11" lean-forward="true" selection-start-line="227" selection-start-column="11" selection-end-line="227" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/BufferMovingCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="11" lean-forward="true" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache/2.10.6/ehcache-2.10.6.jar!/net/sf/ehcache/CacheManager.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="587" column="31" selection-start-line="587" selection-start-column="31" selection-end-line="587" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/javatuning/ch2/buffer/ehcache.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="40" column="33" lean-forward="true" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/TestEHCacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/EHCacheUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/CglibHeavyMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="34" column="48" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
+          <folding>
+            <element signature="e#1028#1029#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/FileWriterBufferTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/NoBufferMovingCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/buffer/HeavyMethodDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/timespace/SpaceSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/timespace/SwapValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/timespace/UnsignedByte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/pool/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/ref/TestAllRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/ref/MyObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/ref/TestPhantomRefFinalize.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="40" column="56" selection-start-line="40" selection-start-column="56" selection-end-line="40" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/ref/TestSoftRef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/ref/CanReliveObj.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/stringappend/TestAppendString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1106">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/stringappend/TestStringBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/list/TestIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/pool/PoolableObjectFactoryDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/pool/ObjectPoolDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch2/pool/DBConnectionPoolDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/collectionvisittuning/TestListGet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/directbuffer/TestBufferAllocate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/directbuffer/TestBufferRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/tech/TestStaticMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/javatuning/ch3/tech/TestArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Javaturning</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>org-netbeans-lib-profiler-charts</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

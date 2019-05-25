@@ -1,0 +1,25 @@
+
+一.　安装客户端
+install samba-client samba-swat -y
+mp -qa|grep samba
+
+二. 用户配置
+groupadd smb
+useradd smb -d /data/smb/ -g smb -s /sbin/nologin
+groups smb
+chown -R smb:smb /data/smb
+vim /etc/samba/smb.conf
+./smbpasswd -a smb
+systemctl start smb 
+systemctl status smb 
+systemctl is-active smb
+mkdir /data/smb2
+useradd smb2 -d /data/smb2/ -g smb -s /sbin/nologin
+groups smb2
+chown -R smb2:smb /data/smb2/
+smbpasswd -a smb2
+systemctl restart smb
+systemctl status smb
+
+
+具体配置请见smb.conf

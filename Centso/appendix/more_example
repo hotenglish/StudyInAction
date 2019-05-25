@@ -1,0 +1,52 @@
+[oracle@localhost appendix]$ vim more.txt 
+[oracle@localhost appendix]$ wc -l more.txt
+6 more.txt
+[oracle@localhost appendix]$ more more.txt
+1
+2
+3
+4
+5
+6
+[oracle@localhost appendix]$ man more|more
+MORE(1)                                                                                  BSD General Commands Manual                                                                                  MORE(1)
+
+NAME
+     more — 在显示器上阅读文件的过滤器
+
+总
+     more [-dlfpcsu] [-num] [+/ pattern] [+ linenum] [file ...]
+
+描
+     More 是 一个 过滤器, 用于 分页 显示 (一次一屏) 文本. 这个 版本 非常 基本.  用户 应该 知道 less(1) 提供了 more(1) 的 模拟, 并且 做了 增强.
+
+选
+     下面 介绍 命令行选项. 选项 可以 从 环境变量 MORE 中获取 (要 确保 它们 以 短横线 开头 (``-'')), 但是 命令行选项 能够 覆盖 它们.
+
+     -num  这个选项指定屏幕的行数 (以整数表示).
+
+     -d    让 more 给 用户 显示 提示信息 "[Press space to continue, 'q' to quit.]", 当 用户 按下 其他键 时, 显示 "[Press 'h' for instructions.]", 而不是 扬声器 鸣笛.
+
+     -l    More 在 通常情况下 把 ^L (form feed) 当做 特殊字符, 遇到 这个字符 就会 暂停.  -l 选项 可以 阻止 这种特性.
+
+     -f    使 more 计数 逻辑行, 而不是 屏幕行 (就是说, 长行 不会 断到 下一行).
+
+     -p    不卷屏, 而是 清除 整个屏幕, 然后 显示 文本.
+
+     -c    不卷屏, 而是 从 每一屏的 顶部 开始 显示 文本, 每 显示完 一行, 就 清除 这一行的 剩余部分.
+
+     -s    把 重复的空行 压缩成 一个 空行.
+
+     -u    防止下划线.
+
+     +/    在 显示 每个文件 前, 搜索 +/ 选项 指定的 文本串.
+
+1
+2
+3
+4
+5
+6
+[oracle@localhost appendix]$ more +6 more.txt
+6
+

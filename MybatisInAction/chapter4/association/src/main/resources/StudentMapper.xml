@@ -14,7 +14,7 @@
         <association property="studentSelfCard" column="id" fetchType="lazy"
                      select="com.elson.chapter4.association.dao.StudentSelfCardDao.findStudentSelfCardByStudentId"/>
 
-        <collection property="studentLectureList" column="id" fetchType="eager"
+        <collection property="studentLectureList" column="id" fetchType="lazy"
                     select="com.elson.chapter4.association.dao.StudentLectureDao.findStudentLectureByStudentId"/>
         <discriminator javaType="int" column="sex">
             <case value="1" resultMap="maleStudentMap"/>

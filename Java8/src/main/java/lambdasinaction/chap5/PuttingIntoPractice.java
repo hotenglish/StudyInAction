@@ -46,7 +46,19 @@ public class PuttingIntoPractice {
                         .distinct()
                         .sorted(comparing(Trader::getName))
                         .collect(toList());
-        System.out.println(traders);
+        System.out.print(" you:"+traders+" ");
+        System.out.println();
+
+
+        List<Trader> traders2 =
+                transactions.stream()
+                        .filter(transaction -> transaction.getTrader().getCity().equals("Cambridge"))
+                        .map(Transaction::getTrader)
+                        .distinct()
+                        .sorted(comparing(Trader::getName))
+                        .collect(toList());
+        System.out.print(" our:"+traders2+" ");
+        System.out.println();
 
 
         // Query 4: Return a string of all traders’ names sorted alphabetically.

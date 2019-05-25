@@ -1,0 +1,102 @@
+[oracle@localhost cp]$ touch test2
+[oracle@localhost cp]$ stat test2 
+  文件："test2"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677190      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-04-28 11:37:18.357579777 +0800
+最近更改：2019-04-28 11:37:18.357579777 +0800
+最近改动：2019-04-28 11:37:18.357579777 +0800
+创建时间：-
+[oracle@localhost cp]$ touch test3
+[oracle@localhost cp]$ ls
+cp_example  mv_example  test2  test3
+[oracle@localhost cp]$ stat test3
+  文件："test3"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677191      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-04-28 11:39:05.351572617 +0800
+最近更改：2019-04-28 11:39:05.351572617 +0800
+最近改动：2019-04-28 11:39:05.351572617 +0800
+创建时间：-
+[oracle@localhost cp]$ stat /bin/cp
+  文件："/bin/cp"
+  大小：155264    	块：304        IO 块：4096   普通文件
+设备：25h/37d	Inode：27707       硬链接：1
+权限：(0755/-rwxr-xr-x)  Uid：(    0/    root)   Gid：(    0/    root)
+最近访问：2019-04-27 22:49:08.627548125 +0800
+最近更改：2018-10-31 03:16:01.000000000 +0800
+最近改动：2018-12-15 20:58:17.861831705 +0800
+创建时间：-
+[oracle@localhost cp]$ ls -l
+总用量 8
+-rw-r--r-- 1 oracle dba 4016 4月  28 09:39 cp_example
+-rw-r--r-- 1 oracle dba  907 4月  28 11:35 mv_example
+-rw-r--r-- 1 oracle dba    0 4月  28 11:37 test2
+-rw-r--r-- 1 oracle dba    0 4月  28 11:39 test3
+[oracle@localhost cp]$ touch -r /bin/cp test2
+[oracle@localhost cp]$ stat test2
+  文件："test2"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677190      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-04-27 22:49:08.627548125 +0800
+最近更改：2018-10-31 03:16:01.000000000 +0800
+最近改动：2019-04-28 11:41:36.492562503 +0800
+创建时间：-
+[oracle@localhost cp]$ cp test3 test4
+[oracle@localhost cp]$ ls
+cp_example  mv_example  test2  test3  test4
+[oracle@localhost cp]$ stat test4
+  文件："test4"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677194      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-04-28 11:42:03.526560694 +0800
+最近更改：2019-04-28 11:42:03.526560694 +0800
+最近改动：2019-04-28 11:42:03.526560694 +0800
+创建时间：-
+[oracle@localhost cp]$ rm -f test4
+[oracle@localhost cp]$ ls
+cp_example  mv_example  test2  test3
+[oracle@localhost cp]$ date
+2019年 04月 28日 星期日 11:42:31 HKT
+[oracle@localhost cp]$ stat /bin/cp
+  文件："/bin/cp"
+  大小：155264    	块：304        IO 块：4096   普通文件
+设备：25h/37d	Inode：27707       硬链接：1
+权限：(0755/-rwxr-xr-x)  Uid：(    0/    root)   Gid：(    0/    root)
+最近访问：2019-04-27 22:49:08.627548125 +0800
+最近更改：2018-10-31 03:16:01.000000000 +0800
+最近改动：2018-12-15 20:58:17.861831705 +0800
+创建时间：-
+[oracle@localhost cp]$ touch -d "2 days ago" /bin/cp
+touch: 无法创建"/bin/cp": 权限不够
+[oracle@localhost cp]$ touch -d "2 days ago" test2
+[oracle@localhost cp]$ ls -l
+总用量 8
+-rw-r--r-- 1 oracle dba 4016 4月  28 09:39 cp_example
+-rw-r--r-- 1 oracle dba  907 4月  28 11:35 mv_example
+-rw-r--r-- 1 oracle dba    0 4月  26 11:44 test2
+-rw-r--r-- 1 oracle dba    0 4月  28 11:39 test3
+[oracle@localhost cp]$ stat test2
+  文件："test2"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677190      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-04-26 11:44:57.094408509 +0800
+最近更改：2019-04-26 11:44:57.094408509 +0800
+最近改动：2019-04-28 11:44:57.094549078 +0800
+创建时间：-
+[oracle@localhost cp]$ touch -t "01231215" test2
+[oracle@localhost cp]$ stat test2
+  文件："test2"
+  大小：0         	块：0          IO 块：4096   普通空文件
+设备：29h/41d	Inode：677190      硬链接：1
+权限：(0644/-rw-r--r--)  Uid：( 1001/  oracle)   Gid：( 1002/     dba)
+最近访问：2019-01-23 12:15:00.000000000 +0800
+最近更改：2019-01-23 12:15:00.000000000 +0800
+最近改动：2019-04-28 11:46:00.302544849 +0800
+创建时间：-
+

@@ -24,7 +24,7 @@
 
     <select id="findUserByRoleId" parameterType="long" resultMap="userMapper">
         SELECT a.id, a.user_name, a.cnname, a.sex, a.mobile, a.email, a.note
-        from t_user a,t_user_role b where a.id = b.role_id and b.user_id = #{userId}
+        from t_user a,t_user_role b where a.id = b.user_id and b.user_id = #{userId}
     </select>
 
 </mapper>

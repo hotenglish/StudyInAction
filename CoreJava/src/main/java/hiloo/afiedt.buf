@@ -1,7 +1,0 @@
-CREATE OR REPLACE TRIGGER add_test_tri
-BEFORE INSERT ON test
-FOR EACH ROW
-BEGIN
-   :new.c1 := :new.c1 + 1;
-END;
-/

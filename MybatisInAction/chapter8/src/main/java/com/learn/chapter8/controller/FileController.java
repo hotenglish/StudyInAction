@@ -45,8 +45,8 @@ public class FileController {
         MultipartHttpServletRequest multipartRequest = (MultipartHttpServletRequest) request;
         MultipartFile imgFile = multipartRequest.getFile("imageFile");
         FileBean file = new FileBean();
-        String filePath = "/home/laimaosheng/Server/" + new Date().getTime() + imgFile.getOriginalFilename();
-        fileService.uploanFile(imgFile, filePath);
+        String filePath = "/home/oracle/learn/Servers" + new Date().getTime() + imgFile.getOriginalFilename();
+        fileService.uploadFile(imgFile, filePath);
         file.setFilePath(filePath);
         file.setTitle(title);
         Message msg = new Message();

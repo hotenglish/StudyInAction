@@ -1,0 +1,20 @@
+mv 
+--backup[=CONTROL] : 为每个已存在的目标文件创建备份
+-b : 类似–backup 但不接受参数
+-f, --force : 覆盖前不询问
+-i, --interactive : 覆盖前询问
+-n, –nechoo-clobber : 不覆盖已存在文件 如果您指定了-i、-f、-n 中的多个，仅最后一个生效。
+--strip-trailing-slashes : 去掉每个源文件参数尾部的斜线
+-S, --suffix=SUFFIX : 替换常用的备份文件后缀
+-t, --target-directory=DIRECTORY : 将所有参数指定的源文件或目录 移动至 指定目录
+-T,--no-target-directory : 将目标文件视作普通文件处理
+-u, --update : 只在源文件文件比目标文件新，或目标文件不存在时才进行移动
+-v, --verbose : 详细显示进行的步骤
+
+[root@localhost conf]# /bin/mv -i nginx.conf nginx.conf.bak
+/bin/mv：是否覆盖"nginx.conf.bak"？ y
+
+[root@localhost conf]# /bin/mv -f nginx.conf.bak nginx.conf
+
+
+

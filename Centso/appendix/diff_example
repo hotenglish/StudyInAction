@@ -1,0 +1,21 @@
+[root@localhost conf]# cp nginx.conf nginx.conf.bak
+[root@localhost conf]# vim nginx.conf.bak
+[root@localhost conf]# diff nginx.conf nginx.conf.bak | cat -n
+     1	2c2
+     2	< #user  nobody;
+     3	---
+     4	> user  nobody;
+     5	5,7c5,7
+     6	< #error_log  logs/error.log;
+     7	< #error_log  logs/error.log  notice;
+     8	< #error_log  logs/error.log  info;
+     9	---
+    10	> error_log  logs/error.log;
+    11	> error_log  logs/error.log  notice;
+    12	> error_log  logs/error.log  info;
+    13	9c9
+    14	< #pid        logs/nginx.pid;
+    15	---
+    16	> pid        logs/nginx.pid;
+[root@localhost conf]# vim nginx.conf.bak
+

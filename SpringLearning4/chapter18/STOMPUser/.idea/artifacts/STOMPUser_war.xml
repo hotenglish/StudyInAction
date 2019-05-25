@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="STOMPUser:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="STOMPUser.war">
-      <element id="artifact" artifact-name="STOMPUser:war exploded" />
-    </root>
-  </artifact>
-</component>

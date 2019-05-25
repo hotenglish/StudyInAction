@@ -1,0 +1,47 @@
+[oracle@localhost appendix]$ touch src_aaata
+[oracle@localhost appendix]$ mkdir tmp
+[oracle@localhost appendix]$ cd tmp
+[oracle@localhost tmp]$ cd ..
+[oracle@localhost appendix]$ ls
+cp_example  mv_example  src_aaata  test2  test3  tmp  touch_example
+[oracle@localhost appendix]$ rm -v -i src_aaata 
+rm：是否删除普通空文件 "src_aaata"？y
+已删除"src_aaata"
+[oracle@localhost appendix]$ cd tmp
+[oracle@localhost tmp]$ touch a
+[oracle@localhost tmp]$ cd ..
+[oracle@localhost appendix]$ rm -v -i tmp
+rm: 无法删除"tmp": 是一个目录
+[oracle@localhost appendix]$ rm -r  -v -i tmp
+rm：是否进入目录"tmp"? y
+rm：是否删除普通空文件 "tmp/a"？y
+已删除"tmp/a"
+rm：是否删除目录 "tmp"？y
+已删除目录："tmp"
+[oracle@localhost appendix]$ touch src_aaata
+[oracle@localhost appendix]$ rm -r  -v -i src_aaa*
+rm：是否删除普通空文件 "src_aaata"？y
+已删除"src_aaata"
+[oracle@localhost appendix]$ ln -s test2 test.soft.link
+[oracle@localhost appendix]$ ln test3 test.hard.link
+[oracle@localhost appendix]$ ls -l
+总用量 20
+-rw-r--r-- 1 oracle dba 4016 4月  28 11:48 cp_example
+-rw-r--r-- 1 oracle dba  907 4月  28 11:48 mv_example
+-rw-r--r-- 1 oracle dba    0 4月  28 11:48 test2
+-rw-r--r-- 2 oracle dba    0 4月  28 11:48 test3
+-rw-r--r-- 2 oracle dba    0 4月  28 11:48 test.hard.link
+lrwxrwxrwx 1 oracle dba    5 4月  28 12:13 test.soft.link -> test2
+-rw-r--r-- 1 oracle dba 4526 4月  28 11:50 touch_example
+[oracle@localhost appendix]$ cat test.soft.link 
+[oracle@localhost appendix]$ cat test.hard.link 
+[oracle@localhost appendix]$ vi test.hard.link
+[oracle@localhost appendix]$ cat test.hard.link 
+[oracle@localhost appendix]$ rm -f test
+[oracle@localhost appendix]$ rm -f test2
+[oracle@localhost appendix]$ cat test.soft.link 
+cat: test.soft.link: 没有那个文件或目录
+[oracle@localhost appendix]$ rm -f test3
+[oracle@localhost appendix]$ cat test.hard.link 
+[oracle@localhost appendix]$ 
+

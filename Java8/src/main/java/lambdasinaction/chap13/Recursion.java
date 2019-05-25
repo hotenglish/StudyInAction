@@ -5,10 +5,10 @@ import java.util.stream.LongStream;
 public class Recursion {
 
     public static void main(String args[]) {
-        System.out.println(factorialIterative(2));
-        System.out.println(factorialRecursive(2));
-        System.out.println(factorialStreams(2));
-        System.out.println(factorialTailRecursive(2));
+        System.out.println(factorialIterative(3));
+        System.out.println(factorialRecursive(3));
+        System.out.println(factorialStreams(3));
+        System.out.println(factorialTailRecursive(3));
     }
 
     public static int factorialIterative(long n) {
@@ -20,7 +20,7 @@ public class Recursion {
     }
 
     public static long factorialRecursive(long n) {
-        return n == 1 ? 1 : (n * factorialIterative(n - 1));
+        return n == 1 ? 1 : (n * factorialRecursive(n - 1));
     }
 
     public static long factorialStreams(long n) {

@@ -9,7 +9,7 @@ public class BufferedReaderTest {
 		FileOutputStream fos = null;
 		
 		try {
-			fos = new FileOutputStream("D:\\0706\\abc.txt");
+			fos = new FileOutputStream("/home/oracle/Downloads/abc.txt");
 			//读和写的时候要用一样的编码方式，否则会出现乱码。
 			//如果没有指定编码方式，读写的时候采用的是系统默认的编码集
 			osw = new OutputStreamWriter(fos,"UTF-8");
@@ -50,7 +50,7 @@ public class BufferedReaderTest {
 		FileInputStream fis = null;
 		InputStreamReader isr = null;
 		try {
-			fis = new FileInputStream("D:\\0706\\abc.txt");
+			fis = new FileInputStream("/home/oracle/Downloads/abc.txt");
 			isr = new InputStreamReader(fis,"UTF-8");
 			br = new BufferedReader(isr);
 			//三层包装

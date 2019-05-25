@@ -29,7 +29,7 @@ public class C4Main {
             System.out.println(roleDao.getRole(5L).toString());
             System.out.println("-------------------------------------------------------------->");
             ColorDao colorDao = sqlSession.getMapper(ColorDao.class);
-            colorDao.findColorByNote("yellow").forEach((y, z) -> System.out.println(y + "--->" + z));
+            colorDao.findColorByNote("黄").forEach((y, z) -> System.out.println(y + "--->" + z));
             System.out.println("-------------------------------------------------------------->");
         } catch (Exception e) {
             e.printStackTrace();

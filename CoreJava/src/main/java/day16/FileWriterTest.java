@@ -8,7 +8,7 @@ public class FileWriterTest {
 	public static void main(String[] args) {
 		FileWriter fw = null;
 		try {
-			fw = new FileWriter("D:\\abc.txt");
+			fw = new FileWriter("/home/oracle/Downloads/abc.txt");
 			//写文件，可以直接写字符串
 			fw.write("haha\nhehe\n哈哈");
 			fw.flush();

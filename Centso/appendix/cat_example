@@ -1,0 +1,61 @@
+[oracle@localhost appendix]$ vi file1
+[oracle@localhost appendix]$ ls
+a  cp_example  file1  mv_example  rm_example  test.hard.link  test.soft.link  touch_example
+[oracle@localhost appendix]$ vim file1 
+[oracle@localhost appendix]$ vim a
+[oracle@localhost appendix]$ cat -n a 
+     1	12
+     2	13
+     3	
+     4	45
+     5	45
+[oracle@localhost appendix]$ cat -b a 
+     1	12
+     2	13
+
+     3	45
+     4	45
+[oracle@localhost appendix]$ vim file1
+[oracle@localhost appendix]$ vim file2
+[oracle@localhost appendix]$ cat file1
+1
+2
+3
+[oracle@localhost appendix]$ vim file2
+[oracle@localhost appendix]$ cat file2
+4
+5
+6
+[oracle@localhost appendix]$ cat file1 file2 > file_1_2
+[oracle@localhost appendix]$ cat file_1_2
+1
+2
+3
+4
+5
+6
+[oracle@localhost appendix]$ cat >file_1_2
+a                  
+b 
+c
+d
+e
+[oracle@localhost appendix]$ cat file_1_2
+a
+b
+c
+d
+e
+[oracle@localhost appendix]$ cat >> file_1_2
+cc
+dd
+[oracle@localhost appendix]$ cat file_1_2
+a
+b
+c
+d
+e
+cc
+dd
+
+

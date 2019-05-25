@@ -15,7 +15,7 @@ public class C4Main {
 
     public static void main(String[] args) {
         queryByAnnotation();
-        //queryByMapParameter();
+        queryByMapParameter();
     }
 
     private static void queryByMapParameter() {

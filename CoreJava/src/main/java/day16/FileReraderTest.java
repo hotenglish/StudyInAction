@@ -8,7 +8,7 @@ public class FileReraderTest {
 	public static void main(String[] args) {
 		FileReader fr = null;
 		try {
-			fr = new FileReader("D:\\0706\\abc.txt");
+			fr = new FileReader("/home/oracle/Downloads/abc.txt");
 			int c = 0;
 			while((c=fr.read())!=-1){
 				System.out.print((char)c);

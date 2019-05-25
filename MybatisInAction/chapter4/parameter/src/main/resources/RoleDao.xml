@@ -12,7 +12,7 @@
         select id, role_name, note from t_role where role_name like concat('%',#{roleName},'%')
         and note like concat('%', #{note},'%')
     </select>
-    <select id="findRoleByAnnotation" parameterType="map" resultMap="roleMap">
+    <select id="findRoleByAnnotation" resultMap="roleMap">
         select id, role_name, note from t_role where role_name like concat('%',#{roleName},'%')
         and note like concat('%', #{note},'%')
     </select>
