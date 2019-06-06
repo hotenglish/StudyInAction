@@ -15,8 +15,8 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import org.junit.Test;
 
 public class TestReadWriteLock {
-	private static final int MAX_THREADS = 2000;
-	private static final int TASK_COUNT = 4000;
+	private static final int MAX_THREADS = 1000;
+	private static final int TASK_COUNT = 2000;
 	private static Lock lock=new ReentrantLock();
 	private static ReentrantReadWriteLock readWriteLock=new ReentrantReadWriteLock();
 	private static Lock readLock = readWriteLock.readLock();
@@ -144,7 +144,7 @@ public class TestReadWriteLock {
 		Thread.sleep(100000);
 	}
 	
-	//@Test
+	@Test
 	public void testLock2() throws InterruptedException {
 	
 		CounterPoolExecutor exe=new CounterPoolExecutor(MAX_THREADS, MAX_THREADS,

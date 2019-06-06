@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class VolatileModel {
 	 public class MyThread extends Thread{
-		 private   boolean stop = false;  
+		 private   boolean stop = false;
 		 public void stopMe(){
 			 stop=true;
 		 }
