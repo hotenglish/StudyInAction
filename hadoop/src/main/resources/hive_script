@@ -1,0 +1,109 @@
+create table t_emp(
+id int,
+name string,
+age int,
+dept_name string
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ',';
+
+load data local inpath '/home/oracle/learn/hadoop/src/main/resources/t_emp' into table t_emp;
+
+select count(*) from t_emp where dept_name='sales' group by dept_name;
+
+create table t_person(
+id int,
+name string,
+similar array<string>,
+tedian map<string,string>)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+COLLECTION ITEMS TERMINATED BY '_'
+MAP KEYS TERMINATED BY ':';
+
+load data local inpath '/home/oracle/learn/hadoop/src/main/resources/t_person' into table t_person;
+
+desc t_emp;
+
+select * from t_emp;
+
+select a.id from t_emp a;
+
+create table dept_count(dname string,num int);
+
+insert into table dept_count select dept_name,count(1) from t_emp group by dept_name;
+
+drop table dept_count;
+
+create table dept_count(num int) partitioned by (dname string);
+
+select * from dept_count;
+
+insert into table dept_count partition(dname='sales') select count(1) from t_emp group by dept_name;
+
+create table t_stu(
+userid int,
+name string,
+age int,
+sex int,
+classid int)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+load data local inpath '/home/oracle/learn/hadoop/src/main/resources/t_stu' into table t_stu;
+
+create table t_class(
+cid int,
+name string,
+teacher string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE;
+
+load data local inpath '/home/oracle/learn/hadoop/src/main/resources/t_class' into table t_class;
+
+select s.*,c.name from t_stu s join t_class c on s.classid=c.cid;
+
+
+memo:
+
+hiveserver2连接报错： User: root is not allowed to impersonate anonymous (state=08S01,code=0)
+
+使用HiveServer2运行时，启动好HiveServer后运行
+
+private static String url = "jdbc:hive2://192.168.213.132:10000/default"; 连接hiveserver2时
+
+出现
+
+java.lang.RuntimeException: org.apache.hadoop.ipc.RemoteException(org.apache.hadoop.security.authorize.AuthorizationException):
+User root is not allowed to impersonate anonymous 错误。
+
+修改hadoop 配置文件 etc/hadoop/core-site.xml,加入如下配置项
+
+<property>
+    <name>hadoop.proxyuser.root.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.root.groups</name>
+    <value>*</value>
+</property>
+
+
+hadoop.proxyuser.root.hosts配置项名称中root部分为报错User:* 中的用户名部分
+
+例如User: zhaoshb is not allowed to impersonate anonymous则需要将xml变更为如下格式
+
+<property>
+    <name>hadoop.proxyuser.zhaoshb.hosts</name>
+    <value>*</value>
+</property>
+<property>
+    <name>hadoop.proxyuser.zhaoshb.groups</name>
+    <value>*</value>
+</property>
+
+
+
+
