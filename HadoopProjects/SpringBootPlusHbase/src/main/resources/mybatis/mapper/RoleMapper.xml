@@ -2,37 +2,44 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.elson.chapter9.mapper.RoleMapperChapter9">
-    <!--定义结果类型转化器标识，才能使用类型转换器-->
+<mapper namespace="org.spring.sprintboot.dao.RoleDao">
+
     <resultMap id="roleMapper" type="role">
         <id column="id" property="id" javaType="long" jdbcType="BIGINT"/>
         <result column="role_name" property="roleName" javaType="string" jdbcType="VARCHAR"/>
         <result column="note" property="note" javaType="string" jdbcType="VARCHAR"/>
-        <collection property="userList" column="id" fetchType="lazy"
-                    select="com.elson.chapter9.mapper.UserMapperChapter9.findUserByRoleId"/>
+<!--        <collection property="userList" column="id" fetchType="lazy"
+                    select="org.spring.sprintboot.dao.UserDao.findUserByRoleId"/>-->
     </resultMap>
 
     <select id="getRole" parameterType="long" resultMap="roleMapper">
         select id, role_name, note from t_role where id = #{id}
     </select>
 
-    <insert id="insertRole" parameterType="role" keyProperty="id" useGeneratedKeys="true">
-        insert into t_role(role_name, note) values (#{roleName}, #{note})
+    <insert id="saveOrUpdate" parameterType="role">
+        upsert into t_role(id, role_name, note) values (#{id}, #{roleName}, #{note})
     </insert>
 
+    <delete id="deleteRole" parameterType="long">
+        delete from t_role where id = #{id}
+    </delete>
+
     <select id="findRoleByUserId" resultMap="roleMapper">
-        SELECT a.id, a.role_name, a.note from t_role a, t_user_role b
-        where a.id = b.user_id and b.user_id = #{userId}
+        SELECT a.id id, a.role_name role_name, a.note note from t_role a, t_user_role b
+        where a.id = b.role_id and b.user_id = #{userId}
     </select>
 
     <select id="findRolesByName" parameterType="string" resultMap="roleMapper">
         select id, role_name, note from t_role
-        where role_name like concat('%',#{roleName},'%')
+        where role_name like '%' || #{roleName} || '%'
     </select>
 
-    <select id="findRolesByPageParams" parameterType="com.elson.chapter9.util.PageParams" resultMap="roleMapper">
-        select id, role_name, note from t_role
-        where role_name like concat('%',#{roleName},'%')
-    </select>
+    <delete id="removeRoleFromUser" parameterType="map">
+        delete from t_user_role where  role_id = #{roleId} and user_id = #{userId}
+    </delete>
+
+    <insert id="addRoleForUser" parameterType="map">
+        upsert into t_user_role values(#{userId}, #{roleId})
+    </insert>
 
 </mapper>

@@ -1,0 +1,115 @@
+many to many
+人员-角色
+人员有多个角色  角色优先级
+角色有多个人员
+人员 删除添加角色
+角色 可以添加删除人员
+人员 角色 删除添加
+
+1.create 'user','info','role'
+  create 'role','info','user'
+
+2.
+put 'user','001','info:name','Mark'
+put 'user','001','info:sex','0'
+put 'user','001','info:age','30'
+put 'user','001','role:101','1'
+put 'user','001','role:102','0'
+
+put 'user','002','info:name','Lily'
+put 'user','002','info:sex','1'
+put 'user','002','info:age','27'
+put 'user','002','role:101','0'
+put 'user','002','role:102','1'
+
+put 'role', '101', 'info:rname', 'programmer'
+put 'role', '101', 'user:001', 'Mark'
+put 'role', '101', 'user:002', 'Lily'
+
+put 'role', '102', 'info:rname', 'reception'
+put 'role', '102', 'user:001', 'Mark'
+put 'role', '102', 'user:002', 'Lily'
+
+one to many
+组织架构 部门-子部门
+查询 顶级部门
+查询 每个部门的所有子部门
+部门 添加、删除子部门
+部门 添加、删除
+
+1. create 'dept','info','subdept'
+
+2.
+put 'dept','0_001', 'info:dname', 'company1'
+put 'dept','0_001','subdept:1_101','development one'
+put 'dept','0_001','subdept:1_102','development two'
+put 'dept','0_002', 'info:dname', 'company2'
+put 'dept','0_002','subdept:1_103','development three'
+
+put 'dept','1_101', 'info:dname', 'development one'
+put 'dept','1_102', 'info:dname', 'development two'
+put 'dept','1_103', 'info:dname', 'development three'
+
+
+
+--------------------------------------------------------------------
+
+
+-- ----------------------------
+-- Table structure for t_user
+-- ----------------------------
+
+DROP TABLE IF EXISTS t_user;
+
+CREATE TABLE t_user (
+  id bigint NOT NULL PRIMARY KEY,
+  info.user_name varchar,
+  info.course varchar,
+  info.birthday date,
+  info.sex integer,
+  info.mobile varchar,
+  info.email varchar,
+  info.note varchar
+);
+
+-- ----------------------------
+-- Records of t_user
+-- ----------------------------
+UPSERT INTO t_user VALUES (1, 'zhangsan', 'Java', CURRENT_TIME(), 1, '1325656546', 'lfkdsj@dlkjf.com', 'Yes');
+UPSERT INTO t_user VALUES (2, 'zlkjklfdsa', 'Spark', CURRENT_TIME(), 1, '1325656546', 'lfkdsj@dlkjf.com', 'Yes');
+UPSERT INTO t_user VALUES (3, 'wangwuz', 'Hadoop', CURRENT_TIME(), 2, '1265445', '211321@fdsaf.com', 'None');
+
+-- ----------------------------
+-- Table structure for t_user_role
+-- ----------------------------
+DROP TABLE IF EXISTS t_user_role;
+CREATE TABLE t_user_role (
+  user_id bigint NOT NULL,
+  role_id bigint NOT NULL,
+  CONSTRAINT T_USER_ROLE_PK PRIMARY KEY (user_id,role_id)
+);
+
+-- ----------------------------
+-- Records of t_user_role
+-- ----------------------------
+UPSERT INTO t_user_role VALUES (1, 2);
+UPSERT INTO t_user_role VALUES (2, 3);
+UPSERT INTO t_user_role VALUES (3, 4);
+
+-- ----------------------------
+-- Table structure for t_role
+-- ----------------------------
+DROP TABLE IF EXISTS t_role;
+CREATE TABLE t_role (
+  id bigint NOT NULL PRIMARY KEY,
+  info.role_name varchar,
+  info.note varchar
+);
+
+-- ----------------------------
+-- Records of t_role
+-- ----------------------------
+UPSERT INTO t_role VALUES (1, 'programmer', 'programmer');
+UPSERT INTO t_role VALUES (2, 'admin', 'admin');
+UPSERT INTO t_role VALUES (3, 'teacher', 'teacher');
+UPSERT INTO t_role VALUES (4, 'student', 'student');

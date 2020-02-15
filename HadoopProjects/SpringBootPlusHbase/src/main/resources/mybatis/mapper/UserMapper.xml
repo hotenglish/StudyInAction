@@ -2,29 +2,49 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.elson.chapter9.mapper.UserMapperChapter9">
 
-    <resultMap type="com.elson.chapter9.pojo.User" id="userMapper">
+<mapper namespace="org.spring.sprintboot.dao.UserDao">
+
+    <resultMap type="user" id="userMapper">
         <id column="id" property="id" javaType="long" jdbcType="BIGINT"/>
         <result column="user_name" property="userName"/>
-        <result column="cnname" property="cnName"/>
+        <result column="course" property="course"/>
         <result column="birthday" property="birthday"/>
         <result column="sex" property="sex" jdbcType="INTEGER"
-                javaType="com.elson.chapter9.enums.Sex" typeHandler="com.elson.chapter9.handlers.SexEnumTypeHandler"/>
+                javaType="org.spring.sprintboot.enums.Sex"
+                typeHandler="org.spring.sprintboot.handlers.SexEnumTypeHandler"/>
         <result column="email" property="email"/>
         <result column="mobile" property="mobile"/>
         <result column="note" property="note"/>
         <collection property="roleList" column="id" fetchType="lazy"
-                    select="com.elson.chapter9.mapper.RoleMapperChapter9.findRoleByUserId"/>
+                    select="org.spring.sprintboot.dao.RoleDao.findRoleByUserId"/>
     </resultMap>
 
-    <select id="getUser" parameterType="long"  resultMap="userMapper">
-        select id, user_name, cnname, birthday, sex, email, mobile, note from t_user where id = #{id}
+    <select id="getUser" parameterType="long" resultMap="userMapper">
+        select id, user_name, course, birthday, sex, email, mobile, note from t_user where id = #{id}
     </select>
 
+    <insert id="saveOrUpdate" parameterType="user">
+        upsert into t_user(id, info.user_name, info.course, info.birthday, info.sex, info.email,
+        info.mobile, info.note) values (#{id}, #{userName}, #{course}, #{birthday},
+        #{sex, typeHandler=org.spring.sprintboot.handlers.SexEnumTypeHandler}, #{email}, #{mobile}, #{note})
+    </insert>
+
+    <delete id="deleteUser" parameterType="long">
+        delete from t_user where id = #{id}
+    </delete>
+
+    <delete id="removeUserFromRole" parameterType="map">
+        delete from t_user_role where  user_id = #{userId} and role_id = #{roleId}
+    </delete>
+
+    <insert id="addRoleForUser" parameterType="map">
+        upsert into t_user_role values(#{userId}, #{roleId})
+    </insert>
+
     <select id="findUserByRoleId" parameterType="long" resultMap="userMapper">
-        SELECT a.id, a.user_name, a.cnname, a.sex, a.mobile, a.email, a.note
-        from t_user a,t_user_role b where a.id = b.role_id and b.user_id = #{userId}
+        SELECT a.id id, a.user_name user_name, a.course course, a.sex sex, a.birthday birthday, a.mobile mobile,
+         a.email email, a.note note from t_user a,t_user_role b where a.id = b.user_id and b.role_id = #{roleId}
     </select>
 
 </mapper>

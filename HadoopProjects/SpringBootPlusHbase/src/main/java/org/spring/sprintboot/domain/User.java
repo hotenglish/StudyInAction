@@ -1,6 +1,6 @@
-package com.elson.chapter9.pojo;
+package org.spring.sprintboot.domain;
 
-import com.elson.chapter9.enums.Sex;
+import org.spring.sprintboot.enums.Sex;
 
 import java.util.Date;
 import java.util.List;
@@ -9,7 +9,7 @@ public class User {
 
     private Long id;
     private String userName;
-    private String cnName;
+    private String course;
     private Sex sex;
     private Date birthday;
     private String mobile;
@@ -34,12 +34,12 @@ public class User {
         this.userName = userName;
     }
 
-    public String getCnName() {
-        return cnName;
+    public String getCourse() {
+        return course;
     }
 
-    public void setCnName(String cnName) {
-        this.cnName = cnName;
+    public void setCourse(String course) {
+        this.course = course;
     }
 
     public Sex getSex() {
@@ -92,9 +92,8 @@ public class User {
 
     @Override
     public String toString() {
-        return "--->" + id + "--->" + userName + "--->" + cnName + "--->" + sex +
+        return "--->" + id + "--->" + userName + "--->" + course + "--->" + sex +
                 "--->" + mobile + "--->" + email + "--->" + note;
     }
-
 
 }

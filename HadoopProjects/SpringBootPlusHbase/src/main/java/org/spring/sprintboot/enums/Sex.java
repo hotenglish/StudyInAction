@@ -1,4 +1,4 @@
-package com.elson.chapter9.enums;
+package org.spring.sprintboot.enums;
 
 public enum Sex {
 

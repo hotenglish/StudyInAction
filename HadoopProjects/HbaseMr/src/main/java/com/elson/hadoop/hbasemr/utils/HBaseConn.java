@@ -1,4 +1,4 @@
-package com.elson.hadoop.microblog.utils;
+package com.elson.hadoop.hbasemr.utils;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HBaseConfiguration;

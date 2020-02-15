@@ -1,8 +1,8 @@
-package com.elson.chapter9.handlers;
+package org.spring.sprintboot.handlers;
 
-import com.elson.chapter9.enums.Sex;
 import org.apache.ibatis.type.JdbcType;
 import org.apache.ibatis.type.TypeHandler;
+import org.spring.sprintboot.enums.Sex;
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
