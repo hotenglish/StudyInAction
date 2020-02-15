@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.elson.chapter9.mapper.UserMapperChapter9">
+
+    <resultMap type="com.elson.chapter9.pojo.User" id="userMapper">
+        <id column="id" property="id" javaType="long" jdbcType="BIGINT"/>
+        <result column="user_name" property="userName"/>
+        <result column="cnname" property="cnName"/>
+        <result column="birthday" property="birthday"/>
+        <result column="sex" property="sex" jdbcType="INTEGER"
+                javaType="com.elson.chapter9.enums.Sex" typeHandler="com.elson.chapter9.handlers.SexEnumTypeHandler"/>
+        <result column="email" property="email"/>
+        <result column="mobile" property="mobile"/>
+        <result column="note" property="note"/>
+        <collection property="roleList" column="id" fetchType="lazy"
+                    select="com.elson.chapter9.mapper.RoleMapperChapter9.findRoleByUserId"/>
+    </resultMap>
+
+    <select id="getUser" parameterType="long"  resultMap="userMapper">
+        select id, user_name, cnname, birthday, sex, email, mobile, note from t_user where id = #{id}
+    </select>
+
+    <select id="findUserByRoleId" parameterType="long" resultMap="userMapper">
+        SELECT a.id, a.user_name, a.cnname, a.sex, a.mobile, a.email, a.note
+        from t_user a,t_user_role b where a.id = b.role_id and b.user_id = #{userId}
+    </select>
+
+</mapper>
