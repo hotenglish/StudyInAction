@@ -11,8 +11,7 @@ import java.io.IOException;
 import java.io.StringReader;
 
 /**
- * TF 在一个文章中出现的词频 N 总共多少文章
- * 按行传入
+ * 每个词，在该条微博中出现的次数TF，统计(微博总条数)
  */
 public class FirstMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
@@ -28,8 +27,10 @@ public class FirstMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
             Lexeme word = null;
             while ((word = ikSegmenter.next()) != null) {
                 String w = word.getLexemeText();
+                // 统计TF
                 context.write(new Text(w + "_" + id), new IntWritable(1));
             }
+            // 统计N
             context.write(new Text("count"), new IntWritable(1));
         } else {
             System.out.println(value.toString() + "---------------------");

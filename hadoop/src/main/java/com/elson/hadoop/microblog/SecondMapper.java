@@ -8,6 +8,7 @@ import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 import java.io.IOException;
 
+//统计每个词的DF
 public class SecondMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     @Override
@@ -24,9 +25,11 @@ public class SecondMapper extends Mapper<LongWritable, Text, Text, IntWritable> 
                 String[] split = values[0].trim().split("_");
                 if (split.length >= 2) {
                     String id = split[0];
+                    //统计DF，该词在哪些微博中出现过
                     context.write(new Text(id), new IntWritable(1));
                 }
             }
+
         } else {
             System.out.println(value.toString() + "----");
         }

@@ -9,7 +9,8 @@ public class HiveText {
 
     public static void main(String args[]) throws Exception {
         Class.forName("org.apache.hive.jdbc.HiveDriver");
-        Connection conn = DriverManager.getConnection("jdbc:hive2://master:10000/default", "root", "");
+        Connection conn = DriverManager.getConnection("jdbc:hive2://node1:10000",
+                "root", "123456");
 
         try {
             Statement st = conn.createStatement();

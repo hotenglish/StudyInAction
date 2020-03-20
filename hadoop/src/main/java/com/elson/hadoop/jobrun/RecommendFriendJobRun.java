@@ -13,7 +13,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 public class RecommendFriendJobRun {
 
     public static void main(String[] args) {
-        FileUtil.deleteDir("output");
         Configuration conf = new Configuration();
         String[] otherArgs = new String[]{"/usr/input/friend/", "/output/"};
         if (otherArgs.length != 2) {

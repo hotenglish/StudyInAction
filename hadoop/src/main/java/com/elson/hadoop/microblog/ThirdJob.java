@@ -13,7 +13,12 @@ public class ThirdJob {
 
     public static void main(String[] args) {
         Configuration conf = new Configuration();
-        String[] otherArgs = new String[]{"/output/weibo1/part-r-00003", "/output/weibo2/part-r-00000", "/output/weibo1/", "/output/weibo3/"};
+        String[] otherArgs = new String[]{
+                "/output/weibo1/part-r-00003",
+                "/output/weibo2/part-r-00000",
+                "/output/weibo1/",
+                "/output/weibo3/"};
+
         try {
             Job job = Job.getInstance(conf);
             job.setJarByClass(ThirdJob.class);
