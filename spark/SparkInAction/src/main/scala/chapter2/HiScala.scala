@@ -12,10 +12,10 @@ class HiScala {
 
 }
 
-/*object AnimalTest{
+object AnimalTest{
   def main(args:Array[String]){
     val hiScala=new HiScala
     hiScala.sayName
     hiScala.getName
   }
-}*/
+}

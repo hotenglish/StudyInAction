@@ -13,4 +13,5 @@ object DeclaresVar {
 
     val name: String = "zhangsan"
   }
+
 }

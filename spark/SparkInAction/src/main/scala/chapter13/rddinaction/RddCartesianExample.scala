@@ -20,7 +20,7 @@ object RddCartesianExample {
 
     val cartestianRDD = rdd1.cartesian(rdd2)
 
-    cartestianRDD.collect().foreach(e => println(e))
+    cartestianRDD.collect().foreach(println)
 
     sc.stop()
 

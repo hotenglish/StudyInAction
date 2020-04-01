@@ -11,13 +11,13 @@ trait PersonCoorVary2[-T] {
 object CoorVaryTest {
   val children1 = new PersonCoorVary1[String] {
     override def eat = {
-      println("have lunch...")
+      println("children1 have lunch...")
     }
   }
 
   val father2 = new PersonCoorVary2[Any] {
     override def eat = {
-      println("have lunch...")
+      println("father2 have lunch...")
     }
   }
 

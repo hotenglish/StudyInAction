@@ -21,7 +21,7 @@ public class HBaseConn {
         try {
             if (configuration == null) {
                 configuration = HBaseConfiguration.create();
-                configuration.set("hbase.zookeeper.quorum", "192.168.1.103:2181");
+                configuration.set("hbase.zookeeper.quorum", "node1:2181,node2:2181,node3:2181");
             }
         } catch (Exception e) {
             e.printStackTrace();

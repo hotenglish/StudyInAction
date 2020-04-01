@@ -116,7 +116,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.elson.hadoop.hbasemr.jobrun.HBaseMr</mainClass>
+                            <mainClass>com.elson.hadoop.hbasemr.jobrun.WordCountJobRun</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

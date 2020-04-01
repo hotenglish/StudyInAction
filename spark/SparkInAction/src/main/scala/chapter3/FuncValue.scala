@@ -14,7 +14,7 @@ object FuncValue {
 
   def functionOps(args: String*) = for (arg <- args) println(arg)
 
-  def paraFunction(args: String) = for (arg <- args) print(arg)
+  def paraFunction(args: String) = for (arg <- args) println(arg)
 
   def DT(myFunc: (String) => Unit, data: String) {
     myFunc(data)

@@ -8,6 +8,14 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
+/*
+* 算子释义：
+* aggregateByKey， 先说分为三个参数的：
+* 第一个参数是， 每个key的初始值
+* 第二个是个函数， Seq Function， 经测试这个函数就是用来先对每个分区内的数据按照key分别进行定义进行函数定义的操作
+* 第三个是个函数， Combiner Function， 对经过 Seq Function 处理过的数据按照key分别进行进行函数定义的操作
+* */
+
 public class AggregateByKeyOperator {
 
     public static void main(String args[]) {
@@ -16,7 +24,7 @@ public class AggregateByKeyOperator {
 
         JavaSparkContext sc = new JavaSparkContext(config);
 
-        JavaRDD<String> text = sc.textFile("file:///home/oracle/Downloads/words.txt");
+        JavaRDD<String> text = sc.textFile("file:///E:\\learning\\StudyInAction\\spark\\SparkInPratice\\src\\main\\resources\\words.txt");
 
         JavaRDD<String> words = text.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

@@ -10,7 +10,7 @@ object MulParaFunctionOps {
 
   def func(x: Int, y: Int) = x + y
 
-  def main(args: Array[String]): Unit = {
+  def main (args: Array[String]): Unit = {
     var arr = Array(12, 34, 5, 7, 76)
     var sum = mulParaFunctionOps((tmp, x) => tmp + x, arr, 0)
     println(sum)

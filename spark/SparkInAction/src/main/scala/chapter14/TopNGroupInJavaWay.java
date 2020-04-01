@@ -18,7 +18,7 @@ public class TopNGroupInJavaWay {
                 .setMaster("local");
         JavaSparkContext ctx = new JavaSparkContext(sparkConf);
 
-        JavaRDD<String> lines = ctx.textFile("file:///home/oracle/Downloads/TopNGroup.txt");
+        JavaRDD<String> lines = ctx.textFile("src/TopNGroup.txt");
 
         JavaPairRDD<String, Integer> pairs = lines.mapToPair(line -> {
             String[] splitedLine = line.split(" ");

@@ -7,6 +7,18 @@ import org.apache.spark.api.java.JavaSparkContext;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+*
+* sample(是否放回, fraction, seed)
+* withReplacement：true抽取放回，false抽取不放回。
+* fraction：
+* 1）false抽取不放回的情况下，抽取的概率（0-1）。
+* 0-全不抽
+* 1-全抽
+* 2）true抽取放回的情况下，抽取的次数。
+seed：随机数种子。
+*
+* */
 public class SampleOperator {
 
     public static void main(String args[]) {

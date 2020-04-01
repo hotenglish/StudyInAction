@@ -13,6 +13,7 @@ object LifecycleDeadLetterApp {
     lifecycleLoggingSecondActor ! "stop"
     lifecycleLoggingSecondActor ! "hello"
   }
+
 }
 
 class MyCustomerDeadLetterListener extends Actor {

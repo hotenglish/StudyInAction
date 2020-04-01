@@ -7,7 +7,7 @@ object TopNGroup {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("ScalaTopNGroup").setMaster("local");
     val sc = new SparkContext(conf)
-    val lines = sc.textFile("file:///home/oracle/Downloads/TopNGroup.txt")
+    val lines = sc.textFile("src/TopNGroup.txt")
     val top5 = lines.map { line =>
       val splitedLine = line.split(" ")
       (splitedLine(0), splitedLine(1).toInt)
@@ -23,9 +23,9 @@ object TopNGroup {
       val toppedValue: Iterator[Int] = topped._2.iterator
       while (toppedValue.hasNext) {
         val value: Integer = toppedValue.next()
-        System.out.println(value)
+        println(value)
       }
-      System.out.println("************************************")
+      println("************************************")
     }
     sc.stop()
   }
