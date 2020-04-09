@@ -19,7 +19,7 @@ public class PersistMySQLWordCount {
 
         JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(3));
 
-        JavaDStream<String> lines = jssc.textFileStream("hdfs://Master:9000/wordcount_dir");
+        JavaDStream<String> lines = jssc.textFileStream("hdfs://node1:9000/wordcount_dir");
 
         JavaDStream<String> words = lines.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

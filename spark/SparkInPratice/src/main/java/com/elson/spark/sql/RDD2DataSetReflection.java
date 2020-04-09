@@ -17,7 +17,7 @@ public class RDD2DataSetReflection {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        JavaRDD<String> lines = sc.textFile("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/student.txt");
+        JavaRDD<String> lines = sc.textFile("src/main/resources/student.txt");
 
         JavaRDD<Student> studentRDD = lines.map(line -> {
             String[] lineSplited = line.split(",");

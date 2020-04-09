@@ -16,7 +16,7 @@ public class WordCountJava {
 
         JavaSparkContext sc = new JavaSparkContext(config);
 
-        JavaRDD<String> text = sc.textFile("file:///home/oracle/Downloads/words.txt");
+        JavaRDD<String> text = sc.textFile("src/main/resources/words.txt");
 
         JavaRDD<String> words = text.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

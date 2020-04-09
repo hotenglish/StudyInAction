@@ -18,7 +18,7 @@ public class WindowBasedTopWord {
 
         jssc.checkpoint(".");
 
-        JavaReceiverInputDStream<String> log = jssc.socketTextStream("master", 8089);
+        JavaReceiverInputDStream<String> log = jssc.socketTextStream("node1", 8089);
 
         JavaDStream<String> searchWord = log.map(searchLog -> searchLog.split(" ")[1]);
 

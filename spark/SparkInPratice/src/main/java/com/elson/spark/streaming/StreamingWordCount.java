@@ -18,7 +18,7 @@ public class StreamingWordCount {
 
         JavaStreamingContext jssc = new JavaStreamingContext(sparkConf, Durations.seconds(5));
 
-        JavaReceiverInputDStream<String> lines = jssc.socketTextStream("master", 8089);
+        JavaReceiverInputDStream<String> lines = jssc.socketTextStream("node1", 8089);
 
         JavaDStream<String> words = lines.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

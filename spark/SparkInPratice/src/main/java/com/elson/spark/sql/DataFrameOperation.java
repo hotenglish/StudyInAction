@@ -16,7 +16,7 @@ public class DataFrameOperation {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        Dataset<Row> df = sqlContext.read().json("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/students.json");
+        Dataset<Row> df = sqlContext.read().json("src/main/resources/students.json");
 
         df.show();
 

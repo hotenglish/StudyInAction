@@ -16,9 +16,9 @@ public class SpecifyFormatLoadSave {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        Dataset<Row> userDS = sqlContext.read().format("json").load("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/people.json");
+        Dataset<Row> userDS = sqlContext.read().format("json").load("src/main/resources/people.json");
 
-        userDS.select("name").write().format("parquet").save("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/people.parquet");
+        userDS.select("name").write().format("parquet").save("src/main/resources/people.parquet");
 
         sc.close();
 

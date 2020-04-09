@@ -24,7 +24,7 @@ public class UpdateStateByKeyWordCount {
 
         jssc.checkpoint(".");
 
-        JavaReceiverInputDStream<String> lines = jssc.socketTextStream("master", 8089);
+        JavaReceiverInputDStream<String> lines = jssc.socketTextStream("node1", 8089);
 
         JavaDStream<String> words = lines.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

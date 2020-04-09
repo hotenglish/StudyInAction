@@ -20,7 +20,7 @@ public class HiveDataSource {
                 "row format delimited fields terminated by ' ' lines terminated by '\n'");
 
         sparkSession.sql("LOAD DATA LOCAL INPATH " +
-                "'/home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/student_infos.txt' " +
+                "'src/main/resources/student_infos.txt' " +
                 "INTO TABLE student_infos");
 
         sparkSession.sql("DROP TABLE IF EXISTS student_scores");
@@ -29,7 +29,7 @@ public class HiveDataSource {
                 "row format delimited fields terminated by ' ' lines terminated by '\n'");
 
         sparkSession.sql("LOAD DATA LOCAL INPATH " +
-                "'/home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/student_score.txt' " +
+                "'src/main/resources/student_score.txt' " +
                 "INTO TABLE student_scores");
 
         Dataset<Row> goodStudentDS = sparkSession.sql("select si.name, si.age, ss.score" +

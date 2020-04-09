@@ -14,7 +14,7 @@ public class SecondSort {
 
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> lines = sc.textFile("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/sort.txt");
+        JavaRDD<String> lines = sc.textFile("src/main/resources/sort.txt");
 
         JavaPairRDD<SecondSortKey, String> pairs = lines.mapToPair(line -> {
             String[] lineSplited = line.split(" ");

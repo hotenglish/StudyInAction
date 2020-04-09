@@ -14,6 +14,8 @@ import java.util.Arrays;
 * 第一个参数是， 每个key的初始值
 * 第二个是个函数， Seq Function， 经测试这个函数就是用来先对每个分区内的数据按照key分别进行定义进行函数定义的操作
 * 第三个是个函数， Combiner Function， 对经过 Seq Function 处理过的数据按照key分别进行进行函数定义的操作
+* Spark中的groupByKey,reduceByKey,combineBykey,和aggregateByKey的比较和区别
+* https://blog.csdn.net/sperospera/article/details/89164261
 * */
 
 public class AggregateByKeyOperator {
@@ -24,7 +26,7 @@ public class AggregateByKeyOperator {
 
         JavaSparkContext sc = new JavaSparkContext(config);
 
-        JavaRDD<String> text = sc.textFile("file:///E:\\learning\\StudyInAction\\spark\\SparkInPratice\\src\\main\\resources\\words.txt");
+        JavaRDD<String> text = sc.textFile("src/main/resources/words.txt");
 
         JavaRDD<String> words = text.flatMap(line -> Arrays.asList(line.split(" ")).iterator());
 

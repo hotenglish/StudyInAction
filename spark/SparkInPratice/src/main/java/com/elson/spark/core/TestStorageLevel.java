@@ -10,7 +10,7 @@ public class TestStorageLevel {
         SparkConf conf = new SparkConf().setMaster("local").setAppName("TestStorageLevel");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> text = sc.textFile("file:///home/oracle/Downloads/SecurityAuth.audit");
+        JavaRDD<String> text = sc.textFile("src/main/resources/top.txt");
 
         text = text.cache();
 

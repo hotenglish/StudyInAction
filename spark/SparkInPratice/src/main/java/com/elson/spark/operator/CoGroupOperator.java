@@ -36,7 +36,7 @@ public class CoGroupOperator {
 
         JavaPairRDD<String, Tuple2<Iterable<String>, Iterable<String>>> studentScores = students.cogroup(scores);
 
-        studentScores.foreach(e -> System.out.println("student id:" + e._1 + "\n student name:" + e._2._1 + "\n student score:" + e._2._2));
+        studentScores.foreach(e -> System.out.println(e));
 
         sc.close();
     }

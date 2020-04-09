@@ -20,7 +20,7 @@ object RddCogroupExample {
 
     val cogroupRdd = rdd1.cogroup(rdd2)
 
-    cogroupRdd.foreach(e => print(e + " "))
+    cogroupRdd.foreach(println)
 
   }
 

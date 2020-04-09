@@ -19,7 +19,7 @@ public class GroupTopN {
 
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> lines = sc.textFile("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/score.txt");
+        JavaRDD<String> lines = sc.textFile("src/main/resources/score.txt");
 
         JavaPairRDD<String, Integer> pairs = lines.mapToPair(line -> {
             String[] arr = line.split(" ");

@@ -34,7 +34,7 @@ public class JoinOperator {
 
         JavaPairRDD<Integer, Tuple2<String, Integer>> studentScores = students.join(scores);
 
-        studentScores.foreach(e -> System.out.println(e._1 + " " + e._2));
+        studentScores.foreach(e -> System.out.println(e));
 
     }
 

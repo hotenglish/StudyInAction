@@ -16,7 +16,7 @@ public class TopN {
 
         JavaSparkContext sc = new JavaSparkContext(config);
 
-        JavaRDD<String> lines = sc.textFile("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/top.txt");
+        JavaRDD<String> lines = sc.textFile("src/main/resources/top.txt");
 
         JavaPairRDD<Integer, String> pairs = lines.mapToPair(line -> new Tuple2<>(Integer.valueOf(line), line));
 

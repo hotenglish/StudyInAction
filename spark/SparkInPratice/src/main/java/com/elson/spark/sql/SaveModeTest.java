@@ -17,7 +17,7 @@ public class SaveModeTest {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        Dataset<Row> userDS = sqlContext.read().format("json").load("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/people.json");
+        Dataset<Row> userDS = sqlContext.read().format("json").load("src/main/resources/people.json");
 
         //userDS.write().mode(SaveMode.ErrorIfExists).parquet("parquet.res");
 

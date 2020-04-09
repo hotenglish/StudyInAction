@@ -23,7 +23,7 @@ public class JsonDataSource {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        Dataset<Row> studentDs = sqlContext.read().json("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/students.json");
+        Dataset<Row> studentDs = sqlContext.read().json("src/main/resources/students.json");
 
         studentDs.registerTempTable("student_scores");
 

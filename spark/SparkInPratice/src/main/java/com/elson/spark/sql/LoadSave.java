@@ -16,13 +16,13 @@ public class LoadSave {
 
         SQLContext sqlContext = new SQLContext(sc);
 
-        Dataset<Row> userDS = sqlContext.read().load("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/users.parquet");
+        Dataset<Row> userDS = sqlContext.read().load("src/main/resources/users.parquet");
 
         userDS.printSchema();
 
         userDS.show();
 
-        userDS.select("name", "score").write().save("file:///home/oracle/learn/spark/SparkInPratice/02WorkCountJava/src/main/resources/backup.parquet");
+        userDS.select("name", "score").write().save("src/main/resources/backup.parquet");
 
         sc.close();
     }

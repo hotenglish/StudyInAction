@@ -40,7 +40,7 @@ public class TransformOperation {
         final JavaPairRDD<String, Boolean> blackNameRDD = jssc.sparkContext().parallelizePairs(blackList);
 
         //接受socket数据源
-        JavaReceiverInputDStream<String> adsClickLogStream = jssc.socketTextStream("Master", 8090);
+        JavaReceiverInputDStream<String> adsClickLogStream = jssc.socketTextStream("node1", 8090);
 
         JavaPairDStream<String, String> adsClickLogPairStream
                 = adsClickLogStream.mapToPair(line -> new Tuple2<>(line.split(" ")[2], line));

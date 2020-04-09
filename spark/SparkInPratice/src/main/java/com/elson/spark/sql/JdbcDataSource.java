@@ -28,10 +28,10 @@ public class JdbcDataSource {
 
         Map<String, String> options = new HashMap<>();
 
-        options.put("url", "jdbc:mysql://localhost:3306/SparkJdbc");
+        options.put("url", "jdbc:mysql://node1:3306/SparkJdbc");
         options.put("dbtable", "t_student");
         options.put("user", "root");
-        options.put("password", "");
+        options.put("password", "123456");
 
         Dataset<Row> studentInfoDS = sparkSession.read().format("jdbc").options(options).load();
 
@@ -80,7 +80,7 @@ public class JdbcDataSource {
             Statement stat = null;
 
             try {
-                conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/SparkJdbc", "root", "");
+                conn = DriverManager.getConnection("jdbc:mysql://node1:3306/SparkJdbc", "root", "123456");
                 stat = conn.createStatement();
                 stat.executeUpdate(sql);
             } catch (Exception e) {
