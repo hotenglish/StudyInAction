@@ -1,0 +1,153 @@
+
+R version 4.0.0 (2020-04-24) -- "Arbor Day"
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R是自由软件，不带任何担保。
+在某些条件下你可以将其自由散布。
+用'license()'或'licence()'来看散布的详细条件。
+
+R是个合作计划，有许多人为之做出了贡献.
+用'contributors()'来看合作者的详细情况
+用'citation()'会告诉你如何在出版物中正确地引用R或R程序包。
+
+用'demo()'来看一些示范程序，用'help()'来阅读在线帮助文件，或
+用'help.start()'通过HTML浏览器来看帮助文件。
+用'q()'退出R.
+
+[原来保存的工作空间已还原]
+
+> a <- c(1,3,5,7,2,4)
+> a
+[1] 1 3 5 7 2 4
+> b <- c("one","two","three")
+> b
+[1] "one"   "two"   "three"
+> c <- c(TRUE,TRUE,FALSE,FALSE,FALSE)
+> C
+function (object, contr, how.many, ...) 
+{
+    if (isFALSE(as.logical(Sys.getenv("_R_OPTIONS_STRINGS_AS_FACTORS_")))) 
+        object <- as.factor(object)
+    if (!nlevels(object)) 
+        stop("object not interpretable as a factor")
+    if (!missing(contr) && is.name(Xcontr <- substitute(contr))) 
+        contr <- switch(as.character(Xcontr), poly = "contr.poly", 
+            helmert = "contr.helmert", sum = "contr.sum", 
+            treatment = "contr.treatment", SAS = "contr.SAS", 
+            contr)
+    if (missing(contr)) {
+        oc <- getOption("contrasts")
+        contr <- if (length(oc) < 2L) 
+            if (is.ordered(object)) 
+                contr.poly
+            else contr.treatment
+        else oc[1 + is.ordered(object)]
+    }
+    if (missing(how.many) && missing(...)) 
+        contrasts(object) <- contr
+    else {
+        if (is.character(contr)) 
+            contr <- get(contr, mode = "function")
+        if (is.function(contr)) 
+            contr <- contr(nlevels(object), ...)
+        contrasts(object, how.many) <- contr
+    }
+    object
+}
+<bytecode: 0x0000000011ff99c0>
+<environment: namespace:stats>
+> c
+[1]  TRUE  TRUE FALSE FALSE FALSE
+> c
+
+> a <- c(1, 3, 5, "one")
+> a
+[1] "1"   "3"   "5"   "one"
+> a[3]
+[1] "5"
+> a[c(1,3,4)]
+[1] "1"   "5"   "one"
+> a[1:3]
+[1] "1" "3" "5"
+> ?matrix
+starting httpd help server ... done
+> y <- matrix(5:24, nrow=4, ncol=5)
+> y
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    5    9   13   17   21
+[2,]    6   10   14   18   22
+[3,]    7   11   15   19   23
+[4,]    8   12   16   20   24
+> x <- c(2,45,68,94)
+> rnames <- c("R1", "R2")
+> cnames <- c("C1", "C2")
+> newMatrix <- matrix(x,nrow=2,ncol=2,byrow=TRUE,dimnames={rnames,cnames})
+错误: 意外的',' in "newMatrix <- matrix(x,nrow=2,ncol=2,byrow=TRUE,dimnames={rnames,"
+> newMatrix <- matrix(x,nrow=2,ncol=2,byrow=TRUE,dimnames=list(rnames,cnames))
+> newMatrix
+   C1 C2
+R1  2 45
+R2 68 94
+> newMatrix <- matrix(x,nrow=2,ncol=2,dimnames=list(rnames,cnames))
+> newMatrix
+   C1 C2
+R1  2 68
+R2 45 94
+> newMatrix <- matrix(1:20,nrow=4)
+> newMatrix
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    5    9   13   17
+[2,]    2    6   10   14   18
+[3,]    3    7   11   15   19
+[4,]    4    8   12   16   20
+> x[3,]
+Error in x[3, ] : 量度数目不对
+> x <- matrix(1:20,nrow=4)
+> x
+     [,1] [,2] [,3] [,4] [,5]
+[1,]    1    5    9   13   17
+[2,]    2    6   10   14   18
+[3,]    3    7   11   15   19
+[4,]    4    8   12   16   20
+> x[3,]
+[1]  3  7 11 15 19
+> x[2,3]
+[1] 10
+> x[,4]
+[1] 13 14 15 16
+> ?array
+> dim1 <- c("A1","A2","A3")
+> dim2 <- c("B1","B2")
+> dim3 <- c("C1","C2","C3","C4")
+> d <- array(1:20,c(3,2,4),dimnames=list(dim1,dim2,dim3))
+> d
+, , C1
+
+   B1 B2
+A1  1  4
+A2  2  5
+A3  3  6
+
+, , C2
+
+   B1 B2
+A1  7 10
+A2  8 11
+A3  9 12
+
+, , C3
+
+   B1 B2
+A1 13 16
+A2 14 17
+A3 15 18
+
+, , C4
+
+   B1 B2
+A1 19  2
+A2 20  3
+A3  1  4
+
+> 

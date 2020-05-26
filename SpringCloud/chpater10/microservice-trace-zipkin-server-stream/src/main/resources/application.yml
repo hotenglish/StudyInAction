@@ -1,0 +1,9 @@
+server:
+  port: 9411
+zipkin:
+  collector:
+    rabbitmq:
+      addresses: node4:5672
+      password: mq
+      username: mq
+      queue: zipkin

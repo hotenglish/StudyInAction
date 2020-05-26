@@ -1,0 +1,307 @@
+> library(DMwR)
+载入需要的程辑包：lattice
+载入需要的程辑包：grid
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+> x <- algae[-manyNAs(algae),]
+> clean.algae <- knnImputation(algae,k=10)
+> lm.a1 <- lm(a1 ~ ., data=clean.algae[, 1:12])
+> head(clean.algae)
+  season  size  speed mxPH mnO2     Cl    NO3     NH4    oPO4     PO4 Chla   a1   a2   a3
+1 winter small medium 8.00  9.8 60.800  6.238 578.000 105.000 170.000 50.0  0.0  0.0  0.0
+2 spring small medium 8.35  8.0 57.750  1.288 370.000 428.750 558.750  1.3  1.4  7.6  4.8
+3 autumn small medium 8.10 11.4 40.020  5.330 346.667 125.667 187.057 15.6  3.3 53.6  1.9
+4 spring small medium 8.07  4.8 77.364  2.302  98.182  61.182 138.700  1.4  3.1 41.0 18.9
+5 autumn small medium 8.06  9.0 55.350 10.416 233.700  58.222  97.580 10.5  9.2  2.9  7.5
+6 winter small   high 8.25 13.1 65.750  9.248 430.000  18.250  56.667 28.4 15.1 14.6  1.4
+   a4   a5   a6  a7
+1 0.0 34.2  8.3 0.0
+2 1.9  6.7  0.0 2.1
+3 0.0  0.0  0.0 9.7
+4 0.0  1.4  0.0 1.4
+5 0.0  7.5  4.1 1.0
+6 0.0 22.5 12.6 2.9
+> summary(lm.a1)
+
+Call:
+lm(formula = a1 ~ ., data = clean.algae[, 1:12])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-37.293 -11.988  -2.623   7.177  62.465 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept)  39.091753  23.609820   1.656  0.09948 . 
+seasonspring  3.689773   4.125868   0.894  0.37233   
+seasonsummer  0.333951   3.985869   0.084  0.93332   
+seasonwinter  3.488576   3.840263   0.908  0.36484   
+sizemedium    3.349192   3.752461   0.893  0.37327   
+sizesmall     9.734007   4.123081   2.361  0.01928 * 
+speedlow      3.706971   4.676117   0.793  0.42895   
+speedmedium  -0.158543   3.207178  -0.049  0.96063   
+mxPH         -3.098611   2.650299  -1.169  0.24385   
+mnO2          1.053319   0.702830   1.499  0.13567   
+Cl           -0.040731   0.033554  -1.214  0.22634   
+NO3          -1.489958   0.549112  -2.713  0.00729 **
+NH4           0.001626   0.001000   1.626  0.10575   
+oPO4         -0.007084   0.039740  -0.178  0.85871   
+PO4          -0.050298   0.030602  -1.644  0.10196   
+Chla         -0.093264   0.079589  -1.172  0.24279   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 17.6 on 184 degrees of freedom
+Multiple R-squared:  0.3718,	Adjusted R-squared:  0.3205 
+F-statistic: 7.259 on 15 and 184 DF,  p-value: 1.961e-12
+
+> anova(lm.a1)
+Analysis of Variance Table
+
+Response: a1
+           Df Sum Sq Mean Sq F value    Pr(>F)    
+season      3     66    21.9  0.0709 0.9754563    
+size        2  11527  5763.5 18.6121 4.352e-08 ***
+speed       2   4028  2014.1  6.5043 0.0018647 ** 
+mxPH        1   1225  1224.8  3.9551 0.0482113 *  
+mnO2        1   2304  2304.1  7.4408 0.0069940 ** 
+Cl          1   4323  4323.5 13.9619 0.0002488 ***
+NO3         1   3359  3359.5 10.8487 0.0011857 ** 
+NH4         1    403   403.4  1.3026 0.2552235    
+oPO4        1   4711  4711.2 15.2140 0.0001345 ***
+PO4         1   1344  1343.9  4.3399 0.0386120 *  
+Chla        1    425   425.2  1.3732 0.2427852    
+Residuals 184  56978   309.7                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> lm2.a1 <- update(lm.a1, . ~. -season)
+> lm2.a1
+
+Call:
+lm(formula = a1 ~ size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + 
+    oPO4 + PO4 + Chla, data = clean.algae[, 1:12])
+
+Coefficients:
+(Intercept)   sizemedium    sizesmall     speedlow  speedmedium         mxPH         mnO2  
+  40.778346     3.337045    10.298892     2.816417    -0.702007    -2.754166     0.800318  
+         Cl          NO3          NH4         oPO4          PO4         Chla  
+  -0.038373    -1.510986     0.001574    -0.008209    -0.048866    -0.089171  
+
+> summary(lm2.a1)
+
+Call:
+lm(formula = a1 ~ size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + 
+    oPO4 + PO4 + Chla, data = clean.algae[, 1:12])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-36.154 -11.630  -3.147   7.515  64.133 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 40.7783464 22.8107698   1.788  0.07545 . 
+sizemedium   3.3370453  3.7353795   0.893  0.37281   
+sizesmall   10.2988917  4.0747516   2.527  0.01232 * 
+speedlow     2.8164171  4.5812576   0.615  0.53945   
+speedmedium -0.7020072  3.1500823  -0.223  0.82389   
+mxPH        -2.7541662  2.6042028  -1.058  0.29161   
+mnO2         0.8003179  0.6569947   1.218  0.22470   
+Cl          -0.0383725  0.0332854  -1.153  0.25045   
+NO3         -1.5109859  0.5455540  -2.770  0.00618 **
+NH4          0.0015741  0.0009922   1.586  0.11432   
+oPO4        -0.0082091  0.0393637  -0.209  0.83503   
+PO4         -0.0488663  0.0303671  -1.609  0.10926   
+Chla        -0.0891708  0.0790896  -1.127  0.26099   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 17.53 on 187 degrees of freedom
+Multiple R-squared:  0.3666,	Adjusted R-squared:  0.3259 
+F-statistic: 9.018 on 12 and 187 DF,  p-value: 1.46e-13
+
+> anova(lm2.a1)
+Analysis of Variance Table
+
+Response: a1
+           Df Sum Sq Mean Sq F value    Pr(>F)    
+size        2  11501  5750.6 18.7182  3.89e-08 ***
+speed       2   4000  1999.9  6.5096 0.0018493 ** 
+mxPH        1   1243  1243.4  4.0472 0.0456808 *  
+mnO2        1   2106  2106.1  6.8554 0.0095617 ** 
+Cl          1   4140  4139.9 13.4755 0.0003153 ***
+NO3         1   3503  3503.5 11.4038 0.0008916 ***
+NH4         1    394   394.3  1.2833 0.2587365    
+oPO4        1   4696  4695.9 15.2853 0.0001292 ***
+PO4         1   1270  1270.5  4.1355 0.0434063 *  
+Chla        1    391   390.5  1.2712 0.2609903    
+Residuals 187  57450   307.2                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+> anova(lm.a1,lm2.a1)
+Analysis of Variance Table
+
+Model 1: a1 ~ season + size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + oPO4 + 
+    PO4 + Chla
+Model 2: a1 ~ size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + oPO4 + PO4 + 
+    Chla
+  Res.Df   RSS Df Sum of Sq      F Pr(>F)
+1    184 56978                           
+2    187 57450 -3   -471.71 0.5078 0.6774
+> final.lm <- step(lm.a1)
+Start:  AIC=1162.42
+a1 ~ season + size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + oPO4 + 
+    PO4 + Chla
+
+         Df Sum of Sq   RSS    AIC
+- season  3    471.71 57450 1158.1
+- speed   2    283.26 57261 1159.4
+- oPO4    1      9.84 56988 1160.5
+- mxPH    1    423.29 57402 1161.9
+- Chla    1    425.22 57403 1161.9
+- Cl      1    456.31 57435 1162.0
+<none>                56978 1162.4
+- mnO2    1    695.52 57674 1162.8
+- NH4     1    818.27 57796 1163.3
+- PO4     1    836.54 57815 1163.3
+- size    2   1893.80 58872 1165.0
+- NO3     1   2279.91 59258 1168.3
+
+Step:  AIC=1158.07
+a1 ~ size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + oPO4 + PO4 + 
+    Chla
+
+        Df Sum of Sq   RSS    AIC
+- speed  2    231.90 57682 1154.9
+- oPO4   1     13.36 57463 1156.1
+- mxPH   1    343.62 57794 1157.3
+- Chla   1    390.53 57840 1157.4
+- Cl     1    408.30 57858 1157.5
+- mnO2   1    455.88 57906 1157.7
+<none>               57450 1158.1
+- NH4    1    773.25 58223 1158.7
+- PO4    1    795.53 58245 1158.8
+- size   2   2205.90 59656 1161.6
+- NO3    1   2356.64 59807 1164.1
+
+Step:  AIC=1154.88
+a1 ~ size + mxPH + mnO2 + Cl + NO3 + NH4 + oPO4 + PO4 + Chla
+
+       Df Sum of Sq   RSS    AIC
+- oPO4  1     23.18 57705 1153.0
+- Chla  1    258.78 57941 1153.8
+- mxPH  1    351.12 58033 1154.1
+- mnO2  1    429.29 58111 1154.4
+- Cl    1    499.90 58182 1154.6
+<none>              57682 1154.9
+- NH4   1    718.50 58400 1155.3
+- PO4   1    758.83 58441 1155.5
+- size  2   2125.92 59808 1158.1
+- NO3   1   2319.36 60001 1160.8
+
+Step:  AIC=1152.96
+a1 ~ size + mxPH + mnO2 + Cl + NO3 + NH4 + PO4 + Chla
+
+       Df Sum of Sq   RSS    AIC
+- Chla  1     235.8 57941 1151.8
+- mxPH  1     383.5 58089 1152.3
+- mnO2  1     415.2 58120 1152.4
+- Cl    1     497.7 58203 1152.7
+<none>              57705 1153.0
+- NH4   1     697.6 58403 1153.4
+- size  2    2104.3 59809 1156.1
+- NO3   1    2307.3 60012 1158.8
+- PO4   1    5743.5 63448 1169.9
+
+Step:  AIC=1151.77
+a1 ~ size + mxPH + mnO2 + Cl + NO3 + NH4 + PO4
+
+       Df Sum of Sq   RSS    AIC
+- mnO2  1     450.5 58391 1151.3
+- Cl    1     462.0 58403 1151.4
+<none>              57941 1151.8
+- mxPH  1     661.6 58602 1152.0
+- NH4   1     741.3 58682 1152.3
+- size  2    2281.6 60222 1155.5
+- NO3   1    2608.0 60549 1158.6
+- PO4   1    6242.5 64183 1170.2
+
+Step:  AIC=1151.32
+a1 ~ size + mxPH + Cl + NO3 + NH4 + PO4
+
+       Df Sum of Sq   RSS    AIC
+- NH4   1     522.2 58914 1151.1
+<none>              58391 1151.3
+- Cl    1     617.0 59008 1151.4
+- mxPH  1     644.7 59036 1151.5
+- size  2    2553.8 60945 1155.9
+- NO3   1    2182.3 60574 1156.7
+- PO4   1    9046.0 67437 1178.1
+
+Step:  AIC=1151.1
+a1 ~ size + mxPH + Cl + NO3 + PO4
+
+       Df Sum of Sq   RSS    AIC
+<none>              58914 1151.1
+- mxPH  1     614.9 59528 1151.2
+- Cl    1     873.4 59787 1152.0
+- NO3   1    1911.9 60825 1155.5
+- size  2    2737.1 61651 1156.2
+- PO4   1    8532.2 67446 1176.2
+> summary(lm2.a1)
+
+Call:
+lm(formula = a1 ~ size + speed + mxPH + mnO2 + Cl + NO3 + NH4 + 
+    oPO4 + PO4 + Chla, data = clean.algae[, 1:12])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-36.154 -11.630  -3.147   7.515  64.133 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)   
+(Intercept) 40.7783464 22.8107698   1.788  0.07545 . 
+sizemedium   3.3370453  3.7353795   0.893  0.37281   
+sizesmall   10.2988917  4.0747516   2.527  0.01232 * 
+speedlow     2.8164171  4.5812576   0.615  0.53945   
+speedmedium -0.7020072  3.1500823  -0.223  0.82389   
+mxPH        -2.7541662  2.6042028  -1.058  0.29161   
+mnO2         0.8003179  0.6569947   1.218  0.22470   
+Cl          -0.0383725  0.0332854  -1.153  0.25045   
+NO3         -1.5109859  0.5455540  -2.770  0.00618 **
+NH4          0.0015741  0.0009922   1.586  0.11432   
+oPO4        -0.0082091  0.0393637  -0.209  0.83503   
+PO4         -0.0488663  0.0303671  -1.609  0.10926   
+Chla        -0.0891708  0.0790896  -1.127  0.26099   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 17.53 on 187 degrees of freedom
+Multiple R-squared:  0.3666,	Adjusted R-squared:  0.3259 
+F-statistic: 9.018 on 12 and 187 DF,  p-value: 1.46e-13
+
+> summary(final.lm)
+
+Call:
+lm(formula = a1 ~ size + mxPH + Cl + NO3 + PO4, data = clean.algae[, 
+    1:12])
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-28.580 -12.583  -3.751   8.689  63.213 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 52.83928   20.54613   2.572  0.01087 *  
+sizemedium   3.03643    3.36256   0.903  0.36765    
+sizesmall   10.59939    3.78632   2.799  0.00564 ** 
+mxPH        -3.45712    2.43571  -1.419  0.15741    
+Cl          -0.05338    0.03156  -1.692  0.09235 .  
+NO3         -0.87703    0.35044  -2.503  0.01316 *  
+PO4         -0.05891    0.01114  -5.287 3.35e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 17.47 on 193 degrees of freedom
+Multiple R-squared:  0.3504,	Adjusted R-squared:  0.3302 
+F-statistic: 17.35 on 6 and 193 DF,  p-value: 5.083e-16

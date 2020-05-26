@@ -1,0 +1,23 @@
+> mydata <- data.frame(age=numeric(0),
++ gender=character(0),
++ weight=numeric(0))
+> mydata <- edit(mydata)
+> mydata
+  age gender weight isteacher var5
+1  20      m    120         y <NA>
+2  30      r    140         n <NA>
+3  18      r     98         n <NA>
+> fix(mydata)
+> mydata
+  age gender weight isteacher var5
+1  20      m    120         y <NA>
+2  30      r    140         y <NA>
+3  18      r     98         y <NA>
+> fix(mydata)
+> mydata <- mydata[,-5]
+> mydata
+  age gender weight isteacher
+1  20      m    120         y
+2  30      r    140         y
+3  18      r     98         y
+

@@ -1,0 +1,17 @@
+> par(mfrow=c(2,2))
+> x <- c(10,12,4,16,8)
+> lab <- c("US","UK","Australia","Germany","France")
+> pie(x,lab,main="Simple Pie Chart")
+> pct <- round(x/sum(x)*100)
+> sum(x)
+[1] 55
+> pct
+[1] 18 22  7 29 15
+> lab1 <- paste(lab," ",pct, "%", sep=" ")
+> lab1
+[1] "US   18 %"       "UK   22 %"       "Australia   7 %" "Germany   29 %" 
+[5] "France   15 %"  
+> library(plotrix)
+> pie3D(x,explode=0.1,main="3D Pie Chart")
+> fan.plot(x,labels = lab,main="Fan Plot")
+> 

@@ -1,0 +1,43 @@
+> for(i in 1:5) print("Hello")
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+> x <- 5
+> while(x>0){print("Hello");x <- x - 1 }
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+[1] "Hello"
+> x <- 1
+> if(x!=1) print("male")
+> if(x!=1) print("male") else print("female")
+[1] "female"
+> ifelse(x>1,print("male"),print("female"))
+[1] "female"
+[1] "female"
+> ifelse(x>1,print("male"),print("female"))
+[1] "female"
+[1] "female"
+> feeling <- c("sad","afraid")
+> for(i in feeling){}
+> for(i in feeling){ print(switch(i, happy="I am glad",afraid="fear", sad="cheer up"))}
+[1] "cheer up"
+[1] "fear"
+> cars <- mtcars[1:5,1:4]
+> cars
+                   mpg cyl disp  hp
+Mazda RX4         21.0   6  160 110
+Mazda RX4 Wag     21.0   6  160 110
+Datsun 710        22.8   4  108  93
+Hornet 4 Drive    21.4   6  258 110
+Hornet Sportabout 18.7   8  360 175
+> t(cars)
+     Mazda RX4 Mazda RX4 Wag Datsun 710 Hornet 4 Drive Hornet Sportabout
+mpg         21            21       22.8           21.4              18.7
+cyl          6             6        4.0            6.0               8.0
+disp       160           160      108.0          258.0             360.0
+hp         110           110       93.0          110.0             175.0
+> 

@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: microservice-consumer-movie
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: mq
+    password: mq
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://node1:8761/eureka/
+  instance:
+    prefer-ip-address: true

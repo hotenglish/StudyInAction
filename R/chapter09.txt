@@ -1,0 +1,23 @@
+> mydate<-function(type="long"){
++   switch(type,
++          long=format(Sys.time(),"%A %B %Y"),
++          short=format(Sys.time(),"%m-%d-%y"),
++          cat(type,"is not a recognized type\n"))
++ }
+> mydate("long")
+[1] "星期四 五月 2020"
+> mydate("short")
+[1] "05-07-20"
+> mydate("medium")
+medium is not a recognized type
+
+function(num){
+x <- 0
+for(i in 1:num){
+x<- x+i
+}
+return(x)
+}
+
+> sum(3)
+[1] 6

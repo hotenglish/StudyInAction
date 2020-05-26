@@ -1,0 +1,92 @@
+> mylist <- list(stud.id=1234,stud.name="Tom",stud=c(10,3,14,25,19))
+> mylist
+$stud.id
+[1] 1234
+
+$stud.name
+[1] "Tom"
+
+$stud
+[1] 10  3 14 25 19
+
+> mylist[[1]]
+[1] 1234
+> mylist[[3]]
+[1] 10  3 14 25 19
+> mylist[1]
+$stud.id
+[1] 1234
+
+> mode(mylist[[1]])
+[1] "numeric"
+> mode(mylist[1])
+[1] "list"
+> mylist$stud.id
+[1] 1234
+> names(mylist)
+[1] "stud.id"   "stud.name" "stud"     
+> names(mylist) <- c("id","name","marks")
+> mylist
+$id
+[1] 1234
+
+$name
+[1] "Tom"
+
+$marks
+[1] 10  3 14 25 19
+
+> mylist$parent <- c("Mna","Jutice")
+> mylist
+$id
+[1] 1234
+
+$name
+[1] "Tom"
+
+$marks
+[1] 10  3 14 25 19
+
+$parent
+[1] "Mna"    "Jutice"
+
+> length(mylist)
+[1] 4
+> mylist <- mylist[-4]
+> mylist
+$id
+[1] 1234
+
+$name
+[1] "Tom"
+
+$marks
+[1] 10  3 14 25 19
+> other <- list(age=19,sex="male")
+> other
+$age
+[1] 19
+
+$sex
+[1] "male"
+
+> lst <- c(mylist, other)
+> lst
+$id
+[1] 1234
+
+$name
+[1] "Tom"
+
+$marks
+[1] 10  3 14 25 19
+
+$age
+[1] 19
+
+$sex
+[1] "male"
+
+> unlist(lst)
+    id   name marks1 marks2 marks3 marks4 marks5    age    sex 
+"1234"  "Tom"   "10"    "3"   "14"   "25"   "19"   "19" "male" 

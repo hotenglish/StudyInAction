@@ -1,0 +1,124 @@
+> x <- c(1,2,3,NA)
+> is.na(x)
+[1] FALSE FALSE FALSE  TRUE
+> is.na(survey)
+  manager_test  date country gender   age question1    q2    q3    q4    q5
+1        FALSE FALSE   FALSE  FALSE FALSE     FALSE FALSE FALSE FALSE FALSE
+2        FALSE FALSE   FALSE  FALSE FALSE     FALSE FALSE FALSE FALSE FALSE
+3        FALSE FALSE   FALSE  FALSE FALSE     FALSE FALSE FALSE FALSE FALSE
+4        FALSE FALSE   FALSE  FALSE FALSE     FALSE FALSE FALSE  TRUE  TRUE
+5        FALSE FALSE   FALSE  FALSE  TRUE     FALSE FALSE FALSE FALSE FALSE
+> is.na(survey[6:10])
+  question1    q2    q3    q4    q5
+1     FALSE FALSE FALSE FALSE FALSE
+2     FALSE FALSE FALSE FALSE FALSE
+3     FALSE FALSE FALSE FALSE FALSE
+4     FALSE FALSE FALSE  TRUE  TRUE
+5     FALSE FALSE FALSE FALSE FALSE
+> is.na(survey[,6:10])
+  question1    q2    q3    q4    q5
+1     FALSE FALSE FALSE FALSE FALSE
+2     FALSE FALSE FALSE FALSE FALSE
+3     FALSE FALSE FALSE FALSE FALSE
+4     FALSE FALSE FALSE  TRUE  TRUE
+5     FALSE FALSE FALSE FALSE FALSE
+> is.na(survey[4,9])
+[1] TRUE
+> survey[4,9]==NA
+[1] NA
+> x <- c(1,2,NA,4)
+> y <- x[1]+x[2]+x[3]+x[4]
+> y
+[1] NA
+> survey
+  manager     date country gender age q1 q2 q3 q4 q5
+1       1 10/24/08      US      M  32  5  4  5  5  5
+2       2 10/28/08      US      F  45  3  5  2  5  5
+3       3  10/1/08      UK      F  25  3  5  5  5  2
+4       4 10/12/08      UK      M  39  3  3  4 NA NA
+5       5   5/1/09      UK      F  99  2  2  1  2  1
+> data <- na.omit(survey)
+> data
+  manager     date country gender age q1 q2 q3 q4 q5
+1       1 10/24/08      US      M  32  5  4  5  5  5
+2       2 10/28/08      US      F  45  3  5  2  5  5
+3       3  10/1/08      UK      F  25  3  5  5  5  2
+5       5   5/1/09      UK      F  99  2  2  1  2  1
+> mydate <- as.Date("2016-01-20")
+> mydate
+[1] "2016-01-20"
+> mydate <- c("01/05/2006", "01/29/2007")
+> mydate <- as.Date("2016-01-20")
+> mydate1 <- c("01/05/2006", "01/29/2007")
+> date <- as.Date(mydate1,"%m/%d/%Y")
+> date
+[1] "2006-01-05" "2007-01-29"
+> Sys.Date()
+[1] "2020-05-07"
+> date()
+[1] "Thu May 07 21:48:57 2020"
+> today <- Sys.Date()
+> today
+[1] "2020-05-07"
+> format(today, format="%B %d %Y")
+[1] "五月 07 2020"
+> format(today,format="%y")
+[1] "20"
+> startdate <- as.Date("2003-01-23")
+> enddate <- as.Date("2011-09-18")
+> days <- enddate-startdate
+> days
+Time difference of 3160 days
+> a <- c(2,5,7)
+> a
+[1] 2 5 7
+> is.numeric(a)
+[1] TRUE
+> is.vector(a)
+[1] TRUE
+> b <- as.character(a)
+> b
+[1] "2" "5" "7"
+> is.numeric(b)
+[1] FALSE
+> is.vector(b)
+[1] TRUE
+> data <- survey[order(survey$age)]
+> data
+  country manager gender     date age
+1      US       1      M 10/24/08  32
+2      US       2      F 10/28/08  45
+3      UK       3      F  10/1/08  25
+4      UK       4      M 10/12/08  39
+5      UK       5      F   5/1/09  99
+> data <- survey[order(survey$age,)]
+Error in order(survey$age, ) : argument is missing, with no default
+> data <- survey[order(survey$age),]
+> data
+  manager     date country gender age q1 q2 q3 q4 q5
+3       3  10/1/08      UK      F  25  3  5  5  5  2
+1       1 10/24/08      US      M  32  5  4  5  5  5
+4       4 10/12/08      UK      M  39  3  3  4 NA NA
+2       2 10/28/08      US      F  45  3  5  2  5  5
+5       5   5/1/09      UK      F  99  2  2  1  2  1
+> data <- survey[order(survey$gender, survey$age),]
+> data
+  manager     date country gender age q1 q2 q3 q4 q5
+3       3  10/1/08      UK      F  25  3  5  5  5  2
+2       2 10/28/08      US      F  45  3  5  2  5  5
+5       5   5/1/09      UK      F  99  2  2  1  2  1
+1       1 10/24/08      US      M  32  5  4  5  5  5
+4       4 10/12/08      UK      M  39  3  3  4 NA NA
+> data <- survey[-order(survey$age),]
+> data
+ [1] manager date    country gender  age     q1      q2      q3      q4     
+[10] q5     
+<0 行> (或0-长度的row.names)
+> data <- survey[order(-survey$age),]
+> data
+  manager     date country gender age q1 q2 q3 q4 q5
+5       5   5/1/09      UK      F  99  2  2  1  2  1
+2       2 10/28/08      US      F  45  3  5  2  5  5
+4       4 10/12/08      UK      M  39  3  3  4 NA NA
+1       1 10/24/08      US      M  32  5  4  5  5  5
+3       3  10/1/08      UK      F  25  3  5  5  5  2

@@ -1,0 +1,346 @@
+
+R version 4.0.0 (2020-04-24) -- Arbor Day
+Copyright (C) 2020 The R Foundation for Statistical Computing
+Platform x86_64-w64-mingw32x64 (64-bit)
+
+R是自由软件，不带任何担保。
+在某些条件下你可以将其自由散布。
+用'license()'或'licence()'来看散布的详细条件。
+
+R是个合作计划，有许多人为之做出了贡献.
+用'contributors()'来看合作者的详细情况
+用'citation()'会告诉你如何在出版物中正确地引用R或R程序包。
+
+用'demo()'来看一些示范程序，用'help()'来阅读在线帮助文件，或
+用'help.start()'通过HTML浏览器来看帮助文件。
+用'q()'退出R.
+
+[原来保存的工作空间已还原]
+
+ library()
+ help(package=base)
+starting httpd help server ... 做完了。
+ help(package=car)
+ some
+错误 找不到对象'some'
+ library(car)
+Error in library(car)  不存在叫‘car’这个名字的程辑包
+ install.packages(car)
+Error in install.packages(car)  找不到对象'car'
+ install.packages(car)
+--- 在此連線階段时请选用CRAN的鏡子 ---
+还安装相依关系‘R6’, ‘clipr’, ‘BH’, ‘glue’, ‘purrr’, ‘rematch’, ‘prettyunits’, ‘assertthat’, ‘utf8’, ‘digest’, ‘forcats’, ‘hms’, ‘readr’, ‘rlang’, ‘tidyselect’, ‘cellranger’, ‘progress’, ‘zip’, ‘stringi’, ‘cli’, ‘crayon’, ‘ellipsis’, ‘fansi’, ‘lifecycle’, ‘pillar’, ‘pkgconfig’, ‘vctrs’, ‘magrittr’, ‘SparseM’, ‘MatrixModels’, ‘sp’, ‘haven’, ‘curl’, ‘data.table’, ‘readxl’, ‘openxlsx’, ‘tibble’, ‘minqa’, ‘nloptr’, ‘statmod’, ‘Rcpp’, ‘RcppEigen’, ‘carData’, ‘abind’, ‘pbkrtest’, ‘quantreg’, ‘maptools’, ‘rio’, ‘lme4’
+
+
+  有二进制版本的，但源代码版本是后来的
+      binary source needs_compilation
+rlang  0.4.5  0.4.6              TRUE
+
+  Binaries will be installed
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0R6_2.4.1.zip'
+Content type 'applicationzip' length 59075 bytes (57 KB)
+downloaded 57 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0clipr_0.7.0.zip'
+Content type 'applicationzip' length 51726 bytes (50 KB)
+downloaded 50 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0BH_1.72.0-3.zip'
+Content type 'applicationzip' length 18270708 bytes (17.4 MB)
+downloaded 17.4 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0glue_1.4.0.zip'
+Content type 'applicationzip' length 157998 bytes (154 KB)
+downloaded 154 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0purrr_0.3.4.zip'
+Content type 'applicationzip' length 424008 bytes (414 KB)
+downloaded 414 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0rematch_1.0.1.zip'
+Content type 'applicationzip' length 16027 bytes (15 KB)
+downloaded 15 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0prettyunits_1.1.1.zip'
+Content type 'applicationzip' length 37583 bytes (36 KB)
+downloaded 36 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0assertthat_0.2.1.zip'
+Content type 'applicationzip' length 54860 bytes (53 KB)
+downloaded 53 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0utf8_1.1.4.zip'
+Content type 'applicationzip' length 208479 bytes (203 KB)
+downloaded 203 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0digest_0.6.25.zip'
+Content type 'applicationzip' length 244567 bytes (238 KB)
+downloaded 238 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0forcats_0.5.0.zip'
+Content type 'applicationzip' length 356616 bytes (348 KB)
+downloaded 348 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0hms_0.5.3.zip'
+Content type 'applicationzip' length 106802 bytes (104 KB)
+downloaded 104 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0readr_1.3.1.zip'
+Content type 'applicationzip' length 1723021 bytes (1.6 MB)
+downloaded 1.6 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0rlang_0.4.5.zip'
+Content type 'applicationzip' length 1112530 bytes (1.1 MB)
+downloaded 1.1 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0tidyselect_1.0.0.zip'
+Content type 'applicationzip' length 244684 bytes (238 KB)
+downloaded 238 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0cellranger_1.1.0.zip'
+Content type 'applicationzip' length 103721 bytes (101 KB)
+downloaded 101 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0progress_1.2.2.zip'
+Content type 'applicationzip' length 85157 bytes (83 KB)
+downloaded 83 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0zip_2.0.4.zip'
+Content type 'applicationzip' length 815339 bytes (796 KB)
+downloaded 796 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0stringi_1.4.6.zip'
+Content type 'applicationzip' length 15217051 bytes (14.5 MB)
+downloaded 14.5 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0cli_2.0.2.zip'
+Content type 'applicationzip' length 398396 bytes (389 KB)
+downloaded 389 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0crayon_1.3.4.zip'
+Content type 'applicationzip' length 749428 bytes (731 KB)
+downloaded 731 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0ellipsis_0.3.0.zip'
+Content type 'applicationzip' length 44522 bytes (43 KB)
+downloaded 43 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0fansi_0.4.1.zip'
+Content type 'applicationzip' length 222653 bytes (217 KB)
+downloaded 217 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0lifecycle_0.2.0.zip'
+Content type 'applicationzip' length 101520 bytes (99 KB)
+downloaded 99 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0pillar_1.4.3.zip'
+Content type 'applicationzip' length 183307 bytes (179 KB)
+downloaded 179 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0pkgconfig_2.0.3.zip'
+Content type 'applicationzip' length 22176 bytes (21 KB)
+downloaded 21 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0vctrs_0.2.4.zip'
+Content type 'applicationzip' length 999722 bytes (976 KB)
+downloaded 976 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0magrittr_1.5.zip'
+Content type 'applicationzip' length 157459 bytes (153 KB)
+downloaded 153 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0SparseM_1.78.zip'
+Content type 'applicationzip' length 1065885 bytes (1.0 MB)
+downloaded 1.0 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0MatrixModels_0.4-1.zip'
+Content type 'applicationzip' length 440141 bytes (429 KB)
+downloaded 429 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0sp_1.4-1.zip'
+Content type 'applicationzip' length 1889020 bytes (1.8 MB)
+downloaded 1.8 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0haven_2.2.0.zip'
+Content type 'applicationzip' length 1228371 bytes (1.2 MB)
+downloaded 1.2 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0curl_4.3.zip'
+Content type 'applicationzip' length 4125795 bytes (3.9 MB)
+downloaded 3.9 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0data.table_1.12.8.zip'
+Content type 'applicationzip' length 2326141 bytes (2.2 MB)
+downloaded 2.2 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0readxl_1.3.1.zip'
+Content type 'applicationzip' length 1708814 bytes (1.6 MB)
+downloaded 1.6 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0openxlsx_4.1.4.zip'
+Content type 'applicationzip' length 2819757 bytes (2.7 MB)
+downloaded 2.7 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0tibble_3.0.1.zip'
+Content type 'applicationzip' length 410295 bytes (400 KB)
+downloaded 400 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0minqa_1.2.4.zip'
+Content type 'applicationzip' length 853698 bytes (833 KB)
+downloaded 833 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0nloptr_1.2.2.1.zip'
+Content type 'applicationzip' length 1244270 bytes (1.2 MB)
+downloaded 1.2 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0statmod_1.4.34.zip'
+Content type 'applicationzip' length 281620 bytes (275 KB)
+downloaded 275 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0Rcpp_1.0.4.6.zip'
+Content type 'applicationzip' length 3167629 bytes (3.0 MB)
+downloaded 3.0 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0RcppEigen_0.3.3.7.0.zip'
+Content type 'applicationzip' length 2879505 bytes (2.7 MB)
+downloaded 2.7 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0carData_3.0-3.zip'
+Content type 'applicationzip' length 1816889 bytes (1.7 MB)
+downloaded 1.7 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0abind_1.4-5.zip'
+Content type 'applicationzip' length 63698 bytes (62 KB)
+downloaded 62 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0pbkrtest_0.4-8.6.zip'
+Content type 'applicationzip' length 273975 bytes (267 KB)
+downloaded 267 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0quantreg_5.55.zip'
+Content type 'applicationzip' length 1843970 bytes (1.8 MB)
+downloaded 1.8 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0maptools_0.9-9.zip'
+Content type 'applicationzip' length 2161591 bytes (2.1 MB)
+downloaded 2.1 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0rio_0.5.16.zip'
+Content type 'applicationzip' length 504969 bytes (493 KB)
+downloaded 493 KB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0lme4_1.1-23.zip'
+Content type 'applicationzip' length 5957371 bytes (5.7 MB)
+downloaded 5.7 MB
+
+试开URL’httpsmirrors.e-ducation.cnCRANbinwindowscontrib4.0car_3.0-7.zip'
+Content type 'applicationzip' length 1549141 bytes (1.5 MB)
+downloaded 1.5 MB
+
+程序包‘R6’打开成功，MD5和检查也通过
+程序包‘clipr’打开成功，MD5和检查也通过
+程序包‘BH’打开成功，MD5和检查也通过
+程序包‘glue’打开成功，MD5和检查也通过
+程序包‘purrr’打开成功，MD5和检查也通过
+程序包‘rematch’打开成功，MD5和检查也通过
+程序包‘prettyunits’打开成功，MD5和检查也通过
+程序包‘assertthat’打开成功，MD5和检查也通过
+程序包‘utf8’打开成功，MD5和检查也通过
+程序包‘digest’打开成功，MD5和检查也通过
+程序包‘forcats’打开成功，MD5和检查也通过
+程序包‘hms’打开成功，MD5和检查也通过
+程序包‘readr’打开成功，MD5和检查也通过
+程序包‘rlang’打开成功，MD5和检查也通过
+程序包‘tidyselect’打开成功，MD5和检查也通过
+程序包‘cellranger’打开成功，MD5和检查也通过
+程序包‘progress’打开成功，MD5和检查也通过
+程序包‘zip’打开成功，MD5和检查也通过
+程序包‘stringi’打开成功，MD5和检查也通过
+程序包‘cli’打开成功，MD5和检查也通过
+程序包‘crayon’打开成功，MD5和检查也通过
+程序包‘ellipsis’打开成功，MD5和检查也通过
+程序包‘fansi’打开成功，MD5和检查也通过
+程序包‘lifecycle’打开成功，MD5和检查也通过
+程序包‘pillar’打开成功，MD5和检查也通过
+程序包‘pkgconfig’打开成功，MD5和检查也通过
+程序包‘vctrs’打开成功，MD5和检查也通过
+程序包‘magrittr’打开成功，MD5和检查也通过
+程序包‘SparseM’打开成功，MD5和检查也通过
+程序包‘MatrixModels’打开成功，MD5和检查也通过
+程序包‘sp’打开成功，MD5和检查也通过
+程序包‘haven’打开成功，MD5和检查也通过
+程序包‘curl’打开成功，MD5和检查也通过
+程序包‘data.table’打开成功，MD5和检查也通过
+程序包‘readxl’打开成功，MD5和检查也通过
+程序包‘openxlsx’打开成功，MD5和检查也通过
+程序包‘tibble’打开成功，MD5和检查也通过
+程序包‘minqa’打开成功，MD5和检查也通过
+程序包‘nloptr’打开成功，MD5和检查也通过
+程序包‘statmod’打开成功，MD5和检查也通过
+程序包‘Rcpp’打开成功，MD5和检查也通过
+程序包‘RcppEigen’打开成功，MD5和检查也通过
+程序包‘carData’打开成功，MD5和检查也通过
+程序包‘abind’打开成功，MD5和检查也通过
+程序包‘pbkrtest’打开成功，MD5和检查也通过
+程序包‘quantreg’打开成功，MD5和检查也通过
+程序包‘maptools’打开成功，MD5和检查也通过
+程序包‘rio’打开成功，MD5和检查也通过
+程序包‘lme4’打开成功，MD5和检查也通过
+程序包‘car’打开成功，MD5和检查也通过
+
+下载的二进制程序包在
+        CUsersAdministratorAppDataLocalTempRtmpQfAUSGdownloaded_packages里
+ help(package=car)
+ library(car)
+载入需要的程辑包：carData
+ some
+function (x, ...) 
+UseMethod(some)
+bytecode 0x0000000009a236d8
+environment namespacecar
+ head(mtcars)
+                   mpg cyl disp  hp drat    wt  qsec vs am gear carb
+Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+ lm(mpg~wt,data=mtcars)
+
+Call
+lm(formula = mpg ~ wt, data = mtcars)
+
+Coefficients
+(Intercept)           wt  
+     37.285       -5.344  
+
+ result -  lm(mpg~wt,data=mtcars)
+ summary(result)
+
+Call
+lm(formula = mpg ~ wt, data = mtcars)
+
+Residuals
+    Min      1Q  Median      3Q     Max 
+-4.5432 -2.3647 -0.1252  1.4096  6.8727 
+
+Coefficients
+            Estimate Std. Error t value Pr(t)    
+(Intercept)  37.2851     1.8776  19.858   2e-16 
+wt           -5.3445     0.5591  -9.559 1.29e-10 
+---
+Signif. codes  0 ‘’ 0.001 ‘’ 0.01 ‘’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error 3.046 on 30 degrees of freedom
+Multiple R-squared  0.7528,    Adjusted R-squared  0.7446 
+F-statistic 91.38 on 1 and 30 DF,  p-value 1.294e-10
+
+ plot(result)
+等待页面改变的确认...
+等待页面改变的确认...
+等待页面改变的确认...
+等待页面改变的确认...
+ predict(result,mynewdata)
+Error in predict.lm(result, mynewdata)  找不到对象'mynewdata'
+ 

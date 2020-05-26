@@ -1,0 +1,169 @@
+> install.packages(DMwR)
+Error in install.packages : object 'DMwR' not found
+> library("DMwR")
+Error in library("DMwR") : 不存在叫‘DMwR’这个名字的程辑包
+> install.packages("DMwR")
+Error: unexpected input in "install.packages("DMwR")"
+> install.packages("DMwR")
+also installing the dependencies ‘bitops’, ‘gtools’, ‘gdata’, ‘caTools’, ‘TTR’, ‘gplots’, ‘xts’, ‘quantmod’, ‘ROCR’
+
+
+  There is a binary version available but the source version is later:
+     binary source needs_compilation
+ROCR  1.0-7 1.0-11             FALSE
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/bitops_1.0-6.zip'
+Content type 'application/zip' length 38414 bytes (37 KB)
+downloaded 37 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/gtools_3.8.2.zip'
+Content type 'application/zip' length 336236 bytes (328 KB)
+downloaded 328 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/gdata_2.18.0.zip'
+Content type 'application/zip' length 1262939 bytes (1.2 MB)
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/caTools_1.18.0.zip'
+Content type 'application/zip' length 317192 bytes (309 KB)
+downloaded 309 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/TTR_0.23-6.zip'
+Content type 'application/zip' length 521459 bytes (509 KB)
+downloaded 509 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/gplots_3.0.3.zip'
+Content type 'application/zip' length 593689 bytes (579 KB)
+downloaded 579 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/xts_0.12-0.zip'
+Content type 'application/zip' length 960941 bytes (938 KB)
+downloaded 938 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/quantmod_0.4.17.zip'
+Content type 'application/zip' length 1017545 bytes (993 KB)
+downloaded 993 KB
+
+trying URL 'https://cran.rstudio.com/bin/windows/contrib/4.0/DMwR_0.4.1.zip'
+Content type 'application/zip' length 3242596 bytes (3.1 MB)
+downloaded 3.1 MB
+
+package ‘bitops’ successfully unpacked and MD5 sums checked
+package ‘gtools’ successfully unpacked and MD5 sums checked
+package ‘gdata’ successfully unpacked and MD5 sums checked
+package ‘caTools’ successfully unpacked and MD5 sums checked
+package ‘TTR’ successfully unpacked and MD5 sums checked
+package ‘gplots’ successfully unpacked and MD5 sums checked
+package ‘xts’ successfully unpacked and MD5 sums checked
+package ‘quantmod’ successfully unpacked and MD5 sums checked
+package ‘DMwR’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Administrator\AppData\Local\Temp\RtmpATR8Vz\downloaded_packages
+installing the source package ‘ROCR’
+
+trying URL 'https://cran.rstudio.com/src/contrib/ROCR_1.0-11.tar.gz'
+Content type 'application/x-gzip' length 271680 bytes (265 KB)
+downloaded 265 KB
+
+* installing *source* package 'ROCR' ...
+** 成功将'ROCR'程序包解包并MD5和检查
+** using staged installation
+** R
+** data
+** demo
+** inst
+** byte-compile and prepare package for lazy loading
+** help
+*** installing help indices
+  converting help for package 'ROCR'
+    finding HTML links ... 好了
+    ROCR.hiv                                html  
+    ROCR.simple                             html  
+    ROCR.xval                               html  
+    performance-class                       html  
+    performance                             html  
+    plot-methods                            html  
+    prediction-class                        html  
+    prediction                              html  
+** building package indices
+** installing vignettes
+** testing if installed package can be loaded from temporary location
+*** arch - i386
+*** arch - x64
+** testing if installed package can be loaded from final location
+*** arch - i386
+*** arch - x64
+** testing if installed package keeps a record of temporary installation path
+* DONE (ROCR)
+
+The downloaded source packages are in
+	‘C:\Users\Administrator\AppData\Local\Temp\RtmpATR8Vz\downloaded_packages’
+> library(DMwR)
+载入需要的程辑包：lattice
+载入需要的程辑包：grid
+Registered S3 method overwritten by 'quantmod':
+  method            from
+  as.zoo.data.frame zoo 
+> head(algae)
+  season  size  speed mxPH mnO2     Cl    NO3     NH4    oPO4     PO4 Chla   a1
+1 winter small medium 8.00  9.8 60.800  6.238 578.000 105.000 170.000 50.0  0.0
+2 spring small medium 8.35  8.0 57.750  1.288 370.000 428.750 558.750  1.3  1.4
+3 autumn small medium 8.10 11.4 40.020  5.330 346.667 125.667 187.057 15.6  3.3
+4 spring small medium 8.07  4.8 77.364  2.302  98.182  61.182 138.700  1.4  3.1
+5 autumn small medium 8.06  9.0 55.350 10.416 233.700  58.222  97.580 10.5  9.2
+6 winter small   high 8.25 13.1 65.750  9.248 430.000  18.250  56.667 28.4 15.1
+    a2   a3  a4   a5   a6  a7
+1  0.0  0.0 0.0 34.2  8.3 0.0
+2  7.6  4.8 1.9  6.7  0.0 2.1
+3 53.6  1.9 0.0  0.0  0.0 9.7
+4 41.0 18.9 0.0  1.4  0.0 1.4
+5  2.9  7.5 0.0  7.5  4.1 1.0
+6 14.6  1.4 0.0 22.5 12.6 2.9
+> summary(algare)
+Error in summary(algare) : object 'algare' not found
+> summary(algae)
+    season       size       speed         mxPH            mnO2       
+ autumn:40   large :45   high  :84   Min.   :5.600   Min.   : 1.500  
+ spring:53   medium:84   low   :33   1st Qu.:7.700   1st Qu.: 7.725  
+ summer:45   small :71   medium:83   Median :8.060   Median : 9.800  
+ winter:62                           Mean   :8.012   Mean   : 9.118  
+                                     3rd Qu.:8.400   3rd Qu.:10.800  
+                                     Max.   :9.700   Max.   :13.400  
+                                     NA's   :1       NA's   :2       
+       Cl               NO3              NH4                oPO4       
+ Min.   :  0.222   Min.   : 0.050   Min.   :    5.00   Min.   :  1.00  
+ 1st Qu.: 10.981   1st Qu.: 1.296   1st Qu.:   38.33   1st Qu.: 15.70  
+ Median : 32.730   Median : 2.675   Median :  103.17   Median : 40.15  
+ Mean   : 43.636   Mean   : 3.282   Mean   :  501.30   Mean   : 73.59  
+ 3rd Qu.: 57.824   3rd Qu.: 4.446   3rd Qu.:  226.95   3rd Qu.: 99.33  
+ Max.   :391.500   Max.   :45.650   Max.   :24064.00   Max.   :564.60  
+ NA's   :10        NA's   :2        NA's   :2          NA's   :2       
+      PO4              Chla               a1              a2        
+ Min.   :  1.00   Min.   :  0.200   Min.   : 0.00   Min.   : 0.000  
+ 1st Qu.: 41.38   1st Qu.:  2.000   1st Qu.: 1.50   1st Qu.: 0.000  
+ Median :103.29   Median :  5.475   Median : 6.95   Median : 3.000  
+ Mean   :137.88   Mean   : 13.971   Mean   :16.92   Mean   : 7.458  
+ 3rd Qu.:213.75   3rd Qu.: 18.308   3rd Qu.:24.80   3rd Qu.:11.375  
+ Max.   :771.60   Max.   :110.456   Max.   :89.80   Max.   :72.600  
+ NA's   :2        NA's   :12                                        
+       a3               a4               a5               a6        
+ Min.   : 0.000   Min.   : 0.000   Min.   : 0.000   Min.   : 0.000  
+ 1st Qu.: 0.000   1st Qu.: 0.000   1st Qu.: 0.000   1st Qu.: 0.000  
+ Median : 1.550   Median : 0.000   Median : 1.900   Median : 0.000  
+ Mean   : 4.309   Mean   : 1.992   Mean   : 5.064   Mean   : 5.964  
+ 3rd Qu.: 4.925   3rd Qu.: 2.400   3rd Qu.: 7.500   3rd Qu.: 6.925  
+ Max.   :42.800   Max.   :44.600   Max.   :44.400   Max.   :77.600  
+                                                                    
+       a7        
+ Min.   : 0.000  
+ 1st Qu.: 0.000  
+ Median : 1.000  
+ Mean   : 2.495  
+ 3rd Qu.: 2.400  
+ Max.   :31.600  
+                 
+> hist(algae$mxPH)
+> lines(density(algae$mxPH,na.rm=T))
+> hist(algae$mxPH,prob=T,ylim=0:1)
+> lines(density(algae$mxPH,na.rm=T))

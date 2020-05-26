@@ -1,0 +1,16 @@
+server:
+  port: 8031
+spring:
+  application:
+    name: microservice-hystrix-turbine
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: mq
+    password: mq
+eureka:
+  client:
+    service-url:
+      defaultZone: http://node1:8761/eureka/
+  instance:
+    prefer-ip-address: true
