@@ -1,9 +1,10 @@
 package com.elson.spark.core;
 
-import org.apache.spark.Accumulator;
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.util.AccumulatorV2;
+import org.apache.spark.util.LongAccumulator;
 
 import java.util.Arrays;
 import java.util.List;
@@ -16,11 +17,13 @@ public class AccumulatorValue {
 
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        final Accumulator<Integer> sum = sc.accumulator(0, "our Accumulator");
+        final AccumulatorV2 sum = new LongAccumulator();
 
-        List<Integer> numberList = Arrays.asList(1, 2, 3, 4, 5);
+        sc.sc().register(sum,"our Accumulator");
 
-        JavaRDD<Integer> listRDD = sc.parallelize(numberList);
+        List<Long> numberList = Arrays.asList(1L, 2L, 3L, 4L, 5L);
+
+        JavaRDD<Long> listRDD = sc.parallelize(numberList);
 
         listRDD =listRDD.cache();
 
@@ -35,6 +38,8 @@ public class AccumulatorValue {
         Thread.sleep(60 * 1000 * 1000);
 
         sc.close();
+
+        System.exit(-1);
 
     }
 
