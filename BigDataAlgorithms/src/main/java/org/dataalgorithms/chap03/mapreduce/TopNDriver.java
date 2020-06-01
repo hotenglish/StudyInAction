@@ -31,7 +31,7 @@ public class TopNDriver  extends Configured implements Tool {
 
    public int run(String[] args) throws Exception {
       Job job = new Job(getConf());
-      HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+      //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
       int N = Integer.parseInt(args[0]); // top N
       job.getConfiguration().setInt("N", N);
       job.setJobName("TopNDriver");

@@ -120,6 +120,6 @@ public class Top10 {
       // save final output
       // using outputPath
 
-      System.exit(0);
+      ctx.stop();
    }
 }

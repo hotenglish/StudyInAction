@@ -32,7 +32,7 @@ public class AggregateByKeyDriver  extends Configured implements Tool {
 
    public int run(String[] args) throws Exception {
       Job job = new Job(getConf());
-      HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+      //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
       job.setJobName("AggregateByKeyDriver");
 
       job.setInputFormatClass(TextInputFormat.class);

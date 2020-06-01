@@ -89,7 +89,7 @@ public class Top10UsingTakeOrdered implements Serializable {
          System.out.println(entry._2 + "--" + entry._1);
       }
 
-      System.exit(0);
+       ctx.stop();
    }
 
    static class MyTupleComparator implements Comparator<Tuple2<String, Integer>> ,Serializable {

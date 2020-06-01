@@ -127,6 +127,6 @@ public class Top10NonUnique {
          System.out.println(entry.getKey() + "--" + entry.getValue());
       }
 
-      System.exit(0);
+      ctx.stop();
    }
 }
