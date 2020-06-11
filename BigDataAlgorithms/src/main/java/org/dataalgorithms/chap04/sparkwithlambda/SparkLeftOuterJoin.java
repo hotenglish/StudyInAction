@@ -49,7 +49,7 @@ public class SparkLeftOuterJoin {
     // T => Tuple2<K, V>
     JavaPairRDD<String,Tuple2<String,String>> usersRDD = 
           users.mapToPair((String s) -> {
-              String[] userRecord = s.split("\t");
+              String[] userRecord = s.split(",");
               Tuple2<String,String> location = new Tuple2<String,String>("L", userRecord[1]);
               return new Tuple2<String,Tuple2<String,String>>(userRecord[0], location);
           } 
@@ -61,7 +61,7 @@ public class SparkLeftOuterJoin {
 	// T => Tuple2<K, V>
     JavaPairRDD<String,Tuple2<String,String>> transactionsRDD = 
           transactions.mapToPair((String s) -> {
-              String[] transactionRecord = s.split("\t");
+              String[] transactionRecord = s.split(",");
               Tuple2<String,String> product = new Tuple2<String,String>("P", transactionRecord[1]);
               return new Tuple2<String,Tuple2<String,String>>(transactionRecord[2], product);
           }
@@ -138,6 +138,6 @@ public class SparkLeftOuterJoin {
     }
     System.out.println("--- debug4 end ---");
     //productByUniqueLocations.saveAsTextFile("/left/output");
-    System.exit(0);
+    ctx.stop();
   }
 }

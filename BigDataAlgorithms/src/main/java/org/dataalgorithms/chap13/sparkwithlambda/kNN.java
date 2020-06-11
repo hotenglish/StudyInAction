@@ -52,9 +52,9 @@ public class kNN {
 
     // STEP-4: Create RDDs for query and training datasets
     JavaRDD<String> R = session.read().textFile(datasetR).javaRDD();
-    R.saveAsTextFile(outputPath+"/R");  
+    // R.saveAsTextFile(outputPath+"/R");
     JavaRDD<String> S = session.read().textFile(datasetS).javaRDD();
-    S.saveAsTextFile(outputPath+"/S");
+    // S.saveAsTextFile(outputPath+"/S");
 
     // STEP-5: Perform cartesian product of (R, S)
     //<U> JavaPairRDD<T,U> cartesian(JavaRDDLike<U,?> other)
@@ -62,7 +62,7 @@ public class kNN {
     // one, that is, the RDD of all pairs of elements (a, b) 
     // where a is in this and b is in other.
     JavaPairRDD<String,String> cart = R.cartesian(S);
-    cart.saveAsTextFile(outputPath+"/cart");
+    //cart.saveAsTextFile(outputPath+"/cart");
     
     // STEP-6: Find distance(r, s) for r in R and s in S
     // (K,V), where K = unique-record-id-of-R, V=Tuple2(distance, classification)
@@ -85,7 +85,7 @@ public class kNN {
                 Tuple2<Double,String> V = new Tuple2<Double,String>(distance, sClassificationID);
                 return new Tuple2<String,Tuple2<Double,String>>(K, V);
     });
-    knnMapped.saveAsTextFile(outputPath+"/knnMapped");    
+    //knnMapped.saveAsTextFile(outputPath+"/knnMapped");
 
     // STEP-7: Group distances by r in R
     // now group the results by r.recordID and then find the k-nearest-neigbors.
@@ -115,6 +115,7 @@ public class kNN {
 
     // done 
     session.stop();
+    context.stop();
     System.exit(0);
   }
 }

@@ -26,7 +26,7 @@ public class LeftJoinTransactionMapper
     */
    public void map(LongWritable key, Text value, Context context) 
       throws java.io.IOException, InterruptedException {
-      String[] tokens = StringUtils.split(value.toString(), "\t");
+      String[] tokens = StringUtils.split(value.toString(), ",");
       String productID = tokens[1];
       String userID = tokens[2];
       // make sure products arrive at a reducer after location

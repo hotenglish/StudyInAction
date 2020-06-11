@@ -12,12 +12,7 @@ import scala.Tuple2;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
-//
-import edu.umd.cloud9.io.pair.PairOfStrings;
-//
 import org.apache.hadoop.mapred.SequenceFileOutputFormat;
-import org.apache.hadoop.io.DoubleWritable;
-//
 import org.dataalgorithms.util.SparkUtil;
 
 /**
@@ -37,14 +32,14 @@ import org.dataalgorithms.util.SparkUtil;
  */
 public class NaiveBayesClassifierBuilder implements java.io.Serializable {
 
-   static List<Tuple2<PairOfStrings, DoubleWritable>> toWritableList(Map<Tuple2<String,String>, 
+   static List<Tuple2<MyPairOfStrings, MyDoubleWritable>> toWritableList(Map<Tuple2<String,String>, 
                                                                      Double> PT) {
-      List<Tuple2<PairOfStrings, DoubleWritable>> list = 
-          new ArrayList<Tuple2<PairOfStrings, DoubleWritable>>();
+      List<Tuple2<MyPairOfStrings, MyDoubleWritable>> list = 
+          new ArrayList<Tuple2<MyPairOfStrings, MyDoubleWritable>>();
       for (Map.Entry<Tuple2<String,String>, Double> entry : PT.entrySet()) { 
-         list.add(new Tuple2<PairOfStrings, DoubleWritable>(
-            new PairOfStrings(entry.getKey()._1,  entry.getKey()._2),
-            new DoubleWritable(entry.getValue())
+         list.add(new Tuple2<MyPairOfStrings, MyDoubleWritable>(
+            new MyPairOfStrings(entry.getKey()._1,  entry.getKey()._2),
+            new MyDoubleWritable(entry.getValue())
          ));
       }
       return list;
@@ -147,11 +142,11 @@ public class NaiveBayesClassifierBuilder implements java.io.Serializable {
       // STEP 7.1: save the PT
       // public <K,V> JavaPairRDD<K,V> parallelizePairs(java.util.List<scala.Tuple2<K,V>> list)
       // Distribute a local Scala collection to form an RDD.      
-      List<Tuple2<PairOfStrings, DoubleWritable>> list  =  toWritableList(PT);
-      JavaPairRDD<PairOfStrings, DoubleWritable> ptRDD = ctx.parallelizePairs(list);   
+      List<Tuple2<MyPairOfStrings, MyDoubleWritable>> list  =  toWritableList(PT);
+      JavaPairRDD<MyPairOfStrings, MyDoubleWritable> ptRDD = ctx.parallelizePairs(list);   
       ptRDD.saveAsHadoopFile("/naivebayes/pt",              // name of path
-                          PairOfStrings.class,              // key class
-                          DoubleWritable.class,             // value class
+                          MyPairOfStrings.class,              // key class
+                          MyDoubleWritable.class,             // value class
                           SequenceFileOutputFormat.class    // output format class
                          ); 
 
@@ -162,7 +157,7 @@ public class NaiveBayesClassifierBuilder implements java.io.Serializable {
 
       // done
       ctx.close();    
-     System.exit(0);
+      System.exit(0);
   }
 
 }

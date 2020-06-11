@@ -13,7 +13,6 @@ import java.io.IOException;
  * RelativeFrequencyMapper implements the map() function for Relative Frequency of words.
  *
  * @author Mahmoud Parsian
- *
  */
 public class RelativeFrequencyMapper
         extends Mapper<LongWritable, Text, PairOfWords, IntWritable> {
@@ -62,5 +61,11 @@ public class RelativeFrequencyMapper
             totalCount.set(end - start);
             context.write(pair, totalCount);
         }
+    }
+
+    public static void main(String args[]) {
+        String you = "you are";
+        String r = you.replaceAll("\\W+", "");
+        System.out.println(r);
     }
 }

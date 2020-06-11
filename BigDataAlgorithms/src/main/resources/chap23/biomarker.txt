@@ -1,0 +1,4 @@
+/biomarkers/input/b1.txt
+/biomarkers/input/b2.txt
+/biomarkers/input/b3.txt
+/biomarkers/input/b4.txt

@@ -28,9 +28,9 @@ public class MarkovStateTransitionModelDriver extends Configured implements Tool
 	public int run(String[] args) throws Exception {
         Job job = new Job(getConf());
         job.setJobName("MarkovStateTransitionModelDriver");
-        
+        job.setJarByClass(MarkovStateTransitionModelDriver.class);
         // add jars to distributed cache
-        HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+        //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
 
         FileInputFormat.addInputPath(job, new Path(args[0]));
         FileOutputFormat.setOutputPath(job, new Path(args[1]));

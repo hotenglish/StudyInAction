@@ -36,7 +36,7 @@ public class SortByMRF_MovingAverageDriver {
        }
 
        // add jars to distributed cache
-       HadoopUtil.addJarsToDistributedCache(conf, "/lib/");
+       // adoopUtil.addJarsToDistributedCache(conf, "/lib/");
        
        // set mapper/reducer
        jobconf.setMapperClass(SortByMRF_MovingAverageMapper.class);

@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Iterator;
 
-/**
+/**`
  * The SparkFriendRecommendation is a Spark program to implement a basic
  * friends recommendation engine between all users.
  *
@@ -54,7 +54,7 @@ public class SparkFriendRecommendation {
       @Override
       public Iterator<Tuple2<Long,Tuple2<Long,Long>>> call(String record) {
          // record=<person><TAB><friend1><,><friend2><,><friend3><,>... 
-         String[] tokens = record.split("\t");
+         String[] tokens = record.split(":");
          long person = Long.parseLong(tokens[0]);
          String friendsAsString = tokens[1];
          String[] friendsTokenized = friendsAsString.split(",");
@@ -148,9 +148,8 @@ public class SparkFriendRecommendation {
       System.out.println("debug4 key="+t2._1+ "\t value="+t2._2);
     }
 
-    // done
+    ctx.stop();
     ctx.close();
-    System.exit(0);
   }
   
   static String buildRecommendations(Map<Long, List<Long>> mutualFriends) {

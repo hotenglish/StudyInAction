@@ -1,0 +1,4 @@
+/ttest/input/b1.txt
+/ttest/input/b2.txt
+/ttest/input/b3.txt
+/ttest/input/b4.txt

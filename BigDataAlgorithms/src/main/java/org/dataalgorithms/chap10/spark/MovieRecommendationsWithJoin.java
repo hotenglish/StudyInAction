@@ -56,7 +56,7 @@ public class MovieRecommendationsWithJoin {
           //                                            T
       @Override
       public Tuple2<String,Tuple2<String,Integer>> call(String s) {
-      	String[] record = s.split("\t");
+      	String[] record = s.split(",");
       	String user = record[0];
       	String movie = record[1];
       	Integer rating = new Integer(record[2]);

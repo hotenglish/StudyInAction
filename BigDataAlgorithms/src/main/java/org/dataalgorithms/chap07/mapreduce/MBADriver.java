@@ -70,11 +70,12 @@ public class MBADriver extends Configured implements Tool {
       // job configuration
       Job job = new Job(getConf());
       job.setJobName("MBADriver");
-      job.getConfiguration().setInt("number.of.pairs", numberOfPairs);   
+      job.getConfiguration().setInt("number.of.pairs", numberOfPairs);
+      job.setJarByClass(MBADriver.class);
       		
       // job.setJarByClass(MBADriver.class);
       // add jars to distributed cache
-      HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+      //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
 
 
       //input/output path
@@ -83,7 +84,7 @@ public class MBADriver extends Configured implements Tool {
 
       //Mapper K, V output
       job.setMapOutputKeyClass(Text.class);
-      job.setMapOutputValueClass(IntWritable.class);   
+      job.setMapOutputValueClass(IntWritable.class);
       //output format
       job.setOutputFormatClass(TextOutputFormat.class);
       

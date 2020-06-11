@@ -42,7 +42,7 @@ public class SecondarySortProjectionDriver {
        }
 
        // add jars to distributed cache
-       HadoopUtil.addJarsToDistributedCache(conf, "/lib/");
+       //HadoopUtil.addJarsToDistributedCache(conf, "/lib/");
        
        // set mapper/reducer
        jobconf.setMapperClass(SecondarySortProjectionMapper.class);

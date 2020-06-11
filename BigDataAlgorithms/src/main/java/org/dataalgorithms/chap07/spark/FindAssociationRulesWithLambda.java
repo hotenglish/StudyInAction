@@ -38,7 +38,7 @@ public class FindAssociationRulesWithLambda {
        
       // STEP-3: read all transactions from HDFS and create the first RDD 
       JavaRDD<String> transactions = ctx.textFile(transactionsFileName, 1);
-      transactions.saveAsTextFile("/rules/output/1");
+      //transactions.saveAsTextFile("/rules/output/1");
 
       // STEP-4: generate frequent patterns
       // PairFlatMapFunction<T, K, V>     
@@ -56,12 +56,12 @@ public class FindAssociationRulesWithLambda {
              return result.iterator();
       });
       //
-      patterns.saveAsTextFile("/rules/output/2");
+      //patterns.saveAsTextFile("/rules/output/2");
     
       // STEP-5: combine/reduce frequent patterns
       JavaPairRDD<List<String>, Integer> combined = patterns.reduceByKey((Integer i1, Integer i2) -> i1 + i2);  
       //
-      combined.saveAsTextFile("/rules/output/3");
+      //combined.saveAsTextFile("/rules/output/3");
     
       // now, we have: patterns(K,V)
       //      K = pattern as List<String>
@@ -152,7 +152,7 @@ public class FindAssociationRulesWithLambda {
       // done
       ctx.close();  
       
-      System.exit(0);
+      //System.exit(0);
    }
 }
 

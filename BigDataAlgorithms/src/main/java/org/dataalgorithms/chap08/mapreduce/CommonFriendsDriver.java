@@ -30,9 +30,10 @@ public class CommonFriendsDriver extends Configured implements Tool {
 
         Job job = new Job(getConf());
         job.setJobName("CommonFriendsDriver");
+        job.setJarByClass(CommonFriendsDriver.class);
 
         // add jars to distributed cache
-        HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+        //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
 
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);

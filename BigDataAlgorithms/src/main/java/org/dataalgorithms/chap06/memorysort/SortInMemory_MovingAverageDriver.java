@@ -10,6 +10,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 //
+import org.dataalgorithms.chap02.mapreduce.SecondarySortReducer;
 import org.dataalgorithms.util.HadoopUtil;
 import org.dataalgorithms.chap06.TimeSeriesData;
 
@@ -35,8 +36,10 @@ public class SortInMemory_MovingAverageDriver {
        
        Job job = new Job(conf, "SortInMemory_MovingAverageDriver");
 
+       job.setJarByClass(SortInMemory_MovingAverageDriver.class);
+
        // add jars to distributed cache
-       HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+       //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
        
        // set mapper/reducer
        job.setMapperClass(SortInMemory_MovingAverageMapper.class);

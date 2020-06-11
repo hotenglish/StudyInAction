@@ -134,8 +134,8 @@ public class FindCommonFriends {
     for (Tuple2<Tuple2<Long, Long>, Iterable<Long>> t2 : debug3) {
       System.out.println("debug3 key="+t2._1+ "\t value="+t2._2);
     }
-    
-    System.exit(0);
+    ctx.close();
+    //System.exit(0);
   }
   
   static Tuple2<Long,Long> buildSortedTuple(long a, long b) {

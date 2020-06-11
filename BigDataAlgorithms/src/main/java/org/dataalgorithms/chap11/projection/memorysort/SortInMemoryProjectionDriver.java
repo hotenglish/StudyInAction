@@ -37,9 +37,10 @@ public class SortInMemoryProjectionDriver {
           System.exit(1);
        }
        Job job = new Job(conf, "SortInMemoryProjectionDriver");
+       job.setJarByClass(SortInMemoryProjectionDriver.class);
 
        // add jars to distributed cache
-       HadoopUtil.addJarsToDistributedCache(job, "/lib/");
+       //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
        
        // set mapper/reducer
        job.setMapperClass(SortInMemoryProjectionMapper.class);

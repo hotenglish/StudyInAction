@@ -34,6 +34,7 @@ public class AggregateByKeyDriver  extends Configured implements Tool {
       Job job = new Job(getConf());
       //HadoopUtil.addJarsToDistributedCache(job, "/lib/");
       job.setJobName("AggregateByKeyDriver");
+      job.setJarByClass(AggregateByKeyDriver.class);
 
       job.setInputFormatClass(TextInputFormat.class);
       job.setOutputFormatClass(SequenceFileOutputFormat.class);

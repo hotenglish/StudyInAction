@@ -1,6 +1,5 @@
 package org.dataalgorithms.chap14.sparkwithlambda;
 
-
 // STEP-0: import required classes and interfaces
 import java.util.Map;
 import java.util.List;
@@ -10,12 +9,7 @@ import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
-//
-import edu.umd.cloud9.io.pair.PairOfStrings;
-//
 import org.apache.hadoop.mapred.SequenceFileInputFormat;
-import org.apache.hadoop.io.DoubleWritable;
-//
 import org.dataalgorithms.util.SparkUtil;
  
 /**
@@ -68,18 +62,18 @@ public class NaiveBayesClassifier implements java.io.Serializable {
       // returned RDD will create many references to the same object. 
       // If you plan to directly cache Hadoop writable objects, you 
       // should first copy them using a map function.      
-      JavaPairRDD<PairOfStrings, DoubleWritable> ptRDD = ctx.hadoopFile(
+      JavaPairRDD<MyPairOfStrings, MyDoubleWritable> ptRDD = ctx.hadoopFile(
                           nbProbTablePath,             	    // "/naivebayes/pt" 
                           SequenceFileInputFormat.class,    // input format class
-                          PairOfStrings.class,              // key class
-                          DoubleWritable.class              // value class	
+                          MyPairOfStrings.class,              // key class
+                          MyDoubleWritable.class              // value class	
                          );          
 
       // <K2,V2> JavaPairRDD<K2,V2> mapToPair(PairFunction<T,K2,V2> f)
       // Return a new RDD by applying a function to all elements of this RDD.
       JavaPairRDD<Tuple2<String,String>, Double> classifierRDD = 
-              ptRDD.mapToPair((Tuple2<PairOfStrings,DoubleWritable> rec) -> {
-          PairOfStrings pair = rec._1;
+              ptRDD.mapToPair((Tuple2<MyPairOfStrings,MyDoubleWritable> rec) -> {
+          MyPairOfStrings pair = rec._1;
           Tuple2<String,String> K2 = new Tuple2<String,String>(pair.getLeftElement(), pair.getRightElement());
           Double V2 = rec._2.get();
           return new Tuple2<Tuple2<String,String>,Double>(K2, V2);
